@@ -170,60 +170,78 @@ td,
 th {
   padding: 0; }
 
-body,
-button,
-input,
-select,
-textarea {
+body {
   color: #263238;
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 21px;
   font-size: 1.3125rem;
-  letter-spacing: -0.005em;
+  letter-spacing: .01em;
   line-height: 1.58; }
 
-h1, h2, h3, h4, h5, h6 {
-  clear: both;
-  letter-spacing: -0.01em; }
-
 p {
-  margin-bottom: 1.5em; }
+  margin-top: 0; }
 
 dfn, cite, em, i {
   font-style: italic; }
 
-blockquote {
-  margin: 0 1.5em; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  margin-top: 0; }
 
-address {
-  margin: 0 0 1.5em; }
+h1 {
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 1.2; }
 
-pre {
-  background: #ededed;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.58;
-  margin-bottom: 1.5em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.5em; }
+h2 {
+  font-size: 29.6px;
+  font-size: 1.85rem;
+  line-height: 1.25; }
 
-code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem; }
+h3 {
+  font-size: 28px;
+  font-size: 1.75rem; }
 
-abbr, acronym {
-  border-bottom: 1px dotted #ededed;
-  cursor: help; }
+h4 {
+  font-size: 24px;
+  font-size: 1.5rem; }
 
-mark, ins {
-  background: #fefefe;
-  text-decoration: none; }
+h5 {
+  font-size: 22.4px;
+  font-size: 1.4rem; }
 
-big {
-  font-size: 125%; }
+h6 {
+  font-size: 20.8px;
+  font-size: 1.3rem; }
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+    font-size: 3rem; }
+  h2 {
+    font-size: 36px;
+    font-size: 2.25rem; }
+  h3 {
+    font-size: 29.6px;
+    font-size: 1.85rem; }
+  h4 {
+    font-size: 28px;
+    font-size: 1.75rem; }
+  h5 {
+    font-size: 24px;
+    font-size: 1.5rem; }
+  h6 {
+    font-size: 22.4px;
+    font-size: 1.4rem; } }
 
 html {
   box-sizing: border-box; }
@@ -236,3 +254,20 @@ html {
 
 body {
   background: #fff; }
+
+blockquote, q {
+  quotes: "" ""; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
+
+hr {
+  background-color: #ededed;
+  border: 0;
+  height: 1px;
+  margin-bottom: 30px; }
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }

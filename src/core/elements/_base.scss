@@ -1,9 +1,3 @@
-// Base
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-
-@import 'variables';
-@import 'typography';
-
 html {
 	box-sizing: border-box;
 }
@@ -17,4 +11,20 @@ html {
 // Default body styles
 body {
 	background: $color-plain;
+}
+
+blockquote, q {
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+hr {
+	background-color: $color-neutral-dark;
+	border: 0;
+	height: 1px;
+	margin-bottom: $size-element-spacing;
 }
