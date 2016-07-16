@@ -4,12 +4,17 @@
 $color-plain: #fff !default;
 $color-primary: #00BCD4 !default;
 $color-secondary: #263238 !default;
-$color-tertiary: #fefefe !default;
-$color-quaternary: #ededed !default;
+$color-text: #263238 !default;
+$color-neutral-light: #fefefe !default;
+$color-neutral-dark: #ededed !default;
 
 // Sizes
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-
+$size-element-spacing: 1.5em;
 
 // Typography
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
+$font-main:  Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font-pre: "Courier 10 Pitch", Courier, monospace;
+$font-line-height-body: 1.58;

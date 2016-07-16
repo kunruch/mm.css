@@ -170,6 +170,61 @@ td,
 th {
   padding: 0; }
 
+body,
+button,
+input,
+select,
+textarea {
+  color: #263238;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  letter-spacing: -0.005em;
+  line-height: 1.58; }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  letter-spacing: -0.01em; }
+
+p {
+  margin-bottom: 1.5em; }
+
+dfn, cite, em, i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 1.5em; }
+
+address {
+  margin: 0 0 1.5em; }
+
+pre {
+  background: #ededed;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.58;
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.5em; }
+
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #ededed;
+  cursor: help; }
+
+mark, ins {
+  background: #fefefe;
+  text-decoration: none; }
+
+big {
+  font-size: 125%; }
+
 html {
   box-sizing: border-box; }
 
