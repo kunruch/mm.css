@@ -1,7 +1,11 @@
-code {
+code, kbd, tt, var, pre {
+	font-family: $font-pre;
+	@include font-size(1.125);
+}
+
+code, kbd, tt {
 	background: $color-neutral-dark;
 	border-radius: $size-default-radius;
-	font-size: 86%;
 	padding: 3px 8px;
 	white-space: nowrap;
 }
@@ -9,8 +13,6 @@ code {
 pre {
 	background: $color-neutral-light;
 	border-left: $size-default-radius solid $color-primary;
-	font-family: $font-pre;
-	font-size: 86%;
     line-height: 1.8;
     padding: $size-element-spacing-small;
 

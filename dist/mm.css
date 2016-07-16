@@ -265,6 +265,33 @@ hr {
   height: 1px;
   margin-bottom: 1.5em; }
 
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1em; }
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+form,
+address {
+  margin-bottom: 1.5em; }
+
+abbr, acronym {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+mark, ins {
+  background: #f2f2f2;
+  text-decoration: none; }
+
+big {
+  font-size: 125%; }
+
 a {
   color: #00BCD4;
   text-decoration: none; }
@@ -318,18 +345,20 @@ td {
   td:last-child {
     padding-right: 0; }
 
-code {
+code, kbd, tt, var, pre {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+code, kbd, tt {
   background: #ededed;
   border-radius: 3px;
-  font-size: 86%;
   padding: 3px 8px;
   white-space: nowrap; }
 
 pre {
   background: #f2f2f2;
   border-left: 3px solid #00BCD4;
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 86%;
   line-height: 1.8;
   padding: 1em; }
   pre > code {

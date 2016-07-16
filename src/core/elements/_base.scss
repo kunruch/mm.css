@@ -28,3 +28,35 @@ hr {
 	height: 1px;
 	margin-bottom: $size-element-spacing;
 }
+
+input,
+textarea,
+select,
+fieldset {
+	margin-bottom: $size-element-spacing-small;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+form,
+address {
+	margin-bottom: $size-element-spacing;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+mark, ins {
+	background:  $color-neutral-light;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
