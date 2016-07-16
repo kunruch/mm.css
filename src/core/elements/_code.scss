@@ -1,0 +1,25 @@
+code {
+	background: $color-neutral-dark;
+	border-radius: $size-default-radius;
+	font-size: 86%;
+	padding: 3px 8px;
+	white-space: nowrap;
+}
+
+pre {
+	background: $color-neutral-light;
+	border-left: $size-default-radius solid $color-primary;
+	font-family: $font-pre;
+	font-size: 86%;
+    line-height: 1.8;
+    padding: $size-element-spacing-small;
+
+	& > code {
+		background: transparent;
+        font-size: inherit;
+        padding: 0;
+		border-radius: 0;
+		display: block;
+		white-space: pre;
+	}
+}

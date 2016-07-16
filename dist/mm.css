@@ -318,6 +318,28 @@ td {
   td:last-child {
     padding-right: 0; }
 
+code {
+  background: #ededed;
+  border-radius: 3px;
+  font-size: 86%;
+  padding: 3px 8px;
+  white-space: nowrap; }
+
+pre {
+  background: #f2f2f2;
+  border-left: 3px solid #00BCD4;
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 86%;
+  line-height: 1.8;
+  padding: 1em; }
+  pre > code {
+    background: transparent;
+    font-size: inherit;
+    padding: 0;
+    border-radius: 0;
+    display: block;
+    white-space: pre; }
+
 article {
   margin-top: 6em;
   margin-bottom: 6em; }
