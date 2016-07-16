@@ -194,7 +194,6 @@ h6 {
   font-weight: 700;
   letter-spacing: -.01em;
   line-height: 1.4;
-  margin-bottom: 30px;
   margin-top: 0; }
 
 h1 {
@@ -264,7 +263,33 @@ hr {
   background-color: #ededed;
   border: 0;
   height: 1px;
-  margin-bottom: 30px; }
+  margin-bottom: 1.5em; }
+
+ul, ol {
+  margin: 0 0 1.5em 0; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-top: 0.3em;
+  margin-left: 0.5em; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin: 0 1.5em 0; }
+
+dt,
+dd,
+li {
+  margin-bottom: 0.3em; }
 
 img {
   height: auto;
