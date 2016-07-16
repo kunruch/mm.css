@@ -265,6 +265,12 @@ hr {
   height: 1px;
   margin-bottom: 1.5em; }
 
+a {
+  color: #00BCD4;
+  text-decoration: none; }
+  a:hover {
+    color: #11171a; }
+
 ul, ol {
   margin: 0 0 1.5em 0; }
 
@@ -311,6 +317,10 @@ td {
   th:last-child,
   td:last-child {
     padding-right: 0; }
+
+article {
+  margin-top: 6em;
+  margin-bottom: 6em; }
 
 .container {
   padding-right: 1em;
