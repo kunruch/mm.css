@@ -2,7 +2,7 @@ blockquote {
 	border-left: $size-default-radius solid $color-neutral-dark;
 	margin-left: 0;
 	margin-right: 0;
-	padding: 1rem 1.5rem;
+	padding: $size-element-spacing-small;
 
 	& *:last-child {
 		margin: 0;

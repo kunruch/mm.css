@@ -330,7 +330,7 @@ blockquote {
   border-left: 3px solid #ededed;
   margin-left: 0;
   margin-right: 0;
-  padding: 1rem 1.5rem; }
+  padding: 1em; }
   blockquote *:last-child {
     margin: 0; }
 
