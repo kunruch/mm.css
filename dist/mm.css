@@ -173,10 +173,10 @@ th {
 body {
   color: #263238;
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: -.005em;
-  line-height: 1.58; }
+  line-height: 1.675; }
 
 p {
   margin-top: 0; }
@@ -223,9 +223,6 @@ h6 {
   font-size: 1.3rem; }
 
 @media (min-width: 768px) {
-  body {
-    font-size: 21px;
-    font-size: 1.3125rem; }
   h1 {
     font-size: 48px;
     font-size: 3rem; }
@@ -358,8 +355,7 @@ td {
 
 code, kbd, tt, var, pre {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 18px;
-  font-size: 1.125rem; }
+  font-size: 86%; }
 
 code, kbd, tt {
   background: #ededed;
@@ -382,7 +378,9 @@ pre {
 
 article {
   margin-top: 6em;
-  margin-bottom: 6em; }
+  margin-bottom: 6em;
+  font-size: 20px;
+  font-size: 1.25rem; }
 
 .container {
   padding-right: 1em;

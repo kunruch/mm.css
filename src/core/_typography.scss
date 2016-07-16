@@ -4,7 +4,7 @@
 body {
 	color: $color-text;
 	font-family: $font-main;
-	@include font-size(1.125);
+	@include font-size($size-default-text);
 	letter-spacing: -.005em;
 	line-height: $font-line-height-body;
 }
@@ -31,57 +31,53 @@ h6 {
 }
 
 h1 {
-	@include font-size(2.5);
+	@include font-size(2.5 * $size-default-text);
 	line-height: 1.2;
 }
 
 h2 {
-	@include font-size(1.85);
+	@include font-size(1.85 * $size-default-text);
 	line-height: 1.25;
 }
 
 h3 {	
-	@include font-size(1.75);
+	@include font-size(1.75 * $size-default-text);
 }
 
 h4 {
-	@include font-size(1.5);
+	@include font-size(1.5 * $size-default-text);
 }
 
 h5 {	
-	@include font-size(1.4);
+	@include font-size(1.4 * $size-default-text);
 }
 
 h6 {	
-	@include font-size(1.3);
+	@include font-size(1.3 * $size-default-text);
 }
 
 @media (min-width: 768px) {
-	body {
-		@include font-size(1.3125);
-	}
-
 	h1 {
-		@include font-size(3);
+		@include font-size(3 * $size-default-text);
 	}
 
 	h2 {
-		@include font-size(2.25);
+		@include font-size(2.25 * $size-default-text);
 	}
 
 	h3 {
-		@include font-size(1.85);
+		@include font-size(1.85 * $size-default-text);
 	}
 
 	h4 {
-		@include font-size(1.75);
+		@include font-size(1.75 * $size-default-text);
 	}
 
 	h5 {
-		@include font-size(1.5);
+		@include font-size(1.5 * $size-default-text);
 	}
 
 	h6 {
-		@include font-size(1.4);
+		@include font-size(1.4 * $size-default-text);
 	}
 }

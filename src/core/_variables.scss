@@ -10,6 +10,9 @@ $color-neutral-dark: #ededed !default;
 
 // Sizes
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
+$size-default-text: 1;
+$size-article-text: 1.25;
+
 $size-element-spacing: 1.5em;
 $size-element-spacing-small: 1em;
 $size-container-max: 1600px;
@@ -21,4 +24,4 @@ $size-default-radius: 3px;
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $font-main:  Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-pre: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font-line-height-body: 1.58;
+$font-line-height-body: 1.675;

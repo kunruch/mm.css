@@ -1,4 +1,5 @@
 article {
     margin-top: 4 * $size-element-spacing;
     margin-bottom: 4 * $size-element-spacing;
+    @include font-size($size-article-text);
 }
