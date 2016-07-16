@@ -1,0 +1,26 @@
+{
+  "name": "mmcss",
+  "version": "1.0.0",
+  "description": "A Minimal Modern CSS Framework.",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkthemes/mmcss.git"
+  },
+  "author": "Kanishk Kunal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kkthemes/mmcss/issues"
+  },
+  "homepage": "https://github.com/kkthemes/mmcss#readme"
+}
