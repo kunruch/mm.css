@@ -326,6 +326,14 @@ dt,
 li {
   margin-bottom: 0.3em; }
 
+blockquote {
+  border-left: 3px solid #ededed;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 1.5rem; }
+  blockquote *:last-child {
+    margin: 0; }
+
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
