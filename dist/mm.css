@@ -175,7 +175,7 @@ body {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 21px;
   font-size: 1.3125rem;
-  letter-spacing: .01em;
+  letter-spacing: -.005em;
   line-height: 1.58; }
 
 p {
@@ -284,10 +284,9 @@ dt {
   font-weight: bold; }
 
 dd {
-  margin: 0 1.5em 0; }
+  margin: 0 1.5em 1.5em; }
 
 dt,
-dd,
 li {
   margin-bottom: 0.3em; }
 
@@ -312,3 +311,17 @@ td {
   th:last-child,
   td:last-child {
     padding-right: 0; }
+
+.container {
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px; }
+
+.container-readable {
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px; }

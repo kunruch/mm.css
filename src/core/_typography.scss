@@ -5,7 +5,7 @@ body {
 	color: $color-text;
 	font-family: $font-main;
 	@include font-size(1.3125);
-	letter-spacing: .01em;
+	letter-spacing: -.005em;
 	line-height: $font-line-height-body;
 }
 

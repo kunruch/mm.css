@@ -22,11 +22,10 @@ dt {
 }
 
 dd {
-	margin: 0 $size-element-spacing 0;
+	margin: 0 $size-element-spacing $size-element-spacing;
 }
 
 dt,
-dd,
 li {
 	margin-bottom: $size-element-spacing/5;
 }
