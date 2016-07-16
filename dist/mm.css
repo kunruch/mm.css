@@ -296,3 +296,19 @@ img {
   /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */ }
+
+table {
+  width: 100%;
+  margin: 0 0 1.5em; }
+
+th,
+td {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 1em;
+  text-align: left; }
+  th:first-child,
+  td:first-child {
+    padding-left: 0; }
+  th:last-child,
+  td:last-child {
+    padding-right: 0; }

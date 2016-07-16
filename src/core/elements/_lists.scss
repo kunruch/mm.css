@@ -1,0 +1,32 @@
+ul, ol {
+	margin: 0 0 $size-element-spacing 0;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+    margin-top: $size-element-spacing/5;
+	margin-left: $size-element-spacing/3;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 $size-element-spacing 0;
+}
+
+dt,
+dd,
+li {
+	margin-bottom: $size-element-spacing/5;
+}
