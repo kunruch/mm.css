@@ -173,8 +173,8 @@ th {
 body {
   color: #263238;
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   letter-spacing: -.005em;
   line-height: 1.58; }
 
@@ -223,6 +223,9 @@ h6 {
   font-size: 1.3rem; }
 
 @media (min-width: 768px) {
+  body {
+    font-size: 21px;
+    font-size: 1.3125rem; }
   h1 {
     font-size: 48px;
     font-size: 3rem; }
