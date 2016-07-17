@@ -3,6 +3,6 @@ a {
 	text-decoration: none;
 
 	&:hover {
-		color: darken($color-text, 10);
+		border-bottom: 1px dotted;
 	}
 }

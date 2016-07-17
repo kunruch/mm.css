@@ -171,8 +171,8 @@ th {
   padding: 0; }
 
 body {
-  color: #263238;
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  font-family: Source Sans Pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   letter-spacing: -.005em;
@@ -286,7 +286,7 @@ abbr, acronym {
   cursor: help; }
 
 mark, ins {
-  background: #f2f2f2;
+  background: #f8f8f8;
   text-decoration: none; }
 
 big {
@@ -296,7 +296,7 @@ a {
   color: #00BCD4;
   text-decoration: none; }
   a:hover {
-    color: #11171a; }
+    border-bottom: 1px dotted; }
 
 ul, ol {
   margin: 0 0 1.5em 0; }
@@ -324,10 +324,11 @@ li {
   margin-bottom: 0.3em; }
 
 blockquote {
+  background: #f8f8f8;
   border-left: 3px solid #dedede;
   margin-left: 0;
   margin-right: 0;
-  padding: 1em; }
+  padding: 1.5em; }
   blockquote *:last-child {
     margin: 0; }
 
@@ -343,7 +344,7 @@ table {
 
 th,
 td {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f8f8f8;
   padding: 1em;
   text-align: left; }
   th:first-child,
@@ -358,13 +359,14 @@ code, kbd, tt, var, pre {
   font-size: 86%; }
 
 code, kbd, tt {
-  background: #f2f2f2;
+  background: #f8f8f8;
   border-radius: 3px;
   padding: 3px 8px;
   white-space: nowrap; }
 
 pre {
-  background: #f2f2f2;
+  background: #f8f8f8;
+  border: 1px dotted #dedede;
   border-left: 3px solid #00BCD4;
   line-height: 1.8;
   padding: 1em; }
@@ -392,7 +394,7 @@ input[type='submit'] {
   font-size: 0.95rem;
   font-weight: 400;
   letter-spacing: .05em;
-  line-height: 2.5;
+  line-height: 2.8;
   padding: 0 1.5em;
   text-align: center;
   text-decoration: none;
@@ -522,4 +524,4 @@ article {
   padding-left: 1em;
   margin-right: auto;
   margin-left: auto;
-  max-width: 800px; }
+  max-width: 740px; }

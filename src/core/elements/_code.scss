@@ -12,6 +12,7 @@ code, kbd, tt {
 
 pre {
 	background: $color-neutral-light;
+	border: 1px dotted $color-neutral-dark;
 	border-left: $size-default-radius solid $color-primary;
     line-height: 1.8;
     padding: $size-element-spacing-small;
