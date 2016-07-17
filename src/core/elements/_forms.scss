@@ -1,0 +1,46 @@
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+	appearance: none; // Removes awkward default styles on some inputs for iOS
+	background-color: transparent;
+	border: 1px solid $color-neutral-dark;
+	border-radius: $size-default-radius;
+	box-shadow: none;
+	box-sizing: border-box;
+	padding: 8px 12px; // The .6rem vertically centers text on FF, ignored by Webkit
+	width: 100%;
+
+	&:focus {
+		border: 1px solid $color-primary;
+		outline: 0;
+	}
+}
+
+label,
+legend {
+	font-weight: 700;
+	display: block;
+	margin-bottom: $size-element-spacing-small / 2;
+}
+
+fieldset {
+	border-width: 0;
+	padding: 0;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	display: inline;
+}
+
+.label-inline {
+	font-weight: normal;
+	display: inline-block;
+	margin-left: $size-element-spacing-small / 2;
+}

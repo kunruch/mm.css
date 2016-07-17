@@ -260,7 +260,7 @@ blockquote, q {
     content: ""; }
 
 hr {
-  background-color: #ededed;
+  background-color: #dedede;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
@@ -324,7 +324,7 @@ li {
   margin-bottom: 0.3em; }
 
 blockquote {
-  border-left: 3px solid #ededed;
+  border-left: 3px solid #dedede;
   margin-left: 0;
   margin-right: 0;
   padding: 1em; }
@@ -358,7 +358,7 @@ code, kbd, tt, var, pre {
   font-size: 86%; }
 
 code, kbd, tt {
-  background: #ededed;
+  background: #f2f2f2;
   border-radius: 3px;
   padding: 3px 8px;
   white-space: nowrap; }
@@ -375,6 +375,54 @@ pre {
     border-radius: 0;
     display: block;
     white-space: pre; }
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  width: 100%; }
+  input[type='email']:focus,
+  input[type='number']:focus,
+  input[type='password']:focus,
+  input[type='search']:focus,
+  input[type='tel']:focus,
+  input[type='text']:focus,
+  input[type='url']:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #00BCD4;
+    outline: 0; }
+
+label,
+legend {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5em; }
+
+fieldset {
+  border-width: 0;
+  padding: 0; }
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: inline; }
+
+.label-inline {
+  font-weight: normal;
+  display: inline-block;
+  margin-left: 0.5em; }
 
 article {
   margin-top: 6em;

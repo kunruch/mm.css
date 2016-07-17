@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MMCSS Demo Page</title>
+    <meta name="description" content="Demo page from MMCSS Framework">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,700">
+    <link rel="stylesheet" href="/dist/mm.css">
+</head>
+
+<body>
+    <div class="container-readable">
+        <form>
+            <fieldset>
+                <label for="nameField">Name</label>
+                <input type="text" placeholder="CJ Patoilo" id="nameField">
+                <label for="ageRangeField">Age Range</label>
+                <select id="ageRangeField">
+        <option value="0-13">0-13</option>
+        <option value="14-17">14-17</option>
+        <option value="18-23">18-23</option>
+        <option value="24+">24+</option>
+        </select>
+                <label for="commentField">Comment</label>
+                <textarea placeholder="Hi CJ …" id="commentField"></textarea>
+                <div class="example-send-yourself-copy">
+                    <input type="checkbox" id="confirmField">
+                    <label class="label-inline" for="confirmField">Send a copy to yourself</label>
+                </div>
+                <input class="button-primary" type="submit" value="Send">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
