@@ -376,6 +376,81 @@ pre {
     display: block;
     white-space: pre; }
 
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background-color: #00BCD4;
+  border: 1px solid #00BCD4;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15.2px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: .05em;
+  line-height: 2.5;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap; }
+  .button:hover, .button:focus,
+  button:hover,
+  button:focus,
+  input[type='button']:hover,
+  input[type='button']:focus,
+  input[type='reset']:hover,
+  input[type='reset']:focus,
+  input[type='submit']:hover,
+  input[type='submit']:focus {
+    background-color: #263238;
+    border-color: #263238;
+    color: #fff;
+    outline: 0; }
+  .button.button-ghost,
+  button.button-ghost,
+  input[type='button'].button-ghost,
+  input[type='reset'].button-ghost,
+  input[type='submit'].button-ghost {
+    color: #00BCD4;
+    background-color: transparent; }
+    .button.button-ghost:hover, .button.button-ghost:focus,
+    button.button-ghost:hover,
+    button.button-ghost:focus,
+    input[type='button'].button-ghost:hover,
+    input[type='button'].button-ghost:focus,
+    input[type='reset'].button-ghost:hover,
+    input[type='reset'].button-ghost:focus,
+    input[type='submit'].button-ghost:hover,
+    input[type='submit'].button-ghost:focus {
+      color: #263238;
+      background-color: transparent;
+      border-color: #263238; }
+  .button.button-text,
+  button.button-text,
+  input[type='button'].button-text,
+  input[type='reset'].button-text,
+  input[type='submit'].button-text {
+    color: #00BCD4;
+    background-color: transparent;
+    border-color: transparent; }
+    .button.button-text:hover, .button.button-text:focus,
+    button.button-text:hover,
+    button.button-text:focus,
+    input[type='button'].button-text:hover,
+    input[type='button'].button-text:focus,
+    input[type='reset'].button-text:hover,
+    input[type='reset'].button-text:focus,
+    input[type='submit'].button-text:hover,
+    input[type='submit'].button-text:focus {
+      color: #263238;
+      background-color: transparent;
+      border-color: transparent; }
+
 input[type='email'],
 input[type='number'],
 input[type='password'],
