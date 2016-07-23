@@ -1,0 +1,23 @@
+.section-block {
+    padding-top: $size-element-spacing;
+    padding-bottom: $size-element-spacing;
+}
+
+.section-block-large {
+    padding-top: 2 * $size-element-spacing;
+    padding-bottom: 2 * $size-element-spacing;
+}
+
+.section-hero {
+    padding-top: 3 * $size-element-spacing;
+    padding-bottom: 3 * $size-element-spacing;
+}
+
+.section-highlight {
+    background-color: $color-secondary;
+    color: $color-plain;
+}
+
+.section-neutral {
+
+}

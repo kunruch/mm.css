@@ -6,10 +6,10 @@
     max-width: $size-container-max;
 }
 
+.container-content {
+    max-width: $size-container-content-max;
+}
+
 .container-readable {
-    padding-right: $size-element-spacing-small;
-    padding-left: $size-element-spacing-small;
-    margin-right: auto;
-    margin-left: auto;
     max-width: $size-container-readable-max;
 }

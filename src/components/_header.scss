@@ -1,0 +1,44 @@
+
+$color-header-background: $color-secondary !default;
+$color-header-text: $color-plain !default;
+
+$color-sub-header-background: $color-neutral-light !default;
+
+$size-site-title: 1.8;
+
+#header {
+    background-color: $color-header-background;
+    color: $color-header-text;
+    position: relative;
+
+    .site-logo {
+
+    }
+
+    .site-title {
+        @include font-size($size-site-title);
+        line-height: 1.2;
+        margin: 0;
+
+        a {
+            color: $color-header-text;
+
+            &:hover {
+                border: 0;
+            }
+        }
+    }
+
+    .site-description {
+        margin: 0;
+    }
+}
+
+#sub-header {    
+    background-color: $color-sub-header-background;
+    
+    .sub-heading {
+        text-align: center;
+        margin: 0;
+    }
+}

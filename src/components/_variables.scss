@@ -1,4 +1,5 @@
-// Base
+// Colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-@import 'typography';
-@import 'elements/elements';
+
+$color-header-background: $color-secondary !default;
+$color-header-text: $color-plain !default;

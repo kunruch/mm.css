@@ -196,49 +196,49 @@ h6 {
   line-height: 1.4;
   margin-top: 0; }
 
-h1 {
+h1, .h1 {
   font-size: 40px;
   font-size: 2.5rem;
   line-height: 1.2; }
 
-h2 {
+h2, .h2 {
   font-size: 29.6px;
   font-size: 1.85rem;
   line-height: 1.25; }
 
-h3 {
+h3, .h3 {
   font-size: 28px;
   font-size: 1.75rem; }
 
-h4 {
+h4, .h4 {
   font-size: 24px;
   font-size: 1.5rem; }
 
-h5 {
+h5, .h5 {
   font-size: 22.4px;
   font-size: 1.4rem; }
 
-h6 {
+h6, .h6 {
   font-size: 20.8px;
   font-size: 1.3rem; }
 
 @media (min-width: 768px) {
-  h1 {
+  h1, .h1 {
     font-size: 48px;
     font-size: 3rem; }
-  h2 {
+  h2, .h2 {
     font-size: 36px;
     font-size: 2.25rem; }
-  h3 {
+  h3, .h3 {
     font-size: 29.6px;
     font-size: 1.85rem; }
-  h4 {
+  h4, .h4 {
     font-size: 28px;
     font-size: 1.75rem; }
-  h5 {
+  h5, .h5 {
     font-size: 24px;
     font-size: 1.5rem; }
-  h6 {
+  h6, .h6 {
     font-size: 22.4px;
     font-size: 1.4rem; } }
 
@@ -517,14 +517,29 @@ article {
   padding-left: 1em;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1600px; }
+  max-width: 100%; }
+
+.container-content {
+  max-width: 1400px; }
 
 .container-readable {
-  padding-right: 1em;
-  padding-left: 1em;
-  margin-right: auto;
-  margin-left: auto;
   max-width: 740px; }
+
+.section-block {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em; }
+
+.section-block-large {
+  padding-top: 3em;
+  padding-bottom: 3em; }
+
+.section-hero {
+  padding-top: 4.5em;
+  padding-bottom: 4.5em; }
+
+.section-highlight {
+  background-color: #263238;
+  color: #fff; }
 
 .float-right {
   float: right; }
@@ -555,3 +570,25 @@ article {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+#header {
+  background-color: #263238;
+  color: #fff;
+  position: relative; }
+  #header .site-title {
+    font-size: 28.8px;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin: 0; }
+    #header .site-title a {
+      color: #fff; }
+      #header .site-title a:hover {
+        border: 0; }
+  #header .site-description {
+    margin: 0; }
+
+#sub-header {
+  background-color: #f8f8f8; }
+  #sub-header .sub-heading {
+    text-align: center;
+    margin: 0; }
