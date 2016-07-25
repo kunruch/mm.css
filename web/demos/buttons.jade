@@ -1,0 +1,19 @@
+extends ./../_layout.jade
+include ./../_mixins.jade
+
+block vars
+  - var title = 'Buttons Demo'
+  - var description = 'Buttons Demo for MMCSS - Minimal Modern CSS Framework'
+  - var path = 'demo/buttons.html'
+
+block content
+    article.container.container-readable.section-block-large
+        h1 Buttons
+        // Default Button
+        a.button(href='#') Default Button
+        | 
+        // Ghost Button
+        button.button.button-ghost Ghost Button
+        | 
+        // Text Button
+        input.button.button-text(type='submit', value='Text Button')

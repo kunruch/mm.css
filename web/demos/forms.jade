@@ -1,0 +1,28 @@
+extends ./../_layout.jade
+include ./../_mixins.jade
+
+block vars
+  - var title = 'Forms Demo'
+  - var description = 'Forms Demo for MMCSS - Minimal Modern CSS Framework'
+  - var path = 'demo/forms.html'
+
+block content
+    article.container.container-readable.section-block-large
+        h1 Forms
+        form
+            fieldset
+                label(for='nameField') Name
+                input#nameField(type='text', placeholder='CJ Patoilo')
+                label(for='ageRangeField') Age Range
+                select#ageRangeField
+                    option(value='0-13') 0-13
+                    option(value='14-17') 14-17
+                    option(value='18-23') 18-23
+                    option(value='24+') 24+
+                label(for='commentField') Comment
+                textarea#commentField(placeholder='Hi CJ …')
+                .clearfix
+                    .float-right
+                        input#confirmField(type='checkbox')
+                        label.label-inline(for='confirmField') Send a copy to yourself
+                    input(type='submit', value='Send')
