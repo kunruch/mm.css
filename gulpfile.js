@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var jade        = require('gulp-jade');
+var ghPages = require('gulp-gh-pages');
 
 var SRC_SCSS    = './src/**/*.scss';
 var SRC_JADE    = './web/**/!(_)*.jade';
@@ -67,3 +68,11 @@ gulp.task('default', ['copy-static', 'sass', 'jade'], function () {
  * Build task
  */
  gulp.task('build', ['copy-static', 'sass', 'jade']);
+
+/**
+ * Deploy to GitHub Pages
+ */
+gulp.task('deploy', function() {
+  return gulp.src('./public/**/*')
+    .pipe(ghPages());
+});
