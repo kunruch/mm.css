@@ -1,2 +1,20 @@
-h1 Hello World!
-p I am a paragraph and I have changed now.
+extends ./_layout.jade
+include ./_mixins.jade
+
+block vars
+  - var title = 'Minimal Modern CSS Framework'
+  - var description = 'A Minimal Modern CSS Framework for front-end Web Development. WordPress Compatible and built with SASS/SCSS'
+  - var slug = ''
+
+block content
+    ul.section-block-large
+    li
+        a(href='/demos/text.html') Text
+    li
+        a(href='/demos/markup-and-formatting.html') Markup and Formatting
+    li
+        a(href='/demos/lists.html') Lists
+    li
+        a(href='/demos/forms.html') Forms
+    li
+        a(href='/demos/buttons.html') Buttons
