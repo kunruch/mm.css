@@ -1,15 +1,18 @@
 
-$color-header-background: $color-secondary !default;
-$color-header-text: $color-plain !default;
+$color-header-background: #fff !default;
+$color-header-text: lighten($color-text, 5) !default;
 
 $color-sub-header-background: $color-neutral-light !default;
 
-$size-site-title: 1.8;
+$size-site-title: 1.5;
 
 #header {
     background-color: $color-header-background;
     color: $color-header-text;
     position: relative;
+    z-index: 99;
+    border-bottom: 1px solid $color-default-border;
+    box-shadow: 0 0 5px $color-default-box-shadow;
 
     .site-logo {
 
