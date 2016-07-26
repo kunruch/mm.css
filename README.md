@@ -10,3 +10,10 @@ Work in Progress. Please check back later for updates or get in touch with [Kani
 
 ## License
 Licensed under the MIT License
+
+## TODO
+ - Mixins for containrs and sections
+ - Color naming
+ - Nav, header, footer, sidebar and grid in layout
+ - rename media queries variables
+ - Fix em and rem usage

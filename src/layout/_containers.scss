@@ -1,15 +1,23 @@
-.container {
-    padding-right: $size-element-spacing-small;
+@mixin container($max-width) {
+	padding-right: $size-element-spacing-small;
     padding-left: $size-element-spacing-small;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: $size-container-max;
+    max-width: $max-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-full {
+    @include container(100%);
+}
+
+.container-wide {
+    @include container($size-container-wide-max);
 }
 
 .container-content {
-    max-width: $size-container-content-max;
+    @include container($size-container-content-max);
 }
 
 .container-readable {
-    max-width: $size-container-readable-max;
+    @include container($size-container-readable-max);
 }
