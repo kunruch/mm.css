@@ -21,7 +21,9 @@ $color-default-box-shadow: rgba(0,0,0,0.1) !default;
 // Sizes
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $size-default-text: 1;
-$size-article-text: 1.1;
+$size-small-text: 0.8;
+$size-medium-text: 1.1;
+$size-large-text: 1.325;
 
 $size-element-spacing: 1.5em;
 $size-element-spacing-small: 1em;
@@ -39,4 +41,3 @@ $size-small-screen: 768px;
 $font-main: "Open Sans", Helvetica, Arial, sans-serif;
 $font-pre: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $line-height-body: 1.675;
-$line-height-article: 1.85;

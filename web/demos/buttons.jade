@@ -9,11 +9,18 @@ block vars
 block content
     article.container-readable.section-block-large
         h1 Buttons
-        // Default Button
-        a.button(href='#') Default Button
-        | 
-        // Ghost Button
-        button.button.button-ghost Ghost Button
-        | 
-        // Text Button
-        input.button.button-text(type='submit', value='Text Button')
+        div
+          // Default Button
+          a.button(href='#') Default Button
+          | 
+          // Ghost Button
+          button.button-ghost Ghost Button
+          | 
+          // Text Button
+          input.button.button-text(type='submit', value='Text Button')
+        div
+          // Default Button
+          a.button.button-rounded(href='#') Rounded Button
+          | 
+          // Ghost Button
+          button.button-ghost.button-rounded Rounded Ghost Button

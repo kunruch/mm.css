@@ -22,7 +22,11 @@
 	}
 }
 
-// Alignments for elements like images
+// Alignments for elements like text and images
+.text-center {
+	text-align: center;
+}
+
 .alignleft {
 	display: inline;
 	float: left;

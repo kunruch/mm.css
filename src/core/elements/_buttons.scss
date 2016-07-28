@@ -9,15 +9,13 @@ input[type='submit'] {
 	box-sizing: border-box;
 	color: $color-plain;
 	cursor: pointer;
-	display: inline-block;    
-	@include font-size(0.95 * $size-default-text);
+	display: inline-block;
 	font-weight: 400;
 	letter-spacing: .05em;
-	line-height: 2.8;
+	line-height: 2.5;
 	padding: 0 $size-element-spacing;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
 	white-space: nowrap;
 
 	&:hover,
@@ -38,6 +36,11 @@ input[type='submit'] {
 			background-color: transparent;
 			border-color: $color-primary-dark;
 		}
+	}
+
+	&.button-rounded {		
+		border-radius: 48px;		
+		padding: 0 (1.5*$size-element-spacing);
 	}
 
 	&.button-text {
