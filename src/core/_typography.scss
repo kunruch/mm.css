@@ -5,7 +5,6 @@ body {
 	color: $color-text;
 	font-family: $font-main;
 	@include font-size($size-default-text);
-	letter-spacing: -.005em;
 	line-height: $font-line-height-body;
 }
 
@@ -22,10 +21,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 {	
+	color: $color-headings;
 	clear: both;
 	font-weight: 700;
-	letter-spacing: -.01em;
+	letter-spacing: -0.01em;
 	line-height: 1.4;
 	margin-top: 0;
 }
