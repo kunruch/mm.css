@@ -10,7 +10,3 @@ Work in Progress. Please check back later for updates or get in touch with [Kani
 
 ## License
 Licensed under the MIT License
-
-## TODO
- - rename media queries variables
- - Fix em and rem usage
