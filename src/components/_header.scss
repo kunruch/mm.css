@@ -1,8 +1,8 @@
 
-$color-header-background: #fff !default;
+$color-header-background: $color-plain !default;
 $color-header-text: lighten($color-text, 5) !default;
 
-$color-sub-header-background: rgb(240, 240, 240) !default;
+$color-sub-header-background: $color-concrete !default;
 
 $size-site-title: 1.5;
 

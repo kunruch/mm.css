@@ -1,21 +1,27 @@
 // Colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$color-plain: #fff !default;
-$color-primary: #00b96a !default;
-$color-secondary: #263238 !default;
-$color-text: #333 !default;
-$color-headings: #333 !default;
-$color-neutral-light: #f8f8f8 !default;
-$color-neutral-dark: #dedede !default;
+$color-green: #00b96a !default;
+$color-mine-shaft: #333333 !default;
+$color-tundora: #414141 !default;
+$color-concrete: #f2f2f2 !default;
+$color-alto: #dedede !default;
 
-$color-default-border: rgba(0,0,0,0.075) !default;
+$color-plain: #fff !default;
+$color-primary: $color-green !default;
+$color-primary-dark: darken($color-green, 5) !default;
+$color-text: $color-tundora !default;
+$color-headings: $color-mine-shaft !default;
+$color-neutral-light: $color-concrete !default;
+$color-neutral-dark: $color-alto !default;
+
+$color-default-border: $color-neutral-dark !default;
 $color-default-box-shadow: rgba(0,0,0,0.1) !default;
 
 // Sizes
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $size-default-text: 1;
-$size-article-text: 1.125;
+$size-article-text: 1.1;
 
 $size-element-spacing: 1.5em;
 $size-element-spacing-small: 1em;
@@ -32,4 +38,5 @@ $size-small-screen: 768px;
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $font-main: "Open Sans", Helvetica, Arial, sans-serif;
 $font-pre: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font-line-height-body: 1.675;
+$line-height-body: 1.675;
+$line-height-article: 1.85;

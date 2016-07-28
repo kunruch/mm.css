@@ -5,7 +5,7 @@ body {
 	color: $color-text;
 	font-family: $font-main;
 	@include font-size($size-default-text);
-	line-height: $font-line-height-body;
+	line-height: $line-height-body;
 }
 
 p {

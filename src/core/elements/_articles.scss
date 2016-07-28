@@ -1,5 +1,10 @@
 article {
     @include font-size($size-default-text);
+    line-height: $line-height-article;
+
+    h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {        
+	    margin-top: $size-element-spacing;
+    }
 }
 
 @media (min-width: $size-small-screen) {

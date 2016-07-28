@@ -22,8 +22,8 @@ input[type='submit'] {
 
 	&:hover,
 	&:focus {
-		background-color: $color-secondary;
-		border-color: $color-secondary;
+		background-color: $color-primary-dark;
+		border-color: $color-primary-dark;
 		color: $color-plain;
 		outline: 0;
 	}
@@ -34,9 +34,9 @@ input[type='submit'] {
 
 		&:hover,
 		&:focus {
-			color: $color-secondary;
+			color: $color-primary-dark;
 			background-color: transparent;
-			border-color: $color-secondary;
+			border-color: $color-primary-dark;
 		}
 	}
 
@@ -47,7 +47,7 @@ input[type='submit'] {
 
 		&:hover,
 		&:focus {
-			color: $color-secondary;
+			color: $color-primary-dark;
 			background-color: transparent;
 			border-color: transparent;
 		}
