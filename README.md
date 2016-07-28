@@ -12,6 +12,5 @@ Work in Progress. Please check back later for updates or get in touch with [Kani
 Licensed under the MIT License
 
 ## TODO
- - Nav, header, footer, sidebar and grid in layout
  - rename media queries variables
  - Fix em and rem usage
