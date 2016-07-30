@@ -2,6 +2,7 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 $color-green: #00b96a !default;
+$color-outer-space: #263238 !default;
 $color-mine-shaft: #333333 !default;
 $color-tundora: #414141 !default;
 $color-concrete: #f2f2f2 !default;
@@ -10,6 +11,7 @@ $color-alto: #dedede !default;
 $color-plain: #fff !default;
 $color-primary: $color-green !default;
 $color-primary-dark: darken($color-green, 5) !default;
+$color-secondary: $color-outer-space !default;
 $color-text: $color-tundora !default;
 $color-headings: $color-mine-shaft !default;
 $color-neutral-light: $color-concrete !default;

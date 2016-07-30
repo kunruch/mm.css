@@ -2,11 +2,12 @@
 $color-header-background: $color-plain !default;
 $color-header-text: lighten($color-text, 5) !default;
 
-$color-sub-header-background: $color-concrete !default;
+$color-sub-header-background: $color-secondary !default;
+$color-sub-header-text: $color-plain !default;
 
 $size-site-title: 1.5;
 
-#header {
+.site-header {
     background-color: $color-header-background;
     color: $color-header-text;
     position: relative;
@@ -18,6 +19,7 @@ $size-site-title: 1.5;
 
     .site-title {
         @include font-size($size-site-title);
+        font-weight: 600;
         line-height: 1.2;
         margin: 0;
 
@@ -35,10 +37,13 @@ $size-site-title: 1.5;
     }
 }
 
-#sub-header {    
+.site-sub-header {
     background-color: $color-sub-header-background;
-    
+    color: $color-sub-header-text;
+
     .sub-heading {
+        font-weight: 600;
+        color: $color-sub-header-text;
         text-align: center;
     }
 }
