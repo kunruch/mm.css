@@ -11,8 +11,13 @@
 
 		a {
 			display: block;
+			color: $color-text;
 			text-decoration: none;
 			border-bottom: none;
+
+			&:hover {
+				color: $color-primary;
+			}
 		}
 
 		ul {
