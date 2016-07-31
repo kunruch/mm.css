@@ -1,4 +1,5 @@
-$color-nav-text: lighten($color-text, 25) !default;
+$color-nav-text: lighten($color-text, 30) !default;
+$color-nav-text-active: $color-text !default;
 $color-nav-text-hover: darken($color-text, 10) !default;
 $size-nav-text: $size-default-text !default;
 
@@ -22,6 +23,10 @@ $size-nav-text: $size-default-text !default;
 			&:hover {
 				color: $color-nav-text-hover;
 			}
+		}
+		
+		.current-menu-item a {
+			color: $color-nav-text-active;
 		}
 
 		ul {
