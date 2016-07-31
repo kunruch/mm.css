@@ -11,8 +11,8 @@ code, kbd, tt {
 }
 
 pre {
-	background: $color-neutral-light;
-	border: 1px dotted $color-neutral-dark;
+	background: $color-background-light;
+	border: 1px solid $color-default-border;
 	border-left: $size-default-radius solid $color-primary;
     line-height: 1.8;
     padding: $size-element-spacing-small;
@@ -21,6 +21,7 @@ pre {
 		background: transparent;
         font-size: inherit;
         padding: 0;
+		border: 0;
 		border-radius: 0;
 		display: block;
 		white-space: pre;
