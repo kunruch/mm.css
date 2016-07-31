@@ -20,7 +20,7 @@ $size-site-title: 1.5;
 
     .site-title {
         @include font-size($size-site-title);
-        font-weight: 600;
+        font-weight: 500;
         line-height: 1.2;
         margin: 0;
 
@@ -43,7 +43,7 @@ $size-site-title: 1.5;
     color: $color-sub-header-text;
 
     .sub-heading {
-        font-weight: 600;
+        font-weight: 500;
         color: $color-sub-header-text;
         text-align: center;
     }
