@@ -44,6 +44,6 @@ $size-small-screen: 768px;
 
 // Typography
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$font-main: "Open Sans", Helvetica, Arial, sans-serif;
-$font-pre: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$line-height-body: 1.675;
+$font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-pre: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+$line-height-body: 1.6;

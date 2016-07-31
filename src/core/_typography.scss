@@ -6,6 +6,7 @@ body {
 	font-family: $font-main;
 	@include font-size($size-default-text);
 	line-height: $line-height-body;
+	word-wrap: break-word;
 }
 
 p {
@@ -24,9 +25,9 @@ h5,
 h6 {	
 	color: $color-headings;
 	clear: both;
-	font-weight: 700;
+	font-weight: 500;
 	letter-spacing: -0.01em;
-	line-height: 1.4;
+	line-height: 1.25;
 	margin-top: 0;
 }
 
