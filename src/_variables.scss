@@ -2,22 +2,26 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 $color-green: #00b96a !default;
+$color-blue: #2196f3 !default;
 $color-outer-space: #263238 !default;
 $color-mine-shaft: #333333 !default;
 $color-tundora: #414141 !default;
 $color-concrete: #f2f2f2 !default;
+$color-alabaster: #fafafa !default;
 $color-alto: #dedede !default;
 
 $color-plain: #fff !default;
-$color-primary: $color-green !default;
-$color-primary-dark: darken($color-green, 5) !default;
-$color-secondary: $color-outer-space !default;
+$color-background-light: $color-alabaster !default;
+$color-background-dark: $color-outer-space !default;
+$color-primary: $color-blue !default;
+$color-primary-dark: darken($color-primary, 5) !default;
+$color-secondary: $color-green !default;
 $color-text: $color-tundora !default;
 $color-headings: $color-mine-shaft !default;
 $color-neutral-light: $color-concrete !default;
 $color-neutral-dark: $color-alto !default;
 
-$color-default-border: $color-neutral-dark !default;
+$color-default-border: $color-neutral-light !default;
 $color-default-box-shadow: rgba(0,0,0,0.1) !default;
 
 // Sizes
