@@ -23,9 +23,19 @@ html(lang='en-US')
     +analytics
   body#top
     header#header.site-header
-        .container-content.section-block
-            h1.site-title
-                a(href='/') MMCSS
-
+        .container-content.section-block.clearfix
+            .site-branding
+              h1.site-title
+                  a(href='/') MMCSS
+            nav(role="navigation").main-navigation
+              ul.menu
+                li.menu-item
+                  a(href="#") Learn
+                li.menu-item
+                  a(href="#") Examples
+                li.menu-item
+                  a(href="#") Showcase                
+                li.menu-item
+                  a(href="#") Blog
     block content
   block scripts

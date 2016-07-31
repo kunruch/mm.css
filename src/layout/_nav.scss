@@ -1,22 +1,26 @@
+$color-nav-text: lighten($color-text, 25) !default;
+$color-nav-text-hover: darken($color-text, 10) !default;
+$size-nav-text: $size-default-text !default;
+
 .main-navigation {
-	font-weight: 600;
+	@include font-size($size-nav-text);
 
 	ul {
 		li {
 			float: left;
 			position: relative;
-			padding-left: $size-element-spacing-small;
+			padding-left: $size-element-spacing;
 			margin: 0;
 		}
 
 		a {
 			display: block;
-			color: $color-text;
+			color: $color-nav-text;
 			text-decoration: none;
 			border-bottom: none;
 
 			&:hover {
-				color: $color-primary;
+				color: $color-nav-text-hover;
 			}
 		}
 
