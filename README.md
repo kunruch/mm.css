@@ -6,6 +6,7 @@ Work in Progress. Please check back later for updates or get in touch with [Kani
 
 ## Credits
 
+- [Skeleton](http://getskeleton.com/) - Skeleton is a simple, responsive boilerplate to kickstart any responsive project by [Dave Gamache](https://twitter.com/dhg).
 - [Milligram](http://milligram.github.io) - Milligram is a minimalist CSS framework by [CJ Patoilo](http://cjpatoilo.com).
 
 ## License
