@@ -4,7 +4,7 @@
 body {
 	color: $color-text;
 	font-family: $font-main;
-	@include font-size($size-default-text);
+	@include font-size($size-default-text, "em");
 	line-height: $line-height-body;
 	word-wrap: break-word;
 }
@@ -26,7 +26,7 @@ h6 {
 	color: $color-headings;
 	clear: both;
 	font-weight: 700;
-	letter-spacing: -0.01em;
+	letter-spacing: -0.01rem;
 	line-height: 1.25;
 	margin-top: 0;
 }
