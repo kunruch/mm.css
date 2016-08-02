@@ -1,9 +1,11 @@
 @mixin container($max-width) {
-	padding-right: $size-element-spacing-small;
-    padding-left: $size-element-spacing-small;
+    position: relative;
     max-width: $max-width;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;    
+	padding-right: $size-element-spacing-small;
+    padding-left: $size-element-spacing-small;
+    box-sizing: border-box;
 }
 
 .container-full {
@@ -20,4 +22,13 @@
 
 .container-readable {
     @include container($size-container-readable-max);
+}
+
+.container-full:after,
+.container-wide:after,
+.container-content:after,
+.container-readable:after {
+    content: "";
+    display: table;
+    clear: both;
 }

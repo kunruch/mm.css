@@ -10,7 +10,7 @@ $size-nav-text: $size-default-text !default;
 		li {
 			float: left;
 			position: relative;
-			padding-left: $size-element-spacing;
+			padding: 0 ($size-element-spacing / 2);
 			margin: 0;
 		}
 
@@ -72,5 +72,17 @@ $size-nav-text: $size-default-text !default;
 		li.focus > ul {
 			left: auto;
 		}
+	}
+}
+
+.main-navigation {
+	ul li:first-child {
+		padding-left: 0;
+	}
+}
+
+.main-navigation.alignright {
+	ul li:last-child {
+		padding-right: 0;
 	}
 }

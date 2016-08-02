@@ -11,7 +11,6 @@ $size-site-title: 1.5;
     background-color: $color-header-background;
     color: $color-header-text;
     border-bottom: 1px solid $color-default-border;
-    position: relative;
     z-index: 99;
 
     .site-logo {
@@ -21,7 +20,7 @@ $size-site-title: 1.5;
     .site-title {
         @include font-size($size-site-title);
         font-weight: 500;
-        line-height: 1.2;
+        line-height: 1;
         margin: 0;
 
         a {
@@ -47,12 +46,4 @@ $size-site-title: 1.5;
         color: $color-sub-header-text;
         text-align: center;
     }
-}
-
-.site-header .site-branding {
-	float: left;
-}
-
-.site-header .main-navigation {
-	float: right;
 }
