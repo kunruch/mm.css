@@ -1,0 +1,33 @@
+.page-title {
+    margin-top: $size-element-spacing-big;
+}
+
+.entry-title {
+    margin-bottom:  $size-element-spacing-small;
+
+    a {
+        color: $color-headings;
+
+        &:hover {
+            color: $color-primary;
+            border-bottom: 0;
+        }
+    }
+}
+
+.entry-meta, .entry-footer {    
+	@include font-size($size-default-text);
+    color: lighten($color-text, 40);
+
+    > span {
+        margin-left: $size-element-spacing-small;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    a {
+        color: lighten($color-text, 20);
+    }
+}
