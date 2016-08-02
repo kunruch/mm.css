@@ -24,7 +24,7 @@ select {
 
 label,
 legend {
-	font-weight: 700;
+	font-weight: $font-weight-bold;
 	display: block;
 	margin-bottom: $size-element-spacing-small / 2;
 }

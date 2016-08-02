@@ -25,7 +25,7 @@ h5,
 h6 {	
 	color: $color-headings;
 	clear: both;
-	font-weight: 700;
+	font-weight: $font-weight-bold;
 	letter-spacing: -0.01rem;
 	line-height: 1.25;
 	margin-top: 0;

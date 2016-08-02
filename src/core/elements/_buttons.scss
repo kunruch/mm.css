@@ -10,7 +10,7 @@ input[type='submit'] {
 	color: $color-plain;
 	cursor: pointer;
 	display: inline-block;
-	font-weight: 400;
+	font-weight: $font-weight-normal;
 	letter-spacing: .05em;
 	line-height: 2.5;
 	padding: 0 $size-element-spacing;
@@ -39,7 +39,7 @@ input[type='submit'] {
 	}
 
 	&.button-rounded {		
-		border-radius: 48px;		
+		border-radius: 3rem;		
 		padding: 0 (1.5*$size-element-spacing);
 	}
 

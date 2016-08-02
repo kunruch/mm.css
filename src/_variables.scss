@@ -26,25 +26,30 @@ $color-default-box-shadow: rgba(0,0,0,0.1) !default;
 
 // Sizes
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$size-default-text: 1;
-$size-small-text: 0.8;
-$size-medium-text: 1.1;
-$size-large-text: 1.325;
+$size-default-text: 1 !default;
+$size-small-text: 0.8 !default;
+$size-medium-text: 1.1 !default;
+$size-large-text: 1.325 !default;
 
-$size-element-spacing: 1.5rem;
-$size-element-spacing-big: 3.5rem;
-$size-element-spacing-small: 1rem;
+$size-element-spacing: 1.5rem !default;
+$size-element-spacing-big: 3.5rem !default;
+$size-element-spacing-small: 1rem !default;
 
-$size-container-wide-max: 1600px;
-$size-container-content-max: 1180px;
-$size-container-readable-max: 740px;
+$size-container-wide-max: 1600px !default;
+$size-container-content-max: 1180px !default;
+$size-container-readable-max: 740px !default;
 
-$size-default-radius: 3px;
+$size-default-radius: 3px !default;
 
-$size-small-screen: 768px;
+$size-small-screen: 768px !default;
 
 // Typography
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$font-main: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-$font-pre: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-$line-height-body: 1.6;
+$font-main: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif !default;
+$font-pre: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
+$line-height-body: 1.6 !default;
+
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-medium: 500 !default;
+$font-weight-light: 300 !default;
