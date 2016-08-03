@@ -32,9 +32,9 @@ input[type='submit'] {
 
 		&:hover,
 		&:focus {
-			color: $color-primary-dark;
-			background-color: transparent;
-			border-color: $color-primary-dark;
+			color: $color-plain;
+			background-color: $color-primary;
+			border-color: $color-primary;
 		}
 	}
 
