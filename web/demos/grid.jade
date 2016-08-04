@@ -1,0 +1,35 @@
+extends ./../_layout.jade
+include ./../_mixins.jade
+
+block vars
+  - var title = 'Grid Demo'
+  - var description = 'Grid Demo for MMCSS - Minimal Modern CSS Framework'
+  - var path = 'demo/grid.html'
+
+block content
+    article.container-readable
+        h1 Grid
+        div.grid.section-block
+          div.one-half HALF
+          div.one-half HALF
+          div.one-half HALF
+          div.one-half HALF
+        
+        div.grid.section-block
+          div.one-third ONE-THIRD
+          div.one-third ONE-THIRD
+          div.one-third ONE-THIRD
+          div.one-third ONE-THIRD
+          div.one-third ONE-THIRD
+          div.one-third ONE-THIRD
+        
+        div.grid.section-block
+          div.one-fourth ONE-FOURTH
+          div.one-fourth ONE-FOURTH
+          div.one-fourth ONE-FOURTH
+          div.one-fourth ONE-FOURTH
+          div.one-fourth ONE-FOURTH
+          div.one-fourth ONE-FOURTH
+          div.one-fourth ONE-FOURTH
+          div.one-fourth ONE-FOURTH
+        

@@ -1,0 +1,31 @@
+@import "susy";
+
+.grid {
+    @include container;
+}
+
+@media (min-width: $size-small-screen) {
+    .one-half {
+        @include span(1 of 2);
+
+        &:nth-child(2n+0) {
+            @include omega;
+        }
+    }
+
+    .one-third {
+        @include span(1 of 3);
+
+        &:nth-child(3n+0) {
+            @include omega;
+        }
+    }
+
+    .one-fourth {
+        @include span(1 of 4);
+
+        &:nth-child(4n+0) {
+            @include omega;
+        }
+    }
+}

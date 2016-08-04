@@ -9,6 +9,11 @@ var SRC_SCSS = './src/**/*.scss';
 var SRC_JADE = './web/**/!(_)*.jade';
 var SRC_STATIC = './web/static/**/*';
 
+
+const SASS_INCLUDE_PATHS = [
+    './node_modules/susy/sass/'
+];
+
 var DEST_SCSS = './dist/';
 var DEST_JADE = './public/';
 var DEST_STATIC = './public/';
@@ -41,7 +46,7 @@ gulp.task('jade', function () {
  */
 gulp.task('sass', function () {
     gulp.src(SRC_SCSS)
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({ includePaths: SASS_INCLUDE_PATHS }).on('error', sass.logError))
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(gulp.dest(DEST_SCSS)) //CSS for dist
         .pipe(gulp.dest(DEST_STATIC)) //CSS for web
