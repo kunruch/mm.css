@@ -11,7 +11,7 @@ var SRC_STATIC = './web/static/**/*';
 
 
 const SASS_INCLUDE_PATHS = [
-    './node_modules/susy/sass/'
+    './node_modules/'
 ];
 
 var DEST_SCSS = './dist/';
