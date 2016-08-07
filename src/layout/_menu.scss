@@ -1,7 +1,7 @@
-$color-nav-text: lighten($color-text, 30) !default;
-$color-nav-text-active: $color-text !default;
-$color-nav-text-hover: darken($color-text, 10) !default;
-$size-nav-text: $size-default-text !default;
+$color-nav-text: rgba(255, 255, 255, 0.6) !default;
+$color-nav-text-active: $color-plain !default;
+$color-nav-text-hover: $color-plain !default;
+$size-nav-text: 0.875 * ($size-default-text) !default;
 
 .main-navigation {
 	@include font-size($size-nav-text);
@@ -12,6 +12,9 @@ $size-nav-text: $size-default-text !default;
 			position: relative;
 			padding: 0 ($size-element-spacing / 2);
 			margin: 0;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			line-height: ($size-site-title) * 1rem;
 		}
 
 		a {

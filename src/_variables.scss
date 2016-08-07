@@ -2,8 +2,9 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 $color-green: #00b96a !default;
-$color-blue: #2196f3 !default;
-$color-outer-space: #263238 !default;
+$color-blue: #3498db !default;
+$color-outer-space: #2F353E !default;
+$color-river-bed: #454E5B !default;
 $color-mine-shaft: #333333 !default;
 $color-tundora: #414141 !default;
 $color-concrete: #f2f2f2 !default;
@@ -13,6 +14,7 @@ $color-alto: #dedede !default;
 $color-plain: #fff !default;
 $color-background-light: $color-alabaster !default;
 $color-background-dark: $color-outer-space !default;
+$color-background-medium-dark: $color-river-bed !default;
 $color-primary: $color-blue !default;
 $color-primary-dark: darken($color-primary, 5) !default;
 $color-secondary: $color-green !default;
