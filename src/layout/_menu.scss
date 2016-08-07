@@ -14,7 +14,7 @@ $size-nav-text: 0.875 * ($size-default-text) !default;
 			margin: 0;
 			text-transform: uppercase;
 			letter-spacing: 0.1em;
-			line-height: $size-site-line-height;
+			line-height: $size-site-header-line-height;
 		}
 
 		a {
@@ -33,14 +33,12 @@ $size-nav-text: 0.875 * ($size-default-text) !default;
 		}
 
 		ul {
-			background: $color-plain;
+			background: $color-header-background;
 			margin: 0;
-			padding: ($size-element-spacing-small / 2) 0 0;
-			border: 1px solid $color-default-border;
-			box-shadow: 0 3px 3px $color-default-box-shadow;
+			padding: 0;
 			float: left;
 			position: absolute;
-			top: $size-element-spacing;
+			top: $size-site-header-line-height;
 			left: -999em;
 			z-index: 99999;
 
@@ -50,7 +48,8 @@ $size-nav-text: 0.875 * ($size-default-text) !default;
 			}
 
 			li {
-				padding: 0 $size-element-spacing-small ($size-element-spacing-small / 2);
+				padding: 0 ($size-element-spacing-small / 2);				
+				text-transform: none;
 
 				&:hover > ul,
 				&.focus > ul {
@@ -73,19 +72,7 @@ $size-nav-text: 0.875 * ($size-default-text) !default;
 
 		li:hover > ul,
 		li.focus > ul {
-			left: auto;
+			left: $size-element-spacing-small * -(1/2);
 		}
-	}
-}
-
-.main-navigation {
-	ul li:first-child {
-		padding-left: 0;
-	}
-}
-
-.main-navigation.alignright {
-	ul li:last-child {
-		padding-right: 0;
 	}
 }
