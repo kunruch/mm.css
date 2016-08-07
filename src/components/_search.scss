@@ -1,0 +1,10 @@
+.search-expandable {
+    input[type="search"] {
+        width: 200px;
+        transition: width .4s;
+    }
+
+    input[type="search"]:focus {
+        width: 300px;
+    }
+}

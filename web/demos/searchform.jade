@@ -1,0 +1,16 @@
+extends ./../_layout.jade
+include ./../_mixins.jade
+
+block vars
+  - var title = 'Search Form Buttons Demo'
+  - var description = 'Search Form Demo for MMCSS - Minimal Modern CSS Framework'
+  - var path = 'demo/searchform.html'
+
+block content
+    article.container-readable
+        h1 Search Form
+        form.search-form(role='search', method='get', action='')
+            input.search-field(type='search', placeholder='Search …', value='', name='s')
+            input.search-submit(type='submit', value='Search')        
+        form.search-form(role='search', method='get', action='').search-expandable
+            input.search-field(type='search', placeholder='Expandable Search …', value='', name='s')
