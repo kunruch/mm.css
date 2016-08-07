@@ -1,6 +1,6 @@
 code, kbd, tt, var, pre {
 	font-family: $font-pre;
-	font-size: 86%;
+	font-size: 80%;
 }
 
 code, kbd, tt {
@@ -11,11 +11,11 @@ code, kbd, tt {
 }
 
 pre {
-	background: $color-background-light;
-	border: 1px solid $color-default-border;
-	border-left: $size-default-radius solid $color-primary;
+	background: transparent;
+	border: 2px solid $color-default-border;
     line-height: 1.8;
-    padding: $size-element-spacing-small;
+	color: darken($color-text, 20);
+    padding: $size-element-spacing-small $size-element-spacing;
 
 	& > code {
 		background: transparent;
