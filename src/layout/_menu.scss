@@ -8,13 +8,13 @@ $size-nav-text: 0.875 * ($size-default-text) !default;
 
 	ul {
 		li {
-			float: left;
 			position: relative;
+			display: inline-block;
 			padding: 0 ($size-element-spacing / 2);
 			margin: 0;
 			text-transform: uppercase;
 			letter-spacing: 0.1em;
-			line-height: ($size-site-title) * 1rem;
+			line-height: $size-site-line-height;
 		}
 
 		a {

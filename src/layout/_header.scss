@@ -6,12 +6,23 @@ $color-sub-header-background: $color-background-medium-dark !default;
 $color-sub-header-text: $color-plain !default;
 
 $size-site-title: 1.5;
+$size-site-line-height: 42px;
 
 .site-header {
     background-color: $color-header-background;
     color: $color-header-text;
+    padding-top: $size-element-spacing;
+    padding-bottom: $size-element-spacing;
     z-index: 99;
+    position: relative;
+    text-align: center;
 
+    .site-branding {
+        position: absolute;
+        left: $size-element-spacing;
+        top: $size-element-spacing;
+    }
+    
     .site-logo {
 
     }
@@ -19,7 +30,7 @@ $size-site-title: 1.5;
     .site-title {
         @include font-size($size-site-title);
         font-weight: $font-weight-medium;
-        line-height: 1;
+        line-height: $size-site-line-height;
         margin: 0;
 
         a {
