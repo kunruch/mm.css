@@ -1,0 +1,9 @@
+$color-footer-background: $color-plain !default;
+$color-footer-text: lighten($color-text, 15) !default;
+
+.site-footer {
+    background-color: $color-footer-background;
+    color: $color-footer-text;
+    border-top: 1px solid $color-default-border;
+    margin-top: $size-element-spacing-big;
+}
