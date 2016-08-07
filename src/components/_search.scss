@@ -1,3 +1,8 @@
+.search-box {
+    display: inline-block;
+    margin-right: $size-element-spacing;
+}
+
 .search-expandable {
     input[type="search"] {
         width: 200px;
@@ -15,11 +20,11 @@
     .css-icon-search {
         opacity: 0.5;
         position: absolute;
-        left: 8px;
-        top: 12px;
+        right: 0;
+        top: 11px;
     }
 
     input[type="search"] {
-        padding-left: 32px;
+        padding-right: 32px;
     }
 }
