@@ -1,0 +1,31 @@
+.css-icon-search {
+    display: block;    
+    position: relative;
+    overflow: hidden;
+    height: 32px;
+    width: 32px;
+    border: 0;
+
+    &:before {
+        display: block;
+        content: "";
+        width: 16px;
+        height: 16px;
+        border: 3px solid $color-text;
+        background: transparent;
+        border-radius: 100%;
+    }
+
+    &:after {
+        content: "";
+        background: $color-text;
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: 12px;
+        width: 3px;
+        height: 7px;
+        margin-top: 0;
+        transform: rotate(-45deg);
+    }
+}
