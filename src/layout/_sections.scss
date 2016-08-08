@@ -4,12 +4,16 @@
 }
 
 
-.section-block {
+.section {
     @include section($size-element-spacing);
 }
 
-.section-block-large {    
+.section-medium {
     @include section(2 * $size-element-spacing);
+}
+
+.section-large {    
+    @include section(3 * $size-element-spacing);
 }
 
 .section-hero {    

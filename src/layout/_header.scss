@@ -72,9 +72,15 @@ $size-site-header-line-height: 42px;
     background-color: $color-sub-header-background;
     color: $color-sub-header-text;
     text-align: center;
+    margin-bottom: $size-element-spacing-big;
 
     h1, h2 {
         font-weight: $font-weight-medium;
         color: $color-sub-header-text;
+        margin-top: 0;
+    }
+
+    h1:last-child, h2:last-child {
+        margin-bottom: 0;
     }
 }
