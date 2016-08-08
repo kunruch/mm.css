@@ -23,7 +23,7 @@ html(lang='en-US')
   body#top
     header#header.site-header
         .container-full
-            .site-branding
+            .site-branding.header-left
               h1.site-title
                   a(href='/') MMCSS
             nav(role="navigation").main-navigation
@@ -36,6 +36,7 @@ html(lang='en-US')
                   a(href="#") Showcase                
                 li.menu-item
                   a(href="#") Blog
+            a.button.button-rounded(href="#").header-right Download
     block content
     footer#footer.site-footer
       .container-content.section-block.text-center
