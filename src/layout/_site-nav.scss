@@ -1,7 +1,7 @@
 $color-nav-text: rgba($color-header-text, 0.68) !default;
 $color-nav-text-active: $color-header-text !default;
 $color-nav-text-hover: $color-header-text !default;
-$size-nav-text: $size-default-text * 1.1 !default;
+$size-nav-text: $size-default-text * 1.05 !default;
 
 .main-navigation {
 	@include font-size($size-nav-text);
