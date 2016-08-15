@@ -11,26 +11,11 @@ $color-concrete: #f2f2f2 !default;
 $color-alabaster: #fafafa !default;
 $color-alto: #dedede !default;
 
-$color-plain: #fff !default;
-$color-background-light: $color-alabaster !default;
-$color-background-dark: $color-outer-space !default;
-$color-background-medium-dark: $color-river-bed !default;
-$color-primary: $color-blue !default;
-$color-primary-dark: darken($color-primary, 5) !default;
-$color-secondary: $color-green !default;
-$color-text: $color-tundora !default;
-$color-headings: $color-mine-shaft !default;
-$color-neutral-light: $color-concrete !default;
-$color-neutral-dark: $color-alto !default;
-
-$color-default-border: $color-neutral-light !default;
-$color-default-box-shadow: rgba(0,0,0,0.1) !default;
-
 // Sizes
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $size-default-text: 1 !default;
 $size-small-text: 0.875 !default;
-$size-medium-text: 1.1 !default;
+$size-medium-text: 1.1875 !default;
 $size-large-text: 1.325 !default;
 
 $size-element-spacing: 1.5rem !default;
@@ -39,7 +24,7 @@ $size-element-spacing-small: 1rem !default;
 
 $size-container-wide-max: 1600px !default;
 $size-container-content-max: 1180px !default;
-$size-container-readable-max: 740px !default;
+$size-container-readable-max: 760px !default;
 
 $size-default-radius: 3px !default;
 

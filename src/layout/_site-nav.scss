@@ -1,7 +1,7 @@
-$color-nav-text: rgba(255, 255, 255, 0.6) !default;
-$color-nav-text-active: $color-plain !default;
-$color-nav-text-hover: $color-plain !default;
-$size-nav-text: 0.875 * ($size-default-text) !default;
+$color-nav-text: rgba($color-header-text, 0.68) !default;
+$color-nav-text-active: $color-header-text !default;
+$color-nav-text-hover: $color-header-text !default;
+$size-nav-text: $size-default-text * 1.1 !default;
 
 .main-navigation {
 	@include font-size($size-nav-text);
@@ -12,8 +12,6 @@ $size-nav-text: 0.875 * ($size-default-text) !default;
 			display: inline-block;
 			padding: 0 ($size-element-spacing / 2);
 			margin: 0;
-			text-transform: uppercase;
-			letter-spacing: 0.1em;
 			line-height: $size-site-header-line-height;
 		}
 

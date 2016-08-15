@@ -1,0 +1,24 @@
+
+$color-plain: #fff !default;
+$color-background-light: $color-alabaster !default;
+$color-background-dark: $color-outer-space !default;
+$color-background-medium-dark: $color-river-bed !default;
+$color-primary: $color-blue !default;
+$color-primary-dark: darken($color-primary, 5) !default;
+$color-secondary: $color-green !default;
+$color-text: darken($color-outer-space, 5) !default;
+$color-headings: darken($color-outer-space, 5) !default;
+$color-neutral-light: $color-concrete !default;
+$color-neutral-dark: $color-alto !default;
+
+$color-default-border: $color-neutral-light !default;
+$color-default-box-shadow: rgba(0,0,0,0.1) !default;
+
+// Header
+$color-header-background: $color-background-dark !default;
+$color-header-text: $color-plain !default;
+
+$header-border: none !default;
+
+$color-sub-header-background: $color-background-medium-dark !default;
+$color-sub-header-text: $color-plain !default;

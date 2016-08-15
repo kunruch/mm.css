@@ -1,6 +1,7 @@
 .search-box {
     display: inline-block;
     margin-right: $size-element-spacing;
+    @include font-size($size-default-text);
 }
 
 .search-expandable {
@@ -18,7 +19,7 @@
     position: relative;
 
     .css-icon-search {
-        opacity: 0.5;
+        opacity: 0.4;
         position: absolute;
         right: 0;
         top: 11px;
