@@ -7,8 +7,8 @@ node_js:
 before_script:
 - npm install -g gulp
 - git remote set-url origin "https://${GH_TOKEN}@github.com/kkthemes/mmcss.git"
-- git config user.email "kanishk.kunal@hotmail.com"
-- git config user.name "Travis-CI"
+- git config --global user.email "kanishk.kunal@hotmail.com"
+- git config --global user.name "Travis-CI"
 script:
 - gulp build
 - gulp deploy
