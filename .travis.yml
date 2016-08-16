@@ -1,0 +1,10 @@
+branches:
+  only:
+  - master
+language: node_js
+node_js:
+  - "4"
+before_script:
+  - npm install -g gulp
+script: 
+  - gulp build
