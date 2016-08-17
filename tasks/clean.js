@@ -6,7 +6,7 @@ var del     = require('del');
  * Clean files
  */
 gulp.task('clean', function () {
-    del([config.clean.DEST]).then(paths => {
+    return del(config.clean.DIRS).then(paths => {
         console.log('Deleted files and folders:\n', paths.join('\n'));
     });
 });

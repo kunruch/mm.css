@@ -14,7 +14,7 @@ requireDir('./tasks', { recurse: true })
 
 //Default task for development. Build, watch for file changes and auto reload browsers
 gulp.task('default', function() {
-	runSequence(
+	return runSequence(
 		'clean',
 		['assets', 'css', 'html', 'scripts'],
 		'watch',
@@ -22,18 +22,15 @@ gulp.task('default', function() {
 	);
 });
 
-//Build task to build and minify files for production
-gulp.task('build', function() {
-	runSequence(
-		'clean',
-		['assets', 'css', 'html', 'scripts', 'minify']
-	);
-});
+//Dist task to build and prepare files for distribution
+//We have only CSS files to build for this project
+gulp.task('dist', ['css-dist']);
 
 //Deploy task to build and deploy to production server.
 gulp.task('deploy', function() {
-	runSequence(
-		'build',
-		'deploy'
+	return runSequence(
+		'clean',
+		['assets', 'css', 'html', 'scripts', 'minify'],
+		'gh-pages-deploy'
 	);
 });

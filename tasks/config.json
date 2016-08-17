@@ -1,10 +1,29 @@
 {
     "clean" : {
-        "DEST": "./public/**/*"
+        "DIRS": ["./public/**/*"]
     },
 
     "assets" : {
-        "SRC": "./web/assets/**/*",
-        "DEST": "./public"
+        "SRC":  "./web/assets/**/*",
+        "DEST": "./public",
+        "WATCH": "./web/assets/**/*"
+    },
+
+    "html" : {        
+        "SRC": "./web/**/!(_)*.jade",
+        "DEST": "./public/",
+        "WATCH": "./web/**/*.jade"
+    },
+    
+    "css" : {        
+        "SRC": "./src/**/*.scss",
+        "DEST": "./public/",
+        "WATCH": "./src/**/*.scss",
+        "INCLUDE_PATHS": ["./node_modules/"],
+        "DIST": "./dist/"
+    },
+
+    "deploy": {
+        "SRC": "./public/**/*"
     }
 }
