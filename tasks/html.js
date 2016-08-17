@@ -7,6 +7,16 @@ var jade = require('gulp-jade');
  */
 gulp.task('html', function () {
     return gulp.src(config.html.SRC)
-        .pipe(jade())
+        .pipe(jade({ pretty: true}))
+        .pipe(gulp.dest(config.html.DEST))
+});
+
+
+/**
+ * Generate Minified HTML
+ */
+gulp.task('html-min', function () {
+    return gulp.src(config.html.SRC)
+        .pipe(jade({ pretty: false}))
         .pipe(gulp.dest(config.html.DEST))
 });

@@ -22,14 +22,14 @@ gulp.task('default', function() {
 });
 
 //Dist task to build and prepare files for distribution
-//We have only CSS files to build for this project
+//We have only CSS files to distribute for this project
 gulp.task('dist', ['css-dist']);
 
 //Deploy task to build and deploy to production server.
 gulp.task('deploy', function() {
 	return runSequence(
 		'clean',
-		['assets', 'css', 'html', 'scripts', 'minify'],
+		['assets', 'css-min', 'html-min', 'scripts'],
 		'gh-pages-deploy'
 	);
 });

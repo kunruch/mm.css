@@ -2,21 +2,33 @@ var config  = require('./config.json');
 var gulp    = require('gulp');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
+var rename = require('gulp-rename');
 
 /**
- * Generate CSS
+ * Generate CSS.
  */
 gulp.task('css', function () {
     return gulp.src(config.css.SRC)
         .pipe(sass({ includePaths: config.css.INCLUDE_PATHS }).on('error', sass.logError))
-        .pipe(cleanCSS({ compatibility: 'ie8' }))
-        .pipe(gulp.dest(config.css.DEST))
+        .pipe(gulp.dest(config.css.DEST)) //non-minified CSS
 });
 
 /**
- * Preaprre CSS for distribution
+ * Generate and minify CSS
  */
-gulp.task('css-dist', ['css'], function () {
+gulp.task('css-min', function () {
+    return gulp.src(config.css.SRC)
+        .pipe(sass({ includePaths: config.css.INCLUDE_PATHS }).on('error', sass.logError))
+        .pipe(gulp.dest(config.css.DEST)) //non-minified CSS
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(rename({ extname: '.min.css' }))
+        .pipe(gulp.dest(config.css.DEST)) //minified CSS
+});
+
+/**
+ * Prepare CSS for distribution
+ */
+gulp.task('css-dist', ['css-min'], function () {
     return gulp.src(config.css.DEST + "**.css")
         .pipe(gulp.dest(config.css.DIST))
 });
