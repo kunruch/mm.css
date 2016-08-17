@@ -13,13 +13,12 @@ html(lang='en-US')
     meta(property='og:url', content='#{url_base}#{path}')
     meta(property='og:image', content='#{url_base}img/mmcss.png')
     link(rel='canonical', href='#{url_base}#{path}')
-    +style('mm')
+    link(href='/mm.css', rel='stylesheet')
     block styles
     link(rel='icon', href='#{url_base}img/mmcss-favicon-32x32.png', sizes='32x32')
     link(rel='icon', href='#{url_base}img/mmcss-favicon-192x192.png', sizes='192x192')
     link(rel='apple-touch-icon-precomposed', href='#{url_base}img/mmcss-favicon-180x180.png')
     meta(name='msapplication-TileImage', content='#{url_base}img/mmcss-favicon-270x270.png')
-    +analytics
   body#top
     header#header.site-header
         .container-full

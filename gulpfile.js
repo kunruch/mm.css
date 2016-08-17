@@ -68,7 +68,7 @@ gulp.task('default', ['copy-static', 'sass', 'jade'], function () {
 gulp.task('build', ['copy-static', 'sass', 'jade']);
 
 /**
- * Deploy to GitHub Pages
+ * Deploy to GitHub Pages. This task is run via Travis CI
  */
 gulp.task('deploy', function () {
     return gulp.src('./public/**/*')
