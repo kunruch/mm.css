@@ -10,7 +10,6 @@ before_script:
 - git config --global user.email "kanishk.kunal@hotmail.com"
 - git config --global user.name "Travis-CI"
 script:
-- gulp build
 - gulp deploy
 env:
   global:

@@ -1,0 +1,10 @@
+{
+    "clean" : {
+        "DEST": "./public/**/*"
+    },
+
+    "assets" : {
+        "SRC": "./web/assets/**/*",
+        "DEST": "./public"
+    }
+}
