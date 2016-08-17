@@ -12,13 +12,12 @@ var requireDir  = require('require-dir');
 
 requireDir('./tasks', { recurse: true })
 
-//Default task for development. Build, watch for file changes and auto reload browsers
+//Default task for development. Build, watch for file changes and auto rebuild
 gulp.task('default', function() {
 	return runSequence(
 		'clean',
 		['assets', 'css', 'html', 'scripts'],
-		'watch',
-		'connect'
+		'watch'
 	);
 });
 
