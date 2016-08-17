@@ -2,11 +2,7 @@
 
 .grid {
     @include container;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -ms-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 

@@ -468,7 +468,9 @@ input[type='text'],
 input[type='url'],
 textarea,
 select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: transparent;
   border: 1px solid #dedede;
   border-radius: 3px;
@@ -522,11 +524,9 @@ nav ul ul {
   margin-left: auto;
   margin-right: auto;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap; }
+      flex-wrap: wrap; }
   .grid:after {
     content: " ";
     display: block;
