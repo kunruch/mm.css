@@ -68,13 +68,17 @@ $color-header-light-text: $color-text !default;
 		    line-height: $size-site-header-line-height;
         }
 
+        ul {
+            font-size: 95%;
+        }
+
         a {
             color: inherit;
 		    opacity: 0.7;
         }
 
-        a:hover, .current-menu-item a {
-            border-bottom: 1px solid;
+        a:hover, .current-menu-item > a {
+            border-bottom-color: transparent;
             opacity: 1;
         }
     }
@@ -97,8 +101,26 @@ $color-header-light-text: $color-text !default;
 }
 
  .header {
+     .menu {
+         li {
+            background-color: $color-header-default-background;
+         }
+     }
+
      input[type="search"] {
         border-color: transparent;
-        background: darken($color-header-default-background, 4);
+        background-color: darken($color-header-default-background, 4);
     }     
  }
+
+.header-light {
+    .menu {
+        > a:hover, .current-menu-item > a {
+            border-bottom: 1px solid;
+        }
+
+        ul {            
+            background-color: $color-header-light-background;
+        }
+    }
+}

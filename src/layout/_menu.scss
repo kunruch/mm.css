@@ -1,6 +1,5 @@
-$color-nav-text: inherit !default;
-
 .menu {
+
 	li {
 		position: relative;
 		display: inline-block;
@@ -17,6 +16,7 @@ $color-nav-text: inherit !default;
 		margin: 0;
 		padding: 0;
 		float: left;
+		text-align: left;
 		position: absolute;
 		top: $size-site-header-line-height;
 		left: -999em;
@@ -28,7 +28,7 @@ $color-nav-text: inherit !default;
 		}
 
 		li {
-			padding: 0 ($size-element-spacing-small / 2);				
+			padding: 0 ($size-element-spacing / 2);				
 			text-transform: none;
 
 			&:hover > ul,
@@ -52,6 +52,6 @@ $color-nav-text: inherit !default;
 
 	li:hover > ul,
 	li.focus > ul {
-		left: $size-element-spacing-small * -(1/2);
+		left: 0;
 	}
 }
