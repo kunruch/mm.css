@@ -10,7 +10,7 @@ html {
 
 // Default body styles
 body {
-	background: $color-plain;
+	background: $color-body;
 }
 
 blockquote, q {
@@ -23,7 +23,7 @@ blockquote, q {
 }
 
 hr {
-	background-color: $color-neutral-dark;
+	background-color: $color-gray-dark;
 	border: 0;
 	height: 1px;
 	margin-bottom: $size-element-spacing;
@@ -53,7 +53,7 @@ abbr, acronym {
 }
 
 mark, ins {
-	background:  $color-neutral-light;
+	background:  $color-gray-light;
 	text-decoration: none;
 }
 

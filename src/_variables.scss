@@ -1,21 +1,41 @@
 // Colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$color-green: #00b96a !default;
-$color-blue: #3498db !default;
-$color-outer-space: #2F353E !default;
-$color-river-bed: #454E5B !default;
-$color-mine-shaft: #333333 !default;
-$color-tundora: #414141 !default;
-$color-concrete: #f2f2f2 !default;
+$color-blue: #2196F3 !default; //material blue
+$color-outer-space: #2e353b !default;
 $color-alabaster: #fafafa !default;
-$color-alto: #dedede !default;
+$color-concrete: #f2f2f2 !default;
+$color-alto: #bbb !default;
+
+// Background color
+$color-body: #fff !default; //white background
+$color-background-light: $color-alabaster !default;
+$color-background-dark: $color-outer-space !default;
+
+// Branding colors
+$color-primary: $color-blue !default;
+$color-primary-hover: darken($color-primary, 5) !default;
+
+//  Text colors
+$color-text:  lighten($color-outer-space, 10) !default;
+$color-headings: $color-outer-space !default;
+$color-text-light:  $color-alabaster !default;
+$color-text-muted:  $color-alto !default;
+
+// Grays
+$color-gray-light: $color-alabaster !default;
+$color-gray: $color-concrete !default;
+$color-gray-dark: $color-alto !default;
+
+// Border colors and box shadow
+$color-default-border: $color-gray !default;
+$color-default-box-shadow: rgba(0,0,0,0.1) !default;
 
 // Sizes
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 $size-default-text: 1 !default;
 $size-small-text: 0.875 !default;
-$size-medium-text: 1.1875 !default;
+$size-medium-text: 1.16 !default;
 $size-large-text: 1.325 !default;
 
 $size-element-spacing: 1.5rem !default;

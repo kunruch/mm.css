@@ -6,11 +6,16 @@ block vars
   - var path = 'demo/buttons.html'
 
 block content
-    article.container-readable
+    div.section.container-readable
         h1 Buttons
         div
+          strong Default Buttons
+          hr
           // Default Button
           a.button(href='#') Default Button
+          | 
+          // Primary Button
+          a.button.button-primary(href='#') Primary Button
           | 
           // Ghost Button
           button.button-ghost Ghost Button
@@ -18,8 +23,15 @@ block content
           // Text Button
           input.button.button-text(type='submit', value='Text Button')
         div
+          strong Rounded Buttons
+          hr
           // Default Button
           a.button.button-rounded(href='#') Rounded Button
           | 
+          // Primary Button Rounded
+          button.button-ghost.button-rounded.button-primary Rounded Primary Button
+          | 
           // Ghost Button
           button.button-ghost.button-rounded Rounded Ghost Button
+          
+          

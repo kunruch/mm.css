@@ -1,6 +1,14 @@
 $size-site-title: 1.5;
 $size-site-header-line-height: 42px;
-$size-header-padding: $size-element-spacing-small;
+$size-header-padding: $size-element-spacing;
+
+$color-header-background: $color-background-dark !default;
+$color-header-text: $color-text-light !default;
+
+$header-border: none !default;
+
+$color-sub-header-background: $color-background-dark !default;
+$color-sub-header-text: $color-text-light !default;
 
 .site-header {
     background-color: $color-header-background;

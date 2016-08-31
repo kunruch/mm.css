@@ -1,5 +1,5 @@
-$color-footer-background: $color-plain !default;
-$color-footer-text: lighten($color-text, 15) !default;
+$color-footer-background: $color-background-dark !default;
+$color-footer-text: $color-text-muted !default;
 
 .site-footer {
     background-color: $color-footer-background;

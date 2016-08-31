@@ -3,15 +3,14 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-	background-color: $color-primary;
-	border: 2px solid $color-primary;
+	background-color: $color-gray;
+	border: 1px solid $color-gray;
 	border-radius: $size-default-radius;
 	box-sizing: border-box;
-	color: $color-plain;
+	color: $color-headings;
 	cursor: pointer;
-	display: inline-block;
-	font-weight: $font-weight-medium;
-	letter-spacing: .05em;
+	display: inline-block;	
+	font-weight: $font-weight-normal;
 	line-height: 2.5;
 	padding: 0 $size-element-spacing;
 	text-align: center;
@@ -20,24 +19,36 @@ input[type='submit'] {
 
 	&:hover,
 	&:focus {
-		background-color: $color-primary-dark;
-		border-color: $color-primary-dark;
-		color: $color-plain;
+		background-color: $color-primary-hover;
+		border-color: $color-primary-hover;
+		color: $color-text-light;
 		outline: 0;
 	}
 
 	&.button-ghost {
-		color: $color-primary;
 		background-color: transparent;
+		border-color: $color-gray-dark;
 
 		&:hover,
 		&:focus {
-			color: $color-plain;
+			color: #fff;
 			background-color: $color-primary;
 			border-color: $color-primary;
 		}
 	}
 
+	&.button-primary {
+		background-color: $color-primary;
+		border-color: $color-primary;
+		color: $color-text-light;
+
+		&:hover,
+		&:focus {			
+			background-color: $color-primary-hover;
+			border-color: $color-primary-hover;
+		}
+	}
+	
 	&.button-rounded {		
 		border-radius: 3rem;		
 		padding: 0 (1.5*$size-element-spacing);
@@ -50,7 +61,7 @@ input[type='submit'] {
 
 		&:hover,
 		&:focus {
-			color: $color-primary-dark;
+			color: $color-primary-hover;
 			background-color: transparent;
 			border-color: transparent;
 		}
