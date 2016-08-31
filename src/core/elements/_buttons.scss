@@ -4,13 +4,13 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
 	background-color: $color-primary;
-	border: 1px solid $color-primary;
+	border: 2px solid $color-primary;
 	border-radius: $size-default-radius;
 	box-sizing: border-box;
 	color: $color-plain;
 	cursor: pointer;
 	display: inline-block;
-	font-weight: $font-weight-normal;
+	font-weight: $font-weight-medium;
 	letter-spacing: .05em;
 	line-height: 2.5;
 	padding: 0 $size-element-spacing;

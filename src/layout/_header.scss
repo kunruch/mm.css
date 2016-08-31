@@ -1,12 +1,13 @@
 $size-site-title: 1.5;
 $size-site-header-line-height: 42px;
+$size-header-padding: $size-element-spacing-small;
 
 .site-header {
-    background-color: $color-header-background;    
+    background-color: $color-header-background;
     border-bottom: $header-border;
     color: $color-header-text;
-    padding-top: $size-element-spacing;
-    padding-bottom: $size-element-spacing;
+    padding-top: $size-header-padding;
+    padding-bottom: $size-header-padding;
     z-index: 99;
     position: relative;
     text-align: center;
@@ -14,20 +15,21 @@ $size-site-header-line-height: 42px;
 
 .header-left {
     position: absolute;
-    left: $size-element-spacing;
-    top: $size-element-spacing;
+    left: $size-header-padding;
+    top: $size-header-padding;
 }
 
 .header-right {
     position: absolute;
-    right: $size-element-spacing;
-    top: $size-element-spacing;
+    right: $size-header-padding;
+    top: $size-header-padding;
 }
 
 .site-title {
     @include font-size($size-site-title);
     font-weight: $font-weight-medium;
     line-height: $size-site-header-line-height;
+    letter-spacing: 0.05em;
     margin: 0;
 
     a {
