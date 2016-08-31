@@ -39,21 +39,29 @@ $color-header-light-text: $color-text !default;
 }
 
 // Header elements styles
-.site-title {
+.site-branding {
+    color: inherit;
+
+    &:hover {
+        border: 0;
+    }
+}
+
+.site-branding img {
+    float: left;
+    height: $size-site-header-line-height;
+    width: auto;
+    padding-right: $size-element-spacing / 2;   
+}
+
+.site-branding .title {
+    display: inline-block;
     @include font-size($size-site-title);
     font-weight: $font-weight-normal;
     line-height: $size-site-header-line-height;
     letter-spacing: 0.03em;
     color: inherit;
     margin: 0;
-
-    a {
-        color: inherit;
-
-        &:hover {
-            border: 0;
-        }
-    }
 }
 
 .site-description {
