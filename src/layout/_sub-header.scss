@@ -1,0 +1,30 @@
+$color-sub-header-default-background: $color-background-dark !default;
+$color-sub-header-default-text: $color-text-light !default;
+
+$color-sub-header-light-background: $color-body !default;
+$color-sub-header-light-text: $color-headings !default;
+
+.sub-header, .sub-header-light {
+    margin-bottom: $size-element-spacing-big;
+
+    h1, h2 {
+        font-weight: $font-weight-medium;
+        
+        color: inherit;
+        margin-top: 0;
+    }
+
+    h1:last-child, h2:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.sub-header {
+    background-color: $color-sub-header-default-background;
+    color: $color-sub-header-default-text;
+}
+
+.sub-header-light {
+    background-color: $color-sub-header-light-background;
+    color: $color-sub-header-light-text;
+}

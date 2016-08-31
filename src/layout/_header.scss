@@ -1,47 +1,54 @@
 $size-site-title: 1.5;
-$size-site-header-line-height: 42px;
-$size-header-padding: $size-element-spacing;
+$size-site-header-line-height: 40px;
 
-$color-header-background: $color-background-dark !default;
-$color-header-text: $color-text-light !default;
+$color-header-default-background: $color-background-dark !default;
+$color-header-default-text: $color-text-light !default;
 
-$header-border: none !default;
+$color-header-light-background: $color-body !default;
+$color-header-light-text: $color-text !default;
 
-$color-sub-header-background: $color-background-dark !default;
-$color-sub-header-text: $color-text-light !default;
-
-.site-header {
-    background-color: $color-header-background;
-    border-bottom: $header-border;
-    color: $color-header-text;
-    padding-top: $size-header-padding;
-    padding-bottom: $size-header-padding;
+.header, .header-light {
+    padding-top: $size-element-spacing-small;
+    padding-bottom: $size-element-spacing-small;
     z-index: 99;
     position: relative;
     text-align: center;
 }
 
+.header {
+    background-color: $color-header-default-background;
+    color: $color-header-default-text;
+}
+
+.header-light {
+    background-color: $color-header-light-background;
+    color: $color-header-light-text;
+}
+
+// Header positioning
 .header-left {
     position: absolute;
-    left: $size-header-padding;
-    top: $size-header-padding;
+    left: $size-element-spacing;
+    top: $size-element-spacing-small;
 }
 
 .header-right {
     position: absolute;
-    right: $size-header-padding;
-    top: $size-header-padding;
+    right: $size-element-spacing;
+    top: $size-element-spacing-small;
 }
 
+// Header elements styles
 .site-title {
     @include font-size($size-site-title);
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-normal;
     line-height: $size-site-header-line-height;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
+    color: inherit;
     margin: 0;
 
     a {
-        color: $color-header-text;
+        color: inherit;
 
         &:hover {
             border: 0;
@@ -53,7 +60,25 @@ $color-sub-header-text: $color-text-light !default;
     margin: 0;
 }
 
-.site-header {
+.header, .header-light {
+    .menu {
+        font-size: 105%;
+
+        li {            
+		    line-height: $size-site-header-line-height;
+        }
+
+        a {
+            color: inherit;
+		    opacity: 0.7;
+        }
+
+        a:hover, .current-menu-item a {
+            border-bottom: 1px solid;
+            opacity: 1;
+        }
+    }
+
     .search-form {
         margin: 0;
 
@@ -65,27 +90,15 @@ $color-sub-header-text: $color-text-light !default;
             display: none;
         }
 
-        input[type="search"] {
-            border-color: transparent;
-            background: darken($color-header-background, 4);
+        input[type="search"] {            
             font-style: italic;
         }
     }
 }
 
-.site-sub-header {
-    background-color: $color-sub-header-background;
-    color: $color-sub-header-text;
-    text-align: center;
-    margin-bottom: $size-element-spacing-big;
-
-    h1, h2 {
-        font-weight: $font-weight-medium;
-        color: $color-sub-header-text;
-        margin-top: 0;
-    }
-
-    h1:last-child, h2:last-child {
-        margin-bottom: 0;
-    }
-}
+ .header {
+     input[type="search"] {
+        border-color: transparent;
+        background: darken($color-header-default-background, 4);
+    }     
+ }

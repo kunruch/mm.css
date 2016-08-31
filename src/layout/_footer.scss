@@ -1,9 +1,27 @@
-$color-footer-background: $color-background-dark !default;
-$color-footer-text: $color-text-muted !default;
+$color-footer-default-background: $color-background-dark !default;
 
-.site-footer {
-    background-color: $color-footer-background;
-    color: $color-footer-text;
-    border-top: 1px solid $color-default-border;
+$color-footer-light-background: $color-body !default;
+
+
+.footer, .footer-light {
+    color: $color-text-muted;
     margin-top: $size-element-spacing-big;
+
+    nav {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    a {
+        color: darken($color-text-muted, 15);
+    }
+}
+
+.footer {
+    background-color: $color-footer-default-background;
+}
+
+.footer-light {
+    background-color: $color-footer-light-background;
+    border-top: 1px solid $color-default-border;
 }

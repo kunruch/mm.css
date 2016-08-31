@@ -20,12 +20,12 @@ html(lang='en-US')
     link(rel='apple-touch-icon-precomposed', href='#{url_base}img/mmcss-favicon-180x180.png')
     meta(name='msapplication-TileImage', content='#{url_base}img/mmcss-favicon-270x270.png')
   body#top
-    header#header.site-header
-        .container-full
+    header.header
+        .container
             .site-branding.header-left
               h1.site-title
                   a(href='/') MMCSS
-            nav(role="navigation").main-navigation
+            nav(role="navigation")
               ul.menu
                 li.menu-item
                   a(href="#") Learn
@@ -33,11 +33,29 @@ html(lang='en-US')
                   a(href="#") Examples
                 li.menu-item
                   a(href="#") Showcase                
-                li.menu-item
-                  a(href="#") Blog
-            a.button.button-primary(href="#").header-right Download
+                li.menu-item.current-menu-item
+                  a(href="#") About
+            div.header-right
+              form.search-form.search-expandable(role='search', method='get', action='http://thememm.local/')
+                label
+                  span.screen-reader-text Search for:
+                  .search-box
+                    span.css-icon-search
+                    input.search-field(type='search', placeholder='Search …', value='', name='s', title='Search for:')
+                input.search-submit(type='submit', value='Search')
+
     block content
-    footer#footer.site-footer
+    footer.footer
       .container-content.section.text-center
+        nav
+            ul.menu
+              li.menu-item
+                a(href="#") Github
+              li.menu-item
+                a(href="#") Twitter
+              li.menu-item
+                a(href="#") Contact                
+              li.menu-item.current-menu-item
+                a(href="#") About
         span Made for the modern web by <a href="https://kkthemes.com/">KKThemes</a>.  Licensed under the <a href="https://github.com/kkthemes/mmcss/blob/master/LICENSE" target="blank">MIT License</a>.  
   block scripts

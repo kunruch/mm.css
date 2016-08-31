@@ -1,0 +1,57 @@
+$color-nav-text: inherit !default;
+
+.menu {
+	li {
+		position: relative;
+		display: inline-block;
+		padding: 0 ($size-element-spacing / 2);
+		margin: 0;
+	}
+
+	a {
+		display: block;
+	}
+
+	ul {
+		background: transparent;
+		margin: 0;
+		padding: 0;
+		float: left;
+		position: absolute;
+		top: $size-site-header-line-height;
+		left: -999em;
+		z-index: 99999;
+
+		ul {
+			left: -999em;
+			top: 0;
+		}
+
+		li {
+			padding: 0 ($size-element-spacing-small / 2);				
+			text-transform: none;
+
+			&:hover > ul,
+			&.focus > ul {
+				left: 100%;
+			}
+		}
+
+		a {
+			min-width: 160px;
+		}
+
+		:hover > a,
+		.focus > a {
+		}
+
+		a:hover,
+		a.focus {
+		}
+	}
+
+	li:hover > ul,
+	li.focus > ul {
+		left: $size-element-spacing-small * -(1/2);
+	}
+}

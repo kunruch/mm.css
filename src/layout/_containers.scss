@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-.container-full {
+.container {
     @include container-mixin(100%);
 }
 
@@ -23,7 +23,7 @@
     @include container-mixin($size-container-readable-max);
 }
 
-.container-full:after,
+.container:after,
 .container-wide:after,
 .container-content:after,
 .container-readable:after {
