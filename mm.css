@@ -430,7 +430,7 @@ hr
     margin-bottom: 1.5rem; 
 
     border: 0;
-    background-color: #f2f2f2;
+    background-color: #ddd;
 }
 
 input,
@@ -532,7 +532,7 @@ blockquote
     margin-left: 0;
     padding: 1.5rem; 
 
-    border: 1px solid #f2f2f2;
+    border: 1px solid #ddd;
     background: #fafafa;
 }
 blockquote *:last-child
@@ -561,7 +561,7 @@ td
 
     text-align: left; 
 
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #ddd;
 }
 th:first-child,
 td:first-child
@@ -593,7 +593,7 @@ tt
     white-space: nowrap; 
 
     border-radius: 3px;
-    background: #f2f2f2;
+    background: #ddd;
 }
 
 pre
@@ -603,7 +603,7 @@ pre
     padding: 1rem 1.5rem; 
 
     color: #111;
-    border: 2px solid #f2f2f2;
+    border: 2px solid #ddd;
     background: transparent;
 }
 pre > code
@@ -641,9 +641,9 @@ input[type='submit']
     text-decoration: none;
 
     color: #333;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #ddd;
     border-radius: 3px;
-    background-color: #f2f2f2;
+    background-color: #ddd;
 }
 .button:hover,
 .button:focus,
@@ -761,7 +761,7 @@ select
     width: 100%; 
     padding: 8px 12px;
 
-    border: 1px solid #bbb;
+    border: 1px solid #ddd;
     border-radius: 3px;
     background-color: transparent;
     box-shadow: none;
@@ -1094,32 +1094,28 @@ nav ul ul
     margin: 0;
 }
 
+.header .menu,
+.header-light .menu
+{
+    font-size: 105%;
+}
 .header .menu li,
 .header-light .menu li
 {
     line-height: 40px;
 }
-
-.header .menu ul,
-.header-light .menu ul
-{
-    font-size: 95%;
-}
-
 .header .menu a,
 .header-light .menu a
 {
     opacity: .7; 
     color: inherit;
 }
-
 .header .menu a:hover,
 .header .menu .current-menu-item > a,
 .header-light .menu a:hover,
 .header-light .menu .current-menu-item > a
 {
-    opacity: 1; 
-    border-bottom-color: transparent;
+    opacity: 1;
 }
 
 .header .search-form,
@@ -1145,26 +1141,10 @@ nav ul ul
     font-style: italic;
 }
 
-.header .menu li
-{
-    background-color: #171f26;
-}
-
 .header input[type='search']
 {
     border-color: transparent;
     background-color: #0f1519;
-}
-
-.header-light .menu > a:hover,
-.header-light .menu .current-menu-item > a
-{
-    border-bottom: 1px solid;
-}
-
-.header-light .menu ul
-{
-    background-color: #fff;
 }
 
 .sub-header,
@@ -1206,55 +1186,115 @@ nav ul ul
     display: inline-block;
 
     margin: 0; 
-    padding: 0 .75rem;
+    padding: 0 12px;
 }
 
 .menu a
 {
     display: block;
+
+    border: none;
 }
 
 .menu ul
 {
+    font-size: 90%;
+
     position: absolute;
     z-index: 99999; 
-    top: 40px;
-    left: -999em;
+    top: 100%;
+    left: 50%;
 
+    visibility: hidden;
     float: left;
 
     margin: 0;
-    padding: 0;
+    margin-left: -82px;
+    padding: 0 12px;
 
     text-align: left;
 
-    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
 }
 .menu ul ul
 {
-    top: 0; 
-    left: -999em;
+    font-size: 100%;
+
+    top: -1px;
+    left: 100%;
+
+    margin-left: 0;
+
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 .menu ul li
 {
-    padding: 0 .75rem;
+    padding: 0; 
 
+    text-align: center;
     text-transform: none;
+
+    color: #444;
+    border-bottom: 1px solid #ddd;
 }
-.menu ul li:hover > ul,
-.menu ul li.focus > ul
+.menu ul li:last-child
 {
-    left: 100%;
+    border-bottom: 0;
 }
 .menu ul a
 {
-    min-width: 160px;
+    width: 140px;
 }
 
 .menu li:hover > ul,
 .menu li.focus > ul
 {
-    left: 0;
+    visibility: visible;
+}
+
+.menu ul:after,
+.menu ul:before
+{
+    position: absolute;
+    bottom: 100%;
+
+    width: 0;
+    height: 0;
+
+    content: ' ';
+    pointer-events: none; 
+
+    border: solid transparent;
+}
+
+.menu ul:before
+{
+    left: 50%;
+
+    margin-left: -12px; 
+
+    border-width: 12px;
+    border-bottom-color: #ddd;
+}
+
+.menu ul:after
+{
+    left: 50%;
+
+    margin-left: -10px; 
+
+    border-width: 10px;
+    border-bottom-color: #fff;
+}
+
+.menu ul ul:before,
+.menu ul ul:after
+{
+    border: 0;
 }
 
 .page-title
@@ -1359,7 +1399,7 @@ article .h6
 
 .footer-light
 {
-    border-top: 1px solid #f2f2f2; 
+    border-top: 1px solid #ddd; 
     background-color: #fff;
 }
 
