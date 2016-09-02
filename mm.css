@@ -292,7 +292,7 @@ h4,
 h5,
 h6
 {
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.25;
 
     clear: both;
@@ -1001,8 +1001,8 @@ nav ul ul
 
 .section-hero
 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
 }
 .section-hero h1,
 .section-hero h2
@@ -1010,7 +1010,7 @@ nav ul ul
     font-weight: 300;
 
     margin-top: 1.5rem;
-    margin-bottom: 3.5rem; 
+    margin-bottom: 1.5rem; 
 
     letter-spacing: 0;
 
