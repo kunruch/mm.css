@@ -592,8 +592,9 @@ tt
 
     white-space: nowrap; 
 
+    border: 1px solid #ddd;
     border-radius: 3px;
-    background: #ddd;
+    background: #fafafa;
 }
 
 pre
@@ -603,8 +604,8 @@ pre
     padding: 1rem 1.5rem; 
 
     color: #111;
-    border: 2px solid #ddd;
-    background: transparent;
+    border: 1px solid #ddd;
+    background: #fafafa;
 }
 pre > code
 {
@@ -640,10 +641,10 @@ input[type='submit']
     white-space: nowrap; 
     text-decoration: none;
 
-    color: #333;
-    border: 1px solid #ddd;
+    color: #fafafa;
+    border: 1px solid #171f26;
     border-radius: 3px;
-    background-color: #ddd;
+    background-color: #171f26;
 }
 .button:hover,
 .button:focus,
@@ -657,9 +658,9 @@ input[type='submit']:hover,
 input[type='submit']:focus
 {
     color: #fafafa;
-    border-color: #0d8aee;
+    border-color: #0d1216;
     outline: 0; 
-    background-color: #0d8aee;
+    background-color: #0d1216;
 }
 .button.button-ghost,
 button.button-ghost,
@@ -667,7 +668,8 @@ input[type='button'].button-ghost,
 input[type='reset'].button-ghost,
 input[type='submit'].button-ghost
 {
-    border-color: #bbb; 
+    color: #333; 
+    border-color: #ddd;
     background-color: transparent;
 }
 .button.button-ghost:hover,
@@ -681,9 +683,7 @@ input[type='reset'].button-ghost:focus,
 input[type='submit'].button-ghost:hover,
 input[type='submit'].button-ghost:focus
 {
-    color: #fff;
-    border-color: #2196f3; 
-    background-color: #2196f3;
+    background-color: #fafafa;
 }
 .button.button-primary,
 button.button-primary,
@@ -725,8 +725,10 @@ input[type='button'].button-text,
 input[type='reset'].button-text,
 input[type='submit'].button-text
 {
-    color: #2196f3;
-    border-color: transparent; 
+    padding: 0 12px; 
+
+    color: inherit;
+    border-color: transparent;
     background-color: transparent;
 }
 .button.button-text:hover,
@@ -741,8 +743,6 @@ input[type='submit'].button-text:hover,
 input[type='submit'].button-text:focus
 {
     color: #0d8aee;
-    border-color: transparent; 
-    background-color: transparent;
 }
 
 input[type='email'],
@@ -1017,6 +1017,11 @@ nav ul ul
     color: inherit;
 }
 
+.section-highlight
+{
+    background-color: #fafafa;
+}
+
 .header,
 .header-light
 {
@@ -1069,7 +1074,7 @@ nav ul ul
     float: left;
 
     width: auto;
-    height: 40px;
+    height: 42px;
     padding-right: .75rem;
 }
 
@@ -1078,7 +1083,7 @@ nav ul ul
     font-size: 24px;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 42px;
 
     display: inline-block;
 
@@ -1102,18 +1107,20 @@ nav ul ul
 .header .menu li,
 .header-light .menu li
 {
-    line-height: 40px;
+    line-height: 42px;
 }
-.header .menu a,
-.header-light .menu a
+
+.header a,
+.header-light a
 {
-    opacity: .7; 
+    opacity: .8; 
     color: inherit;
 }
-.header .menu a:hover,
-.header .menu .current-menu-item > a,
-.header-light .menu a:hover,
-.header-light .menu .current-menu-item > a
+
+.header a:hover,
+.header .current-menu-item > a,
+.header-light a:hover,
+.header-light .current-menu-item > a
 {
     opacity: 1;
 }
@@ -1147,11 +1154,6 @@ nav ul ul
     background-color: #0f1519;
 }
 
-.sub-header,
-.sub-header-light
-{
-    margin-bottom: 3.5rem;
-}
 .sub-header h1:first-child,
 .sub-header h2:first-child,
 .sub-header-light h1:first-child,
@@ -1159,6 +1161,7 @@ nav ul ul
 {
     margin-top: 0;
 }
+
 .sub-header h1:last-child,
 .sub-header h2:last-child,
 .sub-header-light h1:last-child,
@@ -1212,8 +1215,10 @@ nav ul ul
     margin-left: -82px;
     padding: 0 12px;
 
+    transition: opacity .3s ease-in-out;
     text-align: left;
 
+    opacity: 0;
     border: 1px solid #ddd;
     border-radius: 3px;
     background: #fff;
@@ -1254,6 +1259,8 @@ nav ul ul
 .menu li.focus > ul
 {
     visibility: visible;
+
+    opacity: 1;
 }
 
 .menu ul:after,
@@ -1457,6 +1464,18 @@ article .h6
 
     margin-right: auto; 
     margin-left: auto;
+}
+
+.button .icon
+{
+    font-size: 120%;
+
+    vertical-align: text-bottom;
+}
+
+.button .icon + span
+{
+    margin-left: 12px;
 }
 
 .css-icon-search

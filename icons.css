@@ -1,0 +1,32 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-thumbs-o-up {
+  width: 0.8571465983986855em;
+}
+
+.icon-twitter {
+  width: 0.9285703301429749em;
+}
+
+.icon-github {
+  width: 0.8571436107158661em;
+}
+
+.icon-desktop {
+  width: 1.0714355893433094em;
+}
+
+.icon-mobile {
+  width: 0.42857130616903305em;
+}
+
+.icon-folder-o {
+  width: 0.9285712838172913em;
+}
