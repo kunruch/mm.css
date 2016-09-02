@@ -54,15 +54,14 @@ input[type='submit'] {
 	}
 
 	&.button-text {
-		color: $color-primary;
+		color: inherit;
 		background-color: transparent;
 		border-color: transparent;
+		padding: 0 12px;
 
 		&:hover,
 		&:focus {
 			color: $color-primary-hover;
-			background-color: transparent;
-			border-color: transparent;
 		}
 	}
 }

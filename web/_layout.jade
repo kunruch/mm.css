@@ -16,12 +16,14 @@ html(lang='en-US')
     meta(property='og:image', content='#{url_base}img/mmcss.png')
     link(rel='canonical', href='#{url_base}#{path}')
     link(href='/mm.css', rel='stylesheet')
+    link(href='/icons.css', rel='stylesheet')
     block styles
     link(rel='icon', href='#{url_base}img/mmcss-favicon-32x32.png', sizes='32x32')
     link(rel='icon', href='#{url_base}img/mmcss-favicon-192x192.png', sizes='192x192')
     link(rel='apple-touch-icon-precomposed', href='#{url_base}img/mmcss-favicon-180x180.png')
     meta(name='msapplication-TileImage', content='#{url_base}img/mmcss-favicon-270x270.png')
   body#top
+    include partials/_icons.html
     header.header
         .container
             .header-left
@@ -32,12 +34,12 @@ html(lang='en-US')
                 li.menu-item
                   a(href="#quickstart") Quickstart
                 li.menu-item
-                  a(href="/docs") Docs
+                  a(href="/docs/") Docs
                 li.menu-item
-                  a(href="/examples") Examples
+                  a(href="/examples/") Examples
                 li.menu-item
-                  a(href="/showcase") Showcase                
-                li.menu-item.current-menu-item
+                  a(href="/showcase/") Showcase                
+                li.menu-item
                   a(href="#") Help
                   ul.sub-menu
                     li.menu-item
@@ -57,13 +59,12 @@ html(lang='en-US')
                       a(href="#{github_base}blob/master/LICENSE.md", target="_blank") License Info
 
             div.header-right
-              form.search-form.search-expandable(role='search', method='get', action='http://thememm.local/')
-                label
-                  span.screen-reader-text Search for:
-                  .search-box
-                    span.css-icon-search
-                    input.search-field(type='search', placeholder='Search …', value='', name='s', title='Search for:')
-                input.search-submit(type='submit', value='Search')
+              a.button.button-text(href="#{github_base}", target="_blank")
+               | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+               span GitHub
+              a.button.button-text(href="#{twitter_url}", target="_blank")
+               | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+               span Twitter
 
     block content
     footer.footer-light
@@ -71,8 +72,10 @@ html(lang='en-US')
         nav
             ul.menu
               li.menu-item
-                a(href="#{github_base}") Github
+                a(href="#{github_base}", target="_blank") Github
               li.menu-item
                 a(href="#{twitter_url}", target="_blank") Twitter
+              li.menu-item
+                a(href="/about/", target="_blank") About
         span Made for the modern web by <a href="http://kunruchcreations.com/">KunRuch Creations</a>.  Licensed under the <a href="#{github_base}blob/master/LICENSE.md" target="blank">MIT License</a>.  
   block scripts
