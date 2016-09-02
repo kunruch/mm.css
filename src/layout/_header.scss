@@ -8,8 +8,8 @@ $color-header-light-background: $color-body !default;
 $color-header-light-text: $color-text !default;
 
 .header, .header-light {
-    padding-top: $size-element-spacing-small;
-    padding-bottom: $size-element-spacing-small;
+    padding-top: $size-element-spacing;
+    padding-bottom: $size-element-spacing;
     z-index: 99;
     position: relative;
     text-align: center;
@@ -29,13 +29,13 @@ $color-header-light-text: $color-text !default;
 .header-left {
     position: absolute;
     left: $size-element-spacing;
-    top: $size-element-spacing-small;
+    top: $size-element-spacing;
 }
 
 .header-right {
     position: absolute;
     right: $size-element-spacing;
-    top: $size-element-spacing-small;
+    top: $size-element-spacing;
 }
 
 // Header elements styles
@@ -70,7 +70,6 @@ $color-header-light-text: $color-text !default;
 
 .header, .header-light {
     .menu {
-        font-size: 105%;
 
         li {            
 		    line-height: $size-site-header-line-height;

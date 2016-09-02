@@ -2,7 +2,7 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 $color-blue: #2196F3 !default; //material blue
-$color-outer-space: #2e353b !default;
+$color-outer-space: #171f26 !default;
 $color-alabaster: #fafafa !default;
 $color-concrete: #f2f2f2 !default;
 $color-alto: #bbb !default;
@@ -17,8 +17,8 @@ $color-primary: $color-blue !default;
 $color-primary-hover: darken($color-primary, 5) !default;
 
 //  Text colors
-$color-text:  lighten($color-outer-space, 10) !default;
-$color-headings: $color-outer-space !default;
+$color-text:  #444 !default;
+$color-headings: #333 !default;
 $color-text-light:  $color-alabaster !default;
 $color-text-muted:  $color-alto !default;
 
@@ -58,5 +58,5 @@ $line-height-body: 1.6 !default;
 
 $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
-$font-weight-medium: 500 !default;
+$font-weight-medium: 600 !default;
 $font-weight-light: 300 !default;
