@@ -1,14 +1,14 @@
-//icons inside buttons
-.button .icon {
+.icon {
     font-size: 120%;
     vertical-align: text-bottom;
 }
 
+//Icons inside buttons
 .button .icon + span {
     margin-left: 12px;
 }
 
-
+//Pure CSS Icons
 .css-icon-search {
     display: block;    
     position: relative;
