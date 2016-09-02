@@ -5,8 +5,7 @@ $color-sub-header-light-background: $color-body !default;
 $color-sub-header-light-text: $color-headings !default;
 
 .sub-header, .sub-header-light {
-    margin-bottom: $size-element-spacing-big;
-
+    
     h1:first-child, h2:first-child {
         margin-top: 0;
     }

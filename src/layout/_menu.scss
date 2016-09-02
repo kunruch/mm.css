@@ -21,11 +21,13 @@ $size-menu-padding: 12px;
 	border: 1px solid $color-default-border;
 	border-radius: $size-default-radius;
 	
-	//position at center of it's parent
+	//position at bottom-center of it's parent
 	top: 100%;
 	left: 50%;
 	margin: 0;
 	margin-left: -1 * ($size-menu-width + (2 * $size-menu-padding))/2 ;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
 
 	padding: 0 $size-menu-padding;
 	float: left;
@@ -67,6 +69,7 @@ $size-menu-padding: 12px;
 .menu li:hover > ul,
 .menu li.focus > ul {
 	visibility: visible;
+	opacity: 1;
 }
 
 // submenu arrow

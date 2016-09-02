@@ -4,15 +4,16 @@ code, kbd, tt, var, pre {
 }
 
 code, kbd, tt {
-	background: $color-gray;
+	background: $color-background-light;
+	border: 1px solid $color-default-border;
 	border-radius: $size-default-radius;
 	padding: 3px 8px;
 	white-space: nowrap;
 }
 
 pre {
-	background: transparent;
-	border: 2px solid $color-default-border;
+	background: $color-background-light;
+	border: 1px solid $color-default-border;
     line-height: 1.8;
 	color: darken($color-text, 20);
     padding: $size-element-spacing-small $size-element-spacing;
