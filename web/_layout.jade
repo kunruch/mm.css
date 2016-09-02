@@ -1,6 +1,8 @@
 doctype html
 block vars
 - var url_base = 'https://mmcss.kunruchcreations.com/'
+- var github_base = 'https://github.com/kunruch/mmcss/'
+- var twitter_url = 'https://twitter.com/kanishkkunal'
 html(lang='en-US')
   head
     meta(charset='UTF-8')
@@ -28,29 +30,31 @@ html(lang='en-US')
             nav(role="navigation")
               ul.menu
                 li.menu-item
-                  a(href="#") Learn
+                  a(href="#quickstart") Quickstart
                 li.menu-item
-                  a(href="#") Docs
+                  a(href="/docs") Docs
                 li.menu-item
-                  a(href="#") Examples
+                  a(href="/examples") Examples
                 li.menu-item
-                  a(href="#") Showcase                
+                  a(href="/showcase") Showcase                
                 li.menu-item.current-menu-item
-                  a(href="#") About
+                  a(href="#") Help
                   ul.sub-menu
                     li.menu-item
-                      a(href='#') Child Menu
+                      a(href="#{github_base}issues/new", target="_blank") Report an Issue
                     li.menu-item
-                      a(href='#') Child Menu
+                      a(href="#{github_base}issues", target="_blank") View all Issues
                     li.menu-item
-                      a(href='#') Child Menu
+                      a(href="#{twitter_url}", target="_blank") Connect on Twitter
                     li.menu-item
-                      a(href='#') Child Menu
+                      a(href='#') See all Releases
                       ul.sub-menu
                         li.menu-item
-                          a(href='#') Child Menu
+                          a(href="#{github_base}releases/latest", target="_blank") Latest Release
+                        li.menu-item
+                          a(href="#{github_base}releases", target="_blank") Release History
                     li.menu-item
-                      a(href='#') Child Menu
+                      a(href="#{github_base}blob/master/LICENSE.md", target="_blank") License Info
 
             div.header-right
               form.search-form.search-expandable(role='search', method='get', action='http://thememm.local/')
@@ -67,12 +71,8 @@ html(lang='en-US')
         nav
             ul.menu
               li.menu-item
-                a(href="#") Github
+                a(href="#{github_base}") Github
               li.menu-item
-                a(href="#") Twitter
-              li.menu-item
-                a(href="#") Contact                
-              li.menu-item
-                a(href="#") About
-        span Made for the modern web by <a href="http://kunruchcreations.com/">KunRuch Creations</a>.  Licensed under the <a href="https://github.com/kunruch/mmcss/blob/master/LICENSE" target="blank">MIT License</a>.  
+                a(href="#{twitter_url}", target="_blank") Twitter
+        span Made for the modern web by <a href="http://kunruchcreations.com/">KunRuch Creations</a>.  Licensed under the <a href="#{github_base}blob/master/LICENSE.md" target="blank">MIT License</a>.  
   block scripts

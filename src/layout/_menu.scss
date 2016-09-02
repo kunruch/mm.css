@@ -1,57 +1,99 @@
-.menu {
+$size-menu-width: 140px;
+$size-menu-padding: 12px;
 
+.menu {
 	li {
 		position: relative;
 		display: inline-block;
-		padding: 0 ($size-element-spacing / 2);
+		padding: 0 $size-menu-padding;
 		margin: 0;
 	}
 
 	a {
 		display: block;
+		border: none;
+	}
+}
+
+//submenu
+.menu	ul {
+	background: #fff;
+	border: 1px solid $color-default-border;
+	border-radius: $size-default-radius;
+	
+	//position at center of it's parent
+	top: 100%;
+	left: 50%;
+	margin: 0;
+	margin-left: -1 * ($size-menu-width + (2 * $size-menu-padding))/2 ;
+
+	padding: 0 $size-menu-padding;
+	float: left;
+	text-align: left;
+	position: absolute;
+	font-size: 90%;
+	visibility: hidden;
+	z-index: 99999;
+
+	//submenu's submenu
+	ul {		
+		font-size: 100%;
+		left: 100%;
+		top: -1px;
+		margin-left: 0;
+		border-left: 0;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
 	}
 
-	ul {
-		background: transparent;
-		margin: 0;
+	li {		
+		color: $color-text;
+		border-bottom: 1px solid $color-default-border;
+		text-align: center;
+		text-transform: none;
 		padding: 0;
-		float: left;
-		text-align: left;
-		position: absolute;
-		top: $size-site-header-line-height;
-		left: -999em;
-		z-index: 99999;
 
-		ul {
-			left: -999em;
-			top: 0;
-		}
-
-		li {
-			padding: 0 ($size-element-spacing / 2);				
-			text-transform: none;
-
-			&:hover > ul,
-			&.focus > ul {
-				left: 100%;
-			}
-		}
-
-		a {
-			min-width: 160px;
-		}
-
-		:hover > a,
-		.focus > a {
-		}
-
-		a:hover,
-		a.focus {
+		&:last-child {
+			border-bottom: 0;
 		}
 	}
 
-	li:hover > ul,
-	li.focus > ul {
-		left: 0;
+	a {
+		width: 140px;
 	}
+}
+
+// submenu expand
+.menu li:hover > ul,
+.menu li.focus > ul {
+	visibility: visible;
+}
+
+// submenu arrow
+.menu ul:after, .menu ul:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.menu ul:before {  
+	border-bottom-color: $color-default-border;
+	border-width: 12px;
+	left: 50%;
+	margin-left: -12px;
+}
+
+.menu ul:after {
+    border-bottom-color: #fff;
+    border-width: 10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.menu ul ul:before, .menu ul ul:after {
+	border: 0;
 }
