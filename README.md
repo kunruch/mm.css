@@ -1,12 +1,10 @@
-![alt MMCSS - Minimal Modern CSS Framework](https://raw.githubusercontent.com/kunruch/mmcss/master/web/assets/img/mmcss-featured.png "MMCSS - Minimal Modern CSS Framework")
+[![alt MMCSS - Minimal Modern CSS Framework](https://raw.githubusercontent.com/kunruch/mmcss/master/web/assets/img/mmcss-featured.png "MMCSS - Minimal Modern CSS Framework")](http://mmcss.kunruchcreations.com/)
 
 [![Build Status](https://travis-ci.org/kunruch/mmcss.svg?branch=master)](https://travis-ci.org/kunruch/mmcss)
 
 # MMCSS
 
-[Minimal Modern CSS Framework](http://mmcss.kunruchcreations.com/)
-
-MMCSS is built with minimalism in mind to help you build modern, fast and responsive websites. Just 4kb gzipped it has right amount of styles and components required to design a modern website. It imposes no dependency on JavaScript libraries.
+[MMCSS](http://mmcss.kunruchcreations.com/) is built with minimalism in mind to help you build modern, fast and responsive websites. Just 4kb gzipped it has right amount of styles and components required to design a modern website. It imposes no dependency on JavaScript libraries.
 
 Find links to tutorials and documentation below to get started quickly.
 
