@@ -297,7 +297,8 @@ h6
 
     clear: both;
 
-    margin-top: 0; 
+    margin-top: 0;
+    margin-bottom: 1em; 
 
     letter-spacing: -.01rem;
 
@@ -1466,7 +1467,7 @@ article .h6
     margin-left: auto;
 }
 
-.button .icon
+.icon
 {
     font-size: 120%;
 
@@ -1519,6 +1520,67 @@ article .h6
     transform: rotate(-45deg); 
 
     background: #444;
+}
+
+.thumbnail
+{
+    margin-bottom: 1.5rem; 
+
+    background-color: #171f26;
+}
+
+.thumbnail-medium
+{
+    width: 120px;
+    height: 120px;
+}
+
+.thumbnail-small
+{
+    width: 52px;
+    height: 52px;
+}
+
+.thumbnail-rounded
+{
+    border-radius: 100%;
+}
+
+.media-left
+{
+    position: relative;
+
+    display: block;
+}
+.media-left .thumbnail
+{
+    position: absolute;
+    top: 2px; 
+    left: 0;
+}
+.media-left .media-body
+{
+    position: relative;
+
+    padding-left: 1.5rem;
+}
+.media-left .thumbnail-small + .media-body
+{
+    margin-left: 52px;
+}
+.media-left .thumbnail-medium + .media-body
+{
+    margin-left: 120px;
+}
+
+[class*='thumbnail-'] .icon
+{
+    width: 40%;
+    height: 40%;
+    margin-top: 30%; 
+    margin-left: 30%;
+
+    color: #fafafa;
 }
 
 .search-box
