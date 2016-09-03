@@ -1,6 +1,6 @@
 {
   "name": "mmcss",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Minimal Modern CSS Framework.",
   "main": "dist/mm.css",
   "dependencies": {},
@@ -19,16 +19,16 @@
     "susy": "^2.2.12"
   },
   "keywords": [
-		"css",
-		"css3",
-		"front-end",
-		"framework",
-		"html",
-		"html5",
-		"responsive",
-		"mobile",
-		"scss"
-	],
+    "css",
+    "css3",
+    "front-end",
+    "framework",
+    "html",
+    "html5",
+    "responsive",
+    "mobile",
+    "scss"
+  ],
   "scripts": {
     "test": "gulp"
   },
