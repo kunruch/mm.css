@@ -18,6 +18,17 @@
     "run-sequence": "^1.2.2",
     "susy": "^2.2.12"
   },
+  "keywords": [
+		"css",
+		"css3",
+		"front-end",
+		"framework",
+		"html",
+		"html5",
+		"responsive",
+		"mobile",
+		"scss"
+	],
   "scripts": {
     "test": "gulp"
   },

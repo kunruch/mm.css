@@ -1,0 +1,8 @@
+public
+tasks
+web
+.publish
+.gitignore
+.npmignore
+.travis.yml
+.gulpfile.js
