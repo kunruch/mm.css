@@ -1,6 +1,7 @@
 [![alt MMCSS - Minimal Modern CSS Framework](https://raw.githubusercontent.com/kunruch/mmcss/master/web/assets/img/mmcss-featured.png "MMCSS - Minimal Modern CSS Framework")](https://mmcss.kunruchcreations.com/)
 
 [![Build Status](https://travis-ci.org/kunruch/mmcss.svg?branch=master)](https://travis-ci.org/kunruch/mmcss)
+[![npm version](https://badge.fury.io/js/mmcss.svg)](https://badge.fury.io/js/mmcss)
 
 # MMCSS
 
