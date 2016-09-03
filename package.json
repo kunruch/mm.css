@@ -21,6 +21,9 @@
   "scripts": {
     "test": "gulp"
   },
+  "engines": {
+    "node": ">=4.2.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kunruch/mmcss.git"
@@ -30,5 +33,5 @@
   "bugs": {
     "url": "https://github.com/kunruch/mmcss/issues"
   },
-  "homepage": "https://github.com/kunruch/mmcss#readme"
+  "homepage": "http://mmcss.kunruchcreations.com/"
 }
