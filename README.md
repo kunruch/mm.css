@@ -1,10 +1,10 @@
-[![alt MMCSS - Minimal Modern CSS Framework](https://raw.githubusercontent.com/kunruch/mmcss/master/web/assets/img/mmcss-featured.png "MMCSS - Minimal Modern CSS Framework")](http://mmcss.kunruchcreations.com/)
+[![alt MMCSS - Minimal Modern CSS Framework](https://raw.githubusercontent.com/kunruch/mmcss/master/web/assets/img/mmcss-featured.png "MMCSS - Minimal Modern CSS Framework")](https://mmcss.kunruchcreations.com/)
 
 [![Build Status](https://travis-ci.org/kunruch/mmcss.svg?branch=master)](https://travis-ci.org/kunruch/mmcss)
 
 # MMCSS
 
-[MMCSS](http://mmcss.kunruchcreations.com/) is built with minimalism in mind to help you build modern, fast and responsive websites. Just 4kb gzipped it has right amount of styles and components required to design a modern website. It imposes no dependency on JavaScript libraries.
+[MMCSS](https://mmcss.kunruchcreations.com/) is built with minimalism in mind to help you build modern, fast and responsive websites. Just 4kb gzipped it has right amount of styles and components required to design a modern website. It imposes no dependency on JavaScript libraries.
 
 Find links to tutorials and documentation below to get started quickly.
 
@@ -16,10 +16,10 @@ $ npm install mmcss
 
 ## Learn More
 
-- [Docs](http://mmcss.kunruchcreations.com/docs/)
-- [Guides](http://mmcss.kunruchcreations.com/guides/)
-- [Examples](http://mmcss.kunruchcreations.com/examples/)
-- [Showcase](http://mmcss.kunruchcreations.com/showcase/)
+- [Docs](https://mmcss.kunruchcreations.com/docs/)
+- [Guides](https://mmcss.kunruchcreations.com/guides/)
+- [Examples](https://mmcss.kunruchcreations.com/examples/)
+- [Showcase](https://mmcss.kunruchcreations.com/showcase/)
 
 ## Credits
 
