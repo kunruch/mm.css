@@ -16,14 +16,15 @@ html(lang='en-US')
     meta(property='og:image', content='#{url_base}img/mmcss.png')
     link(rel='canonical', href='#{url_base}#{path}')
     link(href='/mm.css', rel='stylesheet')
-    link(href='/icons.css', rel='stylesheet')
+    style
+      include ./partials/_icons.css
     block styles
     link(rel='icon', href='#{url_base}img/mmcss-favicon-32x32.png', sizes='32x32')
     link(rel='icon', href='#{url_base}img/mmcss-favicon-192x192.png', sizes='192x192')
     link(rel='apple-touch-icon-precomposed', href='#{url_base}img/mmcss-favicon-180x180.png')
     meta(name='msapplication-TileImage', content='#{url_base}img/mmcss-favicon-270x270.png')
   body#top
-    include partials/_icons.html
+    include partials/_icons.svg
     header.header
         .container
             .header-left
