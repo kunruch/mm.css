@@ -1,4 +1,5 @@
 var config  = require('./config.json');
+var package = require('./../package.json')
 var gulp    = require('gulp');
 var jade = require('gulp-jade');
 
@@ -7,7 +8,12 @@ var jade = require('gulp-jade');
  */
 gulp.task('html', function () {
     return gulp.src(config.html.SRC)
-        .pipe(jade({ pretty: true}))
+        .pipe(jade({ 
+                pretty: true,
+                data: { 
+                    package: package
+                }
+              }))
         .pipe(gulp.dest(config.html.DEST))
 });
 

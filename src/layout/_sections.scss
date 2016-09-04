@@ -20,7 +20,7 @@
     @include section(3 * $size-element-spacing);
     
     h1, h2 {
-        font-weight: $font-weight-light;        
+        font-weight: $font-weight-normal;        
         color: inherit;
         letter-spacing: 0;
         margin-top: $size-element-spacing;
