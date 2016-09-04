@@ -1,41 +1,41 @@
-$size-site-title: 1.5;
-$size-site-header-line-height: 42px;
+$size-site-title: 1.5 !default;
+$size-site-header-height: 72px !default;
 
-$color-header-default-background: $color-background-dark !default;
-$color-header-default-text: $color-text-light !default;
+$color-header-default-background: $color-body !default;
+$color-header-default-text: $color-text !default;
 
-$color-header-light-background: $color-body !default;
-$color-header-light-text: $color-text !default;
-
-.header, .header-light {
-    padding-top: $size-element-spacing;
-    padding-bottom: $size-element-spacing;
-    z-index: 99;
-    position: relative;
-    text-align: center;
-}
+$color-header-dark-background: $color-background-dark !default;
+$color-header-dark-text: $color-text-light !default;
 
 .header {
+    z-index: 99;
+    text-align: center;
+    position: relative;
+    line-height: $size-site-header-height;
+
     background-color: $color-header-default-background;
+    border-bottom: 1px solid $color-default-border;
     color: $color-header-default-text;
 }
 
-.header-light {
-    background-color: $color-header-light-background;
-    color: $color-header-light-text;
+// Header modifiers
+.header-dark {
+    background-color: $color-header-dark-background;
+    color: $color-header-dark-text;
+    border-bottom: 0;
 }
 
 // Header positioning
 .header-left {
     position: absolute;
     left: $size-element-spacing;
-    top: $size-element-spacing;
+    top: 0;
 }
 
 .header-right {
     position: absolute;
     right: $size-element-spacing;
-    top: $size-element-spacing;
+    top: 0;
 }
 
 // Header elements styles
@@ -49,7 +49,7 @@ $color-header-light-text: $color-text !default;
 
 .site-branding img {
     float: left;
-    height: $size-site-header-line-height;
+    height: $size-site-header-height;
     width: auto;
     padding-right: $size-element-spacing / 2;   
 }
@@ -58,7 +58,7 @@ $color-header-light-text: $color-text !default;
     display: inline-block;
     @include font-size($size-site-title);
     font-weight: $font-weight-normal;
-    line-height: $size-site-header-line-height;
+    line-height: $size-site-header-height;
     letter-spacing: 0.03em;
     color: inherit;
     margin: 0;
@@ -68,13 +68,9 @@ $color-header-light-text: $color-text !default;
     margin: 0;
 }
 
-.header, .header-light {
+.header {
     .menu {
         font-size: 105%;
-
-        li {            
-		    line-height: $size-site-header-line-height;
-        }
     }
 
     a {
@@ -103,9 +99,9 @@ $color-header-light-text: $color-text !default;
     }
 }
 
- .header {
-     input[type="search"] {
+.header-dark {
+    input[type="search"] {
         border-color: transparent;
         background-color: darken($color-header-default-background, 4);
     }     
- }
+}
