@@ -22,6 +22,11 @@
         "INCLUDE_PATHS": ["./node_modules/"],
         "DIST": "./dist/"
     },
+    
+    "sitemap" : {        
+        "SRC": "public/**/*.html",
+        "DEST": "./public/"
+    },
 
     "deploy": {
         "SRC": "./public/**/*"

@@ -30,6 +30,7 @@ gulp.task('deploy', function() {
 	return runSequence(
 		'clean',
 		['assets', 'css-min', 'html-min', 'scripts'],
+		'sitemap',
 		'gh-pages-deploy'
 	);
 });
