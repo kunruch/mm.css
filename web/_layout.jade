@@ -58,7 +58,8 @@ html(lang='en-US')
                           a(href="#{github_base}releases", target="_blank") Release History
                     li.menu-item
                       a(href="#{github_base}blob/master/LICENSE.md", target="_blank") License Info
-
+                    li.menu-item
+                      a(href="/about/") About  
             div.header-right
               a.button.button-text(href="#{github_base}", target="_blank")
                | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
@@ -70,15 +71,14 @@ html(lang='en-US')
     block content
     footer.footer
       .container-content.section-large.text-center
-        nav
-            ul.menu
-              li.menu-item
-                a(href="#{github_base}", target="_blank") Github
-              li.menu-item
-                a(href="#{twitter_url}", target="_blank") Twitter
-              li.menu-item
-                a(href="/about/") About  
         p Made for the modern web by <a href="http://kunruchcreations.com/">KunRuch Creations</a>.
           br 
           | Licensed under the <a href="#{github_base}blob/master/LICENSE.md" target="blank">MIT License</a>.
+        div          
+            a.button.button-text(href="#{github_base}", target="_blank")
+              | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+              span GitHub
+            a.button.button-text(href="#{twitter_url}", target="_blank")
+              | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+              span Twitter
   block scripts
