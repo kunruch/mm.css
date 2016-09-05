@@ -1008,7 +1008,7 @@ nav ul ul
 .section-hero h1,
 .section-hero h2
 {
-    font-weight: 300;
+    font-weight: 400;
 
     margin-top: 1.5rem;
     margin-bottom: 1.5rem; 
@@ -1033,7 +1033,7 @@ nav ul ul
     text-align: center;
 
     color: #444; 
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f2f2f2;
     background-color: #fff;
 }
 
@@ -1361,7 +1361,9 @@ article .h6
 
 .footer
 {
-    margin-top: 3.5rem; 
+    font-size: 95%; 
+
+    margin-top: 3.5rem;
 
     color: #bbb;
     border-top: 1px solid #ddd;

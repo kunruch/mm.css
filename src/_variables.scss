@@ -26,7 +26,8 @@ $color-text-light:  $color-gray-light !default;
 $color-text-muted:  $color-gray-dark !default;
 
 // Border colors and box shadow
-$color-default-border: $color-gray !default;
+$color-default-border: $color-gray-medium-light !default;
+$color-dark-border: $color-gray !default;
 $color-default-box-shadow: rgba(0,0,0,0.1) !default;
 
 // Sizes

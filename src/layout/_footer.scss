@@ -8,6 +8,7 @@ $color-footer-dark-background: $color-background-dark !default;
     border-top: 1px solid $color-default-border;
     color: $color-text-muted;
     margin-top: $size-element-spacing-big;
+    font-size: 95%;
 
     a {
         color: darken($color-text-muted, 15);
