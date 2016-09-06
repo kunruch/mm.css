@@ -533,7 +533,7 @@ blockquote
     margin-left: 0;
     padding: 1.5rem; 
 
-    border: 1px solid #ddd;
+    border: 1px solid #f2f2f2;
     background: #fafafa;
 }
 blockquote *:last-child
@@ -562,7 +562,7 @@ td
 
     text-align: left; 
 
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f2f2f2;
 }
 th:first-child,
 td:first-child
@@ -593,7 +593,7 @@ tt
 
     white-space: nowrap; 
 
-    border: 1px solid #ddd;
+    border: 1px solid #f2f2f2;
     border-radius: 3px;
     background: #fafafa;
 }
@@ -605,7 +605,7 @@ pre
     padding: 1rem 1.5rem; 
 
     color: #111;
-    border: 1px solid #ddd;
+    border: 1px solid #f2f2f2;
     background: #fafafa;
 }
 pre > code
@@ -670,7 +670,7 @@ input[type='reset'].button-ghost,
 input[type='submit'].button-ghost
 {
     color: #333; 
-    border-color: #ddd;
+    border-color: #f2f2f2;
     background-color: transparent;
 }
 .button.button-ghost:hover,
@@ -1198,7 +1198,7 @@ nav ul ul
     text-align: left;
 
     opacity: 0;
-    border: 1px solid #ddd;
+    border: 1px solid #f2f2f2;
     border-radius: 3px;
     background: #fff;
 }
@@ -1223,7 +1223,7 @@ nav ul ul
     text-transform: none;
 
     color: #444;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f2f2f2;
 }
 .menu ul li:last-child
 {
@@ -1264,7 +1264,7 @@ nav ul ul
     margin-left: -12px; 
 
     border-width: 12px;
-    border-bottom-color: #ddd;
+    border-bottom-color: #f2f2f2;
 }
 
 .menu ul:after
@@ -1366,7 +1366,7 @@ article .h6
     margin-top: 3.5rem;
 
     color: #bbb;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #f2f2f2;
     background-color: #fff;
 }
 .footer a
