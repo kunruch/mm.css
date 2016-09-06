@@ -10,7 +10,7 @@ gulp.task('html', function () {
     return gulp.src(config.html.SRC)
         .pipe(jade({ 
                 pretty: true,
-                data: { 
+                locals: { 
                     package: package
                 }
               }))
