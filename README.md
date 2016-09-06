@@ -24,6 +24,10 @@ $ npm install mmcss
 
 ## Credits
 
+- [Font Awesome](http://fontawesome.io/) and [IcoMoon](https://icomoon.io/) - for SVG icons used on site.
+- [GraphicFlip](https://graphicflip.com/) - for providing MMCSS logo
+
+## Inspirations
 - [Skeleton](http://getskeleton.com/) - Skeleton is a simple, responsive boilerplate to kickstart any responsive project by [Dave Gamache](https://twitter.com/dhg).
 - [Milligram](http://milligram.github.io) - Milligram is a minimalist CSS framework by [CJ Patoilo](http://cjpatoilo.com).
 
