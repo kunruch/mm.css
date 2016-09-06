@@ -1,6 +1,6 @@
 {
   "name": "mmcss",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A Minimal Modern CSS Framework.",
   "main": "dist/mm.css",
   "dependencies": {},
