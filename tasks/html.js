@@ -10,7 +10,7 @@ gulp.task('html', function () {
     return gulp.src(config.html.SRC)
         .pipe(jade({ 
                 pretty: true,
-                locals: { 
+                data: { 
                     package: package
                 }
               }))
@@ -23,6 +23,11 @@ gulp.task('html', function () {
  */
 gulp.task('html-min', function () {
     return gulp.src(config.html.SRC)
-        .pipe(jade({ pretty: false}))
+        .pipe(jade({ 
+                pretty: false,
+                data: { 
+                    package: package
+                }
+              }))
         .pipe(gulp.dest(config.html.DEST))
 });
