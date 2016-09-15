@@ -1,4 +1,7 @@
 url: "https://mmcss.kunruchcreations.com/"
+html: "web"
+assets: "web/assets"
+styles: "src"
 minify: false
 log: info
 
