@@ -1,0 +1,3 @@
+#Overrides when running on dev server
+site:
+  url: "http://localhost:3000/"
