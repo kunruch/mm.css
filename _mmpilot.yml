@@ -1,10 +1,16 @@
-url: "https://mmcss.kunruchcreations.com/"
-html: "web"
-assets: "web/assets"
-styles: "src"
+## data for building project
+html:
+  src: "web"
+styles:
+  src: "src"
+assets:
+  src: "web/assets"
+
 minify: false
 log: info
 
-## additional data for site
-github: "https://github.com/kunruch/mmcss/"
-twitter: "https://twitter.com/kanishkkunal"
+## additional data for site available as site.{key} in pug templates
+site:
+  url: "https://mmcss.kunruchcreations.com/"
+  github: "https://github.com/kunruch/mmcss/"
+  twitter: "https://twitter.com/kanishkkunal"

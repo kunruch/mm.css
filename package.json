@@ -5,9 +5,10 @@
   "main": "dist/mm.css",
   "dependencies": {
     "susy": "^2.2.12"
-	},
+  },
   "devDependencies": {
-    "npm-run-all": "^3.1.0"
+    "npm-run-all": "^3.1.0",
+    "shx": "^0.1.4"
   },
   "keywords": [
     "css",
@@ -21,11 +22,13 @@
     "scss"
   ],
   "scripts": {
-    "build": "mm build",
+    "build": "mm clean && mm build",
     "watch": "mm watch",
     "serve": "mm serve",
+    "dev": "npm-run-all build --parallel watch serve",
     "deploy": "npm run build && mm deploy",
-    "dev": "npm-run-all build --parallel watch serve"
+    "dist": "shx cp public/**/*.css dist && git add dist/*.css && git commit -m \"Updating dist\" && git push -u origin master",
+    "travis": "npm run deploy && npm run dist"
   },
   "engines": {
     "node": ">=4.2.2"
