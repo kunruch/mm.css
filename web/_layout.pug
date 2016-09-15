@@ -9,20 +9,20 @@ html(lang='en-US')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title #{title} - MMCSS
-    meta(name='description', content='#{description}')
-    meta(property='og:title', content='#{title}')
+    meta(name='description', content=description)
+    meta(property='og:title', content=title)
     meta(property='og:type', content='website')
-    meta(property='og:url', content='#{url_base}#{path}')
-    meta(property='og:image', content='#{url_base}img/mmcss-featured.png')
-    link(rel='canonical', href='#{url_base}#{path}')
+    meta(property='og:url', content=site.url + path)
+    meta(property='og:image', content=site.url + 'img/mmcss-featured.png')
+    link(rel='canonical', href=site.url + path)
     link(href='/mm.css', rel='stylesheet')
     style
       include ./partials/_icons.css
     block styles
-    link(rel='icon', href='#{url_base}img/mmcss-favicon-32x32.png', sizes='32x32')
-    link(rel='icon', href='#{url_base}img/mmcss-favicon-192x192.png', sizes='192x192')
-    link(rel='apple-touch-icon-precomposed', href='#{url_base}img/mmcss-favicon-180x180.png')
-    meta(name='msapplication-TileImage', content='#{url_base}img/mmcss-favicon-270x270.png')
+    link(rel='icon', href=site.url + 'img/mmcss-favicon-32x32.png', sizes='32x32')
+    link(rel='icon', href=site.url + 'img/mmcss-favicon-192x192.png', sizes='192x192')
+    link(rel='apple-touch-icon-precomposed', href=site.url + 'img/mmcss-favicon-180x180.png')
+    meta(name='msapplication-TileImage', content=site.url + 'img/mmcss-favicon-270x270.png')
   body#top
     include partials/_icons.svg
     header.header
@@ -39,30 +39,30 @@ html(lang='en-US')
                 li.menu-item
                   a(href="/examples/") Examples
                 li.menu-item
-                  a(href="/showcase/") Showcase                
+                  a(href="/showcase/") Showcase
                 li.menu-item
                   a(href="#") Help
                   ul.sub-menu
                     li.menu-item
-                      a(href="#{github_base}issues/new", target="_blank") Report an Issue
+                      a(href=site.github + "issues/new", target="_blank") Report an Issue
                     li.menu-item
-                      a(href="#{github_base}issues", target="_blank") View all Issues
+                      a(href=site.github + "issues", target="_blank") View all Issues
                     li.menu-item
                       a(href='#') See all Releases
                       ul.sub-menu
                         li.menu-item
-                          a(href="#{github_base}releases/latest", target="_blank") Latest Release
+                          a(href=site.github + "releases/latest", target="_blank") Latest Release
                         li.menu-item
-                          a(href="#{github_base}releases", target="_blank") Release History
+                          a(href=site.github + "releases", target="_blank") Release History
                     li.menu-item
-                      a(href="#{github_base}blob/master/LICENSE.md", target="_blank") License Info
+                      a(href=site.github + "blob/master/LICENSE.md", target="_blank") License Info
                     li.menu-item
-                      a(href="/about/") About  
+                      a(href="/about/") About
             div.header-right
-              a.button.button-text(href="#{github_base}", target="_blank")
+              a.button.button-text(href=site.github, target="_blank")
                | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
                span GitHub
-              a.button.button-text(href="#{twitter_url}", target="_blank")
+              a.button.button-text(href=site.twitter target="_blank")
                | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
                span Twitter
 
@@ -70,13 +70,13 @@ html(lang='en-US')
     footer.footer
       .container-content.section-large.text-center
         p Made for the modern web by <a href="http://kunruchcreations.com/">KunRuch Creations</a>.
-          br 
+          br
           | Licensed under the <a href="#{github_base}blob/master/LICENSE.md" target="blank">MIT License</a>.
-        div          
-            a.button.button-text(href="#{github_base}", target="_blank")
+        div
+            a.button.button-text(href=site.github, target="_blank")
               | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
               span GitHub
-            a.button.button-text(href="#{twitter_url}", target="_blank")
+            a.button.button-text(href=site.twitter, target="_blank")
               | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
               span Twitter
   block scripts

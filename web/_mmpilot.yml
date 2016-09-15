@@ -1,4 +1,5 @@
-url: "https://mmpilot.kunruchcreations.com/"
+url: "https://mmcss.kunruchcreations.com/"
+minify: false
 log: info
 
 ## additional data for site

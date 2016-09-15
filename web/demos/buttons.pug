@@ -1,0 +1,57 @@
+extends ./../_layout.pug
+
+block vars
+    - var title = 'Buttons Demo'
+    - var description = 'Buttons Demo for MMCSS - Minimal Modern CSS Framework'
+    - var path = 'demo/buttons.html'
+
+block content
+    div.section.container-readable
+        h1 Buttons
+        div
+            strong Default Buttons
+            hr
+            p
+                // Default Button
+                a.button(href='#') Default Button
+                // Primary Button
+                a.button.button-primary(href='#') Primary Button
+                // Ghost Button
+                button.button-ghost Ghost Button
+                // Text Button
+                input.button.button-text(type='submit', value='Text Button')
+        div
+            strong Rounded Buttons
+            hr
+            p
+                // Default Button
+                a.button.button-rounded(href='#') Rounded Button
+                // Primary Button Rounded
+                button.button-ghost.button-rounded.button-primary Rounded Primary Button
+                // Ghost Button
+                button.button-ghost.button-rounded Rounded Ghost Button
+        div
+            strong Buttons with Icons
+            hr
+            p
+                a.button(href="#", target="_blank")
+                    | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+                    span Twitter
+                a.button.button-primary(href="#", target="_blank")
+                    | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+                    span Twitter
+                a.button.button-ghost(href="#", target="_blank")
+                    | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+                    span Twitter
+                a.button.button-text(href="#", target="_blank")
+                    | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+                    span GitHub
+        p
+            a.button(href="#", target="_blank")
+                | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+            a.button.button-primary(href="#" target="_blank")
+                | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+            a.button.button-ghost(href="#", target="_blank")
+                | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+            a.button.button-text(href="#", target="_blank")
+                | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>

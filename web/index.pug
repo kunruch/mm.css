@@ -1,4 +1,4 @@
-extends ./_layout.jade
+extends ./_layout.pug
 
 block vars
   - var title = 'Minimal Modern CSS Framework'
@@ -10,7 +10,7 @@ block content
         .container-content
             include partials/_mmcss.svg
             h2 A Minimal Modern CSS Framework
-            p.text-center.text-muted latest release #{package.version} - #{package.license} License
+            p.text-center.text-muted latest release #{site.version} - #{site.license} License
             .text-center
                 a.button.button-primary(href="#quickstart") Quickstart
     .section-large.section-highlight
@@ -38,7 +38,7 @@ block content
                             <svg class="icon icon-github"><use xlink:href="#icon-tablet"></use></svg>
                         .media-body
                             h4.h5 Mobile Friendly
-                            p MMCSS is mobile friendly CSS Framework. Build responsive websites for all screens with ease. 
+                            p MMCSS is mobile friendly CSS Framework. Build responsive websites for all screens with ease.
 
                 .one-third.section
                     .media.media-left
@@ -56,7 +56,7 @@ block content
                             h4.h5 WordPress Compatible
                             p MMCSS is 100% compatible with WordPress. No need of writing nav-walkers or other workarounds.
 
-                
+
                 .one-third.section
                     .media.media-left
                         .thumbnail.thumbnail-small.thumbnail-rounded(style="background-color:#2ab9b3;")
