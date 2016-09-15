@@ -5,12 +5,12 @@ language: node_js
 node_js:
 - '4'
 before_script:
-- npm install -g gulp
+- npm install
 - git remote set-url origin "https://${GH_TOKEN}@github.com/kunruch/mmcss.git"
 - git config --global user.email "kanishk.kunal@hotmail.com"
 - git config --global user.name "Travis-CI"
 script:
-- gulp deploy
+- npm run deploy
 env:
   global:
     secure: XbI/uuXav1Y4vGAPgp0O/dfKE44umw6Nl73J0vzwKKM9zPXEqV8t3gJAmYrd1reGB5iYMRSOmK9D2HOYHu9m4teuaZ5q3H5ChANT6MXTvEky9+yHmHpOOmwLJa0zOLvot3KNiaOxhgN8zId38aajvrJvlOcMoJq6ooaSA7SbFTHybyOOzIel1LVYe0jQ/51UL1vINGPpl8uhPgcIPOU35/Bf0bH79j8xCjqGAysfnlk0K/e+WNkKSABh+kglCL1NhxkjVtwGJD0hX69qPib4IklslggWVCT9UdUutpYKwifo6e+vh48eWlVvn163h1oO4izPaok5wQchksD8TESLpyVmIvYTwvUZZsn7GBWTRqssJPGDUBA0io/SdJjVQ7mSqxnNXfNE8StMCiYwFoyiNbFC8x0SJuEh7Yw6OcOcpFvx9cOWvPEq6tAE3VDry5bt5Clzd/ryRoKi/v+vB2uHSmhh5UPR0Jbrz1Wo0W8HU40K/TTJMw/RxD6IZ2RO2MhAgyZlbzoJCMHSWxleNZt1yQENXTsgmRIgl4o7haWqZTB98/5Jd8h8C5BEWrAlfHVzoMb/oeSSV1+m1x3z7nG17zDgSgBjGcIRXR8rQNsW0Z8hI9YbSFIIF4E1SMd8URTkwG1IgS0l+PLz2sz77nohbpC+0LR+OR8+edMoCbahVe4=
