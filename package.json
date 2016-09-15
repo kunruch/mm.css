@@ -27,8 +27,7 @@
     "serve": "mm serve",
     "dev": "npm-run-all build --parallel watch serve",
     "deploy": "npm run build && mm deploy",
-    "dist": "shx cp public/**/*.css dist && git add dist/*.css && git commit -m \"Updating dist\" && git push -u origin master",
-    "travis": "npm run deploy && npm run dist"
+    "dist": "shx cp public/**/*.css dist && git add dist/*.css && git commit -m \"Updating dist\" && git push -u origin master"
   },
   "engines": {
     "node": ">=4.2.2"
