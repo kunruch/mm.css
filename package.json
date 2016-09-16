@@ -4,7 +4,6 @@
   "description": "A Minimal Modern CSS Framework.",
   "main": "dist/mm.css",
   "dependencies": {
-    "susy": "^2.2.12"
   },
   "devDependencies": {
     "npm-run-all": "^3.1.0",
