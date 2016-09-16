@@ -8,11 +8,6 @@ $color-header-dark-background: $color-background-dark !default;
 $color-header-dark-text: $color-text-light !default;
 
 .header {
-    z-index: 99;
-    text-align: center;
-    position: relative;
-    line-height: $size-site-header-height;
-
     background-color: $color-header-default-background;
     border-bottom: 1px solid $color-default-border;
     color: $color-header-default-text;
@@ -22,7 +17,44 @@ $color-header-dark-text: $color-text-light !default;
 .header-dark {
     background-color: $color-header-dark-background;
     color: $color-header-dark-text;
-    border-bottom: 0;
+}
+
+//Common Styles
+.header, .header-dark {
+
+    z-index: 99;
+    text-align: center;
+    position: relative;
+    line-height: $size-site-header-height;
+
+    .menu {
+        font-size: 105%;
+    }
+
+    a {
+        color: inherit;
+        opacity: 0.8;
+    }
+
+    a:hover, .current-menu-item > a {
+        opacity: 1;
+    }
+
+    .search-form {
+        margin: 0;
+
+        input, .search-box {
+            margin: 0;
+        }
+
+        input[type="submit"] {
+            display: none;
+        }
+
+        input[type="search"] {
+            font-style: italic;
+        }
+    }
 }
 
 // Header positioning
@@ -51,7 +83,7 @@ $color-header-dark-text: $color-text-light !default;
     float: left;
     height: $size-site-header-height;
     width: auto;
-    padding-right: $size-element-spacing / 2;   
+    padding-right: $size-element-spacing / 2;
 }
 
 .site-branding .title {
@@ -68,40 +100,9 @@ $color-header-dark-text: $color-text-light !default;
     margin: 0;
 }
 
-.header {
-    .menu {
-        font-size: 105%;
-    }
-
-    a {
-        color: inherit;
-        opacity: 0.8;
-    }
-
-    a:hover, .current-menu-item > a {
-        opacity: 1;
-    }
-
-    .search-form {
-        margin: 0;
-
-        input, .search-box {
-            margin: 0;
-        }
-        
-        input[type="submit"] {
-            display: none;
-        }
-
-        input[type="search"] {            
-            font-style: italic;
-        }
-    }
-}
-
 .header-dark {
     input[type="search"] {
         border-color: transparent;
         background-color: darken($color-header-default-background, 4);
-    }     
+    }
 }

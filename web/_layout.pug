@@ -25,7 +25,7 @@ html(lang='en-US')
     meta(name='msapplication-TileImage', content=site.url + 'img/mmcss-favicon-270x270.png')
   body#top
     include partials/_icons.svg
-    header.header.header-dark
+    header.header
         .container
             .header-left
               a(href='/').site-branding
@@ -67,7 +67,7 @@ html(lang='en-US')
                span Twitter
 
     block content
-    footer.footer
+    footer.footer-dark
       .container-content.section-large.text-center
         include partials/_mmcss.svg
         p Made for the modern web by <a href="http://kunruchcreations.com/">KunRuch Creations</a>.
