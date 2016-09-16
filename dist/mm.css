@@ -663,47 +663,57 @@ nav ul ul {
 
 .grid {
   max-width: 100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-wrap {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.grid:after {
-  content: " ";
-  display: block;
-  clear: both;
+.one-half, .one-third, .one-fourth {
+  float: none;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .one-half {
-    width: 44.44444%;
     float: left;
-    margin-right: 11.11111%;
+    width: 0.5;
+    padding-right: 1.5rem;
   }
   .one-half:nth-child(2n+0) {
     float: right;
-    margin-right: 0;
+    padding-right: 0;
   }
   .one-third {
-    width: 28.57143%;
     float: left;
-    margin-right: 7.14286%;
+    width: 0.33333;
+    padding-right: 1.5rem;
   }
   .one-third:nth-child(3n+0) {
     float: right;
-    margin-right: 0;
+    padding-right: 0;
   }
   .one-fourth {
-    width: 21.05263%;
     float: left;
-    margin-right: 5.26316%;
+    width: 0.25;
+    padding-right: 1.5rem;
   }
   .one-fourth:nth-child(4n+0) {
     float: right;
-    margin-right: 0;
+    padding-right: 0;
   }
 }
 
@@ -739,42 +749,53 @@ nav ul ul {
 .container {
   max-width: 100%;
   width: 100%;
-  margin: 0 auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .container-wide {
   max-width: 1600px;
   width: 100%;
-  margin: 0 auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
+}
+
+.container-wide:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .container-content {
   max-width: 1180px;
   width: 100%;
-  margin: 0 auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
+}
+
+.container-content:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .container-readable {
   max-width: 760px;
   width: 100%;
-  margin: 0 auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
 }
 
-.container:after,
-.container-wide:after,
-.container-content:after,
 .container-readable:after {
   content: "";
   display: table;
