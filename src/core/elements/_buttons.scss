@@ -9,7 +9,7 @@ input[type='submit'] {
 	box-sizing: border-box;
 	color: $color-text-light;
 	cursor: pointer;
-	display: inline-block;	
+	display: inline-block;
 	font-weight: $font-weight-normal;
 	line-height: 2.5;
 	padding: 0 $size-element-spacing;
@@ -28,7 +28,7 @@ input[type='submit'] {
 	&.button-ghost {
 		background-color: transparent;
 		border-color: $color-default-border;
-		color: $color-headings;
+		color: $color-text;
 
 		&:hover,
 		&:focus {
@@ -42,14 +42,14 @@ input[type='submit'] {
 		color: $color-text-light;
 
 		&:hover,
-		&:focus {			
+		&:focus {
 			background-color: $color-primary-hover;
 			border-color: $color-primary-hover;
 		}
 	}
-	
-	&.button-rounded {		
-		border-radius: 3rem;		
+
+	&.button-rounded {
+		border-radius: 3rem;
 		padding: 0 (1.5*$size-element-spacing);
 	}
 

@@ -1,3 +1,12 @@
+.highlight {
+    background-color: $color-background-light;
+}
+
+.highlight-dark {
+    background-color: $color-background-dark;
+		color: $color-text-light;
+}
+
 // Floats
 .float-right {
 	float: right;

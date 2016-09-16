@@ -12,22 +12,18 @@
     @include section(2 * $size-element-spacing);
 }
 
-.section-large {    
+.section-large {
     @include section(3 * $size-element-spacing);
 }
 
-.section-hero {    
+.section-hero {
     @include section(3 * $size-element-spacing);
-    
+
     h1, h2 {
-        font-weight: $font-weight-normal;        
+        font-weight: $font-weight-normal;
         color: inherit;
         letter-spacing: 0;
         margin-top: $size-element-spacing;
         margin-bottom: $size-element-spacing;
     }
-}
-
-.section-highlight {
-    background-color: $color-background-light;
 }

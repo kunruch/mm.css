@@ -1,9 +1,15 @@
-code, kbd, tt, var, pre {
+code,
+kbd,
+pre,
+tt,
+var {
 	font-family: $font-pre;
 	font-size: 80%;
 }
 
-code, kbd, tt {
+code,
+kbd,
+tt {
 	background: $color-background-light;
 	border: 1px solid $color-default-border;
 	border-radius: $size-default-radius;
@@ -13,15 +19,15 @@ code, kbd, tt {
 
 pre {
 	background: $color-background-light;
+	font-size: 100%;
 	border: 1px solid $color-default-border;
-    line-height: 1.8;
+	line-height: 1.8;
 	color: darken($color-text, 20);
-    padding: $size-element-spacing-small $size-element-spacing;
+	padding: $size-element-spacing-small $size-element-spacing;
 
 	& > code {
 		background: transparent;
-        font-size: inherit;
-        padding: 0;
+		padding: 0;
 		border: 0;
 		border-radius: 0;
 		display: block;

@@ -6,7 +6,7 @@
     margin-bottom:  $size-element-spacing-small;
 
     a {
-        color: $color-headings;
+        color: $color-text;
 
         &:hover {
             color: $color-primary;
@@ -15,7 +15,7 @@
     }
 }
 
-.entry-meta, .entry-footer {    
+.entry-meta, .entry-footer {
 	@include font-size($size-default-text);
     color: lighten($color-text, 40);
 
