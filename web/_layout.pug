@@ -30,8 +30,10 @@ html(lang='en-US')
             .header-left
               a(href='/').site-branding
                 h1.title MMCSS
+            .header-right.hidden-desktop
+              button#menu-toggle.button-ghost Menu
             nav(role="navigation")
-              ul.menu
+              ul#menu.menu.hidden-mobile
                 li.menu-item
                   a(href="/docs/") Docs
                 li.menu-item
@@ -58,7 +60,7 @@ html(lang='en-US')
                       a(href=site.github + "blob/master/LICENSE.md", target="_blank") License Info
                     li.menu-item
                       a(href="/about/") About
-            div.header-right
+            div.header-right.hidden-mobile
               a.button.button-text(href=site.github, target="_blank")
                | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
                span GitHub
@@ -80,3 +82,5 @@ html(lang='en-US')
               | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
               span Twitter
   block scripts
+    script
+      include ./../scripts/mm.js

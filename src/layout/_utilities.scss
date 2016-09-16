@@ -1,3 +1,4 @@
+// Highlight any element with background colors
 .highlight {
     background-color: $color-background-light;
 }
@@ -53,4 +54,17 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+//Responsive visiblity helpers
+@media (min-width: $size-small-screen) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: $size-small-screen) {
+  .hidden-mobile {
+    display: none;
+  }
 }

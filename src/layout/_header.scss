@@ -11,6 +11,7 @@ $color-header-dark-text: $color-text-light !default;
     background-color: $color-header-default-background;
     border-bottom: 1px solid $color-default-border;
     color: $color-header-default-text;
+    height: $size-site-header-height;
 }
 
 // Header modifiers
