@@ -4,20 +4,11 @@ $color-sub-header-default-text: $color-headings !default;
 $color-sub-header-dark-background: $color-background-dark !default;
 $color-sub-header-dark-text: $color-text-light !default;
 
-.sub-header {    
+.sub-header {
     background-color: $color-sub-header-default-background;
     color: $color-sub-header-default-text;
-
-    h1:first-child, h2:first-child {
-        margin-top: 0;
-    }
-
-    h1:last-child, h2:last-child {
-        margin-bottom: 0;
-    }
 }
 
-// Sub header modifiers
 .sub-header-dark {
     background-color: $color-sub-header-dark-background;
     color: $color-sub-header-dark-text;

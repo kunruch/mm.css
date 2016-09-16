@@ -25,7 +25,7 @@ html(lang='en-US')
     meta(name='msapplication-TileImage', content=site.url + 'img/mmcss-favicon-270x270.png')
   body#top
     include partials/_icons.svg
-    header.header
+    header.header.header-dark
         .container
             .header-left
               a(href='/').site-branding
@@ -48,7 +48,7 @@ html(lang='en-US')
                     li.menu-item
                       a(href=site.github + "issues", target="_blank") View all Issues
                     li.menu-item
-                      a(href='#') All Releases &gt;
+                      a(href='#') See All Releases
                       ul.sub-menu
                         li.menu-item
                           a(href=site.github + "releases/latest", target="_blank") Latest Release
@@ -69,6 +69,7 @@ html(lang='en-US')
     block content
     footer.footer
       .container-content.section-large.text-center
+        include partials/_mmcss.svg
         p Made for the modern web by <a href="http://kunruchcreations.com/">KunRuch Creations</a>.
           br
           | Licensed under the <a href="#{github_base}blob/master/LICENSE.md" target="blank">MIT License</a>.
