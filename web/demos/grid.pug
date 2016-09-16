@@ -5,6 +5,18 @@ block vars
   - var description = 'Grid Demo for MMCSS - Minimal Modern CSS Framework'
   - var path = 'demo/grid.html'
 
+block styles
+  style.
+    .grid > div {
+      background-color: #eee;
+      border-radius: 3px;
+      margin-bottom: 24px;
+      text-align: center;
+      font-size: 75%;
+      font-weight: 500;
+      line-height: 3;
+    }
+
 block content
     article.container-readable
         h1 Grid
@@ -13,7 +25,7 @@ block content
           div.one-half HALF
           div.one-half HALF
           div.one-half HALF
-        
+
         div.grid.section
           div.one-third ONE-THIRD
           div.one-third ONE-THIRD
@@ -21,7 +33,7 @@ block content
           div.one-third ONE-THIRD
           div.one-third ONE-THIRD
           div.one-third ONE-THIRD
-        
+
         div.grid.section
           div.one-fourth ONE-FOURTH
           div.one-fourth ONE-FOURTH
@@ -31,4 +43,3 @@ block content
           div.one-fourth ONE-FOURTH
           div.one-fourth ONE-FOURTH
           div.one-fourth ONE-FOURTH
-        
