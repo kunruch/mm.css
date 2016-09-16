@@ -8,12 +8,13 @@ block vars
 block content
     div.section-hero.sub-header.text-center
         .container-content
+            include partials/_mmcss.svg
             h2 A Minimal Modern CSS Framework
-            p.text-center.text-muted Based on <a href="http://sass-lang.com/" target="_blank">Sass</a> and easy to extend - MIT License
+            p.text-center.text-muted Based on <a href="http://sass-lang.com/" target="_blank">Sass</a> - MIT License
             .text-center
-                div
-                  code(style="font-size:120%; padding: 8px 32px; display: inline-block; margin: 32px;") npm install mmcss --save
-                a.button.button-primary(href="#quickstart") Quickstart Guide
+                code(style="font-size:120%; padding: 5px 32px; display: inline-block; margin: 16px 16px 32px 0;") npm install --save mmcss
+                span or
+                a.button.button-primary(href="#quickstart", style="margin-left: 16px;") Quickstart Guide
     .section-large.highlight
         .container-content
             h3.text-center Why use MMCSS?
