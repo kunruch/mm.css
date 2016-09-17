@@ -8,16 +8,18 @@ block vars
 block content
     div.section-hero.sub-header.text-center
         .container-content
-            include partials/_mmcss.svg
-            h2 A Minimal Modern CSS Framework
-            p.text-center.text-muted Based on <a href="http://sass-lang.com/" target="_blank">Sass</a> - MIT License
+            .media
+              .thumbnail.aligncenter
+                include partials/_mmcss.svg
+              .media-body
+                h2 A Minimal Modern CSS Framework
+            p.text-center.text-muted Built with <a href="http://sass-lang.com/" target="_blank">Sass</a> - 4KB size - MIT License
             .text-center
-                code(style="font-size:120%; padding: 5px 32px; display: inline-block; margin: 16px 16px 32px 0;") npm install --save mmcss
+                code(style="font-size:100%; padding: 0 32px; display: inline-block; margin: 16px 16px 32px 0; line-height: 42px;") npm install --save mmcss
                 span or
                 a.button.button-primary(href="#quickstart", style="margin-left: 16px;") Quickstart Guide
-    .section
+    .section-medium.highlight
         .container-content
-            h3.text-center Why use MMCSS?
             .grid
                 .one-third.section
                     .media.media-left
@@ -32,7 +34,7 @@ block content
                             <svg class="icon icon-github"><use xlink:href="#icon-folder-o"></use></svg>
                         .media-body
                             h4.h5 Lightweight
-                            p Just 4kb gzipped. Right amount of styles and components to build a great looking website.
+                            p Just 4KB compressed size. Right amount of styles and components to build a great looking website.
 
                 .one-third.section
                     .media.media-left
