@@ -22,13 +22,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {	
+h6 {
 	clear: both;
 	font-weight: $font-weight-medium;
 	letter-spacing: -0.01rem;
 	line-height: 1.25;
-	margin-top: 0;
-	margin-bottom: 1em;
+	@include element-spacing(1);
+	margin-top: 1.5em; //headings also carry a top margin for better vertical spacing
 }
 
 h1, .h1 {
@@ -81,8 +81,4 @@ h6, .h6 {
 	h6, .h6 {
 		@include font-size(1.4 * $size-default-text);
 	}
-}
-
-.text-muted {
-	color: $color-text-muted;
 }

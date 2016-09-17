@@ -1,6 +1,6 @@
 @mixin section($padding) {
 	padding-top: $padding;
-    padding-bottom: $padding;
+  padding-bottom: $padding;
 }
 
 
@@ -26,4 +26,8 @@
         margin-top: $size-element-spacing;
         margin-bottom: $size-element-spacing;
     }
+}
+
+.section-header {
+	margin-top: 0;
 }

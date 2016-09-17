@@ -1,3 +1,9 @@
+@mixin element-spacing($scale: 1) {
+	// default margin (scale = 1) only specifies top margin for any element
+	// When scale > 1, extra margin is distributed to top and bottom margin.
+	margin: (((1 + $scale) / 2) * $size-element-spacing) 0 ((($scale - 1) / 2) * $size-element-spacing) 0;
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1, $unit: "rem") {
 	font-size: ($sizeValue * 16) * 1px;

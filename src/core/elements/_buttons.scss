@@ -16,6 +16,7 @@ input[type='submit'] {
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
+	@include element-spacing(1);
 
 	&:hover,
 	&:focus {

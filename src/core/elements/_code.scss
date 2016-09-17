@@ -24,6 +24,7 @@ pre {
 	line-height: 1.8;
 	color: darken($color-text, 20);
 	padding: $size-element-spacing-small $size-element-spacing;
+	@include element-spacing(1);
 
 	& > code {
 		background: transparent;

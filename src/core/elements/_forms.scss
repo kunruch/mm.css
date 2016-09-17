@@ -11,7 +11,7 @@ select {
 	background-color: transparent;
 	border: 1px solid $color-dark-border;
 	border-radius: $size-default-radius;
-	box-shadow: none;	
+	box-shadow: none;
 	font-weight: $font-weight-normal;
 	box-sizing: border-box;
 	padding: 8px 12px; // The .6rem vertically centers text on FF, ignored by Webkit
@@ -27,7 +27,11 @@ label,
 legend {
 	font-weight: $font-weight-bold;
 	display: block;
-	margin-bottom: $size-element-spacing-small / 2;
+	@include element-spacing(1);
+
+	& + * { //Anything after label (mostly input elements)
+		margin-top: 1em;
+	}
 }
 
 fieldset {

@@ -3,21 +3,22 @@ html {
 }
 
 *,
-*:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*:after,
+*:before {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
 }
-
 // Default body styles
 body {
 	background: $color-body;
 }
 
-blockquote, q {
+blockquote,
+q {
 	quotes: "" "";
 
-	&:before,
-	&:after {
+	&:after,
+	&:before {
 		content: "";
 	}
 }
@@ -26,34 +27,36 @@ hr {
 	background-color: $color-gray;
 	border: 0;
 	height: 1px;
-	margin-bottom: $size-element-spacing;
+	@include element-spacing(1);
 }
 
+fieldset,
 input,
-textarea,
 select,
-fieldset {
-	margin-bottom: $size-element-spacing;
+textarea {
+	@include element-spacing(1);
 }
 
-pre,
+address,
 blockquote,
 dl,
 figure,
-table,
-p,
 form,
-address {
-	margin-bottom: $size-element-spacing;
+p,
+pre,
+table {
+	@include element-spacing(1);
 }
 
-abbr, acronym {
+abbr,
+acronym {
 	border-bottom: 1px dotted;
 	cursor: help;
 }
 
-mark, ins {
-	background:  $color-gray-light;
+ins,
+mark {
+	background: $color-gray-light;
 	text-decoration: none;
 }
 

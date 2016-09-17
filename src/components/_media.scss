@@ -2,24 +2,17 @@ $size-thumbnail-small: 52px;
 $size-thumbnail-medium: 120px;
 $size-thumbnail: 148px;
 
-.media {
-
-}
-
 .thumbnail {
-    margin-bottom: $size-element-spacing;
     width: $size-thumbnail;
     height: $size-thumbnail;
 }
 
 .thumbnail-medium {
-  margin-bottom: $size-element-spacing;
   width: $size-thumbnail-medium;
   height: $size-thumbnail-medium;
 }
 
 .thumbnail-small {
-  margin-bottom: $size-element-spacing-small;
   width: $size-thumbnail-small;
   height: $size-thumbnail-small;
 }
@@ -28,14 +21,18 @@ $size-thumbnail: 148px;
   border-radius: 100%;
 }
 
+
 // Media display styles
+.media {
+  // displays media items vertically by default
+}
+
 .media-left {
   position: relative;
   display: block;
 
   [class*="thumbnail"] {
     position: absolute;
-    margin-bottom: 0;
     left: 0;
     top: 2px;
   }
@@ -67,7 +64,6 @@ $size-thumbnail: 148px;
 
   [class*="thumbnail"] {
     position: absolute;
-    margin-bottom: 0;
     right: 0;
     top: 2px;
   }
