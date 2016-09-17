@@ -6,7 +6,7 @@ styles:
 assets:
   src: "web/assets"
 
-minify: false
+minify: true
 log: info
 
 ## additional data for site available as site.{key} in pug templates
