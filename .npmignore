@@ -6,3 +6,5 @@ web
 .npmignore
 .travis.yml
 .gulpfile.js
+_mmpilot.yml
+_mmpilot-dev.yml
