@@ -20,13 +20,13 @@
     "scss"
   ],
   "scripts": {
-    "dev-build": "mm clean && mm build -c _mmpilot.yml,_mmpilot-dev.yml",
-    "dev-watch": "mm watch -c _mmpilot.yml,_mmpilot-dev.yml",
-    "clean": "mm clean",
-    "build": "mm build",
-    "serve": "mm serve",
+    "dev-build": "mmpilot clean && mmpilot build -c _mmpilot.yml,_mmpilot-dev.yml",
+    "dev-watch": "mmpilot watch -c _mmpilot.yml,_mmpilot-dev.yml",
+    "clean": "mmpilot clean",
+    "build": "mmpilot build",
+    "serve": "mmpilot serve",
     "dev": "npm-run-all dev-build --parallel dev-watch serve",
-    "deploy": "npm run clean && npm run build && mm deploy",
+    "deploy": "npm run clean && npm run build && mmpilot deploy",
     "dist": "npm run build && shx cp public/**/*.css dist && git add dist/*.css && git commit -m \"Updating dist\" && git push -u origin master",
     "dist-patch": "npm run dist && npm version patch -m \"Version %s\" && git push && git push --tags && npm publish"
   },
