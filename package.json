@@ -5,6 +5,7 @@
   "main": "dist/mm.css",
   "dependencies": {},
   "devDependencies": {
+    "mmpilot": "^0.1.1",
     "npm-run-all": "^3.1.0",
     "shx": "^0.1.4"
   },

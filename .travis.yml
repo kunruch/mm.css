@@ -6,6 +6,8 @@ node_js:
 - '4'
 before_script:
 - npm install -g mmpilot
+- mmpilot -V
+- mm -V
 - git remote set-url origin "https://${GH_TOKEN}@github.com/kunruch/mmcss.git"
 - git config --global user.email "kanishk.kunal@hotmail.com"
 - git config --global user.name "Travis-CI"
