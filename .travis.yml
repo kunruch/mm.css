@@ -1,3 +1,4 @@
+sudo: required
 branches:
   only:
   - master
@@ -5,10 +6,12 @@ language: node_js
 node_js:
 - 6
 before_script:
+- sudo ln -s "$(which nodejs)" /usr/bin/node
 - git remote set-url origin "https://${GH_TOKEN}@github.com/kunruch/mmcss.git"
 - git config --global user.email "kanishk.kunal@hotmail.com"
 - git config --global user.name "Travis-CI"
 script:
+- mmpilot -V
 - npm run deploy
 env:
   global:
