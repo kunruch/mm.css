@@ -3,12 +3,9 @@ branches:
   - master
 language: node_js
 node_js:
-- '4'
+- 6
 before_script:
 - npm install -g mmpilot
-- which node
-- ln -s `which node` /usr/bin/node
-- mmpilot -V
 - git remote set-url origin "https://${GH_TOKEN}@github.com/kunruch/mmcss.git"
 - git config --global user.email "kanishk.kunal@hotmail.com"
 - git config --global user.name "Travis-CI"
