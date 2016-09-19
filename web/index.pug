@@ -71,18 +71,25 @@ block content
     #quickstart.section-medium
         .container-readable
             h2.section-title.text-center Quickstart Guide
-            ul
-                li
-                    a(href='/demos/text.html') Text
-                li
-                    a(href='/demos/markup-and-formatting.html') Markup and Formatting
-                li
-                    a(href='/demos/lists.html') Lists
-                li
-                    a(href='/demos/forms.html') Forms
-                li
-                    a(href='/demos/buttons.html') Buttons
-                li
-                    a(href='/demos/grid.html') Grid
-                li
-                    a(href='/demos/searchform.html') Search Form
+            p You can download MMCSS  
+                a(href=site.github + "releases/latest") latest release
+                |  and use <code>dist/mm.css</code> in your project. However the recommended way is to use <code>mm.scss</code> so that you can add your own style overrides.
+            h3.h4 Install via npm
+            pre npm install mmcss --save
+
+            h3.h4 Include MMCSS in your project
+            p Ensure <code>node_modules</code> is added to your Sass <a href="http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory" target="_blank">includes/load_paths</a>. If you are using <a href="https://mmpilot.kunruchcreations.com/" target="_blank">MMPilot</a> for building your project, this would have already been taken care for you.
+            p If you are using Sass (recommended) to build your stylesheets then add the following code
+            pre @import 'mmcss/src/mm';
+            p You can also include the dist (compiled and minified) version directly if you don't want to do any style overrides.
+            pre @import 'mmcss/dist/mm';
+
+            h3.h4 Next Steps
+            nav
+                ul
+                    li <a href="/docs">View Documentation</a> - Learn about CSS styles and components offered by MMCSS.
+                    li <a href="/guides">Read Guides</a> - Tutorials for using MMCSS to build your websites.
+                    li <a href="/templates">Templates</a> - Ready made templates to help you get started quickly with your own Web Design projects.
+                    li <a href="/showcase">Showcase</a> - See how other sites are using MMCSS.
+
+            
