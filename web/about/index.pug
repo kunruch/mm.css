@@ -1,0 +1,69 @@
+extends ./../layouts/_layout-page.pug
+
+block vars
+    - var title = 'About'
+    - var description = 'Learn about MMCSS, get to know people behind this tool and find out guidelines for using MMCSS logo and name.'
+
+block page-content
+    p.
+      MMCSS is a minimal modern CSS Framework built upon <a href="http://sass-lang.com/" target="_blank">Sass</a>. Build fast, modern and mobile friendly sites without the bloat of JavaScript libraries.
+
+    p.
+      Primary goal of MMCSS is to be a small size CSS library and yet provide enough styles and components for building a modern website.
+      Licensed under <a href="#{site.github}blob/master/LICENSE.md" target="_blank">MIT license</a>, you are free to use this CSS framework for your personal as well as commercial projects.
+    p.
+      This site itself is built entirely with MMCSS. No additional stylesheets are used.
+
+    .section
+      h2#people People
+      hr
+      p MMCSS is maintained by the <a href="http://kunruchcreations.com/" target="_blank">KunRuch Creations</a> team. Find below key people invloved with this project:
+        div
+          media.media-left
+            .thumbnail-small
+              img(src="https://secure.gravatar.com/avatar/bb9bf20fb6f55b4af10b0f98c540075f?s=112&d=mm&r=g").thumbnail-rounded
+            .media-body
+              h3 Kanishk Kunal
+              div.text-muted.text-small
+                a(href="https://twitter.com/kanishkkunal", target="_blank")
+                  | <svg class="icon icon-github"><use xlink:href="#icon-twitter"></use></svg> @kanishkkunal
+
+          media.media-left
+            .thumbnail-small
+              img(src="https://secure.gravatar.com/avatar/0c7120ee72d4031538d8bf0b0a39a803?s=112&d=mm&r=g").thumbnail-rounded
+            .media-body
+              h3 Monika Ratan
+              div.text-muted.text-small
+                a(href="https://twitter.com/monikaratan", target="_blank")
+                  | <svg class="icon icon-github"><use xlink:href="#icon-twitter"></use></svg> @monikaratan
+    .section
+      h2#branding Branding
+      hr
+      p Kindly follow the following brand guidelines and use the given assets when writing about MMCSS or referring to it in your projects.
+      h3#branding-name Name
+      p When referring to MMCSS you can either use <strong>MMCSS</strong> or <strong>mm.css</strong>.
+      h3#branding-logo Logo
+      p.
+        Use the following SVG logo when denoting MMCSS. Kindly don't
+         change the colors as the same logo with different colors could mean a different project (See: <a href="http://mmpilot.kunruchcreations.com/" target="_blank">MMPilot</a>)
+
+      p.text-center
+        a(href="/img/mmcss.svg")
+          span.thumbnail-medium.aligncenter
+            include ./../partials/_mmcss.svg
+          span.text-small Download SVG
+      h3#branding-colors Colors
+      p Following colors represent MMCSS and can be used in relation with it.
+      div.section.text-center
+        div(style="display:inline-block;")
+          div(style="background-color:#141E30;width:120px;height:120px;border-radius:3px;margin-right:3px;")
+          div.text-small.text-center #141E30
+        div(style="display:inline-block;")
+          div(style="background-color:#2196F3;width:120px;height:120px;border-radius:3px;margin-left:3px;")
+          div.text-small.text-center #2196F3
+      p.text-center
+       span.label MMCSS
+       |  and #[span.label.label-primary MMCSS]
+
+    .section
+      p For any queries kindly <a href="http://kunruchcreations.com/about-us/contact/" target="_blank">contact us</a>.
