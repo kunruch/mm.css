@@ -9,9 +9,9 @@ html(lang='en-US')
     meta(name='description', content=description)
     meta(property='og:title', content=title)
     meta(property='og:type', content='website')
-    meta(property='og:url', content=site.url + path)
+    meta(property='og:url', content=page.url)
     meta(property='og:image', content=site.url + 'img/mmcss-featured.png')
-    link(rel='canonical', href=site.url + path)
+    link(rel='canonical', href=page.url)
     link(href='/styles/mm.css', rel='stylesheet')
     style
       include ./../partials/_icons.css
