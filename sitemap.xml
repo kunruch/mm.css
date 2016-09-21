@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url> <loc>https://mmcss.kunruchcreations.com/about</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/docs/buttons.html</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/docs/forms.html</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/docs/grid.html</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/docs</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/docs/lists.html</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/docs/markup-and-formatting.html</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/docs/searchform.html</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/docs/text.html</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/guides</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/showcase</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
-<url> <loc>https://mmcss.kunruchcreations.com/templates</loc> <lastmod>2016-09-19T18:24:07Z</lastmod> </url>
+<url> <loc>https://mmnotes.kunruchcreations.com/about</loc> <lastmod>2016-09-21T19:29:46Z</lastmod> </url>
+<url> <loc>https://mmnotes.kunruchcreations.com/</loc> <lastmod>2016-09-21T19:29:46Z</lastmod> </url>
 </urlset>
