@@ -89,7 +89,7 @@ $color-header-dark-text: $color-text-light !default;
     float: left;
     height: $size-site-header-height;
     width: auto;
-    padding: $size-element-spacing-small ($size-element-spacing / 2) $size-element-spacing-small 0;
+    padding: 0.5rem;
 }
 
 .site-branding .title {
