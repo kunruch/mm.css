@@ -23,6 +23,7 @@ input[type='submit'] {
 		background-color: darken($color-background-dark, 5);
 		border-color: darken($color-background-dark, 5);
 		color: $color-text-light;
+	  text-decoration: none;
 		outline: 0;
 	}
 

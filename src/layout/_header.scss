@@ -35,6 +35,7 @@ $color-header-dark-text: $color-text-light !default;
     a {
         color: inherit;
         opacity: 0.8;
+        text-decoration: none;
     }
 
     a:hover, .current-menu-item > a {
