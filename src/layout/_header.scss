@@ -89,7 +89,7 @@ $color-header-dark-text: $color-text-light !default;
     float: left;
     height: $size-site-header-height;
     width: auto;
-    padding-right: $size-element-spacing / 2;
+    padding: $size-element-spacing-small ($size-element-spacing / 2) $size-element-spacing-small 0;
 }
 
 .site-branding .title {
@@ -97,7 +97,6 @@ $color-header-dark-text: $color-text-light !default;
     @include font-size($size-site-title);
     font-weight: $font-weight-normal;
     line-height: $size-site-header-height;
-    letter-spacing: 0.03em;
     color: inherit;
     margin: 0;
 }
