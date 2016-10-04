@@ -1,20 +1,23 @@
-
 // Typography
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
+
 body {
-	color: $color-text;
-	font-family: $font-main;
-	@include font-size($size-default-text, "em");
-	line-height: $line-height-body;
-	word-wrap: break-word;
+  color: $color-text;
+  font-family: $font-main;
+  @include font-size($size-default-text, "em");
+  line-height: $line-height-body;
+  word-wrap: break-word;
 }
 
 p {
-	margin-top: 0;
+  margin-top: 0;
 }
 
-dfn, cite, em, i {
-	font-style: italic;
+cite,
+dfn,
+em,
+i {
+  font-style: italic;
 }
 
 h1,
@@ -23,34 +26,46 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
-	font-weight: $font-weight-medium;
-	letter-spacing: -0.01rem;
-	line-height: 1.25;
-	@include element-spacing(1);
-	margin-top: 1.5em; //headings also carry a top margin for better vertical spacing
+  clear: both;
+  font-weight: $font-weight-medium;
+  letter-spacing: -0.01rem;
+  line-height: 1.25;
+  @include element-spacing(1);
+  margin-top: 1.5em; //headings also carry a top margin for better vertical spacing
 }
 
-h1, .h1 { //40px
-	@include font-size(2.5 * $size-default-text);
+.h1,
+h1 {
+  //40px
+  @include font-size(2.5 * $size-default-text);
 }
 
-h2, .h2 { //32px
-	@include font-size(2 * $size-default-text);
+.h2,
+h2 {
+  //32px
+  @include font-size(2 * $size-default-text);
 }
 
-h3, .h3 { //24px
-	@include font-size(1.5 * $size-default-text);
+.h3,
+h3 {
+  //24px
+  @include font-size(1.5 * $size-default-text);
 }
 
-h4, .h4 { //18px
-	@include font-size(1.125 * $size-default-text);
+.h4,
+h4 {
+  //18px
+  @include font-size(1.125 * $size-default-text);
 }
 
-h5, .h5 { //16px
-	@include font-size(1 * $size-default-text);
+.h5,
+h5 {
+  //16px
+  @include font-size(1 * $size-default-text);
 }
 
-h6, .h6 { //14px
-	@include font-size(0.875 * $size-default-text);
+.h6,
+h6 {
+  //14px
+  @include font-size(0.875 * $size-default-text);
 }

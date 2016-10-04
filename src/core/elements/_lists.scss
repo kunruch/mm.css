@@ -1,31 +1,32 @@
-ul, ol {
-	@include element-spacing(1);
+ol,
+ul {
+  @include element-spacing(1);
 }
 
 ul {
-	list-style: circle;
+  list-style: circle;
 }
 
 ol {
-	list-style: decimal;
+  list-style: decimal;
 }
 
-li > ul,
-li > ol {
-	margin-bottom: 0;
+li > ol,
+li > ul {
+  margin-bottom: 0;
   margin-top: $size-element-spacing/5;
-	margin-left: $size-element-spacing/3;
+  margin-left: $size-element-spacing/3;
 }
 
 dt {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 dd {
-	margin: 0 $size-element-spacing $size-element-spacing;
+  margin: 0 $size-element-spacing $size-element-spacing;
 }
 
 dt,
 li {
-	margin-bottom: $size-element-spacing/5;
+  margin-bottom: $size-element-spacing/5;
 }

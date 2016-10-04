@@ -3,35 +3,35 @@ kbd,
 pre,
 tt,
 var {
-	font-family: $font-pre;
-	font-size: 90%;
+  font-family: $font-pre;
+  font-size: 90%;
 }
 
 code,
 kbd,
 tt {
-	background: $color-background-light;
-	border: 1px solid $color-default-border;
-	border-radius: $size-default-radius;
-	padding: 3px 8px;
-	white-space: nowrap;
+  background: $color-background-light;
+  border: 1px solid $color-default-border;
+  border-radius: $size-default-radius;
+  padding: 3px 8px;
+  white-space: nowrap;
 }
 
 pre {
-	background: $color-background-light;
-	font-size: 100%;
-	border: 1px solid $color-default-border;
-	line-height: 1.8;
-	color: darken($color-text, 20);
-	padding: $size-element-spacing-small $size-element-spacing;
-	@include element-spacing(1);
+  background: $color-background-light;
+  font-size: 100%;
+  border: 1px solid $color-default-border;
+  line-height: 1.8;
+  color: darken($color-text, 20);
+  padding: $size-element-spacing-small $size-element-spacing;
+  @include element-spacing(1);
 
-	& > code {
-		background: transparent;
-		padding: 0;
-		border: 0;
-		border-radius: 0;
-		display: block;
-		white-space: pre;
-	}
+  & > code {
+    background: transparent;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    display: block;
+    white-space: pre;
+  }
 }

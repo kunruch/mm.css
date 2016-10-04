@@ -1,9 +1,9 @@
 a {
-	color: $color-primary;
-	text-decoration: none;
-	border-bottom: 1px solid transparent;
+  color: $color-primary;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
 
-	&:hover {
-		text-decoration: underline;
-	}
+  &:hover {
+    text-decoration: underline;
+  }
 }

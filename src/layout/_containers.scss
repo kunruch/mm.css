@@ -1,5 +1,5 @@
 @mixin site-container($width) {
-  @include container($width);
+   @include container($width);
   padding-right: $size-element-spacing-small;
   padding-left: $size-element-spacing-small;
 }
@@ -9,13 +9,13 @@
 }
 
 .container-wide {
-    @include site-container($size-container-wide-max);
+  @include site-container($size-container-wide-max);
 }
 
 .container-content {
-    @include site-container($size-container-content-max);
+  @include site-container($size-container-content-max);
 }
 
 .container-readable {
-    @include site-container($size-container-readable-max);
+  @include site-container($size-container-readable-max);
 }

@@ -1,13 +1,13 @@
 nav {
-	ul {
-		list-style: none;
-		padding-left: 0;
-	}
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 }
 
 nav ul {
-	ul {
-		margin-top: $size-element-spacing-small / 2;
-		padding-left: $size-element-spacing;
-	}
+  ul {
+    margin-top: $size-element-spacing-small / 2;
+    padding-left: $size-element-spacing;
+  }
 }

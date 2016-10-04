@@ -1,40 +1,41 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:after,
 *:before {
-	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
 }
 // Default body styles
+
 body {
-	background: $color-body;
+  background: $color-body;
 }
 
 blockquote,
 q {
-	quotes: "" "";
+  quotes: "" "";
 
-	&:after,
-	&:before {
-		content: "";
-	}
+  &:after,
+  &:before {
+    content: "";
+  }
 }
 
 hr {
-	background-color: $color-gray;
-	border: 0;
-	height: 1px;
-	@include element-spacing(1);
+  background-color: $color-gray;
+  border: 0;
+  height: 1px;
+  @include element-spacing(1);
 }
 
 fieldset,
 input,
 select,
 textarea {
-	@include element-spacing(1);
+  @include element-spacing(1);
 }
 
 address,
@@ -45,21 +46,21 @@ form,
 p,
 pre,
 table {
-	@include element-spacing(1);
+  @include element-spacing(1);
 }
 
 abbr,
 acronym {
-	border-bottom: 1px dotted;
-	cursor: help;
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 ins,
 mark {
-	background: $color-gray-light;
-	text-decoration: none;
+  background: $color-gray-light;
+  text-decoration: none;
 }
 
 big {
-	font-size: 125%;
+  font-size: 125%;
 }

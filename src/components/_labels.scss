@@ -1,18 +1,18 @@
 .label {
-	background-color: $color-background-dark;
-	color: $color-text-light;
-	padding: 3px 8px;
-	font-size: 80%;
-	line-height: 1;
-	border-radius: $size-default-radius;
+  background-color: $color-background-dark;
+  color: $color-text-light;
+  padding: 3px 8px;
+  font-size: 80%;
+  line-height: 1;
+  border-radius: $size-default-radius;
 
-	&.label-primary {
-		background-color: $color-primary;
-		color: $color-text-light;
-	}
+  &.label-primary {
+    background-color: $color-primary;
+    color: $color-text-light;
+  }
 
-	&.label-ghost {
-		background-color: transparent;
-		color: $color-text;
-	}
+  &.label-ghost {
+    background-color: transparent;
+    color: $color-text;
+  }
 }
