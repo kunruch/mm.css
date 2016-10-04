@@ -7,7 +7,8 @@
   "devDependencies": {
     "mmpilot": "^0.3.1",
     "npm-run-all": "^3.1.0",
-    "shx": "^0.1.4"
+    "shx": "^0.1.4",
+    "stylelint": "^7.3.1"
   },
   "keywords": [
     "css",
@@ -30,7 +31,8 @@
     "deploy": "npm-run-all clean build && mmpilot deploy",
     "dev-dist": "npm-run-all clean dev-build && shx cp public/styles/mm.css dist",
     "prod-dist": "npm-run-all clean build && shx cp public/styles/mm.css dist/mm.min.css",
-    "dist": "npm-run-all dev-dist prod-dist && git add dist/*.css && git commit -m \"Updating dist\" && git push -u origin master",
+    "lint": "stylelint \"src/**/*.scss\" --syntax scss",
+    "dist": "npm-run-all lint dev-dist prod-dist && git add dist/*.css && git commit -m \"Updating dist\" && git push -u origin master",
     "dist-patch": "npm run dist && npm version patch -m \"Version %s\" && git push && git push --tags && npm publish"
   },
   "engines": {
