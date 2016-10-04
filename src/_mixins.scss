@@ -1,31 +1,29 @@
 @mixin element-spacing($scale: 1) {
-	// default margin (scale = 1) only specifies top margin for any element
-	// When scale > 1, extra margin is distributed to top and bottom margin.
-	margin: (((1 + $scale) / 2) * $size-element-spacing) 0 ((($scale - 1) / 2) * $size-element-spacing) 0;
+  // default margin (scale = 1) only specifies top margin for any element
+  // When scale > 1, extra margin is distributed to top and bottom margin.
+  margin: (((1 + $scale) / 2) * $size-element-spacing) 0 ((($scale - 1) / 2) * $size-element-spacing) 0;
 }
-
 // Rem output with px fallback
-@mixin font-size($sizeValue: 1, $unit: "rem") {
-	font-size: ($sizeValue * 16) * 1px;
+@mixin font-size($sizeValue: 1, $unit: 'rem') {
+  font-size: ($sizeValue * 16) * 1px;
 
-	@if $unit == "em" {
-		font-size: $sizeValue * 1em;
-	}
-	@else {
-		font-size: $sizeValue * 1rem;
-	}
+  @if $unit == 'em' {
+    font-size: $sizeValue * 1em;
+  }
+  @else {
+    font-size: $sizeValue * 1rem;
+  }
 }
-
 @mixin container($max-width) {
-	max-width: $max-width;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-width;
+  width: 100%;
 
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
 }
