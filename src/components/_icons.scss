@@ -1,42 +1,40 @@
 .icon {
-    font-size: 120%;
-    vertical-align: text-bottom;
+  font-size: 120%;
+  vertical-align: text-bottom;
 }
-
 //Icons inside buttons
 .button .icon + span {
-    margin-left: 12px;
+  margin-left: 12px;
 }
-
 //Pure CSS Icons
 .css-icon-search {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 32px;
+  width: 32px;
+  border: 0;
+
+  &:before {
     display: block;
-    position: relative;
-    overflow: hidden;
-    height: 32px;
-    width: 32px;
-    border: 0;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 3px solid $color-text;
+    background: transparent;
+    border-radius: 100%;
+  }
 
-    &:before {
-        display: block;
-        content: "";
-        width: 16px;
-        height: 16px;
-        border: 3px solid $color-text;
-        background: transparent;
-        border-radius: 100%;
-    }
-
-    &:after {
-        content: "";
-        background: $color-text;
-        display: block;
-        position: absolute;
-        left: 14px;
-        top: 12px;
-        width: 3px;
-        height: 7px;
-        margin-top: 0;
-        transform: rotate(-45deg);
-    }
+  &:after {
+    content: "";
+    background: $color-text;
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    width: 3px;
+    height: 7px;
+    margin-top: 0;
+    transform: rotate(-45deg);
+  }
 }
