@@ -14,7 +14,7 @@ Find links to tutorials and documentation below to get started quickly.
 ## Quickstart
 
 ```sh
-$ npm install mmcss -S
+$ npm install mmcss --save
 ```
 
 ## Learn More

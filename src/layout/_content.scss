@@ -1,33 +1,34 @@
 .page-title {
-    margin-top: $size-element-spacing-big;
+  margin-top: $size-element-spacing-big;
 }
 
 .entry-title {
-    margin-bottom:  $size-element-spacing-small;
+  margin-bottom: $size-element-spacing-small;
 
-    a {
-        color: $color-text;
+  a {
+    color: $color-text;
+  }
 
-        &:hover {
-            color: $color-primary;
-            text-decoration: none;
-        }
-    }
+  a:hover {
+    color: $color-primary;
+    text-decoration: none;
+  }
 }
 
-.entry-meta, .entry-footer {
-	@include font-size($size-default-text);
-    color: lighten($color-text, 40);
+.entry-footer,
+.entry-meta {
+  @include font-size($size-default-text);
+  color: lighten($color-text, 40);
 
-    > span {
-        margin-left: $size-element-spacing-small;
+  > span {
+    margin-left: $size-element-spacing-small;
+  }
 
-        &:first-child {
-            margin-left: 0;
-        }
-    }
+  > span:first-child {
+    margin-left: 0;
+  }
 
-    a {
-        color: lighten($color-text, 20);
-    }
+  a {
+    color: lighten($color-text, 20);
+  }
 }
