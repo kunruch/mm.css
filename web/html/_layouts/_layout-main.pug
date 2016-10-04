@@ -14,14 +14,14 @@ html(lang='en-US')
     link(rel='canonical', href=page.url)
     link(href='/styles/mm.css', rel='stylesheet')
     style
-      include ./../partials/_icons.css
+      include ./../_includes/_icons.css
     block styles
     link(rel='icon', href=site.url + 'img/mmcss-favicon-32x32.png', sizes='32x32')
     link(rel='icon', href=site.url + 'img/mmcss-favicon-192x192.png', sizes='192x192')
     link(rel='apple-touch-icon-precomposed', href=site.url + 'img/mmcss-favicon-180x180.png')
     meta(name='msapplication-TileImage', content=site.url + 'img/mmcss-favicon-270x270.png')
   body#top
-    include ./../partials/_icons.svg
+    include ./../_includes/_icons.svg
     header.header
         .container
             .header-left
@@ -79,6 +79,6 @@ html(lang='en-US')
               | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
               span Twitter
   block scripts
-  include ./../partials/_analytics.pug
+  include ./../_includes/_analytics.pug
   script
     include ./../../../scripts/mm.js

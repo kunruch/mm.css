@@ -1,4 +1,4 @@
-extends ./layouts/_layout-main.pug
+extends ./_layouts/_layout-main.pug
 
 block vars
   - var title = 'Minimal Modern CSS Framework'
@@ -9,7 +9,7 @@ block content
         .container-content
             .media
               .thumbnail.aligncenter
-                include partials/_mmcss.svg
+                include _includes/_mmcss.svg
               .media-body
                 h2 A Minimal Modern CSS Framework
             p.text-center.text-muted Built with <a href="http://sass-lang.com/" target="_blank">Sass</a> - 4KB size - MIT License
@@ -71,7 +71,7 @@ block content
     #quickstart.section-medium
         .container-readable
             h2.section-title.text-center Quickstart Guide
-            p You can download MMCSS  
+            p You can download MMCSS
                 a(href=site.github + "releases/latest") latest release
                 |  and use <code>dist/mm.css</code> in your project. However the recommended way is to use <code>mm.scss</code> so that you can add your own style overrides.
             h3.h4 Install via npm
@@ -91,5 +91,3 @@ block content
                     li <a href="/guides">Read Guides</a> - Tutorials for using MMCSS to build your websites.
                     li <a href="/templates">Templates</a> - Ready made templates to help you get started quickly with your own Web Design projects.
                     li <a href="/showcase">Showcase</a> - See how other sites are using MMCSS.
-
-            
