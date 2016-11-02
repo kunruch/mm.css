@@ -1,12 +1,24 @@
 extends ./_layouts/_layout-page.pug
 
 block vars
-    - var title = 'Showcase'
-    - var description = 'Find here some of the best static sites built using MMCSS'
+  - var title = 'Showcase'
+  - var description = 'Find here some of the best static sites built using MMCSS'
+
+block styles
+  style
+    include ./_includes/_browser-mockups.css
 
 block page-content
-    .section-large
-      p.text-large.text-center Coming Soon..
+  .container-content
+    .grid
+      each site in data.showcase
+        .one-half.section
+          .media
+            a(href=site.url, target='_blank', title=site.name)
+              .browser-mockup.with-tab.aligncenter
+                img(src=site.image, width='500', height='300', alt=site.name)
+            .media-body
+              h2.h4.text-center.entry-title
+                a(href=site.url, target='_blank')= site.name
     .section
-      p.text-center While you wait, check out this site itself which has been built using MMCSS.
-      p.text-center Want to submit a site to showcase? <a href="/contact/">Get in touch</a>
+      p.text-center Want to submit your site to showcase?<br><a href="/contact/">Get in touch</a>

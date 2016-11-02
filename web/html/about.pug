@@ -1,10 +1,11 @@
 extends ./_layouts/_layout-page.pug
 
 block vars
-    - var title = 'About'
-    - var description = 'Learn about MMCSS, get to know people behind this tool and find out guidelines for using MMCSS logo and name.'
+  - var title = 'About'
+  - var description = 'Learn about MMCSS, get to know people behind this tool and find out guidelines for using MMCSS logo and name.'
 
 block page-content
+  .container-readable
     p.
       MMCSS is a minimal modern CSS Framework built upon <a href="http://sass-lang.com/" target="_blank">Sass</a>. Build fast, modern and mobile friendly sites without the bloat of JavaScript libraries.
 
@@ -45,7 +46,7 @@ block page-content
       h3#branding-logo Logo
       p.
         Use the following SVG logo when denoting MMCSS. Kindly don't
-         change the colors as the same logo with different colors could mean a different project (See: <a href="http://mmpilot.kunruchcreations.com/" target="_blank">MMPilot</a>)
+        change the colors as the same logo with different colors could mean a different project (See: <a href="http://mmpilot.kunruchcreations.com/" target="_blank">MMPilot</a>)
 
       p.text-center
         a(href="/img/mmcss.svg")
@@ -62,8 +63,8 @@ block page-content
           div(style="background-color:#2196F3;width:120px;height:120px;border-radius:3px;margin-left:3px;")
           div.text-small.text-center #2196F3
       p.text-center
-       span.label MMCSS
-       |  and #[span.label.label-primary MMCSS]
+      span.label MMCSS
+      |  and #[span.label.label-primary MMCSS]
 
     .section
       p For any queries kindly <a href="/contact/">contact us</a>.

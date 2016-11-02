@@ -1,0 +1,7 @@
+- name: "KunRuch Status"
+  url: "https://status.kunruchcreations.com/"
+  image: "/img/showcase/kunruch-status.png"
+  
+- name: "SDR News"
+  url: "https://news.superdevresources.com/"
+  image: "/img/showcase/sdr-news.png"
