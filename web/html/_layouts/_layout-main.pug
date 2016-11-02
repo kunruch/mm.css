@@ -28,13 +28,13 @@ html(lang='en-US')
         .header-left
           a(href='/').site-branding
             h1.title MMCSS        
-        .menu-toggle.header-right
+        .menu-toggle
           input(type="checkbox")#checkbox-toggle
-          label(for="checkbox-toggle").button.button-ghost
+          label(for="checkbox-toggle").header-right
             span Menu
           .menu-toggle-content
             +menu(data.menu.main)
-            .header-rights
+            .header-right
               +social(data.menu.social)
 
     block content
