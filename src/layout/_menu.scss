@@ -142,3 +142,9 @@ $size-menu-padding: 12px;
   opacity: 1;
   transform: scale(1, 1);
 }
+
+@media (min-width: $size-small-screen) {
+  .menu li {
+    display: block;
+  }
+}
