@@ -5,10 +5,10 @@
   "main": "dist/mm.css",
   "dependencies": {},
   "devDependencies": {
-    "mmpilot": "^0.3.1",
-    "npm-run-all": "^3.1.0",
+    "mmpilot": "^0.3.2",
+    "npm-run-all": "^3.1.1",
     "shx": "^0.1.4",
-    "stylelint": "^7.3.1"
+    "stylelint": "^7.5.0"
   },
   "keywords": [
     "css",
