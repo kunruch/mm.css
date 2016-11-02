@@ -6,9 +6,11 @@ block vars
   - var path = 'demo/searchform.html'
 
 block content
-    article.container-readable
-        h1 Search Form
-        form(role='search', method='get', action='')
-            .search-box
-                .css-icon-search
-                input.search-field(type='search', placeholder='Search …', value='', name='s')
+  article.container-readable
+    h1 Search Form
+    form(role='search', method='get', action='')
+      input.search-field(type='search', placeholder='Search …', value='', name='s')
+    form(role='search', method='get', action='')
+      .search-box
+        .css-icon-search
+        input.search-field(type='search', placeholder='Search with Icon …', value='', name='s')
