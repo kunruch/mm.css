@@ -1,107 +1,109 @@
 $size-menu-width: 140px;
 $size-menu-padding: 12px;
 
-.menu {
-  margin: 0;
-
-  li {
-    position: relative;
-    display: inline-block;
-    padding: 0 $size-menu-padding;
+@include desktop {
+  .menu {
     margin: 0;
-  }
 
-  a {
-    display: block;
-    border: 0;
-  }
-}
-//submenu
+    li {
+      position: relative;
+      display: inline-block;
+      padding: 0 $size-menu-padding;
+      margin: 0;
+    }
 
-.menu ul {
-  background: #fff;
-  border: 1px solid $color-default-border;
-  border-radius: $size-default-radius;
-  //position at bottom-center of it's parent
-  top: 100%;
-  left: 50%;
-  margin: 0 0 0 -1 * ($size-menu-width + (2 * $size-menu-padding))/2;
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-  padding: 0 $size-menu-padding;
-  float: left;
-  text-align: left;
-  position: absolute;
-  font-size: 90%;
-  line-height: 3;
-  transform: scale(0);
-  transform-origin: center top;
-  z-index: 99999;
-  //submenu's submenu
-  ul {
-    font-size: 100%;
-    left: 100%;
-    top: -1px;
-    transform-origin: left top;
-    margin-left: 0;
-    border-left: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  li {
-    color: $color-text;
-    border-bottom: 1px solid $color-default-border;
-    text-align: center;
-    text-transform: none;
-    padding: 0;
-
-    &:last-child {
-      border-bottom: 0;
+    a {
+      display: block;
+      border: 0;
     }
   }
+  //submenu
 
-  a {
-    width: 140px;
+  .menu ul {
+    background: #fff;
+    border: 1px solid $color-default-border;
+    border-radius: $size-default-radius;
+    //position at bottom-center of it's parent
+    top: 100%;
+    left: 50%;
+    margin: 0 0 0 -1 * ($size-menu-width + (2 * $size-menu-padding))/2;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    padding: 0 $size-menu-padding;
+    float: left;
+    text-align: left;
+    position: absolute;
+    font-size: 90%;
+    line-height: 3;
+    transform: scale(0);
+    transform-origin: center top;
+    z-index: 99999;
+    //submenu's submenu
+    ul {
+      font-size: 100%;
+      left: 100%;
+      top: -1px;
+      transform-origin: left top;
+      margin-left: 0;
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    li {
+      color: $color-text;
+      border-bottom: 1px solid $color-default-border;
+      text-align: center;
+      text-transform: none;
+      padding: 0;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    a {
+      width: 140px;
+    }
   }
-}
-// submenu expand
+  // submenu expand
 
-.menu li.focus > ul,
-.menu li:hover > ul {
-  opacity: 1;
-  transform: scale(1);
-}
-// submenu arrow
+  .menu li.focus > ul,
+  .menu li:hover > ul {
+    opacity: 1;
+    transform: scale(1);
+  }
+  // submenu arrow
 
-.menu ul::after,
-.menu ul::before {
-  bottom: 100%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
+  .menu ul::after,
+  .menu ul::before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
 
-.menu ul::before {
-  border-bottom-color: $color-default-border;
-  border-width: 12px;
-  left: 50%;
-  margin-left: -12px;
-}
+  .menu ul::before {
+    border-bottom-color: $color-default-border;
+    border-width: 12px;
+    left: 50%;
+    margin-left: -12px;
+  }
 
-.menu ul::after {
-  border-bottom-color: #fff;
-  border-width: 10px;
-  left: 50%;
-  margin-left: -10px;
-}
+  .menu ul::after {
+    border-bottom-color: #fff;
+    border-width: 10px;
+    left: 50%;
+    margin-left: -10px;
+  }
 
-.menu ul ul::after,
-.menu ul ul::before {
-  border: 0;
+  .menu ul ul::after,
+  .menu ul ul::before {
+    border: 0;
+  }
 }
 
 // Toggling side menu
@@ -165,5 +167,7 @@ $size-menu-padding: 12px;
 
   .menu li {
     display: block;
+    line-height: 2;
+    text-align: left;
   }
 }
