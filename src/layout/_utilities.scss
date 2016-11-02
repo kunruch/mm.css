@@ -73,13 +73,13 @@
   }
 }
 //Responsive visiblity helpers
-@media (min-width: $size-small-screen) {
+@include desktop {
   .hidden-desktop {
     display: none;
   }
 }
 
-@media (max-width: $size-small-screen) {
+@include mobile {
   .hidden-mobile {
     display: none;
   }

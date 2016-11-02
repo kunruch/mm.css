@@ -2,7 +2,7 @@ article {
   @include font-size($size-default-text);
 }
 
-@media (min-width: $size-small-screen) {
+@include desktop {
   article {
     @include font-size($size-medium-text);
   }

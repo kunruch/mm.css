@@ -30,7 +30,7 @@ $grid-col-margin-span: 5% !default; //space between cols
   @include col-full-width();
 }
 
-@media (min-width: $size-small-screen) {
+@include desktop {
   .one-half {
     @include col(1, 2);
 

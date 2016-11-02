@@ -111,7 +111,7 @@ $color-header-dark-text: $color-text-light !default;
   }
 }
 
-@media (max-width: $size-small-screen) {
+@include mobile {
   .menu-toggle-content {
     .header-right,
     .header-left {

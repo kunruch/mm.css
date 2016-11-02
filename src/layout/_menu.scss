@@ -140,7 +140,7 @@ $size-menu-padding: 12px;
   margin: 0;
 }
 
-@media (max-width: $size-small-screen) {
+@include mobile {
   .menu-toggle label {
     display: inline-block;
   }
