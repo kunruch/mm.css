@@ -121,15 +121,17 @@ $size-menu-padding: 12px;
   cursor: pointer;
   user-select: none;
   line-height: 42px;
-  padding: 0 16px;
+  padding: 0 16px 0 8px;
   margin-top: ($size-site-header-height - 42px) / 2;
   text-transform: uppercase;
   border: 1px solid $color-default-border;
   border-radius: $size-default-radius;
+  opacity: 0.8;
 
   &:focus,
   &:hover {
     background-color: $color-background-light;
+    opacity: 1;
   }
 }
 
