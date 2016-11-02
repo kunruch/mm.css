@@ -135,13 +135,31 @@ $size-menu-padding: 12px;
   }
 }
 
-.menu-toggle input[type=checkbox]:checked ~ .menu-toggle-content {
-  opacity: 1;
-  transform: scale(1, 1);
-}
-
 .menu-toggle .css-icon-hamburger {
   float: left;
+}
+
+.menu-toggle input[type=checkbox]:checked {
+  & ~ .menu-toggle-content {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+
+  & ~ label > .css-icon-hamburger span {
+    background: none;
+  }
+
+  & ~ label > .css-icon-hamburger span::before {
+    top: 0;
+    transform: rotate(45deg);
+    transition-delay: 0s, 0.2s;
+  }
+
+  & ~ label > .css-icon-hamburger span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition-delay: 0s, 0.2s;
+  }
 }
 
 .menu-toggle-content {

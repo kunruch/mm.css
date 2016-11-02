@@ -45,6 +45,7 @@ $hamburger-size: 42px;
 $hamburger-bar-thickness: 3px;
 $hamburger-bar-space: 3px;
 $hamburger-paddding: 8px;
+$hamburger-transistion-duration: 0.3s;
 
 .css-icon-hamburger {
   display: inline-block;
@@ -56,7 +57,7 @@ $hamburger-paddding: 8px;
   height: 42px;
   font-size: 0;
   text-indent: -9999px;
-  transition: background 0.3s;
+  transition: background 0.2s;
 }
 
 .css-icon-hamburger span {
@@ -68,6 +69,7 @@ $hamburger-paddding: 8px;
   height: $hamburger-bar-thickness;
   background-color: $color-text;
   background-color: currentColor;
+  transition: background 0s $hamburger-transistion-duration;
 }
 
 .css-icon-hamburger span::before,
@@ -80,12 +82,16 @@ $hamburger-paddding: 8px;
   background-color: $color-text;
   background-color: currentColor;
   content: "";
+  transition-duration: $hamburger-transistion-duration, $hamburger-transistion-duration;
+  transition-delay: $hamburger-transistion-duration, 0s;
 }
 
 .css-icon-hamburger span::before {
   top: -$hamburger-bar-thickness - $hamburger-bar-space;
+  transition-property: top, transform;
 }
 
 .css-icon-hamburger span::after {
   bottom: -$hamburger-bar-thickness - $hamburger-bar-space;
+  transition-property: bottom, transform;
 }

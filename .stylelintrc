@@ -121,7 +121,6 @@
     "selector-descendant-combinator-no-non-space": true,
     "selector-list-comma-newline-after": "always",
     "selector-list-comma-space-before": "never",
-    "selector-max-compound-selectors": 3,
     "selector-max-empty-lines": 0,
     "selector-no-id": true,
     "selector-no-vendor-prefix": true,
