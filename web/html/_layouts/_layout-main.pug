@@ -1,3 +1,4 @@
+include ./../_includes/_mixins.pug
 doctype html
 block vars
 html(lang='en-US')
@@ -23,47 +24,17 @@ html(lang='en-US')
   body#top
     include ./../_includes/_icons.svg
     header.header
-        .container
-            .header-left
-              a(href='/').site-branding
-                h1.title MMCSS
-            .header-right.hidden-desktop
-              button#menu-toggle.button-ghost Menu
-            nav(role="navigation")
-              ul#menu.menu.hidden-mobile
-                li.menu-item
-                  a(href="/docs/") Docs
-                li.menu-item
-                  a(href="/guides/") Guides
-                li.menu-item
-                  a(href="/templates/") Templates
-                li.menu-item
-                  a(href="/showcase/") Showcase
-                li.menu-item
-                  a(href="#") Help
-                  ul.sub-menu
-                    li.menu-item
-                      a(href=site.github + "issues/new", target="_blank") Report an Issue
-                    li.menu-item
-                      a(href=site.github + "issues", target="_blank") View all Issues
-                    li.menu-item
-                      a(href='#') See All Releases
-                      ul.sub-menu
-                        li.menu-item
-                          a(href=site.github + "releases/latest", target="_blank") Latest Release
-                        li.menu-item
-                          a(href=site.github + "releases", target="_blank") Release History
-                    li.menu-item
-                      a(href="/contact/") Contact
-                    li.menu-item
-                      a(href="/about/") About
-            div.header-right.hidden-mobile
-              a.button.button-text(href=site.github, target="_blank")
-               | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
-               span GitHub
-              a.button.button-text(href=site.twitter target="_blank")
-               | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-               span Twitter
+      .container
+        .header-left
+          a(href='/').site-branding
+            h1.title MMCSS
+        .hidden-mobile
+          +menu(data.menu.main)
+        .header-right
+          .hidden-desktop
+            button#menu-toggle.button-ghost Menu
+          .hidden-mobile
+            +social(data.menu.social)
 
     block content
     footer.footer
@@ -72,12 +43,7 @@ html(lang='en-US')
           br
           | Licensed under the <a href="#{site.github}blob/master/LICENSE.md" target="blank">MIT License</a>.
         div
-            a.button.button-text(href=site.github, target="_blank")
-              | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
-              span GitHub
-            a.button.button-text(href=site.twitter, target="_blank")
-              | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-              span Twitter
+           +social(data.menu.social)
   block scripts
   include ./../_includes/_analytics.pug
   script
