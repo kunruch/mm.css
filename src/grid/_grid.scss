@@ -1,5 +1,4 @@
-$grid-col-total-span: 84% !default; // a number divisible by 2,3,4,6,12 for easier percentage in cols
-$grid-col-margin-span: 16% !default; //remaining space to be divided in space between cols.
+$grid-col-margin-span: 5% !default; //space between cols
 
 .grid {
   @include container(100%);
@@ -8,10 +7,10 @@ $grid-col-margin-span: 16% !default; //remaining space to be divided in space be
   flex-wrap: wrap;
 }
 
-@mixin col($num, $total) {
+@mixin col($num, $total, $spacing: $grid-col-margin-span) {
   float: left;
-  width: ($grid-col-total-span / $total);
-  margin-right: ($grid-col-margin-span / ($total - 1));
+  width: ( 100% - ($grid-col-margin-span * ($total - 1)) ) / $total;
+  margin-right: $grid-col-margin-span;
 }
 
 @mixin col-last() {
@@ -23,6 +22,7 @@ $grid-col-margin-span: 16% !default; //remaining space to be divided in space be
   float: none;
   width: 100%;
 }
+
 // Full width cols on mobile devices
 .one-fourth,
 .one-half,
