@@ -90,7 +90,9 @@ $color-header-dark-text: $color-text-light !default;
 
 .site-branding .title {
   display: inline-block;
+
   @include font-size($size-site-title);
+
   font-weight: $font-weight-normal;
   line-height: $size-site-header-height;
   color: inherit;

@@ -4,16 +4,18 @@
   margin: (((1 + $scale) / 2) * $size-element-spacing) 0 ((($scale - 1) / 2) * $size-element-spacing) 0;
 }
 // Rem output with px fallback
-@mixin font-size($sizeValue: 1, $unit: 'rem') {
+@mixin font-size($sizeValue: 1, $unit: "rem") {
   font-size: ($sizeValue * 16) * 1px;
 
-  @if $unit == 'em' {
+  @if $unit == "em" {
     font-size: $sizeValue * 1em;
   }
+
   @else {
     font-size: $sizeValue * 1rem;
   }
 }
+
 @mixin container($max-width) {
   box-sizing: border-box;
   margin-left: auto;
@@ -23,7 +25,7 @@
 
   &::after {
     clear: both;
-    content: '';
+    content: "";
     display: table;
   }
 }

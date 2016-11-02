@@ -4,7 +4,9 @@
 body {
   color: $color-text;
   font-family: $font-main;
+
   @include font-size($size-default-text, "em");
+
   line-height: $line-height-body;
   word-wrap: break-word;
 }
@@ -30,7 +32,9 @@ h6 {
   font-weight: $font-weight-medium;
   letter-spacing: -0.01rem;
   line-height: 1.25;
+
   @include element-spacing(1);
+
   margin-top: 1.5em; //headings also carry a top margin for better vertical spacing
 }
 

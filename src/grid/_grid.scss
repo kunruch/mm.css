@@ -3,18 +3,22 @@ $grid-col-margin-span: 16% !default; //remaining space to be divided in space be
 
 .grid {
   @include container(100%);
+
   display: flex;
   flex-wrap: wrap;
 }
+
 @mixin col($num, $total) {
   float: left;
   width: ($grid-col-total-span / $total);
   margin-right: ($grid-col-margin-span / ($total - 1));
 }
+
 @mixin col-last() {
   float: right;
   margin-right: 0;
 }
+
 @mixin col-full-width() {
   float: none;
   width: 100%;
@@ -25,6 +29,7 @@ $grid-col-margin-span: 16% !default; //remaining space to be divided in space be
 .one-third {
   @include col-full-width();
 }
+
 @media (min-width: $size-small-screen) {
   .one-half {
     @include col(1, 2);

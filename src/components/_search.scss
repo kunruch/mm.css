@@ -1,16 +1,17 @@
 .search-box {
   display: inline-block;
   margin-right: $size-element-spacing;
+
   @include font-size($size-default-text);
 }
 
 .search-expandable {
-  input[type='search'] {
+  input[type="search"] {
     transition: width 0.4s;
     width: 200px;
   }
 
-  input[type='search']:focus {
+  input[type="search"]:focus {
     width: 300px;
   }
 }
@@ -25,7 +26,7 @@
     top: 11px;
   }
 
-  input[type='search'] {
+  input[type="search"] {
     padding-right: 32px;
   }
 }

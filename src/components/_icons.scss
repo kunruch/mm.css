@@ -2,13 +2,13 @@
   font-size: 120%;
   vertical-align: text-bottom;
 }
-//Icons inside buttons
 
+//Icons inside buttons
 .button .icon + span {
   margin-left: 12px;
 }
-//Pure CSS Icons
 
+//Pure CSS Icons
 .css-icon-search {
   display: block;
   position: relative;
@@ -17,7 +17,7 @@
   width: 32px;
   border: 0;
 
-  &:before {
+  &::before {
     display: block;
     content: "";
     width: 16px;
@@ -27,7 +27,7 @@
     border-radius: 100%;
   }
 
-  &:after {
+  &::after {
     content: "";
     background: $color-text;
     display: block;

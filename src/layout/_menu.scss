@@ -13,7 +13,7 @@ $size-menu-padding: 12px;
 
   a {
     display: block;
-    border: none;
+    border: 0;
   }
 }
 //submenu
@@ -74,8 +74,8 @@ $size-menu-padding: 12px;
 }
 // submenu arrow
 
-.menu ul:after,
-.menu ul:before {
+.menu ul::after,
+.menu ul::before {
   bottom: 100%;
   border: solid transparent;
   content: " ";
@@ -85,21 +85,21 @@ $size-menu-padding: 12px;
   pointer-events: none;
 }
 
-.menu ul:before {
+.menu ul::before {
   border-bottom-color: $color-default-border;
   border-width: 12px;
   left: 50%;
   margin-left: -12px;
 }
 
-.menu ul:after {
+.menu ul::after {
   border-bottom-color: #fff;
   border-width: 10px;
   left: 50%;
   margin-left: -10px;
 }
 
-.menu ul ul:after,
-.menu ul ul:before {
+.menu ul ul::after,
+.menu ul ul::before {
   border: 0;
 }

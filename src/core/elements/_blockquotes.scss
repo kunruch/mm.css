@@ -1,7 +1,9 @@
 blockquote {
   background: $color-background-light;
   border: 1px solid $color-default-border;
+
   @include element-spacing(1);
+
   padding: $size-element-spacing;
 
   & *:last-child {

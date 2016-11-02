@@ -18,6 +18,7 @@
 .entry-footer,
 .entry-meta {
   @include font-size($size-default-text);
+
   color: lighten($color-text, 40);
 
   > span {

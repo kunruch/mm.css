@@ -1,5 +1,6 @@
 @mixin site-container($width) {
-   @include container($width);
+  @include container($width);
+
   padding-right: $size-element-spacing-small;
   padding-left: $size-element-spacing-small;
 }

@@ -3,8 +3,8 @@ html {
 }
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit;
 }
@@ -18,8 +18,8 @@ blockquote,
 q {
   quotes: "" "";
 
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     content: "";
   }
 }
@@ -28,6 +28,7 @@ hr {
   background-color: $color-gray;
   border: 0;
   height: 1px;
+
   @include element-spacing(1);
 }
 

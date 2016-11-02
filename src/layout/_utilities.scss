@@ -62,13 +62,13 @@
 .clearfix {
   *zoom: 1;
 
-  &:after,
-  &:before {
-    content: '';
+  &::after,
+  &::before {
+    content: "";
     display: table;
   }
 
-  &:after {
+  &::after {
     clear: both;
   }
 }
@@ -78,6 +78,7 @@
     display: none;
   }
 }
+
 @media (max-width: $size-small-screen) {
   .hidden-mobile {
     display: none;

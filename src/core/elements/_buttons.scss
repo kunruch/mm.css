@@ -1,8 +1,8 @@
 .button,
 button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   background-color: $color-background-dark;
   border: 1px solid $color-background-dark;
   border-radius: $size-default-radius;
@@ -16,6 +16,7 @@ input[type='submit'] {
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
+
   @include element-spacing(1);
 
   &:focus,
@@ -52,7 +53,7 @@ input[type='submit'] {
 
   &.button-rounded {
     border-radius: 3rem;
-    padding: 0 (1.5*$size-element-spacing);
+    padding: 0 (1.5 * $size-element-spacing);
   }
 
   &.button-text {
