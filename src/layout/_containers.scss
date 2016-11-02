@@ -1,22 +1,27 @@
-@mixin site-container($width) {
-  @include container($width);
+.container {
+  @include container(100%);
+
+  padding-right: $size-element-spacing;
+  padding-left: $size-element-spacing;
+}
+
+.container-wide {
+  @include container($size-container-wide-max);
 
   padding-right: $size-element-spacing-small;
   padding-left: $size-element-spacing-small;
 }
 
-.container {
-  @include site-container(100%);
-}
-
-.container-wide {
-  @include site-container($size-container-wide-max);
-}
-
 .container-content {
-  @include site-container($size-container-content-max);
+  @include container($size-container-content-max);
+
+  padding-right: $size-element-spacing-small;
+  padding-left: $size-element-spacing-small;
 }
 
 .container-readable {
-  @include site-container($size-container-readable-max);
+  @include container($size-container-readable-max);
+
+  padding-right: $size-element-spacing-small;
+  padding-left: $size-element-spacing-small;
 }
