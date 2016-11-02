@@ -72,6 +72,7 @@ $color-header-dark-text: $color-text-light !default;
   right: $size-element-spacing;
   top: 0;
 }
+
 // Header elements styles
 .site-branding {
   color: inherit;
@@ -107,5 +108,16 @@ $color-header-dark-text: $color-text-light !default;
   input[type="search"] {
     border-color: transparent;
     background-color: darken($color-header-default-background, 4);
+  }
+}
+
+@media (max-width: $size-small-screen) {
+  .menu-toggle-content {
+    .header-right,
+    .header-left {
+      position: relative;
+      right: 0;
+      left: 0;
+    }
   }
 }

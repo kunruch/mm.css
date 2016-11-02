@@ -27,14 +27,15 @@ html(lang='en-US')
       .container
         .header-left
           a(href='/').site-branding
-            h1.title MMCSS
-        .hidden-mobile
-          +menu(data.menu.main)
-        .header-right
-          .hidden-desktop
-            button#menu-toggle.button-ghost Menu
-          .hidden-mobile
-            +social(data.menu.social)
+            h1.title MMCSS        
+        .menu-toggle.header-right
+          input(type="checkbox")#checkbox-toggle
+          label(for="checkbox-toggle").button.button-ghost
+            span Menu
+          .menu-toggle-content
+            +menu(data.menu.main)
+            .header-rights
+              +social(data.menu.social)
 
     block content
     footer.footer

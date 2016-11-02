@@ -103,3 +103,42 @@ $size-menu-padding: 12px;
 .menu ul ul::before {
   border: 0;
 }
+
+// Toggling side menu
+.menu-toggle {
+  display: block;
+  user-select: none;
+}
+
+.menu-toggle input[type="checkbox"] {
+  display: none; //Hide the checkbox as checking and unchecking is done via it's label.
+}
+
+.menu-toggle label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-toggle-content {
+  position: fixed;
+  width: 250px;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: $size-element-spacing-small;
+  height: 100%;
+  background: $color-background-dark;
+  color: $color-text-light;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  z-index: 1;
+}
+
+.menu-toggle input[type=checkbox]:checked ~ .menu-toggle-content {
+  opacity: 1;
+  transform: scale(1, 1);
+}
