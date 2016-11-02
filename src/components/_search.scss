@@ -1,32 +1,18 @@
 .search-box {
-  display: inline-block;
-  margin-right: $size-element-spacing;
-
-  @include font-size($size-default-text);
-}
-
-.search-expandable {
-  input[type="search"] {
-    transition: width 0.4s;
-    width: 200px;
-  }
-
-  input[type="search"]:focus {
-    width: 300px;
-  }
-}
-
-.search-form .search-box {
   position: relative;
+  width: 100%;
+
+  @include element-spacing(1);
+
+  input[type="search"] {
+    margin-top: 0;
+    padding-left: 40px;
+  }
 
   .css-icon-search {
     opacity: 0.4;
     position: absolute;
-    right: 0;
-    top: 11px;
-  }
-
-  input[type="search"] {
-    padding-right: 32px;
+    left: 12px;
+    top: 12px;
   }
 }
