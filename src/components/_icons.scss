@@ -41,20 +41,51 @@
   }
 }
 
+$hamburger-size: 42px;
+$hamburger-bar-thickness: 3px;
+$hamburger-bar-space: 3px;
+$hamburger-paddding: 8px;
+
 .css-icon-hamburger {
   display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  font-size: 0;
+  text-indent: -9999px;
+  transition: background 0.3s;
 }
 
 .css-icon-hamburger span {
-  content: "";
   display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: $color-text;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  position: absolute;
+  top: ($hamburger-size / 2) - ($hamburger-bar-thickness / 2);
+  left: $hamburger-paddding;
+  right: $hamburger-paddding;
+  height: $hamburger-bar-thickness;
+  background-color: $color-text;
+  background-color: currentColor;
+}
+
+.css-icon-hamburger span::before,
+.css-icon-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: $hamburger-bar-thickness;
+  background-color: $color-text;
+  background-color: currentColor;
+  content: "";
+}
+
+.css-icon-hamburger span::before {
+  top: -$hamburger-bar-thickness - $hamburger-bar-space;
+}
+
+.css-icon-hamburger span::after {
+  bottom: -$hamburger-bar-thickness - $hamburger-bar-space;
 }
