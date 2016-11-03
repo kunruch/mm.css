@@ -3,6 +3,14 @@ nav {
     list-style: none;
     padding-left: 0;
   }
+
+  li a {
+    color: $color-text;
+  }
+
+  .current-menu-item a {
+    color: $color-primary;
+  }
 }
 
 nav ul {

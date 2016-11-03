@@ -106,6 +106,16 @@ $size-menu-padding: 12px;
   }
 }
 
+// Menu header
+.menu-header {
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+.menu-header:not(:first-child) {
+  margin-top: $size-element-spacing;
+}
+
 // Toggling side menu
 .menu-toggle {
   display: block;
@@ -187,6 +197,17 @@ $size-menu-padding: 12px;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     z-index: 999;
+
+    a {
+      color: inherit;
+      opacity: 0.8;
+      text-decoration: none;
+    }
+
+    .current-menu-item > a,
+    a:hover {
+      opacity: 1;
+    }
   }
 
   .menu li {

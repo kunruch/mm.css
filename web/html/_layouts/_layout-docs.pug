@@ -1,15 +1,8 @@
 extends ./_layout-main.pug
 
 block styles
+  block docs-styles
   style.
-    #docs .one-half:first-child {
-      width: 20%;
-    }
-    
-    #docs .one-half:last-child {
-      width: 75%;
-    }
-
     #docs-toggle + label{
       position: fixed;
       bottom: 1rem;
@@ -18,9 +11,21 @@ block styles
       background-color: #fff;
     }
 
+    @media (min-width: 980px) {
+      #docs-grid > .one-half:first-child {
+        width: 20%;
+        border-right: 1px solid #f2f2f2;
+        margin-top: 32px;
+      }
+      
+      #docs-grid > .one-half:last-child {
+        width: 75%;
+      }
+    }
+
 block content
-  #docs.container-content
-    .grid
+  .container-content
+    #docs-grid.grid
       .one-half
         .menu-toggle
           input(type="checkbox")#docs-toggle
@@ -29,12 +34,12 @@ block content
               span Toggle
             span Docs
           .menu-toggle-content
-            +menu(data.menu.main)
+            +menu(data.menu.docs)
       .one-half
         article
-          .sub-header.section-medium.text-center
-            .container-readable
-              h1.section-title #{title}
-              p.text-muted.text-large #{description}
-          .section
-            block docs-content
+          .container-readable
+            .sub-header.section.text-center
+                h1.section-title #{title}
+                p.text-muted.text-large #{description}
+            .section
+              block docs-content

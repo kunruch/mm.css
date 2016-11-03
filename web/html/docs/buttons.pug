@@ -1,65 +1,63 @@
-extends ./../_layouts/_layout-main.pug
+extends ./../_layouts/_layout-docs.pug
 
 block vars
-    - var title = 'Buttons Demo'
-    - var description = 'Buttons Demo for MMCSS - Minimal Modern CSS Framework'
-    - var path = 'demo/buttons.html'
+  - var title = 'Buttons'
+  - var description = 'Buttons Demo for MMCSS - Minimal Modern CSS Framework'
 
-block content
-    div.section-medium.container-readable
-        h1.section-title Buttons
-        div
-            p
-              strong Default Buttons
-            div
-                // Default Button
-                a.button(href='#') Default Button
-                // Primary Button
-                a.button.button-primary(href='#') Primary Button
-                // Ghost Button
-                button.button-ghost Ghost Button
-                // Text Button
-                input.button.button-text(type='submit', value='Text Button')
-        hr
-        div
-            p
-              strong Rounded Buttons
-            div
-                // Default Button
-                a.button.button-rounded(href='#') Rounded Button
-                // Primary Button Rounded
-                button.button-ghost.button-rounded.button-primary Rounded Primary Button
-                // Ghost Button
-                button.button-ghost.button-rounded Rounded Ghost Button
-        hr
-        div
-            p
-              strong Buttons with Icons
-            div
-                a.button(href="#", target="_blank")
-                    | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-                    span Twitter
-                // Button
-                a.button.button-primary(href="#", target="_blank")
-                    | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-                    span Twitter
-                // Button
-                a.button.button-ghost(href="#", target="_blank")
-                    | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-                    span Twitter
-                // Button
-                a.button.button-text(href="#", target="_blank")
-                    | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
-                    span GitHub
-            div
-              a.button(href="#", target="_blank")
-                  | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-              // Button
-              a.button.button-primary(href="#" target="_blank")
-                  | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-              // Button
-              a.button.button-ghost(href="#", target="_blank")
-                  | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-              // Button
-              a.button.button-text(href="#", target="_blank")
-                  | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+block docs-content
+  div.section-medium
+    div
+      p
+        strong Default Buttons
+      div
+        // Default Button
+        a.button(href='#') Default Button
+        // Primary Button
+        a.button.button-primary(href='#') Primary Button
+        // Ghost Button
+        button.button-ghost Ghost Button
+        // Text Button
+        input.button.button-text(type='submit', value='Text Button')
+    hr
+    div
+      p
+        strong Rounded Buttons
+      div
+        // Default Button
+        a.button.button-rounded(href='#') Rounded Button
+        // Primary Button Rounded
+        button.button-ghost.button-rounded.button-primary Rounded Primary Button
+        // Ghost Button
+        button.button-ghost.button-rounded Rounded Ghost Button
+    hr
+    div
+      p
+        strong Buttons with Icons
+      div
+        a.button(href="#", target="_blank")
+          | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+          span Twitter
+        // Button
+        a.button.button-primary(href="#", target="_blank")
+          | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+          span Twitter
+        // Button
+        a.button.button-ghost(href="#", target="_blank")
+          | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+          span Twitter
+        // Button
+        a.button.button-text(href="#", target="_blank")
+          | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+          span GitHub
+      div
+        a.button(href="#", target="_blank")
+          | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+        // Button
+        a.button.button-primary(href="#" target="_blank")
+          | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+        // Button
+        a.button.button-ghost(href="#", target="_blank")
+          | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+        // Button
+        a.button.button-text(href="#", target="_blank")
+          | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>

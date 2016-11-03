@@ -1,13 +1,12 @@
-extends ./../_layouts/_layout-main.pug
+extends ./../_layouts/_layout-docs.pug
 
 block vars
-  - var title = 'Grid Demo'
+  - var title = 'Grid'
   - var description = 'Grid Demo for MMCSS - Minimal Modern CSS Framework'
-  - var path = 'demo/grid.html'
 
-block styles
+block docs-styles
   style.
-    .grid > div > div {
+    #grid-demo .grid > div > div {
       background-color: #eee;
       border-radius: 3px;
       margin-bottom: 24px;
@@ -17,47 +16,46 @@ block styles
       line-height: 3;
     }
 
-block content
-    article.container-readable
-        h1 Grid
-        div.grid.section
-          div.one-half
-            div HALF
-          div.one-half
-            div HALF
-          div.one-half
-            div HALF
-          div.one-half
-            div HALF
+block docs-content
+  #grid-demo
+    div.grid.section
+      div.one-half
+        div HALF
+      div.one-half
+        div HALF
+      div.one-half
+        div HALF
+      div.one-half
+        div HALF
 
-        div.grid.section
-          div.one-third
-            div ONE-THIRD
-          div.one-third
-            div ONE-THIRD
-          div.one-third
-            div ONE-THIRD
-          div.one-third
-            div ONE-THIRD
-          div.one-third
-            div ONE-THIRD
-          div.one-third
-            div ONE-THIRD
+    div.grid.section
+      div.one-third
+        div ONE-THIRD
+      div.one-third
+        div ONE-THIRD
+      div.one-third
+        div ONE-THIRD
+      div.one-third
+        div ONE-THIRD
+      div.one-third
+        div ONE-THIRD
+      div.one-third
+        div ONE-THIRD
 
-        div.grid.section
-          div.one-fourth
-            div ONE-FOURTH
-          div.one-fourth
-            div ONE-FOURTH
-          div.one-fourth
-            div ONE-FOURTH
-          div.one-fourth
-            div ONE-FOURTH
-          div.one-fourth
-            div ONE-FOURTH
-          div.one-fourth
-            div ONE-FOURTH
-          div.one-fourth
-            div ONE-FOURTH
-          div.one-fourth
-            div ONE-FOURTH
+    div.grid.section
+      div.one-fourth
+        div ONE-FOURTH
+      div.one-fourth
+        div ONE-FOURTH
+      div.one-fourth
+        div ONE-FOURTH
+      div.one-fourth
+        div ONE-FOURTH
+      div.one-fourth
+        div ONE-FOURTH
+      div.one-fourth
+        div ONE-FOURTH
+      div.one-fourth
+        div ONE-FOURTH
+      div.one-fourth
+        div ONE-FOURTH

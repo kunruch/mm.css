@@ -1,71 +1,65 @@
-extends ./../_layouts/_layout-main.pug
+extends ./../_layouts/_layout-docs.pug
 
 block vars
-  - var title = 'Text Demo'
+  - var title = 'Text'
   - var description = 'Text Demo for MMCSS - Minimal Modern CSS Framework'
-  - var path = 'demo/text.html'
 
-block content
-    article
-        .sub-header
-            .container-readable
-                h1 Standard Text Article with a Very Long Title
-        .container-readable
-            p.text-large This is an example of a standard post format
-            p
-                | Inspiration is a spark. A flash of light. Ignition. But without the proper mixture of oxygen and fuel, inspiration
-                | both lives and dies in the same instant. My life, my experiences, my research; these things are fertile soil
-                | for the great blog posts hidden within me. I carry them always and they are present when I sit down to do
-                | my work.
-            p
-              img(src="/img/mmcss-featured.png")
-            p
-                | But all too often, it’s a struggle. The raw material is there, but the inspiration is not. The oxygen is abundant,
-                | but the fuel is scarce. And I’m left wondering, “How?”
-            p
-                | How do I harvest? How do I sift and pan? How do I mine the caverns within me for intellectual and emotional gems?
-                | How do I… write?
-            p
-                | Or perhaps a better question is, how do you? Yes, 
-                em you
-                | , my kindred blog reader. Surely, 
-                em you
-                |  are
-                |                 similar. Surely, 
-                em you’ve
-                |  wrestled the Great Muse down to the dusty earth, and won.
-            p
-                | I know this: it starts before I sit down to type. Great posts begin with significant life challenges. With weighty
-                | problems to solve. With an urgent need or a mature discontent with the way things are today. Yes, I
-                | think all great posts begin before words are written.
-            p So get up, reader. Walk away from your keyboard, and live.
-            p Only then can you give life… to words.
-            h3 Default
-            p
-                | This is a paragraph. It should not have any alignment of any kind. It should just flow like you would normally
-                | expect. Nothing fancy. Just straight up text, free flowing, with love. Completely neutral and not picking
-                | a side or sitting on the fence. It just is. It just freaking is. It likes where it is. It does not feel compelled
-                | to pick a side. Leave him be. It will just be better that way. Trust me.
-            h3 Left Align
-            p(style='text-align: left;')
-                | This is a paragraph. It is left aligned. Because of this, it is a bit more liberal in it’s views. It’s favorite
-                | color is green. Left align tends to be more eco-friendly, but it provides no concrete evidence that it really
-                | is. Even though it likes share the wealth evenly, it leaves the equal distribution up to justified alignment.
-            h3 Center Align
-            p(style='text-align: center;')
-                | This is a paragraph. It is center aligned. Center is, but nature, a fence sitter. A flip flopper. It has a difficult
-                | time making up its mind. It wants to pick a side. Really, it does. It has the best intentions, but it tends
-                | to complicate matters more than help. The best you can do is try to win it over and hope for the best. I
-                | hear center align does take bribes.
-            h3 Right Align
-            p(style='text-align: right;')
-                | This is a paragraph. It is right aligned. It is a bit more conservative in it’s views. It’s prefers to not be
-                | told what to do or how to do it. Right align totally owns a slew of guns and loves to head to the range for
-                | some practice. Which is cool and all. I mean, it’s a pretty good shot from at least four or five football
-                | fields away. Dead on. So boss.
-            h3 Justify Align
-            p(style='text-align: justify;')
-                | This is a paragraph. It is justify aligned. It gets really mad when people associate it with Justin Timberlake.
-                | Typically, justified is pretty straight laced. It likes everything to be in it’s place and not all cattywampus like
-                | the rest of the aligns. I am not saying that makes it better than the rest of the aligns, but it does tend
-                | to put off more of an elitist attitude.
+block docs-content
+  p.text-large This is an example of a standard post format
+
+    | Inspiration is a spark. A flash of light. Ignition. But without the proper mixture of oxygen and fuel, inspiration
+    | both lives and dies in the same instant. My life, my experiences, my research; these things are fertile soil
+    | for the great blog posts hidden within me. I carry them always and they are present when I sit down to do
+    | my work.
+  p
+    img(src="/img/mmcss-featured.png")
+  p
+    | But all too often, it’s a struggle. The raw material is there, but the inspiration is not. The oxygen is abundant,
+    | but the fuel is scarce. And I’m left wondering, “How?”
+  p
+    | How do I harvest? How do I sift and pan? How do I mine the caverns within me for intellectual and emotional gems?
+    | How do I… write?
+  p
+    | Or perhaps a better question is, how do you? Yes, 
+    em you
+    | , my kindred blog reader. Surely, 
+    em you
+    |  are
+    |                 similar. Surely, 
+    em you’ve
+    |  wrestled the Great Muse down to the dusty earth, and won.
+  p
+    | I know this: it starts before I sit down to type. Great posts begin with significant life challenges. With weighty
+    | problems to solve. With an urgent need or a mature discontent with the way things are today. Yes, I
+    | think all great posts begin before words are written.
+  p So get up, reader. Walk away from your keyboard, and live.
+  p Only then can you give life… to words.
+  h3 Default
+  p
+    | This is a paragraph. It should not have any alignment of any kind. It should just flow like you would normally
+    | expect. Nothing fancy. Just straight up text, free flowing, with love. Completely neutral and not picking
+    | a side or sitting on the fence. It just is. It just freaking is. It likes where it is. It does not feel compelled
+    | to pick a side. Leave him be. It will just be better that way. Trust me.
+  h3 Left Align
+  p(style='text-align: left;')
+    | This is a paragraph. It is left aligned. Because of this, it is a bit more liberal in it’s views. It’s favorite
+    | color is green. Left align tends to be more eco-friendly, but it provides no concrete evidence that it really
+    | is. Even though it likes share the wealth evenly, it leaves the equal distribution up to justified alignment.
+  h3 Center Align
+  p(style='text-align: center;')
+    | This is a paragraph. It is center aligned. Center is, but nature, a fence sitter. A flip flopper. It has a difficult
+    | time making up its mind. It wants to pick a side. Really, it does. It has the best intentions, but it tends
+    | to complicate matters more than help. The best you can do is try to win it over and hope for the best. I
+    | hear center align does take bribes.
+  h3 Right Align
+  p(style='text-align: right;')
+    | This is a paragraph. It is right aligned. It is a bit more conservative in it’s views. It’s prefers to not be
+    | told what to do or how to do it. Right align totally owns a slew of guns and loves to head to the range for
+    | some practice. Which is cool and all. I mean, it’s a pretty good shot from at least four or five football
+    | fields away. Dead on. So boss.
+  h3 Justify Align
+  p(style='text-align: justify;')
+    | This is a paragraph. It is justify aligned. It gets really mad when people associate it with Justin Timberlake.
+    | Typically, justified is pretty straight laced. It likes everything to be in it’s place and not all cattywampus like
+    | the rest of the aligns. I am not saying that makes it better than the rest of the aligns, but it does tend
+    | to put off more of an elitist attitude.

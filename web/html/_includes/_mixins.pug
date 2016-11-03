@@ -1,6 +1,6 @@
-mixin menu(list)
+mixin menu(list, classes)
   nav(role="navigation")
-    ul.menu
+    ul(class=classes)
       each item in list
         +menuitem(item)
 
@@ -11,9 +11,12 @@ mixin submenu(item)
         +menuitem(subitem)
 
 mixin menuitem(item)
-  li(class=['menu-item'], class={'current-menu-item': page.path == item.url})
-    a(href=item.url)&attributes(item.attributes) #{item.title}
-    +submenu(item)
+  if item.url
+    li(class=['menu-item'], class={'current-menu-item': page.path == item.url})
+      a(href=item.url)&attributes(item.attributes) #{item.title}
+      +submenu(item)
+  else
+    li(class='menu-header') #{item.title}
 
 mixin social(list)
   each item in list

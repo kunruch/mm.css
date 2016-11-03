@@ -1,0 +1,19 @@
+- title: "Getting Started"
+- title: "Introduction"
+  url: "/docs"
+
+- title: "Core"
+- title: Text
+  url: "/docs/text"
+- title: Markup and Formatting
+  url: "/docs/markup-and-formatting"
+- title: Lists
+  url: "/docs/lists"
+- title: Forms
+  url: "/docs/forms"
+- title: Buttons
+  url: "/docs/buttons"
+- title: Grid
+  url: "/docs/grid"
+- title: Search Form
+  url: "/docs/searchform"
