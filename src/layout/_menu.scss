@@ -110,6 +110,8 @@ $size-menu-padding: 12px;
 .menu-header {
   text-transform: uppercase;
   font-size: 90%;
+  color: $color-gray-dark;
+  letter-spacing: 1px;
 }
 
 .menu-header:not(:first-child) {

@@ -1,6 +1,14 @@
 - title: "Getting Started"
 - title: "Introduction"
   url: "/docs"
+- title: "Installation"
+  url: "/docs/installation"
+- title: "Basic Template"
+  url: "/docs/basic-template"
+- title: "Layout Examples"
+  url: "/docs/layout-examples"
+- title: "Porject Structure"
+  url: "/docs/project-structure"
 
 - title: "Core"
 - title: Text
