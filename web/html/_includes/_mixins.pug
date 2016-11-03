@@ -30,7 +30,7 @@ mixin prevmenu(list, classes)
   each item in list
     if(item.url === page.path)
       if(prev.url)
-        a(href=prev.url, class=classes) &larr; #{prev.title}
+        span(class=classes) &larr; <a href="#{prev.url}">#{prev.title}</a>
     else
       - prev = item
 
@@ -39,7 +39,7 @@ mixin nextmenu(list, classes)
   each item in list
     if(found === true)
       if(item.url)
-        a(href=item.url, class=classes) #{item.title} &rarr;
+        span(class=classes) <a href="#{item.url}">#{item.title}</a> &rarr;
       - found = false
     else if(item.url == page.path)
       - found = true
