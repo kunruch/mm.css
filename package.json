@@ -5,6 +5,7 @@
   "main": "dist/mm.css",
   "dependencies": {},
   "devDependencies": {
+    "gzip-size": "^3.0.0",
     "mmpilot": "^0.4.3",
     "npm-run-all": "^3.1.1",
     "shx": "^0.1.4",
