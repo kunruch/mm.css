@@ -112,6 +112,14 @@ $color-header-dark-text: $color-text-light !default;
 }
 
 @include mobile {
+  .header-right {
+    right: $size-element-spacing-small;
+  }
+
+  .header-left {
+    left: $size-element-spacing-small;
+  }
+
   .menu-toggle-content {
     .header-right,
     .header-left {
