@@ -36,9 +36,16 @@ block content
           .menu-toggle-content
             +menu(data.menu.docs)
       .one-half
-        article
-          .container-readable
+        .container-readable
+          article
             .sub-header.section-medium.text-center
               h1.section-title #{title}
               p.text-muted.text-small #{description}
             block docs-content
+          .grid.section-medium
+            .one-half
+              +prevmenu(data.menu.docs, 'alignleft')
+            .one-half
+              +nextmenu(data.menu.docs, 'alignright')
+          hr
+          p.text-small.text-muted.text-center Want to contribute to the documentation? Edit this page on Github.

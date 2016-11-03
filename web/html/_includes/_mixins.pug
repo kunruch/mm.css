@@ -23,3 +23,23 @@ mixin social(list)
     a.button.button-text(href=item.url, target="_blank")
       | <svg class="icon icon-#{item.icon}"><use xlink:href="#icon-#{item.icon}"></use></svg>
       span #{item.title}
+
+
+mixin prevmenu(list, classes)
+  - var prev = ''
+  each item in list
+    if(item.url === page.path)
+      if(prev.url)
+        a(href=prev.url, class=classes) &larr; #{prev.title}
+    else
+      - prev = item
+
+mixin nextmenu(list, classes)
+  - var found = false
+  each item in list
+    if(found === true)
+      if(item.url)
+        a(href=item.url, class=classes) #{item.title} &rarr;
+      - found = false
+    else if(item.url == page.path)
+      - found = true

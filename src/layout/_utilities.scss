@@ -31,6 +31,7 @@ ul.bare {
 .text-large {
   @include font-size($size-large-text);
 }
+
 // Alignments for elements like text and images
 .text-center {
   text-align: center;
