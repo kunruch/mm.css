@@ -29,8 +29,8 @@ html(lang='en-US')
           a(href='/').site-branding
             h1.title MMCSS        
         .menu-toggle
-          input(type="checkbox")#checkbox-toggle
-          label(for="checkbox-toggle").header-right
+          input(type="checkbox")#menu-toggle
+          label(for="menu-toggle").header-right
             span.css-icon-hamburger
               span Toggle
             span Menu
@@ -46,6 +46,6 @@ html(lang='en-US')
           br
           | Licensed under the <a href="#{site.github}blob/master/LICENSE.md" target="blank">MIT License</a>.
         div
-           +social(data.menu.social)
+          +social(data.menu.social)
   block scripts
   include ./../_includes/_analytics.pug

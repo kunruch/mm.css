@@ -1,0 +1,40 @@
+extends ./_layout-main.pug
+
+block styles
+  style.
+    #docs .one-half:first-child {
+      width: 20%;
+    }
+    
+    #docs .one-half:last-child {
+      width: 75%;
+    }
+
+    #docs-toggle + label{
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 999;
+      background-color: #fff;
+    }
+
+block content
+  #docs.container-content
+    .grid
+      .one-half
+        .menu-toggle
+          input(type="checkbox")#docs-toggle
+          label(for="docs-toggle").alignright
+            span.css-icon-hamburger
+              span Toggle
+            span Docs
+          .menu-toggle-content
+            +menu(data.menu.main)
+      .one-half
+        article
+          .sub-header.section-medium.text-center
+            .container-readable
+              h1.section-title #{title}
+              p.text-muted.text-large #{description}
+          .section
+            block docs-content

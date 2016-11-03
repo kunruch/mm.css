@@ -186,7 +186,7 @@ $size-menu-padding: 12px;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    z-index: 1;
+    z-index: 999;
   }
 
   .menu li {
