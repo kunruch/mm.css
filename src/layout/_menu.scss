@@ -23,20 +23,20 @@ $size-menu-padding: 12px;
     background: #fff;
     border: 1px solid $color-default-border;
     border-radius: $size-default-radius;
-    //position at bottom-center of it's parent
-    top: 100%;
-    left: 50%;
-    margin: 0 0 0 -1 * ($size-menu-width + (2 * $size-menu-padding))/2;
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
+    opacity: 0;
     padding: 0 $size-menu-padding;
     float: left;
     text-align: left;
     position: absolute;
+    margin: 0 0 0 -1 * ($size-menu-width + (2 * $size-menu-padding))/2;
+    //position at bottom-center of it's parent
+    top: 100%;
+    left: 50%;
     font-size: 90%;
     line-height: 3;
     transform: scale(0);
     transform-origin: center top;
+    transition: transform 0.3s ease-in-out;
     z-index: 99999;
     //submenu's submenu
     ul {

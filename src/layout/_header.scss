@@ -10,11 +10,13 @@ $color-header-dark-text: $color-text-light !default;
   border-bottom: 1px solid $color-default-border;
   color: $color-header-default-text;
 }
+
 // Header modifiers
 .header-dark {
   background-color: $color-header-dark-background;
   color: $color-header-dark-text;
 }
+
 //Common Styles
 .header,
 .header-dark {
