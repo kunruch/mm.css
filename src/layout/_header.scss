@@ -9,7 +9,6 @@ $color-header-dark-text: $color-text-light !default;
   background-color: $color-header-default-background;
   border-bottom: 1px solid $color-default-border;
   color: $color-header-default-text;
-  height: $size-site-header-height;
 }
 // Header modifiers
 .header-dark {
@@ -23,6 +22,7 @@ $color-header-dark-text: $color-text-light !default;
   text-align: center;
   position: relative;
   line-height: $size-site-header-height;
+  height: $size-site-header-height;
 
   .menu {
     font-size: 105%;

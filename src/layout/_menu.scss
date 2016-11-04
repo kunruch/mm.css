@@ -142,7 +142,7 @@ $size-menu-padding: 12px;
 
   &:focus,
   &:hover {
-    background-color: $color-background-light;
+    background-color: rgba($color-background-light, 0.5);
     opacity: 1;
   }
 }
