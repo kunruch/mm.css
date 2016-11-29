@@ -8,7 +8,7 @@ nav {
     color: $color-text;
   }
 
-  .current-menu-item a {
+  .current-menu-item > a {
     color: $color-primary;
   }
 }
