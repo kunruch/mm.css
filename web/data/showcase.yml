@@ -1,3 +1,19 @@
+- name: "GraphicFlip"
+  url: "https://graphicflip.com/"
+  image: "/img/showcase/graphicflip.png"
+
+- name: "TemplateFlip"
+  url: "https://templateflip.com/"
+  image: "/img/showcase/templateflip.png"
+
+- name: "KunRuch Creations"
+  url: "https://kunruchcreations.com/"
+  image: "/img/showcase/kunruchcreations.png"
+
+- name: "MMPilot"
+  url: "https://mmpilot.kunruchcreations.com/"
+  image: "/img/showcase/mmpilot.png"
+
 - name: "KunRuch Status"
   url: "https://status.kunruchcreations.com/"
   image: "/img/showcase/kunruch-status.png"
