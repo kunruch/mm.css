@@ -1,33 +1,16 @@
 $color-footer-default-background: $color-gray-light !default;
 $color-footer-default-text: lighten($color-text, 30) !default;
 $color-footer-default-link: lighten($color-text, 10) !default;
-$color-footer-dark-background: $color-background-dark !default;
-$color-footer-dark-text: darken($color-text-light, 30) !default;
-$color-footer-dark-link: darken($color-text-light, 10) !default;
 
 .footer {
   background-color: $color-footer-default-background;
   border-top: 1px solid $color-default-border;
   color: $color-footer-default-text;
+  margin-top: $size-element-spacing-big;
+  font-size: 95%;
 
   a,
   a.button {
     color: $color-footer-default-link;
   }
-}
-
-.footer-dark {
-  background-color: $color-footer-dark-background;
-  color: $color-footer-dark-text;
-
-  a,
-  a.button {
-    color: $color-footer-dark-link;
-  }
-}
-// Common style rules
-.footer,
-.footer-dark {
-  margin-top: $size-element-spacing-big;
-  font-size: 95%;
 }

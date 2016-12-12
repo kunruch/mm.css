@@ -1,14 +1,7 @@
 $color-sub-header-default-background: $color-body !default;
 $color-sub-header-default-text: $color-text !default;
-$color-sub-header-dark-background: $color-background-dark !default;
-$color-sub-header-dark-text: $color-text-light !default;
 
 .sub-header {
   background-color: $color-sub-header-default-background;
   color: $color-sub-header-default-text;
-}
-
-.sub-header-dark {
-  background-color: $color-sub-header-dark-background;
-  color: $color-sub-header-dark-text;
 }
