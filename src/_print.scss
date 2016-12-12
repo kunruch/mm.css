@@ -1,0 +1,22 @@
+@media print {
+  body {
+    background: none;
+    color: #000;
+    margin: 0;
+  }
+
+  .header,
+  .footer {
+    display: none;
+  }
+
+  a {
+    word-wrap: break-word;
+    color: #000;
+  }
+
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 80%;
+  }
+}
