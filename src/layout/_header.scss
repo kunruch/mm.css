@@ -50,6 +50,11 @@ $color-header-default-text: $color-headings !default;
   }
 }
 
+// To position header left and right
+.header > [class*="container"] {
+  position: relative;
+}
+
 // Header positioning
 .header-left {
   position: absolute;
@@ -61,6 +66,10 @@ $color-header-default-text: $color-headings !default;
   position: absolute;
   right: $size-element-spacing;
   top: 0;
+}
+
+.header-right .menu > li.menu-item:last-child {
+  padding-right: 0;
 }
 
 // Header elements styles
