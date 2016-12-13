@@ -128,7 +128,7 @@ $size-menu-padding: 12px;
   display: none; //Hide the checkbox as checking and unchecking is done via it's label.
 }
 
-.menu-toggle label {
+.menu-toggle > label {
   display: none;
   cursor: pointer;
   user-select: none;
