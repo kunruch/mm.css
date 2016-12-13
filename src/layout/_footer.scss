@@ -13,3 +13,9 @@ $color-footer-default-link: lighten($color-text, 10) !default;
     color: $color-footer-default-link;
   }
 }
+
+@include mobile {
+  .footer {
+    margin-top: $size-element-spacing;
+  }
+}
