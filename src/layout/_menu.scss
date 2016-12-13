@@ -136,13 +136,13 @@ $size-menu-padding: 12px;
   padding: 0 16px 0 8px;
   margin-top: ($size-site-header-height - 42px) / 2;
   text-transform: uppercase;
-  border: 1px solid $color-default-border;
+  border: 0;
   border-radius: $size-default-radius;
   opacity: 0.8;
 
   &:focus,
   &:hover {
-    background-color: rgba($color-background-light, 0.5);
+    background-color: rgba(125, 125, 125, 0.1);
     opacity: 1;
   }
 }
