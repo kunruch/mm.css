@@ -11,11 +11,11 @@ input[type="submit"] {
   cursor: pointer;
   display: inline-block;
   font-weight: $font-weight-normal;
-  line-height: 2.5;
-  padding: 0 $size-element-spacing;
+  line-height: 1.5;
+  padding: 0.3em 1em;
+  white-space: normal;
   text-align: center;
   text-decoration: none;
-  white-space: nowrap;
 
   @include element-spacing(1);
 
@@ -53,7 +53,7 @@ input[type="submit"] {
 
   &.button-rounded {
     border-radius: 3rem;
-    padding: 0 (1.5 * $size-element-spacing);
+    padding: 0.3em 1.5em;
   }
 
   &.button-text {
