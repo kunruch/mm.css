@@ -1,4 +1,4 @@
-extends ./_layout-main.pug
+extends ./_layout-default.pug
 
 block styles
   block docs-styles
@@ -39,9 +39,9 @@ block content
         .container-readable
           article
             .sub-header.section-medium.text-center
-              h1.section-title #{title}
-              p.text-muted.text-small #{description}
-            block docs-content
+              h1.section-title #{page.title}
+              p.text-muted.text-small #{page.description}
+            div!= page.content
           .grid.section-medium
             .one-half
               +prevmenu(data.menu.docs, 'alignleft')

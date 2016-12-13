@@ -1,0 +1,30 @@
+extends ./_layout-root.pug
+
+block header
+  header.header
+    .container
+      .header-left
+        a(href='/').site-branding
+          h1.title MMCSS        
+      .menu-toggle
+        input(type="checkbox")#menu-toggle
+        label(for="menu-toggle").header-right
+          span.css-icon-hamburger
+            span Toggle
+          span Menu
+        .menu-toggle-content
+          +menu(data.menu.main, 'menu')
+          .header-right
+            +social(data.menu.social)
+
+block content
+  != page.content
+
+block footer
+    footer.footer
+      .container-content.section-large.text-center
+        p Built with <a href="https://mmpilot.kunruchcreations.com/" target="_blank">mmpilot</a> for the modern web by <a href="http://kunruchcreations.com/">KunRuch Creations</a>.
+          br
+          | Licensed under the <a href="#{site.github}blob/master/LICENSE.md" target="blank">MIT License</a>.
+        div
+          +social(data.menu.social)

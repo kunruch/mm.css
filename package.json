@@ -6,10 +6,10 @@
   "dependencies": {},
   "devDependencies": {
     "gzip-size": "^3.0.0",
-    "mmpilot": "^0.4.4",
-    "npm-run-all": "^3.1.1",
-    "shx": "^0.1.4",
-    "stylelint": "^7.5.0"
+    "mmpilot": "^0.6.2",
+    "npm-run-all": "^3.1.2",
+    "shx": "^0.2.1",
+    "stylelint": "^7.6.0"
   },
   "keywords": [
     "css",

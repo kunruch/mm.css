@@ -1,4 +1,6 @@
 ## data for building project
+includes: "web/html/_includes"
+layouts: "web/html/_layouts"
 html:
   src: "web/html"
 styles:
@@ -9,7 +11,9 @@ data: "web/data"
 
 ## additional data for site available as site.{key} in pug templates
 site:
-  url: "https://mmcss.kunruchcreations.com/"
+  url: "https://mmcss.kunruchcreations.com"
+  title: MMCSS
+  icon: mmcss
   github: "https://github.com/kunruch/mmcss/"
   twitter: "https://twitter.com/kanishkkunal"
   analytics: "UA-37350394-13"
@@ -17,5 +21,5 @@ site:
 ## overrides when built with -d or --development option
 development:
   site:
-    url: "http://localhost:3000/"
+    url: "http://localhost:3000"
     analytics: "" #don't count hits from localhost in analytics

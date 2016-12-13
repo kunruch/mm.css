@@ -1,15 +1,15 @@
-extends ./_layouts/_layout-main.pug
-
-block vars
-  - var title = 'Minimal Modern CSS Framework'
-  - var description = 'A Minimal Modern CSS Framework for front-end Web Development. WordPress Compatible and built with SASS/SCSS'
+---
+title: 'Minimal Modern CSS Framework'
+description: 'A Minimal Modern CSS Framework for front-end Web Development. WordPress Compatible and built with SASS/SCSS'
+layout: 'default'
+---
 
 block content
     div.section-hero.sub-header.text-center
         .container-content
             .media
               .thumbnail.aligncenter
-                include _includes/_mmcss.svg
+                include _includes/icons/_mmcss.svg
               .media-body
                 h2 A Minimal Modern CSS Framework
             p.text-center.text-muted Built with <a href="http://sass-lang.com/" target="_blank">Sass</a> - #{data.stats.size}KB size - MIT License
