@@ -34,7 +34,8 @@
     "prod-dist": "npm-run-all clean build && shx cp public/styles/mm.css dist/mm.min.css",
     "lint": "stylelint \"src/**/*.scss\" --syntax scss",
     "dist": "npm-run-all lint dev-dist prod-dist && git add dist/*.css && git commit -m \"Updating dist\" && git push -u origin master",
-    "dist-patch": "npm run dist && npm version patch -m \"Version %s\" && git push && git push --tags && npm publish"
+    "patch": "npm version patch -m \"Version %s\" && git push && git push --tags && npm publish",
+    "dist-patch": "npm run dist && npm run patch"
   },
   "engines": {
     "node": ">=4.2.2"
