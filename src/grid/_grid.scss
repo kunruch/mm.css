@@ -23,6 +23,10 @@ $grid-col-margin-span: 5% !default; //space between cols
   width: 100%;
 }
 
+.one-full {
+  @include col-full-width();
+}
+
 // Full width cols on mobile devices
 .one-fourth,
 .one-half,
