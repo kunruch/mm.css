@@ -74,20 +74,23 @@ block content
             p You can download MMCSS
                 a(href=site.github + "releases/latest")  latest release
                 |  and use <code>dist/mm.min.css</code> in your project or use it via <a href="https://unpkg.com/mmcss/dist/mm.min.css" target="_blank">CDN</a> as shown below.
-                pre &lt;link href="https://unpkg.com/mmcss/dist/mm.min.css" rel="stylesheet"&gt;
+            pre
+              code.text-small &lt;link href="https://unpkg.com/mmcss/dist/mm.min.css" rel="stylesheet"&gt;
                 
             p However, we recommend that you use the source file <code>mm.scss</code> in your project if you want to add your own style overrides. See below for instructions.
 
             h3.h4 Install via npm
-            pre npm install mmcss --save
+            pre
+              code.text-small npm install mmcss --save
 
-            h3.h4 Include MMCSS in your project
+            h3.h4 Including mm.css in your projects
             p Ensure <code>node_modules</code> is added to your Sass <a href="http://stackoverflow.com/questions/6502313/sass-import-a-file-from-a-different-directory" target="_blank">includes/load_paths</a>. If you are using <a href="https://mmpilot.kunruchcreations.com/" target="_blank">MMPilot</a> for building your project, this would have already been taken care for you.
             p If you are using Sass (recommended) to build your stylesheets then add the following code
-            pre.
-               @import 'mmcss/src/mm';
+            pre
+              code.text-small @import 'mmcss/src/mm';
             p You can also include the dist (compiled and minified) version directly if you don't want to do any style overrides.
-            pre @import 'mmcss/dist/mm';
+            pre
+              code.text-small @import 'mmcss/dist/mm';
 
             h3.h4 Starter Template
             p.
