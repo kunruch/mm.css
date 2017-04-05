@@ -21,3 +21,11 @@
 - name: "SDR News"
   url: "https://news.superdevresources.com/"
   image: "/img/showcase/sdr-news.png"
+
+- name: "SDR Tools"
+  url: "https://tools.superdevresources.com/"
+  image: "/img/showcase/sdr-tools.png"
+
+- name: "Kanishk Kunal"
+  url: "https://kanishkkunal.in/"
+  image: "/img/showcase/kanishkkunal.jpg"
