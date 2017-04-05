@@ -9,6 +9,7 @@ html(lang='en-US')
     +titlemeta(page.title, site.title)
     +opengraph(page)
     link(rel='canonical', href=page.url)
+    link(href="/vendors/highlight/styles/default.css", rel="stylesheet")
     link(href='/styles/mm.css', rel='stylesheet')
     style
       include ./../_includes/icons/_icons.css
@@ -20,5 +21,7 @@ html(lang='en-US')
     block header
     block content
     block footer
-  block scripts
+    script(src="/vendors/highlight/highlight.pack.js")
+    script hljs.initHighlightingOnLoad();
+    block scripts
   include ./../_includes/_analytics.pug
