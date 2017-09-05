@@ -1,6 +1,6 @@
 ---
 title: 'Buttons'
-description: 'Buttons Demo for MMCSS - Minimal Modern CSS Framework'
+description: 'Button Classes in MMCSS - Minimal Modern CSS Framework'
 layout: 'docs'
 ---
 
@@ -9,6 +9,16 @@ block docs-content
     div
       p
         strong Default Buttons
+      p Links and buttons can be styled using the <code>button</code>, <code>button-primary</code>, <code>button-ghost</code> and <code>button-text</code> classes.
+      pre
+        code.
+          #{'<!-- Default Buttons -->'}
+          #{'<a class="button" href="#">Default Button</a>'}
+          #{'<a class="button button-primary" href="#">Primary Button</a>'}
+          #{''}
+          #{'<!-- When assigning to a <button> element, "button" class is not needed -->'}
+          #{'<button class="button-ghost">Ghost Button</button>'}
+          #{'<input class="button-text" value="Text Button"  type="submit"/>'}
       div
         // Default Button
         a.button(href='#') Default Button
@@ -22,12 +32,27 @@ block docs-content
     div
       p
         strong Rounded Buttons
+      p Add <code>button-rounded</code> class to make any button a rounded button.
+      pre
+        code.
+          #{'<!-- Default Button Rounded -->'}
+          #{'<a class="button button-rounded" href="#">Rounded Button</a>'}
+          #{''}
+          #{'<!-- Primary Button Rounded -->'}
+          #{'<button class="button-primary button-rounded">'}
+          #{' Primary Button Rounded'}
+          #{'</button>'}
+          #{''}
+          #{'<!-- Ghost Button Rounded -->'}
+          #{'<button class="button-ghost button-rounded">'}
+          #{' Rounded Ghost Button'}
+          #{'</button>'}
       div
-        // Default Button
+        // Default Button Rounded
         a.button.button-rounded(href='#') Rounded Button
         // Primary Button Rounded
-        button.button-ghost.button-rounded.button-primary Rounded Primary Button
-        // Ghost Button
+        button.button-rounded.button-primary Rounded Primary Button
+        // Ghost Button Rounded
         button.button-ghost.button-rounded Rounded Ghost Button
     hr
     div
