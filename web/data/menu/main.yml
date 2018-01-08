@@ -2,8 +2,6 @@
   url: "/docs"
 - title: "Showcase"
   url: "/showcase"
-- title: "Contact"
-  url: "/contact"
 - title: "Help"
   url: "#"
   children:
@@ -28,3 +26,5 @@
             target: "_blank"
 - title: "About"
   url: "/about"
+- title: "Contact"
+  url: "/contact"
