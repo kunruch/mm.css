@@ -7,4 +7,4 @@ Emoji Reference for Commit messages:
   - 📝 `:memo:` When writing docs or updating project's website
   - 🐛 `:bug:` When fixing a bug
   - 🔖 `:bookmark:` When doing a release or a version tag.
-  - 🔧 `:wrench:` When worrking on Tooling or anything else not touching code in `src` folder
+  - 🔧 `:wrench:` When working on Tooling or anything else not touching code in `src` folder
