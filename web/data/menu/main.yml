@@ -1,11 +1,9 @@
 - title: "Docs"
   url: "/docs"
-- title: "Guides"
-  url: "/guides"
-- title: "Templates"
-  url: "/templates"
 - title: "Showcase"
   url: "/showcase"
+- title: "Contact"
+  url: "/contact"
 - title: "Help"
   url: "#"
   children:
@@ -14,22 +12,19 @@
       attributes:
         target: "_blank"
     - title: "View all Issues"
-      url: "https://github.com/kunruch/mmcss/issues"      
+      url: "https://github.com/kunruch/mmcss/issues"
       attributes:
         target: "_blank"
     - title: "See all Releases"
       url: "#"
       children:
         - title: "Latest Release"
-          url: "https://github.com/kunruch/mmcss/releases/latest"          
+          url: "https://github.com/kunruch/mmcss/releases/latest"
           attributes:
             target: "_blank"
         - title: "Release History"
-          url: "https://github.com/kunruch/mmcss/releases"          
+          url: "https://github.com/kunruch/mmcss/releases"
           attributes:
             target: "_blank"
-    - title: "Contact"
-      url: "/contact"
-    - title: "About"
-      url: "/about"
- 
+- title: "About"
+  url: "/about"
