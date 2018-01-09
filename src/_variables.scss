@@ -1,27 +1,28 @@
 // Colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$color-blue: #2196f3 !default; //material blue
-$color-big-stone: #141e30 !default;
+$color-blue: #357bd8 !default;
 
 // Grays
-$color-gray-light: #fafafa !default;
-$color-gray-medium-light: #f2f2f2 !default;
+$color-gray-light: #f8f8f8 !default;
+$color-gray-medium-light: #ebebeb !default;
 $color-gray: #ddd !default;
 $color-gray-dark: #aaa !default;
+$color-gray-darkest: #444 !default;
+$color-black: #222 !default;
 
 // Background color
 $color-body: #fff !default; //white background
 $color-background-light: $color-gray-light !default;
-$color-background-dark: $color-big-stone !default;
+$color-background-dark: $color-gray-darkest !default;
 
 // Branding colors
 $color-primary: $color-blue !default;
 $color-primary-hover: darken($color-primary, 5) !default;
 
 //  Text colors
-$color-text:  #444 !default;
-$color-headings: #222 !default;
+$color-text:  $color-gray-darkest !default;
+$color-headings: $color-black !default;
 $color-text-light:  $color-gray-light !default;
 $color-text-muted:  $color-gray-dark !default;
 
