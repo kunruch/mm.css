@@ -34,4 +34,4 @@ $ npm install mmcss --save
 - [Milligram](http://milligram.github.io) - Milligram is a minimalist CSS framework by [CJ Patoilo](http://cjpatoilo.com).
 
 ## License
-Licensed under the [MIT License](https://github.com/kunruch/mmcss/blob/master/LICENSE.md)
+Licensed under the [MIT License](https://github.com/kunruch/mm.css/blob/master/LICENSE.md)

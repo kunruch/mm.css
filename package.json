@@ -43,12 +43,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kunruch/mmcss.git"
+    "url": "git+https://github.com/kunruch/mm.css.git"
   },
   "author": "Kanishk Kunal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kunruch/mmcss/issues"
+    "url": "https://github.com/kunruch/mm.css/issues"
   },
   "homepage": "https://mmcss.kunruchcreations.com/"
 }
