@@ -1,0 +1,43 @@
+// Text helper classes
+
+/* text sizes */
+
+.text-small {
+  @include font-size($size-small-text);
+}
+
+.text-medium {
+  @include font-size($size-medium-text);
+}
+
+.text-large {
+  @include font-size($size-large-text);
+}
+
+/* text alignments */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* text colors */
+
+.text-muted {
+  color: $color-text-muted;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-shadow {
+  text-shadow: 0 1px 2px $color-default-shadow;
+}

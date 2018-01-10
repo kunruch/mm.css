@@ -2,6 +2,10 @@
   url: "/docs"
 - title: "Showcase"
   url: "/showcase"
+- title: "About"
+  url: "/about"
+- title: "Contact"
+  url: "/contact"
 - title: "Help"
   url: "#"
   children:
@@ -24,7 +28,3 @@
           url: "https://github.com/kunruch/mm.css/releases"
           attributes:
             target: "_blank"
-- title: "About"
-  url: "/about"
-- title: "Contact"
-  url: "/contact"

@@ -1,3 +1,5 @@
+@import "text";
+
 // Bare list style
 ul.bare {
   list-style: none;
@@ -14,29 +16,8 @@ ul.bare {
   background-color: $color-background-dark;
   color: $color-text-light;
 }
-// Text helper classes
 
-.text-muted {
-  color: $color-text-muted;
-}
-
-.text-small {
-  @include font-size($size-small-text);
-}
-
-.text-medium {
-  @include font-size($size-medium-text);
-}
-
-.text-large {
-  @include font-size($size-large-text);
-}
-
-// Alignments for elements like text and images
-.text-center {
-  text-align: center;
-}
-
+// Alignments for elements
 .alignleft {
   display: inline;
   float: left;
