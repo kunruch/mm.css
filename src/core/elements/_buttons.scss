@@ -16,6 +16,10 @@ input[type="submit"] {
   white-space: normal;
   text-align: center;
   text-decoration: none;
+  transition: color .15s ease-in-out,
+              background-color .15s ease-in-out,
+              border-color .15s ease-in-out,
+              box-shadow .15s ease-in-out;
 
   @include element-spacing(1);
 
@@ -48,6 +52,18 @@ input[type="submit"] {
     &:hover {
       background-color: $color-primary-hover;
       border-color: $color-primary-hover;
+    }
+  }
+
+  &.button-light {
+    background-color: $color-background-light;
+    border-color: $color-background-light;
+    color: $color-text;
+
+    &:focus,
+    &:hover {
+      background-color: darken($color-background-light, 5);
+      border-color: darken($color-background-light, 5);
     }
   }
 

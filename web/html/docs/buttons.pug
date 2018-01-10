@@ -15,19 +15,22 @@ block docs-content
           #{'<!-- Default Buttons -->'}
           #{'<a class="button" href="#">Default Button</a>'}
           #{'<a class="button button-primary" href="#">Primary Button</a>'}
+          #{'<a class="button button-light" href="#">Light Button</a>'}
           #{''}
           #{'<!-- When assigning to a <button> element, "button" class is not needed -->'}
           #{'<button class="button-ghost">Ghost Button</button>'}
-          #{'<input class="button-text" value="Text Button"  type="submit"/>'}
+          #{'<input class="button button-text" value="Text Button"  type="submit"/>'}
       div
         // Default Button
-        a.button(href='#') Default Button
+        a.button.mr-small(href='#') Default Button
         // Primary Button
-        a.button.button-primary(href='#') Primary Button
+        a.button.button-primary.mr-small(href='#') Primary Button
+        // Light Button
+        a.button.button-light.mr-small(href='#') Light Button
         // Ghost Button
-        button.button-ghost Ghost Button
+        button.button-ghost.mr-small Ghost Button
         // Text Button
-        input.button.button-text(type='submit', value='Text Button')
+        input.button.button-text.mr-small(type='submit', value='Text Button')
     hr
     div
       p
@@ -43,46 +46,60 @@ block docs-content
           #{' Primary Button Rounded'}
           #{'</button>'}
           #{''}
+          #{'<!-- Light Button Rounded -->'}
+          #{'<button class="button-light button-rounded">'}
+          #{' Light Button Rounded'}
+          #{'</button>'}
+          #{''}
           #{'<!-- Ghost Button Rounded -->'}
           #{'<button class="button-ghost button-rounded">'}
           #{' Rounded Ghost Button'}
           #{'</button>'}
       div
         // Default Button Rounded
-        a.button.button-rounded(href='#') Rounded Button
+        a.button.button-rounded.mr-small(href='#') Rounded Button
         // Primary Button Rounded
-        button.button-rounded.button-primary Rounded Primary Button
+        button.button-rounded.button-primary.mr-small Rounded Primary
+        // Light Button Rounded
+        button.button-rounded.button-light.mr-small Rounded Light
         // Ghost Button Rounded
-        button.button-ghost.button-rounded Rounded Ghost Button
+        button.button-ghost.button-rounded.mr-small Rounded Ghost
     hr
     div
       p
         strong Buttons with Icons
       div
-        a.button(href="#", target="_blank")
+        a.button.mr-small(href="#", target="_blank")
           | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
           span Twitter
         // Button
-        a.button.button-primary(href="#", target="_blank")
+        a.button.button-primary.mr-small(href="#", target="_blank")
           | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
           span Twitter
         // Button
-        a.button.button-ghost(href="#", target="_blank")
+        a.button.button-light.mr-small(href="#", target="_blank")
           | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
           span Twitter
         // Button
-        a.button.button-text(href="#", target="_blank")
+        a.button.button-ghost.mr-small(href="#", target="_blank")
+          | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+          span Twitter
+        // Button
+        a.button.button-text.mr-small(href="#", target="_blank")
           | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
           span GitHub
       div
-        a.button(href="#", target="_blank")
+        a.button.mr-small(href="#", target="_blank")
           | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
         // Button
-        a.button.button-primary(href="#" target="_blank")
+        a.button.button-primary.mr-small(href="#" target="_blank")
           | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
         // Button
-        a.button.button-ghost(href="#", target="_blank")
+        a.button.button-light.mr-small(href="#" target="_blank")
           | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
         // Button
-        a.button.button-text(href="#", target="_blank")
+        a.button.button-ghost.mr-small(href="#", target="_blank")
+          | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+        // Button
+        a.button.button-text.mr-small(href="#", target="_blank")
           | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
