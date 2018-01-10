@@ -1,13 +1,8 @@
 .container {
   @include container(100%);
 
-  padding-right: $size-element-spacing;
-  padding-left: $size-element-spacing;
-
-  @include mobile {
-    padding-right: $size-element-spacing-small;
-    padding-left: $size-element-spacing-small;
-  }
+  padding-right: $size-element-spacing-small;
+  padding-left: $size-element-spacing-small;
 }
 
 .container-wide {

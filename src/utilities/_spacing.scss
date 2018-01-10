@@ -40,3 +40,24 @@
 .mt-large {
   margin-top: $size-spacer * 3;
 }
+
+// padding
+.px-small {
+  padding-left: $size-spacer * 0.5;
+  padding-right: $size-spacer * 0.5;
+}
+
+.px {
+  padding-left: $size-spacer;
+  padding-right: $size-spacer;
+}
+
+.py-small {
+  padding-top: $size-spacer * 0.5;
+  padding-bottom: $size-spacer * 0.5;
+}
+
+.py {
+  padding-top: $size-spacer;
+  padding-bottom: $size-spacer;
+}

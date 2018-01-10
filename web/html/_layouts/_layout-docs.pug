@@ -11,41 +11,29 @@ block styles
       background-color: #fff;
     }
 
-    @media (min-width: 980px) {
-      #docs-grid > .one-half:first-child {
-        width: 20%;
-        border-right: 1px solid #f2f2f2;
-        margin-top: 32px;
-      }
-
-      #docs-grid > .one-half:last-child {
-        width: 75%;
-      }
-    }
-
 block content
-  .container-content
-    #docs-grid.grid
-      .one-half
+  #docs-grid.grid-flex.no-padding
+    .row
+      .col(style="border-right: 1px solid #eee;")
         .menu-toggle
           input(type="checkbox")#docs-toggle
           label(for="docs-toggle").alignright
             span.css-icon-hamburger
               span Toggle
             span Docs
-          .menu-toggle-content
+          .menu-toggle-content.px(style="width:260px;")
             +menu(data.menu.docs)
-      .one-half
-        .container
-          article
-            .sub-header.section-medium.text-center
-              h1.section-title #{page.title}
-              p.text-muted.text-small #{page.description}
-            div!= page.content
+      .col-flex
+        .container-readable.section
+          .sub-header.section
+            h1.section-title #{page.title}
+            p.text-muted.text-small #{page.description}
+          div!= page.content
           .grid.section-medium
             .one-half
               +prevmenu(data.menu.docs, 'alignleft')
             .one-half
               +nextmenu(data.menu.docs, 'alignright')
           hr
-          p.text-small.text-muted.text-center Want to contribute to the documentation? <a href="#{site.github}blob/master/web/html/#{page.source}" target="_blank">Edit this page</a> on Github.
+          p.py.text-small.text-muted.text-center Want to contribute to the documentation? <a href="#{site.github}blob/master/web/html/#{page.source}" target="_blank">Edit this page</a> on Github.
+      .col.hidden-mobile(style="width:200px;")

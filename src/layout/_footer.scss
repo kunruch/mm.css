@@ -6,7 +6,6 @@ $color-footer-default-link: lighten($color-text, 10) !default;
   background-color: $color-footer-default-background;
   border-top: 1px solid $color-default-border;
   color: $color-footer-default-text;
-  margin-top: $size-element-spacing-big;
   font-size: 95%;
 
   a:not(.button) {
