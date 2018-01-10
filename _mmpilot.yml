@@ -16,7 +16,7 @@ site:
   icon: mmcss
   github: "https://github.com/kunruch/mm.css"
   twitter: "https://twitter.com/kanishkkunal"
-  analytics: "UA-37350394-13"
+  analytics: "UA-37350394-20"
 
 ## overrides when built with -d or --development option
 development:
