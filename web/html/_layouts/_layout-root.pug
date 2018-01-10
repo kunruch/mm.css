@@ -16,6 +16,7 @@ html(lang='en-US')
     block styles
     if(site.icon)
       +favicons(site.icon)
+    include ./../_includes/_analytics.pug
   body#top
     include ./../_includes/icons/_icons.svg
     block header
@@ -24,4 +25,3 @@ html(lang='en-US')
     script(src="/vendors/highlight/highlight.pack.js")
     script hljs.initHighlightingOnLoad();
     block scripts
-  include ./../_includes/_analytics.pug
