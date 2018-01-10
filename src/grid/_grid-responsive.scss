@@ -1,11 +1,6 @@
 $grid-col-margin-span: 5% !default; //space between cols
 
-.grid {
-  @include container(100%);
-
-  display: flex;
-  flex-wrap: wrap;
-}
+/* Responsive cols. Takes 100% width on mobile */
 
 @mixin col($num, $total, $spacing: $grid-col-margin-span) {
   float: left;

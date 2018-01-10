@@ -52,6 +52,11 @@
   padding-right: $size-spacer;
 }
 
+.px-medium {
+  padding-left: $size-spacer * 1.5;
+  padding-right: $size-spacer * 1.5;
+}
+
 .py-small {
   padding-top: $size-spacer * 0.5;
   padding-bottom: $size-spacer * 0.5;
@@ -60,4 +65,9 @@
 .py {
   padding-top: $size-spacer;
   padding-bottom: $size-spacer;
+}
+
+.py-medium {
+  padding-top: $size-spacer * 1.5;
+  padding-bottom: $size-spacer * 1.5;
 }

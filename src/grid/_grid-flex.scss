@@ -1,23 +1,22 @@
-.grid-flex {
+.grid {
   @include container(100%);
 
   display: flex;
   flex-wrap: wrap;
-  padding-left: $size-element-spacing-small;
-  padding-right: $size-element-spacing-small;
 
-  &.no-padding {
-    padding-left: 0;
-    padding-right: 0;
+  &.gutters {
+    padding-left: $size-element-spacing-small;
+    padding-right: $size-element-spacing-small;
 
     > .row {
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: -1 * $size-element-spacing-small;
+      margin-right: -1 * $size-element-spacing-small;
     }
 
-    > .row > .col {
-      padding-left: 0;
-      padding-right: 0;
+    > .row > .col,
+    > .row > .col-flex {
+      padding-left: $size-element-spacing-small;
+      padding-right: $size-element-spacing-small;
     }
   }
 }
@@ -27,14 +26,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: -1 * $size-element-spacing-small;
-  margin-right: -1 * $size-element-spacing-small;
 }
 
 .col {
   display: block;
   max-width: 100%;
-  padding: 0 $size-element-spacing-small;
 }
 
 .col-flex {
@@ -105,4 +101,9 @@
 .w-90 {
   flex: none;
   width: 90%;
+}
+
+.w-100 {
+  flex: none;
+  width: 100%;
 }

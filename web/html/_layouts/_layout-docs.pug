@@ -12,7 +12,7 @@ block styles
     }
 
 block content
-  #docs-grid.grid-flex.no-padding
+  #docs-grid.grid
     .row
       .col(style="border-right: 1px solid #eee;")
         .menu-toggle
@@ -21,7 +21,7 @@ block content
             span.css-icon-hamburger
               span Toggle
             span Docs
-          .menu-toggle-content.px(style="width:260px;")
+          .menu-toggle-content.px-medium.py-medium(style="width:260px;")
             +menu(data.menu.docs)
       .col-flex
         .container-readable.section
