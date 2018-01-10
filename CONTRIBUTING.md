@@ -1,4 +1,4 @@
-# Contributing to MMCSS
+# Contributing to MM.css
 
 ## Git Commit Messages
 

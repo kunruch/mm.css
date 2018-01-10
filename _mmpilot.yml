@@ -12,7 +12,7 @@ data: "web/data"
 ## additional data for site available as site.{key} in pug templates
 site:
   url: "https://mmcss.kunruchcreations.com"
-  title: MMCSS
+  title: MM.css
   icon: mmcss
   github: "https://github.com/kunruch/mmcss/"
   twitter: "https://twitter.com/kanishkkunal"
