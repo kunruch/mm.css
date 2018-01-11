@@ -1,21 +1,35 @@
 ol,
 ul {
   @include element-spacing(1);
+  padding-left: $size-element-spacing;
 }
 
 ul {
-  list-style: circle;
+  list-style: disc;
+
+  ul {
+    list-style-type: circle;
+  }
 }
 
 ol {
   list-style: decimal;
+
+  ol {
+    list-style-type: lower-alpha;
+  }
+}
+
+// Bare list style
+ul.bare {
+  list-style: none;
+  padding-left: 0;
 }
 
 li > ol,
 li > ul {
   margin-bottom: 0;
-  margin-top: $size-element-spacing/5;
-  margin-left: $size-element-spacing/3;
+  margin-top: $size-element-spacing/2;
 }
 
 dt {
