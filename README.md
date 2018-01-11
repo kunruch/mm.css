@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kunruch/mmcss.svg?branch=master)](https://travis-ci.org/kunruch/mmcss)
+[![Build Status](https://travis-ci.org/kunruch/mm.css.svg?branch=master)](https://travis-ci.org/kunruch/mm.css)
 [![npm version](https://badge.fury.io/js/mmcss.svg)](https://badge.fury.io/js/mmcss)
 
 # MM.css
