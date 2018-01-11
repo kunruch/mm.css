@@ -64,6 +64,29 @@ block docs-content
             #{' Rounded Ghost Button'}
             #{'</button>'}
     div
+      h2 Disabled Buttons
+      p Buttons can be disabled by adding the <code>disabled</code> attribute.
+      .code-example
+        .code-output
+          // Default Button
+          a.button.mr-small(href='#', disabled) Default Button
+          // Primary Button
+          a.button.button-primary.mr-small(href='#', disabled) Primary Button
+          // Light Button
+          a.button.button-light.mr-small(href='#', disabled) Light Button
+          // Ghost Button
+          button.button-ghost.mr-small(disabled) Ghost Button
+          // Text Button
+          input.button.button-text.mr-small(type='submit', value='Text Button', disabled)
+        pre
+          code.
+            #{'<!-- Disabled Buttons -->'}
+            #{'<a class="button" href="#" disabled>Default Button</a>'}
+            #{'<a class="button button-primary" href="#" disabled>Primary Button</a>'}
+            #{'<a class="button button-light" href="#" disabled>Light Button</a>'}
+            #{'<button class="button-ghost" disabled>Ghost Button</button>'}
+            #{'<input class="button button-text" value="Text Button"  type="submit" disabled/>'}
+    div
       h2 Buttons with Icons
       .code-example
         .code-output

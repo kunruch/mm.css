@@ -32,6 +32,13 @@ input[type="submit"] {
     outline: 0;
   }
 
+  &[disabled],
+  &:disabled {
+    cursor: default;
+    opacity: .5;
+    pointer-events: none;
+  }
+
   &.button-ghost {
     background-color: transparent;
     border-color: $color-dark-border;
