@@ -6,60 +6,144 @@ layout: 'docs'
 
 block docs-styles
   style.
-    #grid-demo .grid > div > div {
-      background-color: #eee;
-      border-radius: 3px;
-      margin-bottom: 24px;
+    .grid-demo .grid > div > div {
+      background-color: #f2f2f2;
+      border: 1px solid #dedede;
+      margin-top: 2px;
+      margin-bottom: 2px;
       text-align: center;
-      font-size: 75%;
-      font-weight: 500;
-      line-height: 3;
+      font-size: 80%;
+      line-height: 2.5;
+    }
+
+
+    .grid-demo .grid-flex span {
+      display: block;
+      background-color: #f2f2f2;
+      border: 1px solid #dedede;
+      text-align: center;
+      font-size: 80%;
+      line-height: 2.5;
+      margin-top: 2px;
+      margin-bottom: 2px;
     }
 
 block docs-content
-  #grid-demo
-    div.grid.section
-      div.one-full
-        div FULL
+  h2 Auto Responsive Grid System
+  .code-example
+      .code-output
+        .grid-demo.mt
+          div.grid
+            div.one-full
+              div .one-full
 
-    div.grid.section
-      div.one-half
-        div HALF
-      div.one-half
-        div HALF
-      div.one-half
-        div HALF
-      div.one-half
-        div HALF
+          div.grid.mt
+            div.one-half
+              div .one-half
+            div.one-half
+              div .one-half
+            div.one-half
+              div .one-half
+            div.one-half
+              div .one-half
 
-    div.grid.section
-      div.one-third
-        div ONE-THIRD
-      div.one-third
-        div ONE-THIRD
-      div.one-third
-        div ONE-THIRD
-      div.one-third
-        div ONE-THIRD
-      div.one-third
-        div ONE-THIRD
-      div.one-third
-        div ONE-THIRD
+          div.grid.mt
+            div.one-third
+              div .one-third
+            div.one-third
+              div .one-third
+            div.one-third
+              div .one-third
+            div.one-third
+              div .one-third
+            div.one-third
+              div .one-third
+            div.one-third
+              div .one-third
 
-    div.grid.section
-      div.one-fourth
-        div ONE-FOURTH
-      div.one-fourth
-        div ONE-FOURTH
-      div.one-fourth
-        div ONE-FOURTH
-      div.one-fourth
-        div ONE-FOURTH
-      div.one-fourth
-        div ONE-FOURTH
-      div.one-fourth
-        div ONE-FOURTH
-      div.one-fourth
-        div ONE-FOURTH
-      div.one-fourth
-        div ONE-FOURTH
+          div.grid.mt
+            div.one-fourth
+              div .one-fourth
+            div.one-fourth
+              div .one-fourth
+            div.one-fourth
+              div .one-fourth
+            div.one-fourth
+              div .one-fourth
+            div.one-fourth
+              div .one-fourth
+            div.one-fourth
+              div .one-fourth
+            div.one-fourth
+              div .one-fourth
+            div.one-fourth
+              div .one-fourth
+
+  h2 Flexbox Based Grid System
+  p Flexbox based grid system uses <code>grid-flex</code> as parent grid class. You can use <code>row</code> to create rows and <code>col</code> or <code>col-flex</code> to create columns.
+
+  .grid-demo
+    h3 Auto Relaxed Grid Columns
+    p Use <code>col-flex</code> for auto sizing of columns in grid. Use <code>row</code> to break columns into different rows.
+    .code-example
+      .code-output
+        .grid-flex.mt
+          .row
+            .col-flex <span>.col-flex</span>
+            .col-flex <span>.col-flex</span>
+            .col-flex <span>.col-flex</span>
+          .row
+            .col-flex <span>.col-flex</span>
+            .col-flex <span>.col-flex</span>
+            .col-flex <span>.col-flex</span>
+            .col-flex <span>.col-flex</span>
+
+    h3 Grid Columns with Width
+    p Use <code>col</code> when specifying exact width of each column. Width can be specified using the width utility classes such as <code>w-10</code>, <code>w-50</code> etc.
+    .code-example
+      .code-output
+        .grid-flex.mt
+          .row
+            .col.w-10 <span>.col.w-10</span>
+            .col.w-90 <span>.col.w-90</span>
+            .col.w-20 <span>.col.w-20</span>
+            .col.w-80 <span>.col.w-80</span>
+            .col.w-30 <span>.col.w-30</span>
+            .col.w-70 <span>.col.w-70</span>
+            .col.w-40 <span>.col.w-40</span>
+            .col.w-60 <span>.col.w-60</span>
+            .col.w-25 <span>.col.w-25</span>
+            .col.w-75 <span>.col.w-75</span>
+            .col.w-33 <span>.col.w-33</span>
+            .col.w-66 <span>.col.w-66</span>
+            .col.w-50 <span>.col.w-50</span>
+            .col.w-50 <span>.col.w-50</span>
+            .col.w-100 <span>.col.w-100</span>
+
+    h3 Grid Columns with Gutters
+    p Add <code>gutters</code> or  <code>gutters-small</code> to rows to create spacing between columns.
+    .code-example
+      .code-output
+        .grid-flex.mt
+          .row.gutters
+            .col-flex
+              span .col-flex
+            .col-flex
+              span .col-flex
+            .col-flex
+              span .col-flex
+            .col-flex
+              span .col-flex
+          .row.gutters-small
+            .col.w-30
+              span .col.w-30
+            .col.w-50
+              span .col.w-50
+            .col.w-20
+              span .col.w-20
+            .col.w-50
+              span .col.w-50
+            .col.w-20
+              span .col.w-20
+            .col.w-30
+              span .col.w-30

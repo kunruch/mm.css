@@ -1,26 +1,10 @@
-/* Flexbox based grid system. Need to specify the responsivenes with col-* */
+/* Flexbox based grid system. Need to specify the responsivenes with w-* */
 
-.grid {
+.grid-flex {
   @include container(100%);
 
   display: flex;
-  flex-wrap: wrap;
-
-  &.gutters {
-    padding-left: $size-element-spacing-small;
-    padding-right: $size-element-spacing-small;
-
-    > .row {
-      margin-left: -1 * $size-element-spacing-small;
-      margin-right: -1 * $size-element-spacing-small;
-    }
-
-    > .row > .col,
-    > .row > .col-flex {
-      padding-left: $size-element-spacing-small;
-      padding-right: $size-element-spacing-small;
-    }
-  }
+  flex-direction: column;
 }
 
 .row {
@@ -28,6 +12,26 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  &.gutters {
+    margin-left: -0.5 * $size-element-spacing;
+    margin-right: -0.5 * $size-element-spacing;
+
+    > .col,
+    > .col-flex {
+      padding: $size-element-spacing / 2;
+    }
+  }
+
+  &.gutters-small {
+    margin-left: -0.5 * $size-element-spacing-small;
+    margin-right: -0.5 * $size-element-spacing-small;
+
+    > .col,
+    > .col-flex {
+      padding: $size-element-spacing-small / 2;
+    }
+  }
 }
 
 .col {
