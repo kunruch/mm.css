@@ -1,12 +1,16 @@
 blockquote {
-  background: $color-background-light;
-  border: 1px solid $color-default-border;
+  border-left: 2px solid $color-default-border;
 
   @include element-spacing(1);
 
-  padding: $size-element-spacing;
+  padding: $size-element-spacing-small;
 
-  & *:last-child {
-    margin: 0;
+  & *:first-child {
+    margin-top: 0;
+  }
+
+  cite {
+    display: block;
+    margin-top: $size-element-spacing;
   }
 }

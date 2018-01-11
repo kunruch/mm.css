@@ -7,9 +7,12 @@ layout: 'docs'
 
 block docs-content
   div
-    p The typography has default font-size defined as 1.6rem (16px) and line-height as 1.6 (24px).
+    p The default font-size is defined as 1.6rem (16px) with line-height of 1.6 (24px). We define the following system font-stack for the body:
+    pre
+      code.
+        #{'font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;'}
     h2.h3 Headings
-    p HTML headings <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> have the following default styles. A margin top of <code>1.5em</code> is assigned to each of the heading tags. You can assign a custom margin using the margin utility classes.
+    p HTML headings <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> have the following default size. A margin top of <code>1.5em</code> is assigned to each of the heading tags. You can assign a custom margin using the margin utility classes.
     .code-example
       .code-output
         h1.mt Heading 1 <span class="text-muted text-small">2.25rem (36px)</span>
@@ -44,3 +47,31 @@ block docs-content
           #{' <strong class="h5">Heading 5</strong>,'}
           #{' stlye inside paragraph.'}
           #{'</p>'}
+    h2.h3 Blockquotes
+    p Single line blockquote:
+    .code-example
+      .code-output
+        blockquote
+          p Stay hungry. Stay foolish.
+      pre
+        code.
+          #{'<blockquote>'}
+          #{' <p>Stay hungry. Stay foolish.</p>'}
+          #{'</blockquote>'}
+    p Multi line blockquote with a cite reference:
+    .code-example
+      .code-output
+        blockquote
+          p People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at
+            | all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m
+            | actually as proud of the things we haven’t done as the things I have done. Innovation is saying no to
+            | 1,000 things.
+          cite Steve Jobs – Apple Worldwide Developers’ Conference, 1997
+      pre
+        code.
+          #{'<blockquote>'}
+          #{' <p>People think focus means saying yes to ...</p>'}
+          #{' <cite>Steve Jobs – Apple Worldwide Developers’ Conference, 1997</cite>'}
+          #{'</blockquote>'}
+
+
