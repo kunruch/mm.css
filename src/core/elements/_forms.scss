@@ -16,9 +16,11 @@ textarea {
   box-sizing: border-box;
   padding: 8px 12px; // The .6rem vertically centers text on FF, ignored by Webkit
   width: 100%;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
   &:focus {
     border: 1px solid $color-primary;
+    box-shadow: 0 0 0 0.1rem rgba($color-primary,.2);
     outline: 0;
   }
 }
