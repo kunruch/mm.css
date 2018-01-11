@@ -8,7 +8,7 @@ block docs-content
   div
     div
       h2 Default Buttons
-      p Links and buttons can be styled using the <code>button</code>, <code>button-primary</code>, <code>button-ghost</code> and <code>button-text</code> classes.
+      p Links and buttons can be styled using the <code>button</code>, <code>button-primary</code>, <code>button-ghost</code>, <code>button-text</code> etc. classes as shown below
       .code-example
         .code-output
           // Default Button
@@ -19,6 +19,8 @@ block docs-content
           a.button.button-light.mr-small(href='#') Light Button
           // Ghost Button
           button.button-ghost.mr-small Ghost Button
+          // Ghost Light Button
+          button.button-ghost-light.mr-small Ghost Light
           // Text Button
           input.button.button-text.mr-small(type='submit', value='Text Button')
         pre
@@ -30,6 +32,7 @@ block docs-content
             #{''}
             #{'<!-- When assigning to a <button> element, "button" class is not needed -->'}
             #{'<button class="button-ghost">Ghost Button</button>'}
+            #{'<button class="button-ghost-light">Ghost Light</button>'}
             #{'<input class="button button-text" value="Text Button"  type="submit"/>'}
     div
       h2 Rounded Buttons
@@ -44,6 +47,8 @@ block docs-content
           button.button-rounded.button-light.mr-small Rounded Light
           // Ghost Button Rounded
           button.button-ghost.button-rounded.mr-small Rounded Ghost
+          // Ghost Light Rounded
+          button.button-ghost-light.button-rounded.mr-small Rounded Ghost Light
         pre
           code.
             #{'<!-- Default Button Rounded -->'}
@@ -62,6 +67,11 @@ block docs-content
             #{'<!-- Ghost Button Rounded -->'}
             #{'<button class="button-ghost button-rounded">'}
             #{' Rounded Ghost Button'}
+            #{'</button>'}
+            #{''}
+            #{'<!-- Ghost Light Button Rounded -->'}
+            #{'<button class="button-ghost-light button-rounded">'}
+            #{' Rounded Ghost Light'}
             #{'</button>'}
     div
       h2 Disabled Buttons

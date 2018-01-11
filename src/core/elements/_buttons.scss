@@ -74,6 +74,18 @@ input[type="submit"] {
     }
   }
 
+  &.button-ghost-light {
+    background-color: transparent;
+    border-color: $color-text-light;
+    color: $color-text-light;
+
+    &:focus,
+    &:hover {
+      background-color: $color-background-light;
+      color: $color-text;
+    }
+  }
+
   &.button-rounded {
     border-radius: 3rem;
     padding: 0.3em 1.5em;
