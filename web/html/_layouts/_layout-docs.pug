@@ -11,10 +11,23 @@ block styles
       background-color: #fff;
     }
 
+    .code-example {
+      margin-top: 1.5rem;
+    }
+
+    .code-example .code-output {
+      border: 2px solid #f8f8f8;
+      padding: 0 1.5rem 1.5rem;
+    }
+
+    .code-example pre {
+      margin-top: 0;
+    }
+
 block content
   #docs-grid.grid
     .row
-      .col-25.mr(style="border-right: 1px solid #eee;")
+      .col.highlight.mr(style="border-right: 1px solid #eee;")
         .menu-toggle
           input(type="checkbox")#docs-toggle
           label(for="docs-toggle").alignright
