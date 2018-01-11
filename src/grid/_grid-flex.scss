@@ -1,3 +1,5 @@
+/* Flexbox based grid system. Need to specify the responsivenes with col-* */
+
 .grid {
   @include container(100%);
 

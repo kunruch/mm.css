@@ -14,7 +14,7 @@ block styles
 block content
   #docs-grid.grid
     .row
-      .col(style="border-right: 1px solid #eee;")
+      .col-25.mr(style="border-right: 1px solid #eee;")
         .menu-toggle
           input(type="checkbox")#docs-toggle
           label(for="docs-toggle").alignright
@@ -24,7 +24,7 @@ block content
           .menu-toggle-content.px-medium.py-medium(style="width:260px;")
             +menu(data.menu.docs)
       .col-flex
-        .container-readable.section
+        .container-content.section
           .sub-header.section
             h1.section-title #{page.title}
             p.text-muted.text-small #{page.description}
@@ -36,4 +36,4 @@ block content
               +nextmenu(data.menu.docs, 'alignright')
           hr
           p.py.text-small.text-muted.text-center Want to contribute to the documentation? <a href="#{site.github}blob/master/web/html/#{page.source}" target="_blank">Edit this page</a> on Github.
-      .col.hidden-mobile(style="width:200px;")
+      .col.hidden-mobile(style="width:220px;")
