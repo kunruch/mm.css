@@ -11,10 +11,16 @@ block docs-content
       input#nameField(type='text', placeholder='John Doe')
       label(for='ageRangeField') Age
       select#ageRangeField
-        option(value='0-13') 0-13
-        option(value='14-17') 14-17
-        option(value='18-23') 18-23
-        option(value='24+') 24+
+        option 0-18
+        option 18-30
+        option 30-50
+        option 50+
+      label(for='interestRangeField') Interest
+      select#interestRangeField(multiple)
+        option Sports
+        option Travel
+        option Music
+        option Others
       label(for='commentField') Comment
       textarea#commentField(placeholder='Hi John Doe …')
       .clearfix
