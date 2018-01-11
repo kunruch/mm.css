@@ -9,6 +9,8 @@
   url: "/docs/layout-examples"
 
 - title: "Core"
+- title: Typography
+  url: "/docs/typography"
 - title: Text
   url: "/docs/text"
 - title: Markup and Formatting
