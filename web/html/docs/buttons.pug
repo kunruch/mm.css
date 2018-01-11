@@ -97,6 +97,21 @@ block docs-content
             #{'<button class="button-ghost" disabled>Ghost Button</button>'}
             #{'<input class="button button-text" value="Text Button"  type="submit" disabled/>'}
     div
+      h2 Button Sizes
+      p To change the button size, simply add the text size modifiers <code>text-small</code>, <code>text-medium</code> and <code>text-large</code> as shown below.
+      .code-example
+        .code-output
+          a.button.button-primary.text-small.mr-small(href="#", target="_blank") Small Button
+          a.button.button-primary.mr-small(href="#", target="_blank") Normal Button
+          a.button.button-primary.text-medium.mr-small(href="#", target="_blank") Medium Button
+          a.button.button-primary.text-large.mr-small(href="#", target="_blank") Large Button
+        pre
+          code.
+            #{'<a class="button button-primary text-small" href="#" target="_blank">Small Button</a>'}
+            #{'<a class="button button-primary" href="#" target="_blank">Normal Button</a>'}
+            #{'<a class="button button-primary text-medium" href="#" target="_blank">Medium Button</a>'}
+            #{'<a class="button button-primary text-large" href="#" target="_blank">Large Button</a>'}
+    div
       h2 Buttons with Icons
       .code-example
         .code-output
@@ -119,8 +134,7 @@ block docs-content
           a.button.button-text.mr-small(href="#", target="_blank")
             | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
             span GitHub
-      .code-example
-        .code-output
+          br
           a.button.mr-small(href="#", target="_blank")
             | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
           // Button
