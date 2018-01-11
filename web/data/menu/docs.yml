@@ -11,17 +11,15 @@
 - title: "Core"
 - title: Typography
   url: "/docs/typography"
-- title: Text
-  url: "/docs/text"
-- title: Markup and Formatting
-  url: "/docs/markup-and-formatting"
 - title: Lists
   url: "/docs/lists"
-- title: Forms
-  url: "/docs/forms"
 - title: Buttons
   url: "/docs/buttons"
+- title: Forms
+  url: "/docs/forms"
 - title: Grid
   url: "/docs/grid"
 - title: Search Form
   url: "/docs/searchform"
+- title: Markup and Formatting
+  url: "/docs/markup-and-formatting"
