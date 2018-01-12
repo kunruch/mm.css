@@ -1,18 +1,6 @@
 /* Flexbox based grid system. Need to specify the responsivenes with w-* */
 
-.grid-flex {
-  @include container(100%);
-
-  display: flex;
-  flex-direction: column;
-}
-
-.row {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
+.grid {
   &.gutters {
     margin-left: -0.5 * $size-element-spacing;
     margin-right: -0.5 * $size-element-spacing;

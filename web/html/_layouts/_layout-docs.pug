@@ -25,28 +25,27 @@ block styles
     }
 
 block content
-  #docs-grid.grid-flex
-    .row
-      .col.highlight.mr(style="border-right: 1px solid #eee;")
-        .menu-toggle
-          input(type="checkbox")#docs-toggle
-          label(for="docs-toggle").alignright
-            span.css-icon-hamburger
-              span Toggle
-            span Docs
-          .menu-toggle-content.px-medium.py-medium(style="width:260px;")
-            +menu(data.menu.docs)
-      .col-flex
-        .container-content.section
-          .sub-header.section
-            h1.section-title #{page.title}
-            p.text-small.text-muted #{page.description}
-          div!= page.content
-          .grid.section-medium
-            .one-half
-              +prevmenu(data.menu.docs, 'alignleft')
-            .one-half
-              +nextmenu(data.menu.docs, 'alignright')
-          hr
-          p.py.text-small.text-muted.text-center Want to contribute to the documentation? <a href="#{site.github}/blob/master/web/html/#{page.source}" target="_blank">Edit this page</a> on Github.
-      .col.hidden-mobile(style="width:220px;")
+  #docs-grid.grid
+    .col.highlight.mr(style="border-right: 1px solid #eee;")
+      .menu-toggle
+        input(type="checkbox")#docs-toggle
+        label(for="docs-toggle").alignright
+          span.css-icon-hamburger
+            span Toggle
+          span Docs
+        .menu-toggle-content.px-medium.py-medium(style="width:260px;")
+          +menu(data.menu.docs)
+    .col-flex
+      .container-content.section
+        .sub-header.section
+          h1.section-title #{page.title}
+          p.text-small.text-muted #{page.description}
+        div!= page.content
+        .grid.section-medium
+          .one-half
+            +prevmenu(data.menu.docs, 'alignleft')
+          .one-half
+            +nextmenu(data.menu.docs, 'alignright')
+        hr
+        p.py.text-small.text-muted.text-center Want to contribute to the documentation? <a href="#{site.github}/blob/master/web/html/#{page.source}" target="_blank">Edit this page</a> on Github.
+    .col.hidden-mobile(style="width:220px;")
