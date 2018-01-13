@@ -75,7 +75,7 @@ h6 {
   @include font-size(0.875 * $size-default-text);
 }
 
-@include mobile {
+@include tablet {
   .h1,
   h1 {
     //26px

@@ -32,26 +32,26 @@ $color-dark-border: $color-gray !default;
 $color-default-shadow: rgba(0, 0, 0, 0.2) !default;
 
 // Sizes
+// Everything is defined in 3 sizes. Small, default (or medium) & large
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-$size-default-text: 1 !default;
 $size-small-text: 0.875 !default;
-$size-medium-text: 1.125 !default;
+$size-default-text: 1 !default;
 $size-large-text: 1.25 !default;
 
-$size-element-spacing: 1.5rem !default;
-$size-element-spacing-medium: 2rem !default;
-$size-element-spacing-big: 3.5rem !default;
 $size-element-spacing-small: 1rem !default;
-
-$size-spacer: 1rem !default;
+$size-element-spacing: 1.5rem !default;
+$size-element-spacing-large: 2rem !default;
 
 $size-container-wide-max: 1600px !default;
 $size-container-content-max: 1180px !default;
 $size-container-readable-max: 760px !default;
 
-$size-default-radius: 3px !default;
+//screen sizes
+$screen-sm: 540px;
+$screen-md: 960px;
+// anything above 980px is lg
 
-$desktop-width: 980px !default;
+$size-default-radius: 3px !default;
 
 // Typography
 // ––––––––––––––––––––––––––––––––––––––––––––––––––

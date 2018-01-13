@@ -1,2 +1,86 @@
-@import "grid-flex";
-@import "grid-responsive";
+//Base unit used for spacing gutters
+$gutters: $size-element-spacing / 2;
+$gutters-small: $size-element-spacing-small / 2;
+
+.grid {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &.gutters {
+    margin-left: $gutters * -1;
+    margin-right: $gutters * -1;
+    & > .col {
+      padding-left: $gutters;
+      padding-right: $gutters;
+    }
+  }
+
+  &.gutters-small {
+    margin-left: $gutters-small * -1;
+    margin-right: $gutters-small * -1;
+    & > .col {
+      padding-left: $gutters-small;
+      padding-right: $gutters-small;
+    }
+  }
+}
+
+.col {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+  min-width: 0;
+}
+
+//Column Distribution
+.grid-around {
+  justify-content: space-around;
+}
+
+.grid-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+//Fixed Column
+.col-fixed {
+  flex: initial;
+}
+
+//Percent Based Columns
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    -ms-flex-preferred-size: (100% / 12) * $i;
+    -webkit-flex-basis: (100% / 12) * $i;
+    flex-basis: (100% / 12) * $i;
+    max-width: (100% / 12) * $i;
+  }
+}
+
+@include screen-md {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      -ms-flex-preferred-size: (100% / 12) * $i;
+      -webkit-flex-basis: (100% / 12) * $i;
+      flex-basis: (100% / 12) * $i;
+      max-width: (100% / 12) * $i;
+    }
+  }
+}
+
+@include screen-sm {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      -ms-flex-preferred-size: (100% / 12) * $i;
+      -webkit-flex-basis: (100% / 12) * $i;
+      flex-basis: (100% / 12) * $i;
+      max-width: (100% / 12) * $i;
+    }
+  }
+}

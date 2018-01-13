@@ -30,14 +30,43 @@
   }
 }
 
+// screen-sm or mobile
+@mixin screen-sm {
+  @media only screen and (max-width: $screen-sm) {
+    @content;
+  }
+}
+
 @mixin mobile {
-  @media (max-width: #{$desktop-width - 1px}) {
+  @media only screen and (max-width: $screen-sm) {
+    @content;
+  }
+}
+
+
+// screen-md or tablet
+@mixin screen-md {
+  @media only screen and (max-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: $screen-md) {
+    @content;
+  }
+}
+
+
+// screen-lg or desktop
+@mixin screen-lg {
+  @media only screen and (min-width: ($screen-md + 1)) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: #{$desktop-width}) {
+  @media only screen and (min-width: ($screen-md + 1)) {
     @content;
   }
 }

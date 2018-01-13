@@ -6,10 +6,6 @@
   @include font-size($size-small-text);
 }
 
-.text-medium {
-  @include font-size($size-medium-text);
-}
-
 .text-large {
   @include font-size($size-large-text);
 }

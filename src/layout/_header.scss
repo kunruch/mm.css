@@ -103,7 +103,7 @@ $color-header-default-text: $color-headings !default;
   margin: 0;
 }
 
-@include mobile {
+@include tablet {
   .header-right {
     right: $size-element-spacing-small;
   }

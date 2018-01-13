@@ -178,7 +178,7 @@ $size-menu-padding: 12px;
   margin: 0;
 }
 
-@include mobile {
+@include tablet {
   .menu-toggle label {
     display: inline-block;
   }

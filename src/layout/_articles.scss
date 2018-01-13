@@ -1,9 +1,0 @@
-article {
-  @include font-size($size-default-text);
-}
-
-@include desktop {
-  article {
-    @include font-size($size-medium-text);
-  }
-}
