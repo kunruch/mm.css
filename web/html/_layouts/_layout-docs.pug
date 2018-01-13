@@ -42,9 +42,9 @@ block content
           p.text-small.text-muted #{page.description}
         div!= page.content
         .grid.section-medium
-          .one-half
+          .col
             +prevmenu(data.menu.docs, 'alignleft')
-          .one-half
+          .col
             +nextmenu(data.menu.docs, 'alignright')
         hr
         p.py.text-small.text-muted.text-center Want to contribute to the documentation? <a href="#{site.github}/blob/master/web/html/#{page.source}" target="_blank">Edit this page</a> on Github.

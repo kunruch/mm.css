@@ -10,9 +10,9 @@ block styles
 
 block page-content
   .container-content
-    .grid
+    .grid.gutters
       each site in data.showcase
-        .one-half.section
+        .col.col-6.col-md-12.section
           .media
             a(href=site.url, target='_blank', title=site.name)
               .browser-mockup.with-tab.aligncenter
