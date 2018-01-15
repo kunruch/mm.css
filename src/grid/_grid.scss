@@ -13,6 +13,7 @@ $gutters-large: $size-element-spacing-large / 2;
   &.gutters {
     margin-left: $gutters * -1;
     margin-right: $gutters * -1;
+
     & > .col {
       padding-left: $gutters;
       padding-right: $gutters;
@@ -22,6 +23,7 @@ $gutters-large: $size-element-spacing-large / 2;
   &.gutters-small {
     margin-left: $gutters-small * -1;
     margin-right: $gutters-small * -1;
+
     & > .col {
       padding-left: $gutters-small;
       padding-right: $gutters-small;
@@ -31,6 +33,7 @@ $gutters-large: $size-element-spacing-large / 2;
   &.gutters-large {
     margin-left: $gutters-large * -1;
     margin-right: $gutters-large * -1;
+
     & > .col {
       padding-left: $gutters-large;
       padding-right: $gutters-large;
@@ -53,8 +56,6 @@ $gutters-large: $size-element-spacing-large / 2;
 }
 
 .grid-between {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -66,8 +67,6 @@ $gutters-large: $size-element-spacing-large / 2;
 //Percent Based Columns
 @for $i from 1 through 12 {
   .col-#{$i} {
-    -ms-flex-preferred-size: (100% / 12) * $i;
-    -webkit-flex-basis: (100% / 12) * $i;
     flex-basis: (100% / 12) * $i;
     max-width: (100% / 12) * $i;
   }
@@ -76,8 +75,6 @@ $gutters-large: $size-element-spacing-large / 2;
 @include screen-md {
   @for $i from 1 through 12 {
     .col-md-#{$i} {
-      -ms-flex-preferred-size: (100% / 12) * $i;
-      -webkit-flex-basis: (100% / 12) * $i;
       flex-basis: (100% / 12) * $i;
       max-width: (100% / 12) * $i;
     }
@@ -87,8 +84,6 @@ $gutters-large: $size-element-spacing-large / 2;
 @include screen-sm {
   @for $i from 1 through 12 {
     .col-sm-#{$i} {
-      -ms-flex-preferred-size: (100% / 12) * $i;
-      -webkit-flex-basis: (100% / 12) * $i;
       flex-basis: (100% / 12) * $i;
       max-width: (100% / 12) * $i;
     }

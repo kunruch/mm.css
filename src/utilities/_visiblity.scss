@@ -1,18 +1,21 @@
 //Responsive visiblity helpers
 @include desktop {
-  .hidden-desktop, .hidden-lg {
+  .hidden-desktop,
+  .hidden-lg {
     display: none;
   }
 }
 
 @include tablet {
-  .hidden-tablet, .hidden-md {
+  .hidden-tablet,
+  .hidden-md {
     display: none;
   }
 }
 
 @include mobile {
-  .hidden-mobile, .hidden-sm {
+  .hidden-mobile,
+  .hidden-sm {
     display: none;
   }
 }

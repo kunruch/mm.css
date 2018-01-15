@@ -21,6 +21,7 @@
 
 .section-hero {
   @include section(3 * $size-element-spacing);
+
   min-height: 50vh;
   display: flex;
   align-items: center;

@@ -1,6 +1,7 @@
 ol,
 ul {
   @include element-spacing(1);
+
   padding-left: $size-element-spacing;
 }
 
