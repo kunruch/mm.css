@@ -10,6 +10,24 @@
   @include font-size($size-large-text);
 }
 
+/* text weights */
+
+.text-normal {
+  font-weight: $font-weight-normal;
+}
+
+.text-bold {
+  font-weight: $font-weight-bold;
+}
+
+.text-medium {
+  font-weight: $font-weight-medium;
+}
+
+.text-light {
+  font-weight: $font-weight-light;
+}
+
 /* text alignments */
 
 .text-center {

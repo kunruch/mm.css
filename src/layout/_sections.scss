@@ -7,8 +7,12 @@
   @include section($size-element-spacing);
 }
 
+.section-small {
+  @include section($size-element-spacing-small);
+}
+
 .section-medium {
-  @include section(2 * $size-element-spacing);
+  @include section(1.5 * $size-element-spacing);
 }
 
 .section-large {
@@ -17,14 +21,10 @@
 
 .section-hero {
   @include section(3 * $size-element-spacing);
-
-  h1,
-  h2 {
-    font-weight: $font-weight-normal;
-    letter-spacing: 0;
-    margin-top: $size-element-spacing;
-    margin-bottom: $size-element-spacing;
-  }
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-title {
