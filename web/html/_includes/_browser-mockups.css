@@ -1,14 +1,8 @@
 .browser-mockup {
   border-top: 1.5em solid rgba(230, 230, 230, 0.8);
-  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.2);
   position: relative;
   border-radius: 3px 3px 0 0;
   max-width: 500px;
-  transition: opacity 0.2s linear;
-}
-
-.browser-mockup:hover {
-  opacity: 0.75;
 }
 
 .browser-mockup::before {
