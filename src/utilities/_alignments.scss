@@ -1,0 +1,43 @@
+// Alignments for elements
+.alignleft {
+  display: block;
+  float: left;
+  margin-right: $size-element-spacing;
+}
+
+.alignright {
+  display: block;
+  float: right;
+  margin-left: $size-element-spacing;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Floats
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+// Clear floats with .clearfix
+.clearfix {
+  *zoom: 1;
+
+  &::after,
+  &::before {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
