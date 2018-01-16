@@ -5,8 +5,6 @@
   url: "/docs/installation"
 - title: "Basic Template"
   url: "/docs/basic-template"
-- title: "Layout Examples"
-  url: "/docs/layout-examples"
 
 - title: "Core"
 - title: Typography
@@ -17,8 +15,40 @@
   url: "/docs/buttons"
 - title: Forms
   url: "/docs/forms"
+- title: Tabels
+  url: "/docs/tables"
+- title: Navs
+  url: "/docs/navs"
+
+- title: "Layout"
+- title: Containers
+  url: "/docs/containers"
 - title: Grid
   url: "/docs/grid"
+- title: Header
+  url: "/docs/header"
+- title: Menu
+  url: "/docs/menu"
+
+- title: "Components"
+- title: Cards
+  url: "/docs/cards"
+- title: Media
+  url: "/docs/media"
+- title: Labels
+  url: "/docs/labels"
+
+- title: ''
+- title: Utilities
+  url: "/docs/utilities"
+- title: Accessiblity
+  url: "/docs/accessiblity"
+- title: Print
+  url: "/docs/print"
+- title: "Layout Examples"
+  url: "/docs/layout-examples"
+
+- title: ''
 - title: Search Form
   url: "/docs/searchform"
 - title: Markup and Formatting
