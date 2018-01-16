@@ -1,11 +1,38 @@
-.shadow {
-  box-shadow: 0 0.1em 1em 0 $color-default-shadow;
-}
+$card-padding: $size-element-spacing-small !default;
 
-.shadow-hover {
-  transition: box-shadow .25s ease-out;
+.card {
+  border-radius: $size-default-radius;
 
-  &:hover {
-    box-shadow: 0 0.5em 1.5em 0 $color-default-shadow;
+  .card-header,
+  .card-body,
+  .card-footer {
+    padding: $card-padding;
+    padding-bottom: 0;
+
+    &:last-child {
+      padding-bottom: $card-padding;
+    }
+  }
+
+  .card-image {
+    padding-top: $card-padding;
+
+    &:first-child {
+      padding-top: 0;
+
+      img {
+        display: block;
+        border-top-left-radius: $size-default-radius;
+        border-top-right-radius: $size-default-radius;
+      }
+    }
+
+    &:last-child {
+      img {
+        display: block;
+        border-bottom-left-radius: $size-default-radius;
+        border-bottom-right-radius: $size-default-radius;
+      }
+    }
   }
 }
