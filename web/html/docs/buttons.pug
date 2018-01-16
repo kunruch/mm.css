@@ -101,51 +101,69 @@ block docs-content
       p To change the button size, simply add the text size modifiers <code>text-small</code>, <code>text-medium</code> and <code>text-large</code> as shown below.
       .code-example
         .code-output
-          a.button.button-primary.text-small.mr-small(href="#", target="_blank") Small Button
-          a.button.button-primary.mr-small(href="#", target="_blank") Normal Button
-          a.button.button-primary.text-medium.mr-small(href="#", target="_blank") Medium Button
-          a.button.button-primary.text-large.mr-small(href="#", target="_blank") Large Button
+          a.button.button-primary.text-small.mr-small(href="#") Small Button
+          a.button.button-primary.mr-small(href="#") Normal Button
+          a.button.button-primary.text-medium.mr-small(href="#") Medium Button
+          a.button.button-primary.text-large.mr-small(href="#") Large Button
         pre
           code.
-            #{'<a class="button button-primary text-small" href="#" target="_blank">Small Button</a>'}
-            #{'<a class="button button-primary" href="#" target="_blank">Normal Button</a>'}
-            #{'<a class="button button-primary text-medium" href="#" target="_blank">Medium Button</a>'}
-            #{'<a class="button button-primary text-large" href="#" target="_blank">Large Button</a>'}
+            #{'<a class="button button-primary text-small" href="#">Small Button</a>'}
+            #{'<a class="button button-primary" href="#">Normal Button</a>'}
+            #{'<a class="button button-primary text-medium" href="#">Medium Button</a>'}
+            #{'<a class="button button-primary text-large" href="#">Large Button</a>'}
+    div
+      h2 Block Button
+      p Use <code>d-block</code> display utility class to create a block button style.
+      .code-example
+        .code-output
+          a.button.button-primary.d-block(href="#") Block Button
+          .grid.gutters
+            .col
+              a.button.d-block(href="#") Block Button
+            .col
+              a.button.d-block(href="#") Block Button
+      pre
+          code.
+            #{'<a class="button button-primary d-block" href="#">Block Button</a>'}
+            #{'<div class="grid gutters">'}
+            #{' <div class="col"><a class="button d-block" href="#">Block Button</a></div>'}
+            #{' <div class="col"><a class="button d-block" href="#">Block Button</a></div>'}
+            #{'</div>'}
     div
       h2 Buttons with Icons
       .code-example
         .code-output
-          a.button.mr-small(href="#", target="_blank")
+          a.button.mr-small(href="#")
             | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
             span Twitter
           // Button
-          a.button.button-primary.mr-small(href="#", target="_blank")
+          a.button.button-primary.mr-small(href="#")
             | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
             span Twitter
           // Button
-          a.button.button-light.mr-small(href="#", target="_blank")
+          a.button.button-light.mr-small(href="#")
             | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
             span Twitter
           // Button
-          a.button.button-ghost.mr-small(href="#", target="_blank")
+          a.button.button-ghost.mr-small(href="#")
             | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
             span Twitter
           // Button
-          a.button.button-text.mr-small(href="#", target="_blank")
+          a.button.button-text.mr-small(href="#")
             | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
             span GitHub
           br
-          a.button.mr-small(href="#", target="_blank")
+          a.button.mr-small(href="#")
             | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
           // Button
-          a.button.button-primary.mr-small(href="#" target="_blank")
+          a.button.button-primary.mr-small(href="#")
             | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
           // Button
-          a.button.button-light.mr-small(href="#" target="_blank")
+          a.button.button-light.mr-small(href="#")
             | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
           // Button
-          a.button.button-ghost.mr-small(href="#", target="_blank")
+          a.button.button-ghost.mr-small(href="#")
             | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
           // Button
-          a.button.button-text.mr-small(href="#", target="_blank")
+          a.button.button-text.mr-small(href="#")
             | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
