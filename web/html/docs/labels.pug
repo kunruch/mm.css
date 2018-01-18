@@ -1,0 +1,53 @@
+---
+title: 'Labels'
+description: 'Labels of different shapes, sizes and colors in MM.css - Minimal Modern CSS Framework.'
+layout: 'docs'
+---
+
+block docs-content
+  div
+    div
+      h2 Default Labels
+      p
+      .code-example
+        .code-output
+          .mt
+            .label.mr-small Default Label
+            .label.label-primary.mr-small Primary Label
+            .label.label-light.mr-small Light Label
+            .label.label-ghost.mr-small Ghost Label
+            .label.label-ghost-light.mr-small Ghost Light Label
+        pre
+          code.
+            #{'<!-- Default Labels -->'}
+      h2 Rounded Labels
+      p
+      .code-example
+        .code-output
+          .mt
+            .label.label-rounded.mr-small Default Label
+            .label.label-primary.label-rounded.mr-small Primary Label
+            .label.label-light.label-rounded.mr-small Light Label
+            .label.label-ghost.label-rounded.mr-small Ghost Label
+            .label.label-ghost-light.label-rounded.mr-small Ghost Light Label
+        pre
+          code.
+            #{'<!-- Default Labels -->'}
+      h2 Labels Inside Elements
+      p
+      .code-example
+        .code-output
+          .mt
+            h3 Heading With Label
+              .label.label-rounded.text-small New
+            button.button-primary
+              span.mr-small Button with Label
+              .label.label-light.label-rounded 12
+            p
+              a.label.mr-small(href="#") Link Label
+              a.label.label-primary.mr-small(href="#") Link Label Primary
+              a.label.label-light.mr-small(href="#") Link Label Light
+              a.label.label-ghost.mr-small(href="#") Link Label Ghost
+        pre
+          code.
+            #{'<!-- Default Labels -->'}
