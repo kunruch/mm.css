@@ -3,8 +3,19 @@
 
 table {
   width: 100%;
-
   @include element-spacing(1);
+
+  &.table-striped {
+    tbody tr:nth-of-type(odd) {
+      background: $color-background-light;
+    }
+  }
+
+  &.table-auto {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
 
 td,
@@ -12,12 +23,8 @@ th {
   border-bottom: 1px solid $color-default-border;
   padding: $size-element-spacing-small;
   text-align: left;
+}
 
-  &:first-child {
-    padding-left: 0;
-  }
-
-  &:last-child {
-    padding-right: 0;
-  }
+th {
+  border-bottom-width: 2px;
 }
