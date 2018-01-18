@@ -3,6 +3,7 @@
 
 table {
   width: 100%;
+
   @include element-spacing(1);
 
   &.table-striped {
