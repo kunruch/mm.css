@@ -5,12 +5,12 @@
   "main": "dist/mm.css",
   "dependencies": {},
   "devDependencies": {
-    "gzip-size": "^3.0.0",
-    "jstransformer-escape-html": "^1.0.0",
-    "mmpilot": "^0.6.2",
-    "npm-run-all": "^3.1.2",
-    "shx": "^0.2.1",
-    "stylelint": "^7.6.0"
+    "gzip-size": "^4.1.0",
+    "jstransformer-escape-html": "^1.1.0",
+    "mmpilot": "^0.6.6",
+    "npm-run-all": "^4.1.2",
+    "shx": "^0.2.2",
+    "stylelint": "^8.4.0"
   },
   "keywords": [
     "css",
