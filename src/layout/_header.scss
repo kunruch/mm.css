@@ -5,7 +5,6 @@ $color-header-default-text: $color-headings !default;
 
 .header {
   background-color: $color-header-default-background;
-  border-bottom: 1px solid $color-default-border;
   color: $color-header-default-text;
   z-index: 99;
   text-align: center;

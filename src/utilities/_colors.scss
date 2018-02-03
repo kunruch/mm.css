@@ -1,4 +1,8 @@
 // Highlight any element with background colors
+.bg-white {
+  background-color: #fff;
+}
+
 .bg-light {
   background-color: $color-background-light;
 }
@@ -6,4 +10,8 @@
 .bg-dark {
   background-color: $color-background-dark;
   color: $color-text-light;
+}
+
+.bg-primary {
+  background-color: $color-primary;
 }

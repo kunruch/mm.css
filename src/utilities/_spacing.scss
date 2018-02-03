@@ -43,31 +43,31 @@ $size-spacer: $size-element-spacing-small;
 
 // padding
 .px-small {
-  padding-left: $size-spacer * 0.5;
-  padding-right: $size-spacer * 0.5;
+  padding-left: $size-spacer * 0.5!important;
+  padding-right: $size-spacer * 0.5!important;
 }
 
 .px {
-  padding-left: $size-spacer;
-  padding-right: $size-spacer;
+  padding-left: $size-spacer!important;
+  padding-right: $size-spacer!important;
 }
 
 .px-medium {
-  padding-left: $size-spacer * 1.5;
-  padding-right: $size-spacer * 1.5;
+  padding-left: $size-spacer * 1.5!important;
+  padding-right: $size-spacer * 1.5!important;
 }
 
 .py-small {
-  padding-top: $size-spacer * 0.5;
-  padding-bottom: $size-spacer * 0.5;
+  padding-top: $size-spacer * 0.5!important;
+  padding-bottom: $size-spacer * 0.5!important;
 }
 
 .py {
-  padding-top: $size-spacer;
-  padding-bottom: $size-spacer;
+  padding-top: $size-spacer!important;
+  padding-bottom: $size-spacer!important;
 }
 
 .py-medium {
-  padding-top: $size-spacer * 1.5;
-  padding-bottom: $size-spacer * 1.5;
+  padding-top: $size-spacer * 1.5!important;
+  padding-bottom: $size-spacer * 1.5!important;
 }
