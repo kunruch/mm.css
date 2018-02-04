@@ -1,10 +1,8 @@
-## data for building project
+## data for building web project
 includes: "web/html/_includes"
 layouts: "web/html/_layouts"
 html:
   src: "web/html"
-styles:
-  src: "src"
 assets:
   src: "web/assets"
 data: "web/data"
