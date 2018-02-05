@@ -34,18 +34,19 @@
     "css-min": "node-sass --source-map dist/mm.min.css.map --output-style compressed src/mm.scss dist/mm.min.css",
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 2 versions\" -r dist/*.css",
     "banner": "banner-cli dist/*.css",
-    "css-build": "npm-run-all css css-min autoprefixer banner && shx cp dist/*.css public/",
-    "css-watch": "onchange src -- npm run css-build",
+    "css-build-dev": "npm-run-all css autoprefixer && shx cp dist/*.css public/styles",
+    "css-build": "npm-run-all css css-min autoprefixer banner && shx cp dist/*.css public/styles",
+    "css-watch": "onchange src -- npm run css-build-dev",
     "dist": "npm-run-all lint css-build && git add dist/*.css && git commit -m \":bookmark: Updating dist\" && git push -u origin master",
     "patch": "npm version patch -m \":bookmark: Version %s\" && git push && git push --tags && npm publish",
     "dist-patch": "npm run dist && npm run patch",
     "web-clean": "mmpilot clean",
     "web-build": "mmpilot build",
-    "web-watch": "onchange web -- npm run web-build",
-    "serve": "mmpilot serve",
+    "web-watch": "mmpilot watch",
+    "web-serve": "mmpilot serve",
     "web-deploy": "mmpilot deploy",
-    "dev": "npm-run-all web-clean css-build web-build --parallel css-watch web-watch serve",
-    "deploy": "npm-run-all web-clean css-build web-build"
+    "dev": "npm-run-all web-clean web-build css-build --parallel web-watch css-watch web-serve",
+    "deploy": "npm-run-all web-clean web-build css-build"
   },
   "engines": {
     "node": ">=4.2.2"

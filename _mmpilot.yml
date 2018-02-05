@@ -5,6 +5,10 @@ html:
   src: "web/html"
 assets:
   src: "web/assets"
+styles:
+  src: "src"
+scripts:
+  src: "web/scripts"
 data: "web/data"
 
 ## additional data for site available as site.{key} in pug templates
