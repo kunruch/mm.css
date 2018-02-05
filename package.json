@@ -45,7 +45,8 @@
     "web-watch": "mmpilot watch",
     "web-serve": "mmpilot serve",
     "web-deploy": "mmpilot deploy",
-    "dev": "npm-run-all web-clean web-build css-build --parallel web-watch css-watch web-serve",
+    "build": "npm-run-all web-clean web-build css-build",
+    "dev": "npm-run-all build --parallel web-watch css-watch web-serve",
     "deploy": "npm-run-all web-clean web-build css-build"
   },
   "engines": {
