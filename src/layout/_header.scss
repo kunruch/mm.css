@@ -25,6 +25,7 @@ $color-header-default-text: $color-headings !default;
   .current-menu-item > a,
   a:hover {
     opacity: 1;
+    color: inherit;
   }
 
   .button {

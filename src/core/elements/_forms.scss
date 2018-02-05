@@ -9,7 +9,7 @@ select,
 textarea {
   appearance: none; // Removes awkward default styles on some inputs for iOS
   background-color: transparent;
-  border: 2px solid $color-dark-border;
+  border: 1px solid $color-dark-border;
   border-radius: $size-default-radius;
   box-shadow: none;
   font-weight: $font-weight-normal;
@@ -19,7 +19,7 @@ textarea {
   transition: border-color 0.15s ease-in-out;
 
   &:focus {
-    border: 2px solid $color-primary;
+    border: 1px solid $color-primary;
     outline: 0;
   }
 }
