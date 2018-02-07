@@ -1,11 +1,3 @@
-/*!
- * Mmcss v0.3.3
- * https://getmmcss.com/
- *
- * Copyright (c) 2018 Kanishk Kunal
- * Licensed under the MIT license
- */
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -1820,8 +1812,8 @@ nav ul ul {
 .screen-reader-text:focus {
   background-color: #f5f6f7;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.06);
-          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
   clip: auto !important;
   color: #4a89dc;
   display: block;
@@ -1918,8 +1910,13 @@ nav ul ul {
 }
 
 .shadow {
-  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.shadow-md {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .shadow-hover {
@@ -1930,8 +1927,8 @@ nav ul ul {
 }
 
 .shadow-hover:hover {
-  -webkit-box-shadow: 0 0.3em 1em 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 0.3em 1em 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media print {
@@ -2075,7 +2072,7 @@ nav ul ul {
 }
 
 .text-shadow {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (min-width: 961px) {
