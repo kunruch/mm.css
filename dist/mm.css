@@ -1,3 +1,11 @@
+/*!
+ * Mmcss v0.3.3
+ * https://getmmcss.com/
+ *
+ * Copyright (c) 2018 Kanishk Kunal
+ * Licensed under the MIT license
+ */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -198,6 +206,76 @@ th {
   padding: 0;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background: #fff;
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+blockquote::after, blockquote::before,
+q::after,
+q::before {
+  content: "";
+}
+
+hr {
+  background-color: #cbd0d5;
+  border: 0;
+  height: 1px;
+  margin: 1.5rem 0 0rem 0;
+}
+
+fieldset,
+input,
+select,
+textarea {
+  margin: 1.5rem 0 0rem 0;
+}
+
+address,
+blockquote,
+dl,
+figure,
+form,
+p,
+pre,
+table {
+  margin: 1.5rem 0 0rem 0;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+  cursor: help;
+}
+
+ins,
+mark {
+  background: #f5f6f7;
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
+}
+
 body {
   color: #394047;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -285,76 +363,6 @@ h6 {
     font-size: 19.2px;
     font-size: 1.2rem;
   }
-}
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-body {
-  background: #fff;
-}
-
-blockquote,
-q {
-  quotes: "" "";
-}
-
-blockquote::after, blockquote::before,
-q::after,
-q::before {
-  content: "";
-}
-
-hr {
-  background-color: #cbd0d5;
-  border: 0;
-  height: 1px;
-  margin: 1.5rem 0 0rem 0;
-}
-
-fieldset,
-input,
-select,
-textarea {
-  margin: 1.5rem 0 0rem 0;
-}
-
-address,
-blockquote,
-dl,
-figure,
-form,
-p,
-pre,
-table {
-  margin: 1.5rem 0 0rem 0;
-}
-
-abbr,
-acronym {
-  border-bottom: 1px dotted;
-  text-decoration: none;
-  cursor: help;
-}
-
-ins,
-mark {
-  background: #f5f6f7;
-  text-decoration: none;
-}
-
-big {
-  font-size: 125%;
 }
 
 a {
