@@ -48,8 +48,8 @@
   color: $color-text-muted;
 }
 
-.text-white {
-  color: #fff;
+.text {
+  @include modifiers($colors, "color");
 }
 
 .text-shadow {

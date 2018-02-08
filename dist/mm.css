@@ -2095,8 +2095,52 @@ nav ul ul {
   color: #b8bfc6;
 }
 
+.text-primary {
+  color: #4a89dc;
+}
+
 .text-white {
   color: #fff;
+}
+
+.text-blue {
+  color: #4a89dc;
+}
+
+.text-green {
+  color: #8cc152;
+}
+
+.text-pink {
+  color: #d770ad;
+}
+
+.text-purple {
+  color: #967adc;
+}
+
+.text-yellow {
+  color: #f6bb42;
+}
+
+.text-teal {
+  color: #37bc9b;
+}
+
+.text-red {
+  color: #e9573f;
+}
+
+.text-cyan {
+  color: #4fc1e9;
+}
+
+.text-light {
+  color: #f5f6f7;
+}
+
+.text-dark {
+  color: #394047;
 }
 
 .text-shadow {
