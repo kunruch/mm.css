@@ -16,14 +16,15 @@ input[type="submit"] {
   white-space: normal;
   text-align: center;
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   @include element-spacing(1);
 
   &:focus,
   &:hover {
-    background-color: darken($color-background-dark, 5);
-    border-color: darken($color-background-dark, 5);
+    background-color: darken($color-background-dark, $color-darknes);
+    border-color: darken($color-background-dark, $color-darknes);
     color: $color-text-light;
     text-decoration: none;
     outline: 0;
@@ -54,8 +55,8 @@ input[type="submit"] {
 
     &:focus,
     &:hover {
-      background-color: $color-primary-hover;
-      border-color: $color-primary-hover;
+      background-color: darken($color-primary, $color-darknes);
+      border-color: darken($color-primary, $color-darknes);
     }
   }
 
@@ -66,8 +67,8 @@ input[type="submit"] {
 
     &:focus,
     &:hover {
-      background-color: darken($color-background-light, 5);
-      border-color: darken($color-background-light, 5);
+      background-color: darken($color-background-light, $color-darknes);
+      border-color: darken($color-background-light, $color-darknes);
     }
   }
 
@@ -96,7 +97,7 @@ input[type="submit"] {
 
     &:focus,
     &:hover {
-      color: $color-primary-hover;
+      color: darken($color-primary, $color-darknes);
     }
   }
 }
