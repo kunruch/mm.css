@@ -7,7 +7,7 @@ input[type="submit"] {
   border: 1px solid $color-background-dark;
   border-radius: $size-default-radius;
   box-sizing: border-box;
-  color: $color-text-light;
+  color: $color-white;
   cursor: pointer;
   display: inline-block;
   font-weight: $font-weight-normal;
@@ -25,7 +25,6 @@ input[type="submit"] {
   &:hover {
     background-color: darken($color-background-dark, $color-darknes);
     border-color: darken($color-background-dark, $color-darknes);
-    color: $color-text-light;
     text-decoration: none;
     outline: 0;
   }
@@ -51,7 +50,6 @@ input[type="submit"] {
   &.button-primary {
     background-color: $color-primary;
     border-color: $color-primary;
-    color: $color-text-light;
 
     &:focus,
     &:hover {

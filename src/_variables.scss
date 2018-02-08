@@ -21,27 +21,23 @@ $color-gray-darker: #394047 !default;
 $color-white: #fff !default;
 $color-black: #22262a !default;
 
-// Theme colors
-// Colors can be overriden using these
-$color-primary: $color-blue !default;
-$color-secondary: $color-purple!default;
-$color-tertiary: $color-pink !default;
-$color-success: $color-green !default;
-$color-info: $color-cyan !default;
-$color-warning: $color-yellow !default;
-$color-danger: $color-red !default;
-$color-light: $color-gray-lighter !default;
-$color-dark: $color-gray-darker !default;
+// Main theme colors
+$color-primary: $color-blue;
+$color-light: $color-gray-lighter;
+$color-dark: $color-gray-darker;
 
 // Color map used to generate element styles
 $colors: (
   "primary": $color-primary,
-  "secondary": $color-secondary,
-  "tertiary": $color-tertiary,
-  "success": $color-success,
-  "info": $color-info,
-  "warning": $color-warning,
-  "danger": $color-danger,
+  "white": $color-white,
+  "blue": $color-blue,
+  "green": $color-green,
+  "pink": $color-pink,
+  "purple": $color-purple,
+  "yellow": $color-yellow,
+  "teal": $color-teal,
+  "red": $color-red,
+  "cyan": $color-cyan,
   "light": $color-light,
   "dark": $color-dark
 );

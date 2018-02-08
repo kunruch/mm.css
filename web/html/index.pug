@@ -5,26 +5,26 @@ layout: 'default'
 ---
 
 block content
-  div.section-hero.text-center(style="background-color:#394047;")
+  div.section-hero.text-center
     .container-content
-      h2.h1.text-normal.text-white Minimal Modern CSS Framework
-      p.text-center.text-white Built with SCSS - #{data.stats.size}KB size gzipped - MIT License
+      h2.h1.text-normal Minimal Modern CSS Framework
+      p.text-center Lightweight Bootstrap alternative - Zero JavaScript - MIT License
       .section.text-center
-        a.button.button-light.mr(href="/docs") Documentation
-        a.button.button-light(href=site.github, target="_blank") <svg class="icon icon-github"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg> GitHub
+        a.button.button.button-primary.mr(href="/docs") Documentation
+        a.button(href=site.github, target="_blank") <svg class="icon icon-github"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg> GitHub
   .section-medium.bg-light
     .container-content
       .grid.gutters-large
         .col.col-4.col-md-6.col-sm-12.d-flex.py
           .media.media-left
-            .thumbnail.thumbnail-small.thumbnail-rounded(style="background-color:#37BC9B;").text-white
+            .thumbnail.thumbnail-small.thumbnail-rounded.bg-teal.text-white
               <svg class="icon icon-desktop"><use xlink:href="#icon-desktop"></use></svg>
             .media-body
               h2.h3.mt-0 Minimalist Design
               p MM.css is built with minimalism in mind. Build modern and fast websites which users love.
         .col.col-4.col-md-6.col-sm-12.d-flex.py
           .media.media-left
-            .thumbnail.thumbnail-small.thumbnail-rounded(style="background-color:#D770AD;").text-white
+            .thumbnail.thumbnail-small.thumbnail-rounded.bg-pink.text-white
               <svg class="icon icon-folder-o"><use xlink:href="#icon-folder-o"></use></svg>
             .media-body
               h2.h3.mt-0 Lightweight
@@ -32,7 +32,7 @@ block content
 
         .col.col-4.col-md-6.col-sm-12.d-flex.py
           .media.media-left
-            .thumbnail.thumbnail-small.thumbnail-rounded(style="background-color:#967ADC;").text-white
+            .thumbnail.thumbnail-small.thumbnail-rounded.bg-purple.text-white
               <svg class="icon icon-tablet"><use xlink:href="#icon-tablet"></use></svg>
             .media-body
               h2.h3.mt-0 Mobile Friendly
@@ -40,7 +40,7 @@ block content
 
         .col.col-4.col-md-6.col-sm-12.d-flex.py
           .media.media-left
-            .thumbnail.thumbnail-small.thumbnail-rounded(style="background-color:#F6BB42;").text-white
+            .thumbnail.thumbnail-small.thumbnail-rounded.bg-yellow.text-white
               <svg class="icon icon-thumbs-o-up"><use xlink:href="#icon-thumbs-o-up"></use></svg>
             .media-body
               h2.h3.mt-0 Zero JavaScript
@@ -57,7 +57,7 @@ block content
 
         .col.col-4.col-md-6.col-sm-12.d-flex.py
           .media.media-left
-            .thumbnail.thumbnail-small.thumbnail-rounded(style="background-color:#8CC152;").text-white
+            .thumbnail.thumbnail-small.thumbnail-rounded.bg-green.text-white
               <svg class="icon icon-github"><use xlink:href="#icon-check"></use></svg>
             .media-body
               h2.h3.mt-0 MIT License

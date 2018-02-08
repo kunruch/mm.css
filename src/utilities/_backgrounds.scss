@@ -1,0 +1,8 @@
+// Highlight any element with background colors
+.bg {
+  @include modifiers($colors, "background-color");
+}
+
+.bg-transparent {
+  background-color: transparent;
+}

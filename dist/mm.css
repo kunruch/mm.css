@@ -503,7 +503,7 @@ input[type="submit"] {
   border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #e7e9ec;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
@@ -530,7 +530,6 @@ input[type="submit"]:focus,
 input[type="submit"]:hover {
   background-color: #2e3339;
   border-color: #2e3339;
-  color: #e7e9ec;
   text-decoration: none;
   outline: 0;
 }
@@ -578,7 +577,6 @@ input[type="reset"].button-primary,
 input[type="submit"].button-primary {
   background-color: #4a89dc;
   border-color: #4a89dc;
-  color: #e7e9ec;
 }
 
 .button.button-primary:focus, .button.button-primary:hover,
@@ -1865,8 +1863,44 @@ nav ul ul {
   clear: both;
 }
 
+.bg-primary {
+  background-color: #4a89dc;
+}
+
 .bg-white {
   background-color: #fff;
+}
+
+.bg-blue {
+  background-color: #4a89dc;
+}
+
+.bg-green {
+  background-color: #8cc152;
+}
+
+.bg-pink {
+  background-color: #d770ad;
+}
+
+.bg-purple {
+  background-color: #967adc;
+}
+
+.bg-yellow {
+  background-color: #f6bb42;
+}
+
+.bg-teal {
+  background-color: #37bc9b;
+}
+
+.bg-red {
+  background-color: #e9573f;
+}
+
+.bg-cyan {
+  background-color: #4fc1e9;
 }
 
 .bg-light {
@@ -1875,11 +1909,10 @@ nav ul ul {
 
 .bg-dark {
   background-color: #394047;
-  color: #e7e9ec;
 }
 
-.bg-primary {
-  background-color: #4a89dc;
+.bg-transparent {
+  background-color: transparent;
 }
 
 .d-block {

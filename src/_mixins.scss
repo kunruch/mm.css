@@ -1,7 +1,10 @@
 @mixin element-spacing($scale: 1) {
   // default margin (scale = 1) only specifies top margin for any element
   // When scale > 1, extra margin is distributed to top and bottom margin.
-  margin: (((1 + $scale) / 2) * $size-element-spacing) 0 ((($scale - 1) / 2) * $size-element-spacing) 0;
+  margin: (((1 + $scale) / 2) * $size-element-spacing) 0
+    (
+       (($scale - 1) / 2) * $size-element-spacing
+    ) 0;
 }
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1, $unit: "rem") {
@@ -9,9 +12,7 @@
 
   @if $unit == "em" {
     font-size: $sizeValue * 1em;
-  }
-
-  @else {
+  } @else {
     font-size: $sizeValue * 1rem;
   }
 }
@@ -27,6 +28,18 @@
     clear: both;
     content: "";
     display: table;
+  }
+}
+
+@mixin modifiers($map, $attribute, $prefix: "-", $separator: "-", $base: "base") {
+  @each $key, $value in $map {
+    &#{if($key != $base, #{$prefix}#{$key}, '')} {
+      @if type-of($value) == "map" {
+        @include modifiers($value, $attribute, $separator);
+      } @else {
+        #{$attribute}: $value;
+      }
+    }
   }
 }
 
