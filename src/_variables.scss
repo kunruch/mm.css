@@ -2,11 +2,11 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 $color-blue: #4a89dc !default;
-$color-green: #37bc9b !default;
-$color-prink: #d770ad !default;
+$color-green: #8cc152 !default;
+$color-pink: #d770ad !default;
 $color-purple: #967adc !default;
 $color-yellow: #f6bb42 !default;
-$color-teal: #8cc152 !default;
+$color-teal: #37bc9b !default;
 $color-red: #e9573f !default;
 $color-cyan: #4fc1e9 !default;
 
@@ -25,13 +25,13 @@ $color-black: #22262a !default;
 // Colors can be overriden using these
 $color-primary: $color-blue !default;
 $color-secondary: $color-purple!default;
-$color-tertiary: $color-blue !default;
+$color-tertiary: $color-pink !default;
 $color-success: $color-green !default;
-$color-info: $color-blue !default;
-$color-warning: $color-blue !default;
-$color-danger: $color-blue !default;
-$color-light: $color-blue !default;
-$color-dark: $color-blue !default;
+$color-info: $color-cyan !default;
+$color-warning: $color-yellow !default;
+$color-danger: $color-red !default;
+$color-light: $color-gray-lighter !default;
+$color-dark: $color-gray-darker !default;
 
 // Color map used to generate element styles
 $colors: (

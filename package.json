@@ -30,15 +30,22 @@
   ],
   "scripts": {
     "lint": "stylelint \"src/**/*.scss\" --syntax scss",
-    "css": "node-sass --source-map dist/mm.css.map --output-style expanded src/mm.scss dist/mm.css",
-    "css-min": "node-sass --source-map dist/mm.min.css.map --output-style compressed src/mm.scss dist/mm.min.css",
-    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 2 versions\" -r dist/*.css",
+    "css":
+      "node-sass --source-map dist/mm.css.map --output-style expanded src/mm.scss dist/mm.css",
+    "css-min":
+      "node-sass --source-map dist/mm.min.css.map --output-style compressed src/mm.scss dist/mm.min.css",
+    "autoprefixer":
+      "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 2 versions\" -r dist/*.css",
     "banner": "banner-cli dist/*.css",
-    "css-build-dev": "npm-run-all css autoprefixer && shx cp dist/*.css public/styles",
-    "css-build": "npm-run-all css css-min autoprefixer banner && shx cp dist/*.css public/styles",
+    "css-build-dev":
+      "npm-run-all css autoprefixer && shx cp dist/*.css public/styles",
+    "css-build":
+      "npm-run-all css css-min autoprefixer banner && shx cp dist/*.css public/styles",
     "css-watch": "onchange src -- npm run css-build-dev",
-    "dist": "npm-run-all lint css-build && git add dist/*.css && git commit -m \":bookmark: Updating dist\" && git push -u origin master",
-    "patch": "npm version patch -m \":bookmark: Version %s\" && git push && git push --tags && npm publish",
+    "dist":
+      "npm-run-all lint css-build && git add dist/*.css && git commit -m \":bookmark: Updating dist\" && git push -u origin master",
+    "patch":
+      "npm version patch -m \":bookmark: Version %s\" && git push && git push --tags && npm publish",
     "dist-patch": "npm run dist && npm run patch",
     "web-clean": "mmpilot clean",
     "web-build": "mmpilot build",
