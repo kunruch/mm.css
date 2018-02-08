@@ -294,7 +294,7 @@ h6 {
   font-weight: 600;
   letter-spacing: -0.01rem;
   line-height: 1.25;
-  color: #22262a;
+  color: #394047;
   margin: 1.5rem 0 0rem 0;
   margin-top: 1.5em;
 }
@@ -828,7 +828,7 @@ nav ul ul {
 }
 
 .entry-title a {
-  color: #22262a;
+  color: #394047;
 }
 
 .entry-title a:hover {
@@ -1151,7 +1151,7 @@ nav ul ul {
 
 .header {
   background-color: #fff;
-  color: #22262a;
+  color: #394047;
   z-index: 99;
   text-align: center;
   position: relative;
