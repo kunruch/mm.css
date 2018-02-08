@@ -1903,6 +1903,18 @@ nav ul ul {
   background-color: #4fc1e9;
 }
 
+.bg-gray-light {
+  background-color: #e7e9ec;
+}
+
+.bg-gray {
+  background-color: #cbd0d5;
+}
+
+.bg-gray-dark {
+  background-color: #b8bfc6;
+}
+
 .bg-light {
   background-color: #f5f6f7;
 }
@@ -2133,6 +2145,18 @@ nav ul ul {
 
 .text-cyan {
   color: #4fc1e9;
+}
+
+.text-gray-light {
+  color: #e7e9ec;
+}
+
+.text-gray {
+  color: #cbd0d5;
+}
+
+.text-gray-dark {
+  color: #b8bfc6;
 }
 
 .text-light {
