@@ -1,11 +1,3 @@
-/*!
- * Mmcss v0.3.3
- * https://getmmcss.com/
- *
- * Copyright (c) 2018 Kanishk Kunal
- * Licensed under the MIT license
- */
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -644,15 +636,6 @@ input[type="submit"].button-ghost-light:focus,
 input[type="submit"].button-ghost-light:hover {
   background-color: #f5f6f7;
   color: #394047;
-}
-
-.button.button-rounded,
-button.button-rounded,
-input[type="button"].button-rounded,
-input[type="reset"].button-rounded,
-input[type="submit"].button-rounded {
-  border-radius: 3rem;
-  padding: 0.3em 1.5em;
 }
 
 .button.button-text,
@@ -1905,6 +1888,22 @@ nav ul ul {
   border-color: #394047;
 }
 
+.border-hard {
+  border-radius: 0;
+}
+
+.border-soft {
+  border-radius: 3px;
+}
+
+.border-rounded {
+  border-radius: 1em;
+}
+
+.border-circle {
+  border-radius: 50%;
+}
+
 .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1977,6 +1976,14 @@ nav ul ul {
   display: block;
 }
 
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline {
+  display: inline;
+}
+
 .d-none {
   display: none;
 }
@@ -1985,6 +1992,28 @@ nav ul ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.d-inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@media print {
+  body {
+    background: none;
+    color: #000;
+    margin: 0;
+  }
+  a {
+    word-wrap: break-word;
+    color: #000;
+  }
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 80%;
+  }
 }
 
 .shadow {
@@ -2007,22 +2036,6 @@ nav ul ul {
 .shadow-hover:hover {
   -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
-}
-
-@media print {
-  body {
-    background: none;
-    color: #000;
-    margin: 0;
-  }
-  a {
-    word-wrap: break-word;
-    color: #000;
-  }
-  a::after {
-    content: " (" attr(href) ")";
-    font-size: 80%;
-  }
 }
 
 .mr-0 {

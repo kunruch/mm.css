@@ -25,3 +25,19 @@
 .border {
   @include modifiers($colors, "border-color");
 }
+
+.border-hard {
+  border-radius: 0;
+}
+
+.border-soft {
+  border-radius: $size-default-radius;
+}
+
+.border-rounded {
+  border-radius: 1em;
+}
+
+.border-circle {
+  border-radius: 50%;
+}

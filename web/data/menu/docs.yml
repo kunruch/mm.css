@@ -47,10 +47,6 @@
   url: "/docs/utility-float"
 - title: Icons
   url: "/docs/utility-icons"
-- title: Accessiblity
-  url: "/docs/utility-accessiblity"
-- title: Print
-  url: "/docs/print"
 
 - title: "Compositions"
 - title: Grid
@@ -65,3 +61,9 @@
   url: "/docs/media"
 - title: Labels
   url: "/docs/labels"
+
+- title: ""
+- title: Accessiblity
+  url: "/docs/accessiblity"
+- title: Print
+  url: "/docs/print"
