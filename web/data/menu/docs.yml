@@ -5,6 +5,8 @@
   url: "/docs/installation"
 - title: "Basic Template"
   url: "/docs/basic-template"
+- title: "Layout Examples"
+  url: "/docs/layout-examples"
 
 - title: "Core"
 - title: Typography
@@ -19,37 +21,47 @@
   url: "/docs/tables"
 - title: Navs
   url: "/docs/navs"
+- title: Search Form
+  url: "/docs/searchform"
+- title: Markup and Formatting
+  url: "/docs/markup-and-formatting"
 
-- title: "Layout"
+- title: 'Utilities'
 - title: Containers
   url: "/docs/containers"
+- title: Background
+  url: "/docs/utility-background"
+- title: Text
+  url: "/docs/utility-text"
+- title: Borders
+  url: "/docs/utility-borders"
+- title: Shadow
+  url: "/docs/utility-shadow"
+- title: Sizing
+  url: "/docs/utility-sizing"
+- title: Spacing
+  url: "/docs/utility-spacing"
+- title: Display
+  url: "/docs/utility-display"
+- title: Float
+  url: "/docs/utility-float"
+- title: Icons
+  url: "/docs/utility-icons"
+- title: Accessiblity
+  url: "/docs/utility-accessiblity"
+- title: Print
+  url: "/docs/print"
+
+- title: "Compositions"
 - title: Grid
   url: "/docs/grid"
 - title: Header
   url: "/docs/header"
 - title: Menu
   url: "/docs/menu"
-
-- title: "Components"
 - title: Cards
   url: "/docs/cards"
 - title: Media
   url: "/docs/media"
 - title: Labels
   url: "/docs/labels"
-
-- title: ''
-- title: Utilities
-  url: "/docs/utilities"
-- title: Accessiblity
-  url: "/docs/accessiblity"
-- title: Print
-  url: "/docs/print"
-- title: "Layout Examples"
-  url: "/docs/layout-examples"
-
-- title: ''
-- title: Search Form
-  url: "/docs/searchform"
-- title: Markup and Formatting
-  url: "/docs/markup-and-formatting"
