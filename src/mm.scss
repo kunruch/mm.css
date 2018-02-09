@@ -1,7 +1,7 @@
-@import "vendor/normalize";
+@import "normalize";
 @import "variables";
-@import "mixins";
+@import "mixins/mixins";
 @import "core/core";
-@import "layout/layout";
 @import "components/components";
+@import "layout/layout";
 @import "utilities/utilities";
