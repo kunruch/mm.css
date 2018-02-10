@@ -53,12 +53,6 @@ mixin horizontal-menu(list)
 
 mixin social(list)
   each item in list
-    a.button.bg-transparent.border-0(href=item.url, target="_blank")
-      | <svg class="icon icon-#{item.icon}"><use xlink:href="#icon-#{item.icon}"></use></svg>
-      span #{item.title}
-
-mixin social_fotter(list)
-  each item in list
     a.button.button-light.bg-transparent.border-0(href=item.url, target="_blank")
       | <svg class="icon icon-#{item.icon}"><use xlink:href="#icon-#{item.icon}"></use></svg>
       span #{item.title}
