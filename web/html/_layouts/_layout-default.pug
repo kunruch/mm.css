@@ -1,7 +1,7 @@
 extends ./_layout-root.pug
 
 block header
-  header.header.text-white.bg-dark
+  header.header.border-bottom
     .container
       .header-left
         a(href='/').site-branding
@@ -28,7 +28,7 @@ block footer
           img(src="/img/mmcss-180x180.png", width="90", height="90")
       .h4.mt-small Minimal Modern CSS Framework
       div
-        +social(data.menu.social)
+        +social_fotter(data.menu.social)
       p Built with <a href="#{site.url}">MM.css</a> &amp; <a href="https://mmpilot.kunruchcreations.com/" target="_blank">mmpilot</a> for the modern web by <a href="http://kunruchcreations.com/">KunRuch Creations</a>.
         br
         | Licensed under the <a href="#{site.github}/blob/master/LICENSE.md" target="blank">MIT License</a>.

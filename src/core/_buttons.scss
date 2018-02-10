@@ -1,8 +1,23 @@
-.button,
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+@mixin button-modifiers($map, $prefix: "-", $separator: "-", $base: "base") {
+  @each $key, $value in $map {
+    &#{if($key != $base, #{$prefix}#{$key}, '')} {
+      @if type-of($value) == "map" {
+        @include button-modifiers($value, $separator);
+      } @else {
+        background-color: $value;
+        border-color: $value;
+
+        &:focus,
+        &:hover {
+          background-color: darken($value, $color-darkness);
+          border-color: darken($value, $color-darkness);
+        }
+      }
+    }
+  }
+}
+
+.button {
   background-color: $color-background-dark;
   border: 1px solid $color-background-dark;
   border-radius: $size-default-radius;
@@ -23,8 +38,9 @@ input[type="submit"] {
 
   &:focus,
   &:hover {
-    background-color: darken($color-background-dark, $color-darknes);
-    border-color: darken($color-background-dark, $color-darknes);
+    background-color: darken($color-background-dark, $color-darkness);
+    border-color: darken($color-background-dark, $color-darkness);
+    color: $color-white;
     text-decoration: none;
     outline: 0;
   }
@@ -36,61 +52,16 @@ input[type="submit"] {
     pointer-events: none;
   }
 
-  &.button-ghost {
-    background-color: transparent;
-    border-color: $color-dark-border;
+  @include button-modifiers($colors);
+}
+
+.button-light,
+.button-gray-light,
+.button-gray {
+  color: $color-text;
+
+  &:focus,
+  &:hover {
     color: $color-text;
-
-    &:focus,
-    &:hover {
-      background-color: $color-background-light;
-    }
-  }
-
-  &.button-primary {
-    background-color: $color-primary;
-    border-color: $color-primary;
-
-    &:focus,
-    &:hover {
-      background-color: darken($color-primary, $color-darknes);
-      border-color: darken($color-primary, $color-darknes);
-    }
-  }
-
-  &.button-light {
-    background-color: $color-background-light;
-    border-color: $color-background-light;
-    color: $color-text;
-
-    &:focus,
-    &:hover {
-      background-color: darken($color-background-light, $color-darknes);
-      border-color: darken($color-background-light, $color-darknes);
-    }
-  }
-
-  &.button-ghost-light {
-    background-color: transparent;
-    border-color: $color-text-light;
-    color: $color-text-light;
-
-    &:focus,
-    &:hover {
-      background-color: $color-background-light;
-      color: $color-text;
-    }
-  }
-
-  &.button-text {
-    color: inherit;
-    background-color: transparent;
-    border-color: transparent;
-    padding: 0 12px;
-
-    &:focus,
-    &:hover {
-      color: darken($color-primary, $color-darknes);
-    }
   }
 }

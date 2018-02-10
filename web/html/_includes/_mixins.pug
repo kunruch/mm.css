@@ -45,15 +45,21 @@ mixin menuitem(item)
 mixin horizontal-menu(list)
   each item in list
     if item.icon
-      a.button.button-text(href=item.url, target="_blank", title=item.title)
+      a.button.bg-transparent.border-0(href=item.url, target="_blank", title=item.title)
         | <svg class="icon icon-#{item.icon}"><use xlink:href="#icon-#{item.icon}"></use></svg>
     else
-      a.button.button-text(href=item.url)
+      a.button.bg-transparent.border-0(href=item.url)
         | #{item.title}
 
 mixin social(list)
   each item in list
-    a.button.button-text(href=item.url, target="_blank")
+    a.button.bg-transparent.border-0(href=item.url, target="_blank")
+      | <svg class="icon icon-#{item.icon}"><use xlink:href="#icon-#{item.icon}"></use></svg>
+      span #{item.title}
+
+mixin social_fotter(list)
+  each item in list
+    a.button.button-light.bg-transparent.border-0(href=item.url, target="_blank")
       | <svg class="icon icon-#{item.icon}"><use xlink:href="#icon-#{item.icon}"></use></svg>
       span #{item.title}
 

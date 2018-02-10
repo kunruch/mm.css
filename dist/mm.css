@@ -1,3 +1,11 @@
+/*!
+ * Mmcss v0.3.3
+ * https://getmmcss.com/
+ *
+ * Copyright (c) 2018 Kanishk Kunal
+ * Licensed under the MIT license
+ */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -227,7 +235,7 @@ q::before {
 }
 
 hr {
-  background-color: #cbd0d5;
+  background-color: #e7e9ec;
   border: 0;
   height: 1px;
   margin: 1.5rem 0 0rem 0;
@@ -493,11 +501,7 @@ pre > code {
   white-space: pre;
 }
 
-.button,
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+.button {
   background-color: #394047;
   border: 1px solid #394047;
   border-radius: 3px;
@@ -519,146 +523,182 @@ input[type="submit"] {
   margin: 1.5rem 0 0rem 0;
 }
 
-.button:focus, .button:hover,
-button:focus,
-button:hover,
-input[type="button"]:focus,
-input[type="button"]:hover,
-input[type="reset"]:focus,
-input[type="reset"]:hover,
-input[type="submit"]:focus,
-input[type="submit"]:hover {
+.button:focus, .button:hover {
   background-color: #2e3339;
   border-color: #2e3339;
+  color: #fff;
   text-decoration: none;
   outline: 0;
 }
 
-.button[disabled], .button:disabled,
-button[disabled],
-button:disabled,
-input[type="button"][disabled],
-input[type="button"]:disabled,
-input[type="reset"][disabled],
-input[type="reset"]:disabled,
-input[type="submit"][disabled],
-input[type="submit"]:disabled {
+.button[disabled], .button:disabled {
   cursor: default;
   opacity: 0.5;
   pointer-events: none;
 }
 
-.button.button-ghost,
-button.button-ghost,
-input[type="button"].button-ghost,
-input[type="reset"].button-ghost,
-input[type="submit"].button-ghost {
-  background-color: transparent;
-  border-color: #cbd0d5;
-  color: #394047;
-}
-
-.button.button-ghost:focus, .button.button-ghost:hover,
-button.button-ghost:focus,
-button.button-ghost:hover,
-input[type="button"].button-ghost:focus,
-input[type="button"].button-ghost:hover,
-input[type="reset"].button-ghost:focus,
-input[type="reset"].button-ghost:hover,
-input[type="submit"].button-ghost:focus,
-input[type="submit"].button-ghost:hover {
-  background-color: #f5f6f7;
-}
-
-.button.button-primary,
-button.button-primary,
-input[type="button"].button-primary,
-input[type="reset"].button-primary,
-input[type="submit"].button-primary {
+.button-primary {
   background-color: #4a89dc;
   border-color: #4a89dc;
 }
 
-.button.button-primary:focus, .button.button-primary:hover,
-button.button-primary:focus,
-button.button-primary:hover,
-input[type="button"].button-primary:focus,
-input[type="button"].button-primary:hover,
-input[type="reset"].button-primary:focus,
-input[type="reset"].button-primary:hover,
-input[type="submit"].button-primary:focus,
-input[type="submit"].button-primary:hover {
+.button-primary:focus, .button-primary:hover {
   background-color: #357bd8;
   border-color: #357bd8;
 }
 
-.button.button-light,
-button.button-light,
-input[type="button"].button-light,
-input[type="reset"].button-light,
-input[type="submit"].button-light {
-  background-color: #f5f6f7;
-  border-color: #f5f6f7;
-  color: #394047;
+.button-white {
+  background-color: #fff;
+  border-color: #fff;
 }
 
-.button.button-light:focus, .button.button-light:hover,
-button.button-light:focus,
-button.button-light:hover,
-input[type="button"].button-light:focus,
-input[type="button"].button-light:hover,
-input[type="reset"].button-light:focus,
-input[type="reset"].button-light:hover,
-input[type="submit"].button-light:focus,
-input[type="submit"].button-light:hover {
+.button-white:focus, .button-white:hover {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+.button-blue {
+  background-color: #4a89dc;
+  border-color: #4a89dc;
+}
+
+.button-blue:focus, .button-blue:hover {
+  background-color: #357bd8;
+  border-color: #357bd8;
+}
+
+.button-green {
+  background-color: #8cc152;
+  border-color: #8cc152;
+}
+
+.button-green:focus, .button-green:hover {
+  background-color: #7fb842;
+  border-color: #7fb842;
+}
+
+.button-pink {
+  background-color: #d770ad;
+  border-color: #d770ad;
+}
+
+.button-pink:focus, .button-pink:hover {
+  background-color: #d15ca2;
+  border-color: #d15ca2;
+}
+
+.button-purple {
+  background-color: #967adc;
+  border-color: #967adc;
+}
+
+.button-purple:focus, .button-purple:hover {
+  background-color: #8666d7;
+  border-color: #8666d7;
+}
+
+.button-yellow {
+  background-color: #f6bb42;
+  border-color: #f6bb42;
+}
+
+.button-yellow:focus, .button-yellow:hover {
+  background-color: #f5b22a;
+  border-color: #f5b22a;
+}
+
+.button-teal {
+  background-color: #37bc9b;
+  border-color: #37bc9b;
+}
+
+.button-teal:focus, .button-teal:hover {
+  background-color: #31a88b;
+  border-color: #31a88b;
+}
+
+.button-red {
+  background-color: #e9573f;
+  border-color: #e9573f;
+}
+
+.button-red:focus, .button-red:hover {
+  background-color: #e64328;
+  border-color: #e64328;
+}
+
+.button-cyan {
+  background-color: #4fc1e9;
+  border-color: #4fc1e9;
+}
+
+.button-cyan:focus, .button-cyan:hover {
+  background-color: #38b9e6;
+  border-color: #38b9e6;
+}
+
+.button-gray-light {
   background-color: #e7e9ec;
   border-color: #e7e9ec;
 }
 
-.button.button-ghost-light,
-button.button-ghost-light,
-input[type="button"].button-ghost-light,
-input[type="reset"].button-ghost-light,
-input[type="submit"].button-ghost-light {
-  background-color: transparent;
-  border-color: #e7e9ec;
-  color: #e7e9ec;
+.button-gray-light:focus, .button-gray-light:hover {
+  background-color: #d9dce1;
+  border-color: #d9dce1;
 }
 
-.button.button-ghost-light:focus, .button.button-ghost-light:hover,
-button.button-ghost-light:focus,
-button.button-ghost-light:hover,
-input[type="button"].button-ghost-light:focus,
-input[type="button"].button-ghost-light:hover,
-input[type="reset"].button-ghost-light:focus,
-input[type="reset"].button-ghost-light:hover,
-input[type="submit"].button-ghost-light:focus,
-input[type="submit"].button-ghost-light:hover {
+.button-gray {
+  background-color: #cbd0d5;
+  border-color: #cbd0d5;
+}
+
+.button-gray:focus, .button-gray:hover {
+  background-color: #bdc3ca;
+  border-color: #bdc3ca;
+}
+
+.button-gray-dark {
+  background-color: #b8bfc6;
+  border-color: #b8bfc6;
+}
+
+.button-gray-dark:focus, .button-gray-dark:hover {
+  background-color: #aab2bb;
+  border-color: #aab2bb;
+}
+
+.button-light {
   background-color: #f5f6f7;
+  border-color: #f5f6f7;
+}
+
+.button-light:focus, .button-light:hover {
+  background-color: #e7e9ec;
+  border-color: #e7e9ec;
+}
+
+.button-dark {
+  background-color: #394047;
+  border-color: #394047;
+}
+
+.button-dark:focus, .button-dark:hover {
+  background-color: #2e3339;
+  border-color: #2e3339;
+}
+
+.button-light,
+.button-gray-light,
+.button-gray {
   color: #394047;
 }
 
-.button.button-text,
-button.button-text,
-input[type="button"].button-text,
-input[type="reset"].button-text,
-input[type="submit"].button-text {
-  color: inherit;
-  background-color: transparent;
-  border-color: transparent;
-  padding: 0 12px;
-}
-
-.button.button-text:focus, .button.button-text:hover,
-button.button-text:focus,
-button.button-text:hover,
-input[type="button"].button-text:focus,
-input[type="button"].button-text:hover,
-input[type="reset"].button-text:focus,
-input[type="reset"].button-text:hover,
-input[type="submit"].button-text:focus,
-input[type="submit"].button-text:hover {
-  color: #357bd8;
+.button-light:focus, .button-light:hover,
+.button-gray-light:focus,
+.button-gray-light:hover,
+.button-gray:focus,
+.button-gray:hover {
+  color: #394047;
 }
 
 input[type="email"],
