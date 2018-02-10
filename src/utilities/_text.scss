@@ -10,21 +10,21 @@
   @include font-size($size-large-text);
 }
 
-/* text weights */
+/* font weights */
 
-.text-normal {
+.font-normal {
   font-weight: $font-weight-normal;
 }
 
-.text-bold {
+.font-bold {
   font-weight: $font-weight-bold;
 }
 
-.text-medium {
+.font-medium {
   font-weight: $font-weight-medium;
 }
 
-.text-thin {
+.font-thin {
   font-weight: $font-weight-thin;
 }
 
