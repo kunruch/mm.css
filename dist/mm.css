@@ -1,11 +1,3 @@
-/*!
- * Mmcss v0.3.3
- * https://getmmcss.com/
- *
- * Copyright (c) 2018 Kanishk Kunal
- * Licensed under the MIT license
- */
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -658,13 +650,13 @@ pre > code {
 }
 
 .button-gray-dark {
-  background-color: #b8bfc6;
-  border-color: #b8bfc6;
+  background-color: #808c99;
+  border-color: #808c99;
 }
 
 .button-gray-dark:focus, .button-gray-dark:hover {
-  background-color: #aab2bb;
-  border-color: #aab2bb;
+  background-color: #727f8e;
+  border-color: #727f8e;
 }
 
 .button-light {
@@ -1558,7 +1550,7 @@ nav ul ul {
 .menu-header {
   text-transform: uppercase;
   font-size: 85%;
-  color: #b8bfc6;
+  color: #808c99;
   letter-spacing: 0.15em;
 }
 
@@ -1829,7 +1821,7 @@ nav ul ul {
 }
 
 .bg-gray-dark {
-  background-color: #b8bfc6;
+  background-color: #808c99;
 }
 
 .bg-light {
@@ -1917,7 +1909,7 @@ nav ul ul {
 }
 
 .border-gray-dark {
-  border-color: #b8bfc6;
+  border-color: #808c99;
 }
 
 .border-light {
@@ -2191,7 +2183,7 @@ nav ul ul {
 
 /* text colors */
 .text-muted {
-  color: #b8bfc6;
+  color: #808c99;
 }
 
 .text-primary {
@@ -2243,7 +2235,7 @@ nav ul ul {
 }
 
 .text-gray-dark {
-  color: #b8bfc6;
+  color: #808c99;
 }
 
 .text-light {
