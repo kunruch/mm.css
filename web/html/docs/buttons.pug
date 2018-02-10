@@ -32,9 +32,19 @@ block docs-content
           #{'<a class="button" href="#">Default Button</a>'}
           #{'<a class="button button-primary" href="#">Primary Button</a>'}
           #{'<a class="button button-light" href="#">Light Button</a>'}
-          #{'<button class="button button-ghost">Ghost Button</button>'}
-          #{'<button class="button button-ghost-light">Ghost Light</button>'}
-          #{'<input class="button button button-text" value="Text Button"  type="submit"/>'}
+          #{'<a class="button button-gray-light" href="#">Gray Light</a>'}
+          #{'<a class="button button-gray" href="#">Gray button</a>'}
+          #{'<a class="button button-gray-dark" href="#">Gray Dark</a>'}
+          #{'<a class="button button-dark" href="#">Dark Button</a>'}
+          #{''}
+          #{'<a class="button button-blue" href="#">Blue Button</a>'}
+          #{'<a class="button button-green" href="#">Green Button</a>'}
+          #{'<a class="button button-yellow" href="#">Yellow Button</a>'}
+          #{'<a class="button button-red" href="#">Red Button</a>'}
+          #{'<a class="button button-pink" href="#">Pink Button</a>'}
+          #{'<a class="button button-purple" href="#">Purple Button</a>'}
+          #{'<a class="button button-teal" href="#">Teal Button</a>'}
+          #{'<a class="button button-cyan" href="#">Cyan Button</a>'}
 
     h2 Outline Buttons
     p To make any button outline button, add <code>bg-transparent</code> and an appropriate text color using <code>text-*</code> classes as shown below.
@@ -59,75 +69,69 @@ block docs-content
           a.button.button-cyan.bg-transparent.text-cyan.mr-small(href='#') Cyan Button
       pre
         code.
-          #{'<!-- Default Buttons -->'}
-          #{'<a class="button" href="#">Default Button</a>'}
-          #{'<a class="button button-primary" href="#">Primary Button</a>'}
-          #{'<a class="button button-light" href="#">Light Button</a>'}
-          #{'<button class="button button-ghost">Ghost Button</button>'}
-          #{'<button class="button button-ghost-light">Ghost Light</button>'}
-          #{'<input class="button button button-text" value="Text Button"  type="submit"/>'}
+          #{'<a class="button bg-transparent text-dark" href="#">Default Button</a>'}
+          #{'<a class="button button-primary bg-transparent text-primary" href="#">Primary Button</a>'}
+          #{'<a class="button button-blue bg-transparent text-blue" href="#">Blue Button</a>'}
+          #{'...'}
 
     h2 Rounded Buttons
-    p Add <code>border-rounded</code> class to make any button a rounded button.
+    p Add <code>border-rounded</code> class to make any button a rounded button. This will works for outline style too.
     .code-example
       .code-output
-        // Default Button Rounded
-        a.button.border-rounded.mr-small(href='#') Rounded Button
-        // Primary Button Rounded
-        button.button.border-rounded.button-primary.mr-small Rounded Primary
-        // Light Button Rounded
-        button.button.border-rounded.button-light.mr-small Rounded Light
-        // Ghost Button Rounded
-        button.button.button-ghost.border-rounded.mr-small Rounded Ghost
-        // Ghost Light Rounded
-        button.button.button-ghost-light.border-rounded.mr-small Rounded Ghost Light
+        div
+          a.button.border-rounded.mr-small(href='#') Default Button
+          a.button.button-primary.border-rounded.mr-small(href='#') Primary Button
+          a.button.button-light.border-rounded.mr-small(href='#') Light Button
+          a.button.button-gray-light.border-rounded.mr-small(href='#') Gray Light
+          a.button.button-gray.border-rounded.mr-small(href='#') Gray button
+          a.button.button-gray-dark.border-rounded.mr-small(href='#') Gray Dark
+          a.button.button-dark.border-rounded.mr-small(href='#') Dark Button
+        div
+          a.button.button-blue.border-rounded.mr-small(href='#') Blue Button
+          a.button.button-green.border-rounded.mr-small(href='#') Green Button
+          a.button.button-yellow.border-rounded.mr-small(href='#') Yellow Button
+          a.button.button-red.border-rounded.mr-small(href='#') Red Button
+          a.button.button-pink.border-rounded.mr-small(href='#') Pink Button
+          a.button.button-purple.border-rounded.mr-small(href='#') Purple Button
+          a.button.button-teal.border-rounded.mr-small(href='#') Teal Button
+          a.button.button-cyan.border-rounded.mr-small(href='#') Cyan Button
+        div
+          a.button.border-rounded.bg-transparent.text-dark.mr-small(href='#') Default Button
+          a.button.button-primary.border-rounded.bg-transparent.text-primary.mr-small(href='#') Primary Button
+          a.button.button-light.border-rounded.bg-transparent.text-dark.mr-small(href='#') Light Button
+          a.button.button-gray-light.border-rounded.bg-transparent.text-dark.mr-small(href='#') Gray Light
+          a.button.button-gray.border-rounded.bg-transparent.text-dark.mr-small(href='#') Gray button
+          a.button.button-gray-dark.border-rounded.bg-transparent.text-dark.mr-small(href='#') Gray Dark
+          a.button.button-dark.border-rounded.bg-transparent.text-dark.mr-small(href='#') Dark Button
+        div
+          a.button.button-blue.border-rounded.bg-transparent.text-blue.mr-small(href='#') Blue Button
+          a.button.button-green.border-rounded.bg-transparent.text-green.mr-small(href='#') Green Button
+          a.button.button-yellow.border-rounded.bg-transparent.text-yellow.mr-small(href='#') Yellow Button
+          a.button.button-red.border-rounded.bg-transparent.text-red.mr-small(href='#') Red Button
+          a.button.button-pink.border-rounded.bg-transparent.text-pink.mr-small(href='#') Pink Button
+          a.button.button-purple.border-rounded.bg-transparent.text-purple.mr-small(href='#') Purple Button
+          a.button.button-teal.border-rounded.bg-transparent.text-teal.mr-small(href='#') Teal Button
+          a.button.button-cyan.border-rounded.bg-transparent.text-cyan.mr-small(href='#') Cyan Button
       pre
         code.
-          #{'<!-- Default Button Rounded -->'}
-          #{'<a class="button border-rounded" href="#">Rounded Button</a>'}
-          #{''}
-          #{'<!-- Primary Button Rounded -->'}
-          #{'<button class="button-primary border-rounded">'}
-          #{' Primary Button Rounded'}
-          #{'</button>'}
-          #{''}
-          #{'<!-- Light Button Rounded -->'}
-          #{'<button class="button-light border-rounded">'}
-          #{' Light Button Rounded'}
-          #{'</button>'}
-          #{''}
-          #{'<!-- Ghost Button Rounded -->'}
-          #{'<button class="button-ghost border-rounded">'}
-          #{' Rounded Ghost Button'}
-          #{'</button>'}
-          #{''}
-          #{'<!-- Ghost Light Button Rounded -->'}
-          #{'<button class="button-ghost-light border-rounded">'}
-          #{' Rounded Ghost Light'}
-          #{'</button>'}
+          #{'<a class="button border-rounded" href="#">Default Button</a>'}
+          #{'<a class="button button-primary border-rounded" href="#">Primary Button</a>'}
+          #{'<a class="button button-blue border-rounded" href="#">Blue Button</a>'}
+          #{'...'}
 
     h2 Disabled Buttons
     p Buttons can be disabled by adding the <code>disabled</code> attribute.
     .code-example
       .code-output
-        // Default Button
-        a.button.mr-small(href='#', disabled) Default Button
-        // Primary Button
-        a.button.button-primary.mr-small(href='#', disabled) Primary Button
-        // Light Button
-        a.button.button-light.mr-small(href='#', disabled) Light Button
-        // Ghost Button
-        button.button.button-ghost.mr-small(disabled) Ghost Button
-        // Text Button
-        input.button.button-text.mr-small(type='submit', value='Text Button', disabled)
+        div
+          a.button.mr-small(href='#' disabled) Disabled Button
+          a.button.button-primary.mr-small(href='#' disabled) Disabled Button
+          a.button.bg-transparent.text-dark.mr-small(href='#' disabled) Disabled Button
       pre
         code.
-          #{'<!-- Disabled Buttons -->'}
-          #{'<a class="button" href="#" disabled>Default Button</a>'}
-          #{'<a class="button button-primary" href="#" disabled>Primary Button</a>'}
-          #{'<a class="button button-light" href="#" disabled>Light Button</a>'}
-          #{'<button class="button-ghost" disabled>Ghost Button</button>'}
-          #{'<input class="button button-text" value="Text Button"  type="submit" disabled/>'}
+          #{'<a class="button" href="#" disabled>Disabled Button</a>'}
+          #{'<a class="button button-primary" href="#" disabled>Disabled Button</a>'}
+          #{'<a class="button button-primary bg-transparent text-dark" href="#" disabled>Disabled Button</a>'}
     h2 Button Sizes
     p To change the button size, simply add the text size modifiers <code>text-small</code>, <code>text-medium</code> and <code>text-large</code> as shown below.
     .code-example
