@@ -75,7 +75,7 @@ block docs-content
           #{'...'}
 
     h2 Rounded Buttons
-    p Add <code>border-rounded</code> class to make any button a rounded button. This will works for outline style too.
+    p Add <code>border-rounded</code> class to make any button a rounded button.
     .code-example
       .code-output
         div
@@ -95,6 +95,16 @@ block docs-content
           a.button.button-purple.border-rounded.mr-small(href='#') Purple Button
           a.button.button-teal.border-rounded.mr-small(href='#') Teal Button
           a.button.button-cyan.border-rounded.mr-small(href='#') Cyan Button
+      pre
+        code.
+          #{'<a class="button border-rounded" href="#">Default Button</a>'}
+          #{'<a class="button button-primary border-rounded" href="#">Primary Button</a>'}
+          #{'<a class="button button-blue border-rounded" href="#">Blue Button</a>'}
+          #{'...'}
+
+    p Similarly, outline buttons can be made rounded too by adding the <code>border-rounded</code> class.
+    .code-example
+      .code-output
         div
           a.button.border-rounded.bg-transparent.text-dark.mr-small(href='#') Default Button
           a.button.button-primary.border-rounded.bg-transparent.text-primary.mr-small(href='#') Primary Button
@@ -114,10 +124,11 @@ block docs-content
           a.button.button-cyan.border-rounded.bg-transparent.text-cyan.mr-small(href='#') Cyan Button
       pre
         code.
-          #{'<a class="button border-rounded" href="#">Default Button</a>'}
-          #{'<a class="button button-primary border-rounded" href="#">Primary Button</a>'}
-          #{'<a class="button button-blue border-rounded" href="#">Blue Button</a>'}
+          #{'<a class="button border-rounded bg-transparent text-dark" href="#">Default Button</a>'}
+          #{'<a class="button button-primary border-rounded bg-transparent text-primary" href="#">Primary Button</a>'}
+          #{'<a class="button button-blue border-rounded bg-transparent text-blue" href="#">Blue Button</a>'}
           #{'...'}
+
 
     h2 Disabled Buttons
     p Buttons can be disabled by adding the <code>disabled</code> attribute.
