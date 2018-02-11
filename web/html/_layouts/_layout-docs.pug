@@ -57,8 +57,8 @@ block content
         .menu-toggle-content.p-4(style="width:280px;")
           +menu(data.menu.docs)
     .col
-      .container-content.py
-        h1.mt #{page.title}
+      .container-content.pb
+        h1 #{page.title}
         p.text-small.text-muted #{page.description}
         div.py!= page.content
         .grid.py-3
