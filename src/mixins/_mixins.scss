@@ -43,14 +43,15 @@
   }
 }
 
-@mixin twin-modifiers($map, $attribute1, $attribute2, $prefix: "-", $separator: "-", $base: "base") {
+@mixin multi-modifiers($map, $attribute-list, $prefix: "-", $separator: "-", $base: "base") {
   @each $key, $value in $map {
     &#{if($key != $base, #{$prefix}#{$key}, '')} {
       @if type-of($value) == "map" {
-        @include modifiers($value, $attribute1, $attribute2, $separator);
+        @include modifiers($value, $attribute-list, $separator);
       } @else {
-        #{$attribute1}: $value;
-        #{$attribute2}: $value;
+        @each $attribute in $attribute-list {
+          #{$attribute}: $value;
+        }
       }
     }
   }

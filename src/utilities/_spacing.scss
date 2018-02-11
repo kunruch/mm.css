@@ -33,7 +33,7 @@
 }
 
 .mx {
-  @include twin-modifiers($spacing, "margin-left", "margin-right");
+  @include multi-modifiers($spacing, ("margin-left", "margin-right"));
 }
 
 .mx-0 {
@@ -42,12 +42,20 @@
 }
 
 .my {
-  @include twin-modifiers($spacing, "margin-top", "margin-bottom");
+  @include multi-modifiers($spacing, ("margin-top", "margin-bottom"));
 }
 
 .my-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+}
+
+.m {
+  @include modifiers($spacing, "margin");
+}
+
+.m-0 {
+  margin: 0 !important;
 }
 
 // Padding
@@ -84,7 +92,7 @@
 }
 
 .px {
-  @include twin-modifiers($spacing, "padding-left", "padding-right");
+  @include multi-modifiers($spacing, ("padding-left", "padding-right"));
 }
 
 .px-0 {
@@ -93,10 +101,18 @@
 }
 
 .py {
-  @include twin-modifiers($spacing, "padding-top", "padding-bottom");
+  @include multi-modifiers($spacing, ("padding-top", "padding-bottom"));
 }
 
 .py-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+.p {
+  @include modifiers($spacing, "padding");
+}
+
+.p-0 {
+  padding: 0 !important;
 }
