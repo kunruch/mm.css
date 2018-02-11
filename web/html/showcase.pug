@@ -12,11 +12,11 @@ block page-content
   .container-content
     .grid.gutters
       each site in data.showcase
-        .col.col-6.col-md-12.section
+        .col.col-6.col-md-12.py
           a(href=site.url, target='_blank', title=site.name)
             .browser-mockup.with-tab.shadow.shadow-hover.aligncenter
               img(src=site.image, width='500', height='300', alt=site.name)
           h2.h4.text-center
             a(href=site.url, target='_blank').text-dark= site.name
-    .section
+    .py
       p.text-center Want to submit your site to showcase?<br><a href="/contact/">Get in touch</a>

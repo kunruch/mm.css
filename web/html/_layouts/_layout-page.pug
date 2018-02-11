@@ -2,8 +2,8 @@ extends ./_layout-default.pug
 
 block content
   article
-    .section-medium.text-center
+    .py-4.text-center
       .container-readable
         h1.mt-0 #{page.title}
         p.text-muted.text-large #{page.description}
-    .section!= page.content
+    .py!= page.content

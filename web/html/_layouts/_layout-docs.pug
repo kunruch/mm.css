@@ -57,12 +57,11 @@ block content
         .menu-toggle-content.p-4(style="width:280px;")
           +menu(data.menu.docs)
     .col
-      .container-content.section
-        .section
-          h1.mt-0 #{page.title}
-          p.text-small.text-muted #{page.description}
-        div!= page.content
-        .grid.section-medium
+      .container-content.py
+        h1.mt #{page.title}
+        p.text-small.text-muted #{page.description}
+        div.py!= page.content
+        .grid.py-3
           .col
             +prevmenu(data.menu.docs, 'alignleft')
           .col
