@@ -3,6 +3,9 @@ extends ./_layout-default.pug
 block styles
   block docs-styles
   style.
+    .header {
+      border-bottom: 1px solid #f5f6f7;
+    }
     #docs-toggle + label{
       position: fixed;
       bottom: 1rem;
@@ -65,6 +68,5 @@ block content
           .col
             +nextmenu(data.menu.docs, 'alignright')
         p.py.text-small.text-muted.text-center Want to contribute to the documentation? <a href="#{site.github}/blob/master/web/html/#{page.source}" target="_blank">Edit this page</a> on Github.
-    .col.col-fixed.d-none(style="width:220px;")
 
 block footer
