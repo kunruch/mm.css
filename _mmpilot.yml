@@ -6,7 +6,7 @@ html:
 assets:
   src: "web/assets"
 styles:
-  src: "src"
+  src: "web/styles"
 scripts:
   src: "web/scripts"
 data: "web/data"

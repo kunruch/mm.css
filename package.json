@@ -38,9 +38,9 @@
       "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 2 versions\" -r dist/*.css",
     "banner": "banner-cli dist/*.css",
     "css-build-dev":
-      "npm-run-all css autoprefixer && shx cp dist/*.css public/styles",
+      "npm-run-all css autoprefixer && shx cp dist/mm.css public/styles",
     "css-build":
-      "npm-run-all css css-min autoprefixer banner && shx cp dist/*.css public/styles",
+      "npm-run-all css css-min autoprefixer banner && shx cp dist/mm.min.css public/styles/mm.css",
     "css-watch": "onchange src -- npm run css-build-dev",
     "dist":
       "npm-run-all lint css-build && git add dist/*.css && git commit -m \":bookmark: Updating dist\" && git push -u origin master",
@@ -52,9 +52,10 @@
     "web-watch": "mmpilot watch",
     "web-serve": "mmpilot serve",
     "web-deploy": "mmpilot deploy",
+    "dev":
+      "npm-run-all web-clean web-build css-build-dev --parallel web-watch css-watch web-serve",
     "build": "npm-run-all web-clean web-build css-build",
-    "dev": "npm-run-all build --parallel web-watch css-watch web-serve",
-    "deploy": "npm-run-all web-clean web-build css-build"
+    "deploy": "npm-run-all build && web-deploy"
   },
   "engines": {
     "node": ">=4.2.2"
