@@ -77,6 +77,18 @@ $size-element-spacing-large: 2rem !default;
 $size-container-wide-max: 1600px !default;
 $size-container-content-max: 1180px !default;
 $size-container-readable-max: 760px !default;
+
+$size-spacer: 1rem !default;
+// Map used to generate spacing utility classes
+$spacing: (
+  "base": 1 * $size-spacer,
+  "1": 0.25 * $size-spacer,
+  "2": 0.5 * $size-spacer,
+  "3": 1 * $size-spacer,
+  "4": 1.5 * $size-spacer,
+  "5": 3 * $size-spacer,
+  "auto": auto
+);
 // screen sizes
 $screen-sm: 540px;
 $screen-md: 960px;

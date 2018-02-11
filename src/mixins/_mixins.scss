@@ -43,6 +43,19 @@
   }
 }
 
+@mixin twin-modifiers($map, $attribute1, $attribute2, $prefix: "-", $separator: "-", $base: "base") {
+  @each $key, $value in $map {
+    &#{if($key != $base, #{$prefix}#{$key}, '')} {
+      @if type-of($value) == "map" {
+        @include modifiers($value, $attribute1, $attribute2, $separator);
+      } @else {
+        #{$attribute1}: $value;
+        #{$attribute2}: $value;
+      }
+    }
+  }
+}
+
 // screen-sm or mobile
 @mixin screen-sm {
   @media only screen and (max-width: $screen-sm) {
