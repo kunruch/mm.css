@@ -28,3 +28,13 @@ block docs-content
           input#confirmField(type='checkbox')
           label.d-inline.ml-2.font-normal(for='confirmField') Send a copy to yourself
         input.button(type='submit', value='Send')
+
+
+
+  form(role='search', method='get', action='')
+    input.search-field(type='search', placeholder='Search …', value='', name='s')
+  form(role='search', method='get', action='')
+    .search-box
+      .css-icon-search
+      input.search-field(type='search', placeholder='Search with Icon …', value='', name='s')
+
