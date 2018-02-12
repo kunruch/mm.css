@@ -14,21 +14,20 @@ block docs-content
       .code-output
         .grid.gutters.mt-4
           .col
-            .card.border
-              .card-header
-                .h3 Card Title
-                .text-muted Card subtitle
-              .card-body Card Body with light border.
-              .card-footer
-                a.button.button-primary Buy Now
+            .p.border.border-soft
+              .h3 Card Title
+              .text-muted Card subtitle
+              p A simple card with border and soft edges.
+              a.button.button-purple Buy Now
           .col
-            .card.bg-light.border-dark
-              .card-header
-                .h3 Card Title
-                .text-muted Card subtitle
-              .card-body Card Body with light background and dark border.
-              .card-footer
-                a.button.button-primary Buy Now
+            .border.border-soft
+              .p.bg-light
+                .h4.font-medium Card Header
+              .p
+                div A common card design with header and footer.<br>Another line.
+              .p.border-top
+                a.button.button-green.mt-0.mr-1 Accept
+                a.button.mt-0 Cancel
       pre
         code.
           #{'<!-- TODO -->'}
@@ -39,21 +38,17 @@ block docs-content
       .code-output
         .grid.gutters.mt-4
           .col
-            .card.shadow
-              .card-header
-                .h3 Card Title
-                .text-muted Card subtitle
-              .card-body Card Body with shadow.
-              .card-footer
-                a.button.button-primary Buy Now
+            .p.border-soft.shadow
+              .h3 Card Title
+              .text-muted Card subtitle
+              p Card with shadow and soft edges.
+              a.button.button-red Buy Now
           .col
-            .card.shadow-md.shadow-hover
-              .card-header
-                .h3 Card Title
-                .text-muted Card subtitle
-              .card-body Card Body with shadow-md and shadow hover.
-              .card-footer
-                a.button.button-primary Buy Now
+            .p.border-soft.shadow-md.shadow-hover
+              .h3 Card Title
+              .text-muted Card subtitle
+              p Card with shadow-md and shadow hover.
+              a.button.button-red Buy Now
       pre
         code.
           #{'<!-- TODO -->'}
@@ -64,60 +59,50 @@ block docs-content
       .code-output
         .grid.gutters.mt-4
           .col
-            .card.bg-light
-              .card-header
-                .h3 Card Title
-                .text-muted Card subtitle
-              .card-body Card Body with light background.
-              .card-footer
-                a.button.button-primary Buy Now
+
+            .p-4.border-rounded.bg-gray-light
+              .h3 Card Title
+              .text-muted Card subtitle
+              p Card with gray light background.
+              a.button.button-green Buy Now
           .col
-            .card.bg-dark
-              .card-header
-                .h3 Card Title
-                .text-muted Card subtitle
-              .card-body Card Body with dark background.
-              .card-footer
-                a.button.button-light Buy Now
+
+            .p-4.border-rounded.bg-dark.text-white
+              .h3 Card Title
+              .text-gray Card subtitle
+              p Card with dark background.
+              a.button.button-purple Buy Now
       pre
         code.
           #{'<!-- TODO -->'}
 
     h2 Cards With Images
-    p Use <code>.card-image</code> class to add images to card. You can give a padding if needed using <code>.px</code> utility class. Note that we have also used <code>d-flex</code> utility class to make the cards equal height.
     .code-example
       .code-output
         .grid.gutters.mt-4
-          .col.col-4.d-flex
-            .card.shadow-md
-              .card-image
-                img(src="/img/stock/space1.jpg")
-              .card-header
-                .h3 Card Title
+          .col.col-4
+            .p.border.shadow-md
+              h3.mt-2 Card Title
+              .text-muted Card subtitle
+              img.mt(src="/img/stock/space1.jpg")
+              p Card with Image.
+              a.button.button-teal Buy Now
+          .col.col-4
+            .shadow-md
+              img(src="/img/stock/space2.jpg")
+              .p
+                h3.mt-2 Card Title
                 .text-muted Card subtitle
-              .card-body Card Body with Image on top.
-              .card-footer
-                a.button.button-primary Buy Now
-          .col.col-4.d-flex
-            .card.shadow-md
-              .card-header
-                .h3 Card Title
-                .text-muted Card subtitle
-              .card-image
-                img(src="/img/stock/space2.jpg")
-              .card-body Card Body with full width image in body.
-              .card-footer
-                a.button.button-primary Buy Now
-          .col.col-4.d-flex
-            .card.shadow-md
-              .card-header
-                .h3 Card Title
-                .text-muted Card subtitle
-              .card-image.px
-                img(src="/img/stock/space4.jpg")
-              .card-body Card Body with padded image.
-              .card-footer
-                a.button.button-primary Buy Now
+                p Card with full width image on top.
+                a.button.button-yellow Buy Now
+          .col.col-4
+            .shadow-md
+              .p
+                h3.mt-2 Card Title
+              img(src="/img/stock/space4.jpg")
+              .p
+                div Card with full width image in body.
+                a.button.button-pink Buy Now
       pre
         code.
           #{'<!-- TODO -->'}
