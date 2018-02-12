@@ -46,3 +46,42 @@ input[type="checkbox"],
 input[type="radio"] {
   display: inline;
 }
+
+.inline-icon-left,
+.inline-icon-right {
+  position: relative;
+  @include element-spacing(1);
+
+  .icon {
+    position: absolute;
+    top: 10px;
+    color: $color-gray-dark;
+  }
+
+  input,
+  select {
+    margin-top: 0;
+  }
+}
+
+.inline-icon-left {
+  .icon {
+    left: 12px;
+  }
+
+  input,
+  select {
+    padding-left: 2.5em;
+  }
+}
+
+.inline-icon-right {
+  .icon {
+    right: 12px;
+  }
+
+  input,
+  select {
+    padding-right: 2.5em;
+  }
+}

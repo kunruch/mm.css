@@ -32,9 +32,13 @@ block docs-content
 
 
   form(role='search', method='get', action='')
-    input.search-field(type='search', placeholder='Search …', value='', name='s')
-  form(role='search', method='get', action='')
-    .search-box
-      .css-icon-search
-      input.search-field(type='search', placeholder='Search with Icon …', value='', name='s')
+    input(type='search', placeholder='Search …', value='', name='s')
+    .inline-icon-left
+      svg.icon
+        <use xlink:href="#icon-search"></use>
+      input.mt-0(type='search', placeholder='Search with Icon on left …', value='', name='s')
+    .inline-icon-right
+      svg.icon
+        <use xlink:href="#icon-search"></use>
+      input.mt-0(type='search', placeholder='Search with Icon on right …', value='', name='s')
 

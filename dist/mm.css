@@ -754,6 +754,44 @@ input[type="radio"] {
   display: inline;
 }
 
+.inline-icon-left,
+.inline-icon-right {
+  position: relative;
+  margin: 1.5rem 0 0rem 0;
+}
+
+.inline-icon-left .icon,
+.inline-icon-right .icon {
+  position: absolute;
+  top: 10px;
+  color: #808c99;
+}
+
+.inline-icon-left input,
+.inline-icon-left select,
+.inline-icon-right input,
+.inline-icon-right select {
+  margin-top: 0;
+}
+
+.inline-icon-left .icon {
+  left: 12px;
+}
+
+.inline-icon-left input,
+.inline-icon-left select {
+  padding-left: 2.5em;
+}
+
+.inline-icon-right .icon {
+  right: 12px;
+}
+
+.inline-icon-right input,
+.inline-icon-right select {
+  padding-right: 2.5em;
+}
+
 nav ul {
   list-style: none;
   padding-left: 0;
@@ -774,44 +812,22 @@ nav ul ul {
 
 .icon {
   font-size: 120%;
-  vertical-align: text-bottom;
-}
-
-.button .icon + span {
-  margin-left: 12px;
-}
-
-.css-icon-search {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  height: 32px;
-  width: 32px;
-  border: 0;
-}
-
-.css-icon-search::before {
-  display: block;
-  content: "";
-  width: 16px;
-  height: 16px;
-  border: 3px solid #394047;
-  background: transparent;
-  border-radius: 100%;
-}
-
-.css-icon-search::after {
-  content: "";
-  background: #394047;
-  display: block;
-  position: absolute;
-  left: 14px;
-  top: 12px;
-  width: 3px;
-  height: 7px;
-  margin-top: 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  vertical-align: middle;
+  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1em;
+  width: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
 .css-icon-hamburger {
@@ -959,24 +975,6 @@ nav ul ul {
   height: 40%;
   margin-left: 30%;
   margin-top: 30%;
-}
-
-.search-box {
-  position: relative;
-  width: 100%;
-  margin: 1.5rem 0 0rem 0;
-}
-
-.search-box input[type="search"] {
-  margin-top: 0;
-  padding-left: 40px;
-}
-
-.search-box .css-icon-search {
-  opacity: 0.4;
-  position: absolute;
-  left: 12px;
-  top: 12px;
 }
 
 .grid {

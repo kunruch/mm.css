@@ -1,18 +1,1 @@
-.search-box {
-  position: relative;
-  width: 100%;
 
-  @include element-spacing(1);
-
-  input[type="search"] {
-    margin-top: 0;
-    padding-left: 40px;
-  }
-
-  .css-icon-search {
-    opacity: 0.4;
-    position: absolute;
-    left: 12px;
-    top: 12px;
-  }
-}
