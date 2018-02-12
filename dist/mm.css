@@ -754,12 +754,6 @@ input[type="radio"] {
   display: inline;
 }
 
-.label-inline {
-  font-weight: normal;
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-
 nav ul {
   list-style: none;
   padding-left: 0;
@@ -877,44 +871,6 @@ nav ul ul {
   transition-property: bottom, -webkit-transform;
   transition-property: bottom, transform;
   transition-property: bottom, transform, -webkit-transform;
-}
-
-.label {
-  display: inline-block;
-  background-color: #394047;
-  color: #e7e9ec;
-  padding: 4px 8px;
-  font-size: 80%;
-  line-height: 1;
-  border-radius: 3px;
-}
-
-.label.label-primary {
-  background-color: #4a89dc;
-  color: #e7e9ec;
-}
-
-.label.label-light {
-  background-color: #f6f7f8;
-  color: #394047;
-}
-
-.label.label-ghost {
-  background-color: transparent;
-  color: #394047;
-  border: 1px solid #e7e9ec;
-}
-
-.label.label-ghost-light {
-  background-color: transparent;
-  color: #e7e9ec;
-  border: 1px solid #e7e9ec;
-}
-
-.label.label-rounded {
-  border-radius: 1em;
-  padding-left: 0.7em;
-  padding-right: 0.7em;
 }
 
 .thumbnail {

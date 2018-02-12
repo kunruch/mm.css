@@ -7,49 +7,29 @@ layout: 'docs'
 block docs-content
   div
     div
-      h2 Default Labels
+      h2 Label Styles
       p
       .code-example
         .code-output
           .mt
-            .d-inline.px.border-rounded.text-small.bg-dark.text-light.mr-1 Default Label
-            .d-inline.px.border-rounded.text-small.bg-primary.text-light.mr-1 Primary Label
-            .label.label-light.mr-1 Light Label
-            .label.label-ghost.mr-1 Ghost Label
-            .label.label-ghost-light.mr-1 Ghost Light Label
+            .d-inline.px.py-1.text-small.bg-dark.text-light.mr-1 Default Label
+            .d-inline.px.py-1.border-soft.text-small.bg-primary.text-light.mr-1 Primary Label
+            .d-inline.px.py-1.border-soft.text-small.bg-green.text-white.mr-1 Green Label
+            .d-inline.px.py-1.border-soft.text-small.border.border-red.text-red.mr-1 Red Outline Label
+            .d-inline.px.py-1.border-rounded.text-small.border.border-purple.text-purple.mr-1 Purple Rounded Label
         pre
           code.
-            #{'<!-- Default Labels -->'}
-      h2 Rounded Labels
-      p
-      .code-example
-        .code-output
-          .mt
-            .label.label-rounded.mr-1 Default Label
-            .label.label-primary.label-rounded.mr-1 Primary Label
-            .label.label-light.label-rounded.mr-1 Light Label
-            .label.label-ghost.label-rounded.mr-1 Ghost Label
-            .label.label-ghost-light.label-rounded.mr-1 Ghost Light Label
-        pre
-          code.
-            #{'<!-- Default Labels -->'}
+            #{'<!-- Label Styles -->'}
       h2 Labels Inside Elements
       p
       .code-example
         .code-output
           .mt
-            h2 Heading With Label
-              .label.label-rounded.text-small New
-            h3 Heading With Label
-              .label.label-ghost.text-small New
-            button.button-primary
+            h2 Heading
+              .d-inline.px-2.py-1.border-rounded.text-small.bg-red.text-white.ml-2 New
+            button.button.button-primary
               span.mr-1 Button with Label
-              .label.label-light.label-rounded 12
-            p
-              a.label.mr-1(href="#") Link Label
-              a.label.label-primary.mr-1(href="#") Link Label Primary
-              a.label.label-light.mr-1(href="#") Link Label Light
-              a.label.label-ghost.mr-1(href="#") Link Label Ghost
+              .d-inline.px-2.border-rounded.text-small.bg-light.text-dark.ml-2 12
         pre
           code.
-            #{'<!-- Default Labels -->'}
+            #{'<!-- Labels inside elements -->'}
