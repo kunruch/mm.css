@@ -881,25 +881,23 @@ nav ul ul {
 }
 
 .thumbnail {
-  width: 148px;
-  height: 148px;
+  width: 6rem;
+  height: 6rem;
 }
 
-.thumbnail-medium {
-  width: 120px;
-  height: 120px;
+.thumbnail-sm {
+  width: 3.25rem;
+  height: 3.25rem;
 }
 
-.thumbnail-small {
-  width: 52px;
-  height: 52px;
+.thumbnail-lg {
+  width: 8rem;
+  height: 8rem;
 }
 
-.thumbnail-rounded {
-  border-radius: 100%;
-}
-
-[class*="thumbnail-"] .icon {
+.thumbnail .icon,
+.thumbnail-sm .icon,
+.thumbnail-lg .icon {
   width: 40%;
   height: 40%;
   margin-left: 30%;

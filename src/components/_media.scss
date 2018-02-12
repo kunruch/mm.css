@@ -1,28 +1,26 @@
-$size-thumbnail-small: 52px;
-$size-thumbnail-medium: 120px;
-$size-thumbnail: 148px;
+$size-thumbnail-sm: 3.25rem;
+$size-thumbnail: 6rem;
+$size-thumbnail-lg: 8rem;
 
 .thumbnail {
   width: $size-thumbnail;
   height: $size-thumbnail;
 }
 
-.thumbnail-medium {
-  width: $size-thumbnail-medium;
-  height: $size-thumbnail-medium;
+.thumbnail-sm {
+  width: $size-thumbnail-sm;
+  height: $size-thumbnail-sm;
 }
 
-.thumbnail-small {
-  width: $size-thumbnail-small;
-  height: $size-thumbnail-small;
-}
-
-.thumbnail-rounded {
-  border-radius: 100%;
+.thumbnail-lg {
+  width: $size-thumbnail-lg;
+  height: $size-thumbnail-lg;
 }
 
 // When Icons used instead of images in media
-[class*="thumbnail-"] .icon {
+.thumbnail .icon,
+.thumbnail-sm .icon,
+.thumbnail-lg .icon {
   width: 40%;
   height: 40%;
   margin-left: 30%;
