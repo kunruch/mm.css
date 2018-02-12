@@ -435,7 +435,7 @@ table {
 }
 
 table.table-striped tbody tr:nth-of-type(odd) {
-  background: #f5f6f7;
+  background: #f6f7f8;
 }
 
 table.table-auto {
@@ -468,7 +468,7 @@ var {
 code,
 kbd,
 tt {
-  background: #f5f6f7;
+  background: #f6f7f8;
   border: 1px solid #e7e9ec;
   border-radius: 3px;
   padding: 3px 8px;
@@ -476,7 +476,7 @@ tt {
 }
 
 pre {
-  background: #f5f6f7;
+  background: #f6f7f8;
   font-size: 100%;
   line-height: 1.8;
   color: #0c0d0e;
@@ -660,13 +660,13 @@ pre > code {
 }
 
 .button-light {
-  background-color: #f5f6f7;
-  border-color: #f5f6f7;
+  background-color: #f6f7f8;
+  border-color: #f6f7f8;
 }
 
 .button-light:focus, .button-light:hover {
-  background-color: #e7e9ec;
-  border-color: #e7e9ec;
+  background-color: #e8eaed;
+  border-color: #e8eaed;
 }
 
 .button-dark {
@@ -932,7 +932,7 @@ nav ul ul {
 }
 
 .label.label-light {
-  background-color: #f5f6f7;
+  background-color: #f6f7f8;
   color: #394047;
 }
 
@@ -1790,7 +1790,7 @@ nav ul ul {
 }
 
 .bg-light {
-  background-color: #f5f6f7;
+  background-color: #f6f7f8;
 }
 
 .bg-dark {
@@ -1878,7 +1878,7 @@ nav ul ul {
 }
 
 .border-light {
-  border-color: #f5f6f7;
+  border-color: #f6f7f8;
 }
 
 .border-dark {
@@ -2614,7 +2614,7 @@ nav ul ul {
 }
 
 .text-light {
-  color: #f5f6f7;
+  color: #f6f7f8;
 }
 
 .text-dark {
