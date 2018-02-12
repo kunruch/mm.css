@@ -899,68 +899,6 @@ nav ul ul {
   border-radius: 100%;
 }
 
-.media-left {
-  position: relative;
-  display: block;
-}
-
-.media-left [class*="thumbnail"] {
-  position: absolute;
-  left: 0;
-  top: 2px;
-}
-
-.media-left .media-body {
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.media-left .thumbnail + .media-body {
-  margin-left: 148px;
-  min-height: 148px;
-}
-
-.media-left .thumbnail-small + .media-body {
-  margin-left: 52px;
-  min-height: 52px;
-}
-
-.media-left .thumbnail-medium + .media-body {
-  margin-left: 120px;
-  min-height: 52px;
-}
-
-.media-right {
-  position: relative;
-  display: block;
-}
-
-.media-right [class*="thumbnail"] {
-  position: absolute;
-  right: 0;
-  top: 2px;
-}
-
-.media-right .media-body {
-  position: relative;
-  padding-right: 1.5rem;
-}
-
-.media-right .thumbnail + .media-body {
-  margin-right: 148px;
-  min-height: 148px;
-}
-
-.media-right .thumbnail-small + .media-body {
-  margin-right: 52px;
-  min-height: 52px;
-}
-
-.media-right .thumbnail-medium + .media-body {
-  margin-right: 120px;
-  min-height: 120px;
-}
-
 [class*="thumbnail-"] .icon {
   width: 40%;
   height: 40%;
@@ -993,7 +931,6 @@ nav ul ul {
 .grid.gutters > .col {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  margin-bottom: 1.5rem;
 }
 
 .grid.gutters-small {
@@ -1004,7 +941,6 @@ nav ul ul {
 .grid.gutters-small > .col {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 .grid.gutters-large {
@@ -1015,7 +951,6 @@ nav ul ul {
 .grid.gutters-large > .col {
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-bottom: 2rem;
 }
 
 .col {

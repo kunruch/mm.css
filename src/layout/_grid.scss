@@ -17,7 +17,6 @@ $gutters-large: $size-element-spacing-large / 2;
     & > .col {
       padding-left: $gutters;
       padding-right: $gutters;
-      margin-bottom: $gutters * 2;
     }
   }
 
@@ -28,7 +27,6 @@ $gutters-large: $size-element-spacing-large / 2;
     & > .col {
       padding-left: $gutters-small;
       padding-right: $gutters-small;
-      margin-bottom: $gutters-small * 2;
     }
   }
 
@@ -39,7 +37,6 @@ $gutters-large: $size-element-spacing-large / 2;
     & > .col {
       padding-left: $gutters-large;
       padding-right: $gutters-large;
-      margin-bottom: $gutters-large * 2;
     }
   }
 }
