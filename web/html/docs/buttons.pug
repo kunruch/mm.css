@@ -10,7 +10,7 @@ block docs-content
     p Links and buttons can be styled using the <code>button</code>, <code>button-primary</code>, <code>button-green</code>, <code>button-yellow</code> etc. classes as shown below. The default button style is same as dark button style and primary button style is same as blue button.
     .code-example
       .code-output
-        div
+        p
           a.button.mr-1(href='#') Default Button
           a.button.button-primary.mr-1(href='#') Primary Button
           a.button.button-light.mr-1(href='#') Light Button
@@ -18,7 +18,7 @@ block docs-content
           a.button.button-gray.mr-1(href='#') Gray button
           a.button.button-gray-dark.mr-1(href='#') Gray Dark
           a.button.button-dark.mr-1(href='#') Dark Button
-        div
+        p
           a.button.button-blue.mr-1(href='#') Blue Button
           a.button.button-green.mr-1(href='#') Green Button
           a.button.button-yellow.mr-1(href='#') Yellow Button
@@ -50,7 +50,7 @@ block docs-content
     p To make any button outline button, add <code>bg-transparent</code> and an appropriate text color using <code>text-*</code> classes as shown below.
     .code-example
       .code-output
-        div
+        p
           a.button.bg-transparent.text-dark.mr-1(href='#') Default Button
           a.button.button-primary.bg-transparent.text-primary.mr-1(href='#') Primary Button
           a.button.button-light.bg-transparent.text-dark.mr-1(href='#') Light Button
@@ -58,7 +58,7 @@ block docs-content
           a.button.button-gray.bg-transparent.text-dark.mr-1(href='#') Gray button
           a.button.button-gray-dark.bg-transparent.text-dark.mr-1(href='#') Gray Dark
           a.button.button-dark.bg-transparent.text-dark.mr-1(href='#') Dark Button
-        div
+        p
           a.button.button-blue.bg-transparent.text-blue.mr-1(href='#') Blue Button
           a.button.button-green.bg-transparent.text-green.mr-1(href='#') Green Button
           a.button.button-yellow.bg-transparent.text-yellow.mr-1(href='#') Yellow Button
@@ -78,7 +78,7 @@ block docs-content
     p Add <code>border-rounded</code> class to make any button a rounded button.
     .code-example
       .code-output
-        div
+        p
           a.button.border-rounded.mr-1(href='#') Default Button
           a.button.button-primary.border-rounded.mr-1(href='#') Primary Button
           a.button.button-light.border-rounded.mr-1(href='#') Light Button
@@ -86,7 +86,7 @@ block docs-content
           a.button.button-gray.border-rounded.mr-1(href='#') Gray button
           a.button.button-gray-dark.border-rounded.mr-1(href='#') Gray Dark
           a.button.button-dark.border-rounded.mr-1(href='#') Dark Button
-        div
+        p
           a.button.button-blue.border-rounded.mr-1(href='#') Blue Button
           a.button.button-green.border-rounded.mr-1(href='#') Green Button
           a.button.button-yellow.border-rounded.mr-1(href='#') Yellow Button
@@ -105,7 +105,7 @@ block docs-content
     p Similarly, outline buttons can be made rounded too by adding the <code>border-rounded</code> class.
     .code-example
       .code-output
-        div
+        p
           a.button.border-rounded.bg-transparent.text-dark.mr-1(href='#') Default Button
           a.button.button-primary.border-rounded.bg-transparent.text-primary.mr-1(href='#') Primary Button
           a.button.button-light.border-rounded.bg-transparent.text-dark.mr-1(href='#') Light Button
@@ -113,7 +113,7 @@ block docs-content
           a.button.button-gray.border-rounded.bg-transparent.text-dark.mr-1(href='#') Gray button
           a.button.button-gray-dark.border-rounded.bg-transparent.text-dark.mr-1(href='#') Gray Dark
           a.button.button-dark.border-rounded.bg-transparent.text-dark.mr-1(href='#') Dark Button
-        div
+        p
           a.button.button-blue.border-rounded.bg-transparent.text-blue.mr-1(href='#') Blue Button
           a.button.button-green.border-rounded.bg-transparent.text-green.mr-1(href='#') Green Button
           a.button.button-yellow.border-rounded.bg-transparent.text-yellow.mr-1(href='#') Yellow Button
@@ -134,7 +134,7 @@ block docs-content
     p Buttons can be disabled by adding the <code>disabled</code> attribute.
     .code-example
       .code-output
-        div
+        p
           a.button.mr-1(href='#' disabled) Disabled Button
           a.button.button-primary.mr-1(href='#' disabled) Disabled Button
           a.button.bg-transparent.text-dark.mr-1(href='#' disabled) Disabled Button
@@ -147,9 +147,10 @@ block docs-content
     p To change the button size, simply add the text size modifiers <code>text-small</code> and <code>text-large</code> as shown below.
     .code-example
       .code-output
-        a.button.button-primary.text-small.mr-1(href="#") Small Button
-        a.button.button-primary.mr-1(href="#") Normal Button
-        a.button.button-primary.text-large.mr-1(href="#") Large Button
+        p
+          a.button.button-primary.text-small.mr-1(href="#") Small Button
+          a.button.button-primary.mr-1(href="#") Normal Button
+          a.button.button-primary.text-large.mr-1(href="#") Large Button
       pre
         code.
           #{'<a class="button button-primary text-small" href="#">Small Button</a>'}
@@ -159,8 +160,9 @@ block docs-content
     p Use <code>d-block</code> display utility class to create a block button style.
     .code-example
       .code-output
-        a.button.button-primary.d-block(href="#") Block Button
-        .grid.gutters
+        p
+          a.button.button-primary.d-block(href="#") Block Button
+        .grid.gutters.mt
           .col
             a.button.d-block(href="#") Block Button
           .col
@@ -176,14 +178,15 @@ block docs-content
     h2 Buttons with Icons
     .code-example
       .code-output
-        a.button.button-primary.mr-1(href="#")
-          | <svg class="icon icon-twitter mr-2"><use xlink:href="#icon-twitter"></use></svg>
-          span Twitter
-        a.button.mr-1(href="#")
-          | <svg class="icon icon-github mr-2"><use xlink:href="#icon-github"></use></svg>
-          span GitHub
-        br
-        a.button.button-primary.mr-1(href="#")
-          | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
-        a.button.mr-1(href="#")
-          | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+        p
+          a.button.button-primary.mr-1(href="#")
+            | <svg class="icon icon-twitter mr-2"><use xlink:href="#icon-twitter"></use></svg>
+            span Twitter
+          a.button.mr-1(href="#")
+            | <svg class="icon icon-github mr-2"><use xlink:href="#icon-github"></use></svg>
+            span GitHub
+        p
+          a.button.button-primary.mr-1(href="#")
+            | <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+          a.button.mr-1(href="#")
+            | <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>

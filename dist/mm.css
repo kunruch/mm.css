@@ -536,7 +536,6 @@ pre > code {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  margin: 1.5rem 0 0rem 0;
 }
 
 .button:focus, .button:hover {
@@ -1205,10 +1204,6 @@ nav ul ul {
 .header a:hover {
   opacity: 1;
   color: inherit;
-}
-
-.header .button {
-  margin-top: 0;
 }
 
 .header .search-form {
