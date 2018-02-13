@@ -78,6 +78,10 @@ $size-container-wide-max: 1600px !default;
 $size-container-content-max: 1180px !default;
 $size-container-readable-max: 760px !default;
 
+$size-thumbnail-sm: 3.25rem;
+$size-thumbnail: 6rem;
+$size-thumbnail-lg: 8rem;
+
 $size-spacer: 1rem !default;
 // Map used to generate spacing utility classes
 $spacing: (

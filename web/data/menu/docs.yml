@@ -19,18 +19,18 @@
   url: "/docs/buttons"
 - title: Forms
   url: "/docs/forms"
+- title: Images
+  url: "/docs/images"
 - title: Tabels
   url: "/docs/tables"
 - title: Navs
   url: "/docs/navs"
-- title: Markup and Formatting
-  url: "/docs/markup-and-formatting"
 
 - title: 'Utilities'
-- title: Containers
-  url: "/docs/containers"
 - title: Background
   url: "/docs/utility-background"
+- title: Containers
+  url: "/docs/containers"
 - title: Text
   url: "/docs/utility-text"
 - title: Borders
