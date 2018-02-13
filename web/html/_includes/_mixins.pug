@@ -19,6 +19,17 @@ mixin favicons(favicon)
   link(rel='apple-touch-icon-precomposed', href=site.url + '/img/' + favicon + '-180x180.png')
   meta(name='msapplication-TileImage', content=site.url + '/img/' + favicon + '-270x270.png')
 
+
+mixin docs_menu(list, classes)
+  nav(role="navigation")
+    ul(class=classes)
+      each item in list
+        if(item.children)
+          li.text-small.text-muted.text-upper.mt #{item.title}
+          +submenu(item, classes)
+        else
+          +menuitem(item)
+
 mixin menu(list, classes)
   nav(role="navigation")
     ul(class=classes)
@@ -27,13 +38,13 @@ mixin menu(list, classes)
 
 mixin submenu(item)
   if item.children
-    ul.submenu
+    ul.mb
       each subitem in item.children
         +menuitem(subitem)
 
 mixin menuitem(item)
   if item.url
-    li(class=['menu-item'], class={'current-menu-item': page.path == item.url})
+    li(class={'current-menu-item': page.path == item.url})
       a(href=item.url)&attributes(item.attributes)
         if(item.icon)
           <svg class="icon icon-#{item.icon}"><use xlink:href="#icon-#{item.icon}"></use></svg>

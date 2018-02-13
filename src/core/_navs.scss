@@ -5,9 +5,10 @@ nav {
   }
 
   li a {
-    color: $color-text;
+    color: inherit;
   }
 
+  .active > a,
   .current-menu-item > a {
     color: $color-primary;
   }
@@ -16,6 +17,6 @@ nav {
 nav ul {
   ul {
     margin-top: $size-element-spacing-small / 2;
-    padding-left: $size-element-spacing;
+    padding-left: $size-element-spacing-small / 2;
   }
 }

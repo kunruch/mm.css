@@ -821,16 +821,17 @@ nav ul {
 }
 
 nav li a {
-  color: #394047;
+  color: inherit;
 }
 
+nav .active > a,
 nav .current-menu-item > a {
   color: #4a89dc;
 }
 
 nav ul ul {
   margin-top: 0.5rem;
-  padding-left: 1.5rem;
+  padding-left: 0.5rem;
 }
 
 .icon {
@@ -1383,17 +1384,6 @@ nav ul ul {
   }
 }
 
-.menu-header {
-  text-transform: uppercase;
-  font-size: 85%;
-  color: #808c99;
-  letter-spacing: 0.15em;
-}
-
-.menu-header:not(:first-child) {
-  margin-top: 1.5rem;
-}
-
 .menu-toggle {
   display: block;
   -webkit-user-select: none;
@@ -1431,17 +1421,17 @@ nav ul ul {
   float: left;
 }
 
-.menu-toggle input[type=checkbox]:checked ~ .menu-toggle-content {
+.menu-toggle input[type="checkbox"]:checked ~ .menu-toggle-content {
   opacity: 1;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
 
-.menu-toggle input[type=checkbox]:checked ~ label > .css-icon-hamburger span {
+.menu-toggle input[type="checkbox"]:checked ~ label > .css-icon-hamburger span {
   background: none;
 }
 
-.menu-toggle input[type=checkbox]:checked ~ label > .css-icon-hamburger span::before {
+.menu-toggle input[type="checkbox"]:checked ~ label > .css-icon-hamburger span::before {
   top: 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -1449,7 +1439,7 @@ nav ul ul {
           transition-delay: 0s, 0.2s;
 }
 
-.menu-toggle input[type=checkbox]:checked ~ label > .css-icon-hamburger span::after {
+.menu-toggle input[type="checkbox"]:checked ~ label > .css-icon-hamburger span::after {
   bottom: 0;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -2459,6 +2449,12 @@ nav ul ul {
 
 .text-shadow {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* text transforms */
+.text-upper {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 @media only screen and (min-width: 961px) {
