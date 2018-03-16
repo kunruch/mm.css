@@ -74,7 +74,8 @@
 /* Meta color: hue: 200 */
 
 .hljs-meta {
-  color: #9a59b5;
+  color: #262626;
+  font-weight: bold;
 }
 
 .hljs-meta-string {

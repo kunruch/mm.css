@@ -307,8 +307,8 @@ h1 {
 
 .h2,
 h2 {
-  font-size: 28.8px;
-  font-size: 1.8rem;
+  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .h3,
@@ -319,37 +319,52 @@ h3 {
 
 .h4,
 h4 {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .h5,
 h5 {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .h6,
 h6 {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 960px) {
   .h1,
   h1 {
-    font-size: 26px;
-    font-size: 1.625rem;
+    font-size: 30px;
+    font-size: 1.875rem;
   }
   .h2,
   h2 {
-    font-size: 21.6px;
-    font-size: 1.35rem;
+    font-size: 24px;
+    font-size: 1.5rem;
   }
   .h3,
   h3 {
-    font-size: 19.2px;
-    font-size: 1.2rem;
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+  .h4,
+  h4 {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+  .h5,
+  h5 {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .h6,
+  h6 {
+    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
@@ -2411,8 +2426,8 @@ nav ul ul {
 }
 
 .text-large {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 /* font weights */

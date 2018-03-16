@@ -43,8 +43,8 @@ h1 {
 
 .h2,
 h2 {
-  //28.8px
-  @include font-size(1.8 * $size-default-text);
+  //30px
+  @include font-size(1.875 * $size-default-text);
 }
 
 .h3,
@@ -55,38 +55,56 @@ h3 {
 
 .h4,
 h4 {
-  //18px
-  @include font-size(1.125 * $size-default-text);
+  //20px
+  @include font-size(1.25 * $size-default-text);
 }
 
 .h5,
 h5 {
-  //16px
-  @include font-size(1 * $size-default-text);
+  //18px
+  @include font-size(1.125 * $size-default-text);
 }
 
 .h6,
 h6 {
-  //14px
-  @include font-size(0.875 * $size-default-text);
+  //16px
+  @include font-size(1 * $size-default-text);
 }
 
 @include tablet {
   .h1,
   h1 {
-    //26px
-    @include font-size(1.625 * $size-default-text);
+    //30px
+    @include font-size(1.875 * $size-default-text);
   }
 
   .h2,
   h2 {
-    //21.6px
-    @include font-size(1.35 * $size-default-text);
+    //24px
+    @include font-size(1.5 * $size-default-text);
   }
 
   .h3,
   h3 {
-    //19.2px
-    @include font-size(1.2 * $size-default-text);
+    //20px
+    @include font-size(1.25 * $size-default-text);
+  }
+
+  .h4,
+  h4 {
+    //18px
+    @include font-size(1.125 * $size-default-text);
+  }
+
+  .h5,
+  h5 {
+    //16px
+    @include font-size(1 * $size-default-text);
+  }
+
+  .h6,
+  h6 {
+    //14px
+    @include font-size(0.875 * $size-default-text);
   }
 }
