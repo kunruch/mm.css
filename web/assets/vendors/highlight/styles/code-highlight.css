@@ -12,11 +12,11 @@
 
 .hljs,
 .hljs-subst {
-  color: #434a54;
+  color: #373737;
 }
 
 .hljs-comment {
-  color: #656d78;
+  color: #979797;
 }
 
 .hljs-keyword,
@@ -25,6 +25,7 @@
 .hljs-meta-keyword,
 .hljs-doctag,
 .hljs-name {
+  color: #262626;
   font-weight: bold;
 }
 
@@ -38,12 +39,12 @@
 .hljs-quote,
 .hljs-template-tag,
 .hljs-deletion {
-  color: #da4453;
+  color: #e84c3d;
 }
 
 .hljs-title,
 .hljs-section {
-  color: #da4453;
+  color: #e84c3d;
   font-weight: bold;
 }
 
@@ -54,7 +55,7 @@
 .hljs-link,
 .hljs-selector-attr,
 .hljs-selector-pseudo {
-  color: #da4453;
+  color: #e84c3d;
 }
 
 /* Language color: hue: 90; */
@@ -73,7 +74,7 @@
 /* Meta color: hue: 200 */
 
 .hljs-meta {
-  color: #4a89dc;
+  color: #9a59b5;
 }
 
 .hljs-meta-string {
