@@ -3,9 +3,9 @@
 
 # MM.css
 
-[![alt MM.css - Minimal Modern CSS Framework](https://getmmcss.com/img/mmcss-featured.png "MM.css - Minimal Modern CSS Framework")](https://getmmcss.com/)
+[![alt MM.css - Minimal Modern CSS Framework](https://mmcss.kunruchcreations.com/img/mmcss-featured.png "MM.css - Minimal Modern CSS Framework")](https://mmcss.kunruchcreations.com/)
 
-[MM.css](https://getmmcss.com/) is built with minimalism in mind to help you build modern, fast and responsive websites. Just 4kb gzipped it has right amount of styles and utilities required to design a modern website. It imposes no dependency on JavaScript libraries.
+[MM.css](https://mmcss.kunruchcreations.com/) is built with minimalism in mind to help you build modern, fast and responsive websites. Just 4kb gzipped it has right amount of styles and utilities required to design a modern website. It imposes no dependency on JavaScript libraries.
 
 **Currently under development. Things may change without notice.**
 
@@ -19,8 +19,8 @@ $ npm install mmcss --save
 
 ## Explore
 
-* [Docs](https://getmmcss.com/docs/)
-* [Showcase](https://getmmcss.com/showcase/)
+* [Docs](https://mmcss.kunruchcreations.com/docs/)
+* [Showcase](https://mmcss.kunruchcreations.com/showcase/)
 
 ## Credits
 
