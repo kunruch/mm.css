@@ -40,7 +40,7 @@
     "css-build-dev":
       "npm-run-all css autoprefixer && shx cp dist/mm.css public/styles",
     "css-build":
-      "npm-run-all css css-min autoprefixer banner && shx cp dist/mm.min.css public/styles/mm.css",
+      "npm-run-all css css-min banner && shx cp dist/mm.min.css public/styles/mm.css",
     "css-watch": "onchange src -- npm run css-build-dev",
     "dist":
       "npm-run-all lint css-build && git add dist/*.css && git commit -m \":bookmark: Updating dist\" && git push -u origin master",
