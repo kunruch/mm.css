@@ -10,7 +10,7 @@
     "gzip-size": "^4.1.0",
     "jstransformer-escape-html": "^1.1.0",
     "mmpilot": "^0.6.6",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "npm-run-all": "^4.1.2",
     "onchange": "^3.3.0",
     "postcss-cli": "^4.1.1",
